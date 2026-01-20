@@ -112,6 +112,20 @@ header {
   margin-top: 20px;
 }
 
+/* Tablet/Mobile refinement */
+
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-grid {
+    grid-template-columns:  1fr;
+  }
+}
+
 /* Headline Styles */
 .headline-block h2 {
   font-size: 4.5rem;
@@ -177,11 +191,15 @@ header {
   filter: grayscale(10%); /* Slight newsprint desaturation */
 }
 
-.caption {
-  font-size: 0.8rem;
-  margin-top: 8px;
-  color: #444;
-}
+  .caption {
+            font-family: "Old Standard TT", serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -219,10 +237,9 @@ header {
 
 .review-card img {
   width: 100%;
-  height: 120px;
+  height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
-  /* Changed sepia to grayscale for a cohesive look */
   filter: grayscale(100%); 
 }
 
@@ -284,6 +301,7 @@ header {
   border-top: 2px solid #1a1a1a;
   border-bottom: 2px solid #1a1a1a;
   transition: 0.3s;
+  margin-top: 10px;
 }
 
 /* Creating the "end brackets" for a vintage feel */
@@ -325,53 +343,53 @@ header {
         <p>Scott Morrison has seized the Prime Minister’s job with a pledge to offer a "new generation" of leadership after a shock victory in the chaotic Liberal brawl to topple Malcolm Turnbull.</p>
         <p>After defeating former home affairs minister Peter Dutton 45 to 40, the new Prime Minister promised to unify his "bruised and battered" party and signaled there would be no punishment for the men who led the challenge.</p>
     </div>
-        <button class="gothic-button">read allcine</button>
+        <button class="gothic-button">read all</button>
 
     </section>
 
     <aside class="opinion-sidebar">
       <div class="sidebar-item">
         <img src="./art.jpg" style="height: 200px;">
-        <h4>I love horror but this movie is beyond belief</h4>
-        <small>PETER HARTCHER</small>
+        <h4 class="hover:text-red-400">I am a descendant of Russian Royal family</h4>
+        <small>FILM LADY</small>
       </div>
       <div class="sidebar-item">
-                <img src="./pic.jpg" style="height: 200px;">
+                <img src="./lobby.jpg" style="height: 200px;">
 
-        <h4>I will never watch all the movies in the world</h4>
+        <h4>Is this decade right for me? Tips for time travel on a budget.</h4>
         <small>FILM LADY</small>
       </div>
     </aside>
 
     <section class="hero-image-container">
       <img src="./front.jpg" alt="News Image">
-      <p class="caption"><strong>Fradulent Film Critic:</strong> No one asked, but I still like to say something. Photo: R.Parker</p>
+      <p class="caption"><strong>Fradulent Femme Fatale:</strong> No one asked, but I will answer. Photo: R.Parker</p>
     </section>
   </main>
   <section class="reviews-grid">
   <div class="review-card red">
     <img src="./soni.jpg" alt="Review 1">
-    <h3>RUGBY'S WINTER OF DISCONTENT</h3>
-    <p>John O'Neill unleashes on the state of the game and the path forward.</p>
+    <h3>Beyond the front page</h3>
+    <p>Film lady talks about <s>the Overlook</s> the Hydro Majestic Hotel</p>
             <button class="gothic-button">read more</button>
 
   </div>
 
   <div class="review-card yellow">
-    <img src="https://via.placeholder.com/150x100" alt="Review 2">
-    <h3>CREATIVE THINKERS</h3>
-    <p>Be inspired by the nation's leading designers in our innovation issue.</p>
+    <img src="./ozzz.jpg" alt="Review 2">
+    <h3>The cost of OZ-sploitation</h3>
+    <p>Is the Wizard of OZ indeed Wonderful? Or is it all just clickbait?</p>
   </div>
 
   <div class="review-card pink">
-    <img src="https://via.placeholder.com/150x100" alt="Review 3">
-    <h3>ERIN BROCKOVICH</h3>
-    <p>The legendary activist takes up the Australian fight in an exclusive interview.</p>
+    <img src="./wall.JPG" alt="Review 3">
+    <h3>Doppleganger or Dead Ringer?</h3>
+    <p>Once I found a wall art that looks like me. Who/What else looks like me?</p>
   </div>
 
   <div class="review-card blue">
-    <img src="https://via.placeholder.com/150x100" alt="Review 4">
-    <h3>MODERN ARCHITECTURE</h3>
+    <img src="./wednesday.JPG" alt="Review 4">
+    <h3>wow, wednesday woes</h3>
     <p>How the new skyline is changing the way we live and work in the city.</p>
   </div>
 </section>

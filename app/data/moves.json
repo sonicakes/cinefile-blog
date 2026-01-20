@@ -1,0 +1,802 @@
+[
+    {
+        "title": "die hard",
+        "year": "1988",
+        "director": "john mctiernan",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "skyscraper night, air duct, broken glass",
+        "image": "https://images.unsplash.com/photo-1575919220112-0d5a2dc6a4b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWN0aW9uJTIwbW92aWV8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+        "title": "4 months, 3 weeks & 2 days",
+        "year": "2007",
+        "director": "cristian mungiu",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "cold hotel room, eastern europe architecture, shadowy hallway",
+        "image": "https://images.unsplash.com/photo-1558690194-73ec1bdbc5aa?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "antichrist",
+        "year": "2009",
+        "director": "lars von trier",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "deep dark forest, foggy woods, nature decay",
+        "image": "https://images.unsplash.com/photo-1759892588129-5e236ccdb3c8?q=60&w=400&fm=webp&fit=crop"
+    },
+    {
+        "title": "blue velvet",
+        "year": "1986",
+        "director": "david lynch",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "blue velvet fabric, red roses white fence",
+        "image": "https://images.unsplash.com/photo-1606941060060-3d317be9947c?q=60&w=400&fm=webp&fit=crop"
+    },
+    {
+        "title": "breakfast at tiffanys",
+        "year": "1961",
+        "director": "blake edwards",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "pearl necklace, coffee croissant window, new york morning",
+        "image": "https://images.unsplash.com/photo-1636619608432-77941d282b32?q=60&w=400&fm=webp&fit=crop"
+    },
+    {
+        "title": "deliverance",
+        "year": "1972",
+        "director": "john boorman",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "mist river canoe, deep forest river",
+        "image": "https://images.unsplash.com/photo-1532015769533-2442ddad5513?q=60&w=400&fm=webp&fit=crop"
+    },
+    {
+        "title": "dogville",
+        "year": "2003",
+        "director": "lars von trier",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "chalk outlines, minimalist stage",
+        "image": "https://images.unsplash.com/photo-1635596374710-0c59e6d8ab5f?q=80&w=1214&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "fear & loathing in las vegas",
+        "year": "1998",
+        "director": "terry gilliam",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "las vegas neon, desert highway",
+        "image": "https://images.unsplash.com/photo-1599648918303-ed96326b78c2?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "from dusk till dawn",
+        "year": "1996",
+        "director": "robert rodriguez",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "neon bar sign, mexican desert sunset",
+        "image": "https://images.unsplash.com/photo-1666410262945-a66f50ca449c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "funny games",
+        "year": "1997",
+        "director": "michael haneke",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "white gloves, golf ball",
+        "image": "https://images.unsplash.com/photo-1632693128710-f466d1d01a77?q=80&w=931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "his girl friday",
+        "year": "1940",
+        "director": "howard hawks",
+        "watched_previously": "yes",
+        "availability": ["yt", "pc"],
+        "location": "movies-waiting-old; watch later",
+        "image_suggestion": "vintage typewriter, 1940s newspaper",
+        "image": "https://images.unsplash.com/photo-1561040377-60432c7afee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "inland empire",
+        "year": "2006",
+        "director": "david lynch",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "distorted face shadow, dark red curtain",
+        "image": "https://images.unsplash.com/photo-1603914249008-07a1d0bd874a?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "m - fritz lang",
+        "year": "1931",
+        "director": "fritz lang",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "shadow on wall, clock face",
+        "image": "https://images.unsplash.com/photo-1701294458496-59a3fd98c2ba?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "last tango in paris",
+        "year": "1972",
+        "director": "bernardo bertolucci",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "empty apartment window, parisian balcony",
+        "image": "https://images.unsplash.com/photo-1632606469465-d148fd8e148d?q=80&w=657&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "leviathan",
+        "year": "2014",
+        "director": "andrey zvyagintsev",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "whale skeleton, rough arctic sea",
+        "image": ""
+    },
+    {
+        "title": "martyrs",
+        "year": "2008",
+        "director": "pascal laugier",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "cold concrete cellar, rusty metal",
+        "image": "https://images.unsplash.com/photo-1612058237353-6213b412a1c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "melancholia",
+        "year": "2011",
+        "director": "lars von trier",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "blue planet, forest bride",
+        "image": "https://images.unsplash.com/photo-1750885036774-ebb7361fda8e?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "persona",
+        "year": "1966",
+        "director": "ingmar bergman",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "two faces overlapping, black and white portrait",
+        "image": "https://images.unsplash.com/photo-1765459920459-1ff745c499d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBvcnRyYWl0JTIwMiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+        "title": "play misty for me",
+        "year": "1971",
+        "director": "clint eastwood",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "radio microphone, california coastline",
+        "image": "https://images.unsplash.com/photo-1512923161115-7526d726f380?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "prey",
+        "year": "2007",
+        "director": "darrell roodt",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "tall grass shadow, lion stalking",
+        "image": ""
+    },
+    {
+        "title": "pulp fiction",
+        "year": "1994",
+        "director": "quentin tarantino",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "milkshake cherry, briefcase glow",
+        "image": "https://images.unsplash.com/photo-1641549058491-8a3442385da0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVscCUyMGZpY3Rpb258ZW58MHx8MHx8fDA%3D"
+    },
+    {
+        "title": "robocop",
+        "year": "1987",
+        "director": "paul verhoeven",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "futuristic city police, chrome metal texture",
+        "image": "https://images.unsplash.com/photo-1567722066835-84bb115226b4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "scent of a woman",
+        "year": "1992",
+        "director": "martin brest",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "tango dance, ferrari",
+        "image": "https://images.unsplash.com/photo-1637345877917-a3bd513e8078?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "schildlers list",
+        "year": "1993",
+        "director": "steven spielberg",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "barbed wire black and white, red coat isolated",
+        "image": ""
+    },
+    {
+        "title": "solaris",
+        "year": "1972",
+        "director": "andrei tarkovsky",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "space station window, swirling ocean water",
+        "image": ""
+    },
+    {
+        "title": "some like it hot",
+        "year": "1959",
+        "director": "billy wilder",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "jazz saxophone, 1920s dress",
+        "image": "https://images.unsplash.com/photo-1725830071503-d705ef4a0975?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "sweeney todd the demon br",
+        "year": "2007",
+        "director": "tim burton",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "straight razor, barber chair",
+        "image": "https://images.unsplash.com/photo-1611313151697-d626e818dddf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyYmVyJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+        "title": "the amytiville asylum",
+        "year": "2013",
+        "director": "andrew jones",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "spooky asylum hallway, old brick hospital",
+        "image": "https://images.unsplash.com/photo-1583322593092-1fdf70ae266d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "the birds",
+        "year": "1963",
+        "director": "alfred hitchcock",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "crows on fence, flying bird silhouette",
+        "image": "https://images.unsplash.com/photo-1685310898874-a4f8e862c531?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "the blues brothers",
+        "year": "1980",
+        "director": "john landis",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "black fedora, police car chase",
+        "image": ""
+    },
+    {
+        "title": "the boy in the striped pyjamas",
+        "year": "2008",
+        "director": "mark herman",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "fence wire sky, empty swing",
+        "image": ""
+    },
+    {
+        "title": "the bridge on the river kwai",
+        "year": "1957",
+        "director": "david lean",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "jungle bridge, bamboo structure",
+        "image": ""
+    },
+    {
+        "title": "the fly",
+        "year": "1986",
+        "director": "david cronenberg",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "shattered mirror, insect wing",
+        "image": "https://images.unsplash.com/photo-1568689341045-c58407fee7a8?q=80&w=1097&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "the good, the bad, the ugly",
+        "year": "1966",
+        "director": "sergio leone",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "cemetery sunset, western poncho",
+        "image": ""
+    },
+    {
+        "title": "the great dictator",
+        "year": "1940",
+        "director": "charles chaplin",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "world globe, vintage microphone",
+        "image": ""
+    },
+    {
+        "title": "the hunger",
+        "year": "1983",
+        "director": "tony scott",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "ankh symbol, gothic mansion",
+        "image": ""
+    },
+    {
+        "title": "the ruins",
+        "year": "2008",
+        "director": "carter smith",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "vine covered ruins, ancient temple jungle",
+        "image": ""
+    },
+    {
+        "title": "the devils backbone",
+        "year": "2001",
+        "director": "guillermo del toro",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "unexploded bomb, spanish orphanage",
+        "image": ""
+    },
+    {
+        "title": "the wicker man",
+        "year": "1973",
+        "director": "robin hardy",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "burning man statue, may day mask",
+        "image": "https://images.unsplash.com/photo-1619277418608-a8e7a0d4fa35?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "the wizard of oz",
+        "year": "1939",
+        "director": "victor fleming",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "red poppy field, tornado",
+        "image": "https://images.unsplash.com/photo-1595217681753-f94b155c1bd4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "videodrome",
+        "year": "1983",
+        "director": "david cronenberg",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "static television, glitch art",
+        "image": "https://images.unsplash.com/photo-1690041066826-6284d0745a87?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "volver",
+        "year": "2006",
+        "director": "pedro almodóvar",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "red flowers, spanish village",
+        "image": ""
+    },
+    {
+        "title": "walking with dinosaurs",
+        "year": "2013",
+        "director": "barry cook, neil nightingale",
+        "watched_previously": "maybe",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "pterodactyl, t-rex forest",
+        "image": ""
+    },
+    {
+        "title": "we need to talk about kevin",
+        "year": "2011",
+        "director": "lynne ramsay",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting-old",
+        "image_suggestion": "red paint splash, archery bow",
+        "image": "https://images.unsplash.com/flagged/photo-1565056755239-74fdddae5461?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "brokeback mt",
+        "year": "2005",
+        "director": "ang lee",
+        "watched_previously": "yes",
+        "availability": ["on pc"],
+        "location": "movies-waiting",
+        "image_suggestion": "mountain range lake, cowboy hat",
+        "image": "https://images.unsplash.com/photo-1591159007838-92bd350b3b3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "i,tonya",
+        "year": "2017",
+        "director": "craig gillespie",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting",
+        "image_suggestion": "ice skates, ice rink",
+        "image": "https://images.unsplash.com/photo-1669184773984-b1a177330ee9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "its a wonderful life",
+        "year": "1946",
+        "director": "frank capra",
+        "watched_previously": "no",
+        "availability": ["on pc"],
+        "location": "movies-waiting",
+        "image_suggestion": "snowy bridge, bell ringing",
+        "image": ""
+    },
+    {
+        "title": "cabinet of dr caligari",
+        "year": "1920",
+        "director": "robert wiene",
+        "watched_previously": "yes",
+        "availability": ["yt", "pc"],
+        "location": "watch later; movies-waiting",
+        "image_suggestion": "expressionist architecture, jagged shadows",
+        "image": "https://images.unsplash.com/photo-1580979357222-6d9f2e9ec62f?q=80&w=1111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "rashomon",
+        "year": "1950",
+        "director": "akira kurosawa",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies-waiting",
+        "image_suggestion": "heavy rain gate, forest sunlight",
+        "image": ""
+    },
+    {
+        "title": "reservoir dogs",
+        "year": "1992",
+        "director": "quentin tarantino",
+        "watched_previously": "maybe",
+        "availability": ["pc"],
+        "location": "movies-waiting",
+        "image_suggestion": "men in suits, warehouse interior",
+        "image": ""
+    },
+    {
+        "title": "the lighthouse",
+        "year": "2019",
+        "director": "robert eggers",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies-waiting",
+        "image_suggestion": "lighthouse storm, siren",
+        "image": ""
+    },
+    {
+        "title": "adaptation",
+        "year": "2013",
+        "director": "spike jonze",
+        "watched_previously": "maybe",
+        "availability": ["pc"],
+        "location": "movies-archive",
+        "image_suggestion": "orchid flower, typewriter keys",
+        "image": ""
+    },
+    {
+        "title": "kill bill vol 1 &2",
+        "year": "2003-04",
+        "director": "quentin tarantino",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies-archive",
+        "image_suggestion": "katana sword, yellow motorcycle",
+        "image": ""
+    },
+    {
+        "title": "se7en",
+        "year": "1995",
+        "director": "david fincher",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies-archive",
+        "image_suggestion": "green library, rainy city street",
+        "image": ""
+    },
+    {
+        "title": "shutter island",
+        "year": "2010",
+        "director": "martin scorsese",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies-archive",
+        "image_suggestion": "cliffs ocean storm, match light",
+        "image": ""
+    },
+    {
+        "title": "the godfather p1-3",
+        "year": "1972, 1974, 1990",
+        "director": "francis ford coppola",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies-archive",
+        "image_suggestion": "puppet strings, orange fruit",
+        "image": ""
+    },
+    {
+        "title": "2001: a space odyssey",
+        "year": "1968",
+        "director": "stanley kubrick",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "starry space, white monolith",
+        "image": ""
+    },
+    {
+        "title": "joker folie a deux",
+        "year": "2024",
+        "director": "todd phillips",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "clown makeup, duo dance",
+        "image": ""
+    },
+    {
+        "title": "lizzie ",
+        "year": "2018",
+        "director": "craig william macneill",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "axe, victorian dress",
+        "image": ""
+    },
+    {
+        "title": "local hero",
+        "year": "1983",
+        "director": "bill forsyth",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "phone booth beach, northern lights",
+        "image": ""
+    },
+    {
+        "title": "mad god",
+        "year": "2021",
+        "director": "phil tippett",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "steampunk monster, rusty gears",
+        "image": ""
+    },
+    {
+        "title": "megalopolis",
+        "year": "2024",
+        "director": "francis ford coppola",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "gold city, futuristic new york",
+        "image": ""
+    },
+    {
+        "title": "it happened one night",
+        "year": "1934",
+        "director": "frank capra",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "night bus, hitchhiking",
+        "image": "https://images.unsplash.com/photo-1542378142-a5b26c0e870b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "ball of fire",
+        "year": "1941",
+        "director": "howard hawks",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "library books stacks, nightclub singer",
+        "image": ""
+    },
+    {
+        "title": "bringing up baby",
+        "year": "1938",
+        "director": "howard hawks",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "leopard, dinosaur skeleton",
+        "image": "https://images.unsplash.com/photo-1616128417743-c3a6992a65e7?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "rebecca",
+        "year": "1940",
+        "director": "alfred hitchcock",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "large mansion gates, ocean waves cliff",
+        "image": ""
+    },
+    {
+        "title": "nosferatu",
+        "year": "1922",
+        "director": "f.w. murnau",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "vampire shadow stairs, rats",
+        "image": "https://images.unsplash.com/photo-1722649949654-f568c675f065?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "title": "freaks",
+        "year": "1932",
+        "director": "tod browning",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "circus tent, vintage sideshow",
+        "image": ""
+    },
+    {
+        "title": "metropolis",
+        "year": "1927",
+        "director": "fritz lang",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "art deco city, robot silhouette",
+        "image": ""
+    },
+    {
+        "title": "diabolique",
+        "year": "1955",
+        "director": "henri-georges clouzot",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "swimming pool murky, school hallway",
+        "image": ""
+    },
+    {
+        "title": "the haunting",
+        "year": "1963",
+        "director": "robert wise",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "spiral staircase, statue in dark",
+        "image": ""
+    },
+    {
+        "title": "before i wake",
+        "year": "2016",
+        "director": "mike flanagan",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "butterflies, child sleeping",
+        "image": ""
+    },
+    {
+        "title": "invasion",
+        "year": "2007",
+        "director": "oliver hirschbiegel",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "shattered glass, microscope",
+        "image": ""
+    },
+    {
+        "title": "the attic",
+        "year": "2007",
+        "director": "mary lambert",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "dusty attic, old doll",
+        "image": ""
+    },
+    {
+        "title": "the phantom of the opera",
+        "year": "2004",
+        "director": "joel schumacher",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "opera mask, candelabra",
+        "image": ""
+    },
+    {
+        "title": "the general",
+        "year": "1926",
+        "director": "buster keaton, clyde bruckman",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "steam locomotive, civil war cannon",
+        "image": ""
+    },
+    {
+        "title": "the network",
+        "year": "1976",
+        "director": "sidney lumet",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "news studio, television monitors",
+        "image": ""
+    },
+    {
+        "title": "carnival of souls",
+        "year": "1962",
+        "director": "herk harvey",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "abandoned carnival, ghostly face in water",
+        "image": ""
+    },
+    {
+        "title": "housemaid",
+        "year": "1960",
+        "director": "kim ki-young",
+        "watched_previously": "no",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "staircase shadow, rat poison",
+        "image": ""
+    },
+    {
+        "title": "alien",
+        "year": "1979",
+        "director": "ridley scott",
+        "watched_previously": "yes",
+        "availability": ["pc"],
+        "location": "movies",
+        "image_suggestion": "egg texture, space corridor",
+        "image": "https://images.unsplash.com/photo-1564855101177-b3fac36e00e0?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+]

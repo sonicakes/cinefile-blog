@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Detail - The Cinefile Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reusing your base styles */
+        :root {
+            --smh-blue: #005689;
+            --border-weight: 1px solid #222;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: "Source Serif 4", serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .newspaper-page {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        header {
+            border-bottom: 5px solid #000;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .masthead {
+            font-family: "UnifrakturMaguntia", cursive;
+            font-size: 3.5rem;
+            margin: 0;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #000;
+            display: block;
+        }
+
+        .breadcrumb {
+            font-family: "Brawler", serif;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding: 10px 0;
+            border-top: 1px solid #000;
+        }
+
+        /* ARTICLE LAYOUT */
+        .article-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* Content Styles */
+        .article-header h1 {
+            font-family: "Brawler", serif;
+            font-size: 3.5rem;
+            line-height: 1;
+            margin: 10px 0 20px 0;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .article-meta {
+            font-family: "Brawler", serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-top: 2px solid #000;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            margin-bottom: 25px;
+        }
+
+        .featured-image {
+            width: 100%;
+            filter: grayscale(20%);
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            font-family: "Old Standard TT", serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .full-text {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Drop Cap */
+        .full-text p:first-of-type::first-letter {
+            float: left;
+            font-size: 5rem;
+            line-height: 0.8;
+            padding-right: 12px;
+            padding-top: 4px;
+            font-family: "UnifrakturMaguntia", cursive;
+        }
+
+        /* Pull Quote */
+        .pull-quote {
+            font-family: "Brawler", serif;
+            font-size: 1.8rem;
+            font-style: italic;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            margin: 30px 0;
+            padding: 20px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Sidebar Styles */
+        .related-sidebar h3 {
+            font-family: "Brawler", serif;
+            text-transform: uppercase;
+            border-bottom: 3px solid #000;
+            padding-bottom: 5px;
+        }
+
+        .mini-card {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .mini-card img {
+            width: 100%;
+            filter: grayscale(100%);
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .mini-card h4 {
+            font-family: "Brawler", serif;
+            margin: 10px 0 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .gothic-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 25px;
+            font-family: "UnifrakturMaguntia", cursive;
+            font-size: 1.2rem;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-top: 2px solid #1a1a1a;
+            border-bottom: 2px solid #1a1a1a;
+            border-left: 2px solid #1a1a1a;
+            border-right: 2px solid #1a1a1a;
+            transition: 0.3s;
+        }
+
+        .gothic-button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        @media (max-width: 800px) {
+            .article-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="newspaper-page">
+    <header>
+        <a href="#" class="masthead">The Cinefile Blog</a>
+        <div class="breadcrumb">Film Reviews / Long Read / Edition: Jan 2024</div>
+    </header>
+
+    <div class="article-container">
+        <article class="main-content">
+            <div class="article-header">
+                <div class="article-meta">Published by Film Lady | 5 Minute Read</div>
+                <h1>I have no proof, but I believe I'm a real Russian Princess</h1>
+            </div>
+
+            <img src="./art.jpg" alt="Atmospheric Cinema" class="featured-image">
+            <p class="caption">A scene from the latest psychological thriller to sweep the nation. Photo: Associated Press.</p>
+
+            <div class="full-text">
+                <p>It began as a whisper in the back of the theater—a collective holding of breath that didn't release until the credits rolled. In the realm of modern cinema, we are often promised scares, but we are rarely promised a transformation. This latest feature does both with a surgical precision that is honestly quite terrifying.</p>
+                
+                <p>While many critics focus on the jumpscares, the real horror lies in the silence. The director uses negative space the way a painter uses lead white; it is heavy, oppressive, and fills every corner of the screen. I found myself looking at the edges of the frame, waiting for something to move, only to realize the movement was happening inside my own mind.</p>
+
+                <div class="pull-quote">
+                    "If you look at the photo, the shape of the wall lines mimics the shape of my nose. Only royal noses can do that."
+                </div>
+
+                <p>As we move into the second act, the cinematography shifts into a grayscale palette reminiscent of 1940s noir, heightening the sense of displacement. It's a bold choice for a modern audience raised on high-saturation digital color, but it pays off by stripping away the safety of the familiar.</p>
+                
+                <p>In conclusion, if you're looking for a comfortable night out with popcorn, stay home. This movie doesn't want to entertain you; it wants to haunt you. And in that, it succeeds brilliantly.</p>
+            </div>
+
+            <a href="index.html" class="gothic-button">Return to Front Page</a>
+        </article>
+
+        <aside class="related-sidebar">
+            <h3>Recent Stories</h3>
+            
+            <div class="mini-card">
+                <img src="./soni.jpg" alt="Review">
+                <h4>Beyond the front page: The Hydro Majestic</h4>
+                <p><small>The history of the Overlook's cousin...</small></p>
+            </div>
+
+            <div class="mini-card">
+                <img src="./wednesday.JPG" alt="Review">
+                <h4>Wednesday Woes</h4>
+                <p><small>Why mid-week cinema is dying...</small></p>
+            </div>
+
+            <div class="mini-card">
+                <img src="./oz-landscape.jpg" alt="Review">
+                <h4>The Cost of Oz-Sploitation</h4>
+                <p><small>Revisiting the classics of the outback...</small></p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+</body>
+</html>
