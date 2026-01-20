@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Gazette - Lead Story Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+/* Typography - Using classic serif for news feel */
+:root {
+  --smh-blue: #005689;
+  --border-weight: 1px solid #222;
+}
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.brawler-regular {
+  font-family: "Brawler", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.brawler-bold {
+  font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard-tt-regular {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.old-standard-tt-bold {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard-tt-regular-italic {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Source Serif 4", serif;
+  line-height: 1.3;
+  color: #1a1a1a;
+}
+
+.newspaper-page {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header Section */
+header {
+  border-bottom: 5px solid #000;
+  margin-bottom: 20px;
+}
+
+.masthead {
+  text-align: center;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+/* Three-column Top Teasers */
+.top-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+ font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-bottom: 2px solid #000;
+}
+
+.top-nav div {
+  padding: 0 15px;
+}
+.top-nav div:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+/* MAIN CONTENT GRID */
+.main-grid {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 3.5fr; /* Headline | Opinion | Image */
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Headline Styles */
+.headline-block h2 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin: 0 0 15px 0;
+   font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -3px;
+}
+
+.byline {
+   font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-top: 1px solid #000;
+  padding-top: 5px;
+}
+
+/* Multi-column Text Body */
+.article-body {
+  column-count: 2; /* Mimics narrow newspaper columns */
+  column-gap: 20px;
+  text-align: justify;
+  hyphens: auto;
+  font-size: 0.95rem;
+}
+
+.article-body p::first-letter {
+  float: left;
+  font-size: 4rem;
+  line-height: 1;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+/* Sidebar Styling */
+.opinion-sidebar {
+  border-left: 1px solid #ddd;
+  padding-left: 15px;
+}
+
+.sidebar-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.sidebar-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.1;
+   font-family: "Brawler", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Image with Caption */
+.hero-image-container img {
+  width: 100%;
+  filter: grayscale(10%); /* Slight newsprint desaturation */
+}
+
+.caption {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  color: #444;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 3px solid #000; /* Keeps the heavy black divider */
+}
+
+.review-card {
+  padding: 10px;
+  border-top: 8px solid #333; /* Default dark grey bar */
+}
+
+/* Grayscale Color Coding */
+.review-card.red { 
+  border-top-color: #333333; /* Darkest Grey */
+  background-color: #f5f5f5; 
+}
+
+.review-card.yellow { 
+  border-top-color: #666666; /* Medium-Dark Grey */
+  background-color: #f9f9f9; 
+}
+
+.review-card.pink { 
+  border-top-color: #999999; /* Medium-Light Grey */
+  background-color: #fafafa; 
+}
+
+.review-card.blue { 
+  border-top-color: #cccccc; /* Lightest Grey */
+  background-color: #ffffff; 
+}
+
+.review-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  /* Changed sepia to grayscale for a cohesive look */
+  filter: grayscale(100%); 
+}
+
+.review-card h3 {
+  font-family: "Brawler", serif;
+    font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.review-card p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Tablet/Mobile refinement */
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.news-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Helvetica Condensed', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  
+  /* The "Newspaper" Border */
+  border: 1px solid #000;
+  outline: 3px solid #000;
+  outline-offset: -5px;
+  
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.news-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.gothic-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+ font-family: "UnifrakturMaguntia", cursive;
+   font-size: 1.2rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  background: transparent;
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  transition: 0.3s;
+}
+
+/* Creating the "end brackets" for a vintage feel */
+.gothic-button::before, .gothic-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #1a1a1a;
+}
+
+.gothic-button::before { left: 0; }
+.gothic-button::after { right: 0; }
+
+.gothic-button:hover {
+  background-color: #f0f0f0;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+
+<div class="newspaper-page">
+  <header>
+    <div class="top-nav">
+      <div>What is Cinefile Blog?</div>
+      <div>Read All Movie Reviews</div>
+      <div>Contact Chief Editor (aka moi)</div>
+    </div>
+    <h1 class="masthead">The Cinefile Blog</h1>
+  </header>
+
+  <main class="main-grid">
+    <section class="headline-block">
+      <h2>Movie Reviews Nobody Asked For</h2>
+      <div class="byline">By Me, Myself & I | Chief political correspondent</div>
+      <div class="article-body">
+        <p>Scott Morrison has seized the Prime Minister’s job with a pledge to offer a "new generation" of leadership after a shock victory in the chaotic Liberal brawl to topple Malcolm Turnbull.</p>
+        <p>After defeating former home affairs minister Peter Dutton 45 to 40, the new Prime Minister promised to unify his "bruised and battered" party and signaled there would be no punishment for the men who led the challenge.</p>
+    </div>
+        <button class="gothic-button">read allcine</button>
+
+    </section>
+
+    <aside class="opinion-sidebar">
+      <div class="sidebar-item">
+        <img src="./art.jpg" style="height: 200px;">
+        <h4>I love horror but this movie is beyond belief</h4>
+        <small>PETER HARTCHER</small>
+      </div>
+      <div class="sidebar-item">
+                <img src="./pic.jpg" style="height: 200px;">
+
+        <h4>I will never watch all the movies in the world</h4>
+        <small>FILM LADY</small>
+      </div>
+    </aside>
+
+    <section class="hero-image-container">
+      <img src="./front.jpg" alt="News Image">
+      <p class="caption"><strong>Fradulent Film Critic:</strong> No one asked, but I still like to say something. Photo: R.Parker</p>
+    </section>
+  </main>
+  <section class="reviews-grid">
+  <div class="review-card red">
+    <img src="./soni.jpg" alt="Review 1">
+    <h3>RUGBY'S WINTER OF DISCONTENT</h3>
+    <p>John O'Neill unleashes on the state of the game and the path forward.</p>
+            <button class="gothic-button">read more</button>
+
+  </div>
+
+  <div class="review-card yellow">
+    <img src="https://via.placeholder.com/150x100" alt="Review 2">
+    <h3>CREATIVE THINKERS</h3>
+    <p>Be inspired by the nation's leading designers in our innovation issue.</p>
+  </div>
+
+  <div class="review-card pink">
+    <img src="https://via.placeholder.com/150x100" alt="Review 3">
+    <h3>ERIN BROCKOVICH</h3>
+    <p>The legendary activist takes up the Australian fight in an exclusive interview.</p>
+  </div>
+
+  <div class="review-card blue">
+    <img src="https://via.placeholder.com/150x100" alt="Review 4">
+    <h3>MODERN ARCHITECTURE</h3>
+    <p>How the new skyline is changing the way we live and work in the city.</p>
+  </div>
+</section>
+</div>
+
+</body>
+</html>
