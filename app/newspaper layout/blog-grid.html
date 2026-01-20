@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cinefile - Archive Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: "Source Serif 4", serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .archive-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid #000;
+            margin-bottom: 30px;
+        }
+
+        .small-masthead {
+            font-family: "UnifrakturMaguntia", cursive;
+            font-size: 3rem;
+            margin: 0;
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* MASONRY GRID LOGIC */
+        .blog-masonry {
+            /* This creates the random height column effect */
+            column-count: 3;
+            column-gap: 30px;
+            width: 100%;
+        }
+
+        .blog-card {
+            /* Important: prevents cards from breaking across columns */
+            break-inside: avoid;
+            margin-bottom: 40px;
+            display: block;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* PORTRAIT IMAGE STYLING */
+        .thumbnail-wrapper {
+            width: 100%;
+            /* 3:4 Portrait Aspect Ratio */
+            aspect-ratio: 3 / 4; 
+            overflow: hidden;
+            border: 1px solid #000;
+            margin-bottom: 15px;
+            background: #eee;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: 0.3s ease;
+        }
+
+        .blog-card:hover img {
+            filter: grayscale(0%);
+        }
+
+        .blog-card h3 {
+            font-family: "Brawler", serif;
+            font-size: 1.5rem;
+            line-height: 1.1;
+            margin: 10px 0;
+            font-weight: 700;
+        }
+
+        .blog-card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .category {
+            font-family: "Brawler", serif;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #000;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) { .blog-masonry { column-count: 2; } }
+        @media (max-width: 600px) { .blog-masonry { column-count: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="archive-container">
+    <header>
+        <a href="#" class="small-masthead">The Cinefile Blog</a>
+        <p style="font-family: 'Brawler'; font-weight:700; text-transform:uppercase;">Weekly Review Archive</p>
+    </header>
+
+    <main class="blog-masonry">
+        
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./soni.jpg" alt="Review">
+            </div>
+            <span class="category">Review</span>
+            <h3>Beyond the Front Page</h3>
+            <p>A look into the architecture of horror cinema.</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./oz.jpg" alt="Review">
+            </div>
+            <span class="category">Essay</span>
+            <h3>The Cost of Oz-Sploitation</h3>
+            <p>Exploring the rugged landscapes of Australian cinema and how the desert became a character of its own. From Mad Max to the modern thrillers of today, we look at the blood in the sand.</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./wednesday.JPG" alt="Review">
+            </div>
+            <span class="category">Trending</span>
+            <h3>Wednesday Woes</h3>
+            <p>How the new skyline is changing the way we live and work.</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./wall.JPG" alt="Review">
+            </div>
+            <span class="category">Personal</span>
+            <h3>Doppelgänger or Dead Ringer?</h3>
+            <p>Once I found a wall art that looks exactly like me. It raises the question: who or what else is out there mimicking our lives while we watch the screen?</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./piano.jpg" alt="Review">
+            </div>
+            <span class="category">Deep Dive</span>
+            <h3>The Silent Scream</h3>
+            <p>Why modern horror is moving away from noise and toward total, crushing silence.</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./pic.JPG" alt="Review">
+            </div>
+            <span class="category">Trending</span>
+            <h3>Wednesday Woes</h3>
+            <p>How the new skyline is changing the way we live and work.</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./lobby.JPG" alt="Review">
+            </div>
+            <span class="category">Personal</span>
+            <h3>Doppelgänger or Dead Ringer?</h3>
+            <p>Once I found a wall art that looks exactly like me. It raises the question: who or what else is out there mimicking our lives while we watch the screen?</p>
+        </article>
+
+        <article class="blog-card">
+            <div class="thumbnail-wrapper">
+                <img src="./ozzz.jpg" alt="Review">
+            </div>
+            <span class="category">Deep Dive</span>
+            <h3>The Silent Scream</h3>
+            <p>Why modern horror is moving away from noise and toward total, crushing silence.</p>
+        </article>
+
+    </main>
+</div>
+
+</body>
+</html>
