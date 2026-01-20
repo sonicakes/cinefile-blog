@@ -913,5 +913,53 @@
     "location": "movies",
     "image_suggestion": "egg texture, space corridor",
     "image": "https://images.unsplash.com/photo-1564855101177-b3fac36e00e0?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+   {
+    "title": "alien",
+    "year": "1979",
+    "slug": "alien",
+    "excerpt": "On a lonely journey back to Earth, a commercial crew encounters a terrifying alien species with a deadly life cycle. Trapped in a steel tomb millions of miles from help, their only goal is to survive the night.",
+    "director": "ridley scott",
+    "watched_previously": "yes",
+    "availability": ["pc"],
+    "location": "movies",
+    "image_suggestion": "egg texture, space corridor",
+    "image": "https://images.unsplash.com/photo-1564855101177-b3fac36e00e0?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+   {
+    "title": "the lodger",
+    "year": "1927",
+    "slug": "the-lodger",
+    "excerpt": "The Lodger is a classic silent thriller directed by Alfred Hitchcock and is often regarded as his first true masterpiece. Released in 1927, the film tells the suspenseful story of a mysterious lodger suspected of being a serial killer terrorizing fog-covered London.",
+    "director": "alfred hitchcock",
+    "watched_previously": "yes",
+    "availability": ["YT"],
+    "location": "",
+    "image_suggestion": "",
+    "image": "https://images.unsplash.com/photo-1722715682021-7865c3926247?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhpdGNoY29ja3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+   {
+    "title": "rear window",
+    "year": "1954",
+    "slug": "rear-window",
+    "excerpt": "A bored photographer recovering from a broken leg passes the time by watching his neighbors and begins to suspect one of them of murder.",
+    "director": "alfred hitchcock",
+    "watched_previously": "yes",
+    "availability": ["YT"],
+    "location": "",
+    "image_suggestion": "",
+    "image": "https://images.unsplash.com/photo-1535803295577-56201df34de7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+     {
+    "title": "rope",
+    "year": "1948",
+    "slug": "rope",
+    "excerpt": "Two men try to convince themselves they've committed the perfect murder by hosting a dinner party after strangling a former classmate to death.",
+    "director": "alfred hitchcock",
+    "watched_previously": "yes",
+    "availability": ["YT"],
+    "location": "",
+    "image_suggestion": "",
+    "image": "https://images.unsplash.com/photo-1518536674115-4f83c88ebf50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvcGV8ZW58MHx8MHx8fDA%3D"
   }
 ]
