@@ -8,6 +8,9 @@ export type PostMeta = {
     image: string;
     location?: string;
     year: string;
-    watchedPreviously: string;
+    watched_previously: string;
     director?: string;
+    quote?: string;
+    genres?: string;
+    run_time?: string;
 }

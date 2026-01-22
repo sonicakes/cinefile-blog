@@ -1,3 +1,5 @@
+// todo - append this to all img urls in movies.json q=60&w=400&fm=webp&fit=crop
+
 import {
   isRouteErrorResponse,
   Links,

@@ -20,13 +20,15 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   return (
     <div className="archive-container">
       <MainPageHeader />
-
-      <main className="blog-masonry">
+      <main className=" 
+    grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 grid-flow-dense">
         {posts.length === 0 ? (
           <p>not found any posts</p>
         ) : (
-          posts.map((post: PostMeta) => (
-            <BlogCard blog={post} key={post.slug} />
+          posts.map((post: PostMeta, index: number) => 
+            (
+            
+            <BlogCard blog={post} key={post.slug} classExtra={index % 3 === 0 ? 'md:col-span-2' : 'md:col-span-1'}/>
           ))
         )}
       </main>
