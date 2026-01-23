@@ -8,7 +8,7 @@ const TopNav = () => {
     [
       {
       path: '/',
-      label: 'HOme - "the front page'
+      label: 'Home - "the front page'
       },
         {
       path: '/about',
@@ -25,9 +25,9 @@ const TopNav = () => {
     ]
   
   return (
-    <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-brawler font-bold text-base py-4 border-b-2 border-dark divide-x divide-[#ccc]">
+    <div className="text-center capitalize grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-brawler font-bold text-base py-4 border-b-2 border-dark divide-x divide-[#ccc]">
     {menuTitles.map((menuLink) => (
-      <NavLink className={({ isActive }) => (isActive ? activeClasses : baseClasses)} to={menuLink.path}>{menuLink.label}</NavLink>
+      <NavLink key={menuLink.label} className={({ isActive }) => (isActive ? activeClasses : baseClasses)} to={menuLink.path}>{menuLink.label}</NavLink>
     ))}
     </div>
   );

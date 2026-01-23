@@ -73,11 +73,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Section */
-header {
-  border-bottom: 5px solid #000;
-  margin-bottom: 20px;
-}
+
 
 .masthead {
   text-align: center;
@@ -181,9 +177,9 @@ header {
   /* Slight newsprint desaturation */
 }
 
-.caption {
+/* .caption {
   @apply font-caption italic pb-4 text-[#555] mb-7 border-b border-light;
-}
+} */
 
 .reviews-grid {
   display: grid;
@@ -286,12 +282,6 @@ header {
 
 
 
-/* ARTICLE LAYOUT */
-.article-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
-}
 
 /* Content Styles */
 
@@ -301,8 +291,6 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.9rem;
-  border-top: 2px solid #000;
-  border-bottom: 1px solid #ccc;
   padding: 10px 0;
   margin-bottom: 25px;
 }
@@ -313,15 +301,7 @@ header {
   margin-bottom: 10px;
 }
 
-.caption {
-  font-family: "Old Standard TT", serif;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-}
+
 
 /* Pull Quote */
 .pull-quote {
@@ -336,13 +316,7 @@ header {
   line-height: 1.2;
 }
 
-/* Sidebar Styles */
-.related-sidebar h3 {
-  font-family: "Brawler", serif;
-  text-transform: uppercase;
-  border-bottom: 3px solid #000;
-  padding-bottom: 5px;
-}
+
 
 .mini-card {
   margin-bottom: 25px;
@@ -442,31 +416,8 @@ header {
         @media (max-width: 600px) { .blog-masonry { column-count: 1; } } */
 
 
-/* Header Section */
-header.mainpage {
-  border-bottom: 5px solid #000;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
-.mainpage .masthead {
-  font-family: "UnifrakturMaguntia", cursive;
-  font-size: 3.5rem;
-  margin: 0;
-  padding: 10px 0;
-  text-decoration: none;
-  color: #000;
-  display: block;
-}
 
-.mainpage .breadcrumb {
-  font-family: "Brawler", serif;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  padding: 10px 0;
-  border-top: 1px solid #000;
-}
 
 
 .archive-container {
@@ -476,12 +427,6 @@ header.mainpage {
   padding: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
-
 
 .year {
   font-weight: normal;
@@ -550,31 +495,10 @@ header.mainpage {
 }
 
 
-/* blog detail header */
 
 
-/* Header Section */
-header.detail-header {
-  border-bottom: 5px solid #000;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
-.detail-header .masthead {
-  font-family: "UnifrakturMaguntia", cursive;
-  font-size: 3.5rem;
-  margin: 0;
-  padding: 10px 0;
-  text-decoration: none;
-  color: #000;
-  display: block;
-}
 
-.detail-header .breadcrumb {
-  font-family: "Brawler", serif;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  padding: 10px 0;
-  border-top: 1px solid #000;
-}
+
+
+

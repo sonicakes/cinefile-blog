@@ -1,6 +1,7 @@
 import type { Route } from "./+types";
 import type { PostMeta } from "~/types";
 import BlogCard from "~/components/BlogCard";
+import FilterTools from "~/components/FilterTools";
 
 export async function loader({
   request,
@@ -16,10 +17,15 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const { posts } = loaderData;
 
   return (
-      <main
+<>
+<FilterTools />
+
+
+           <section
         className=" 
     grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 grid-flow-dense"
       >
+       
         {posts.length === 0 ? (
           <p>not found any posts</p>
         ) : (
@@ -33,7 +39,9 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
        
           ))
         )}
-      </main>
+      </section>
+ 
+  </>
   );
 };
 

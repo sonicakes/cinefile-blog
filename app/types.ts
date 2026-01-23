@@ -12,5 +12,6 @@ export type PostMeta = {
     director?: string;
     quote?: string;
     genres?: string;
+    image_description?: string;
     run_time?: string;
 }
