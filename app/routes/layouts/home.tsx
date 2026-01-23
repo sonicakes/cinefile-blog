@@ -3,9 +3,11 @@ const HomeLayout = () => {
   return (
     <>
 
-      <section className="max-w-6xl mx-auto px-6 my-8">
+      {/* <section className="max-w-6xl mx-auto px-6 my-8"> */}
+        <div className="newspaper-page">
         <Outlet />
-      </section>
+        </div>
+      {/* </section> */}
     </>
   );
 };

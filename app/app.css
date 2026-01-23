@@ -1,13 +1,63 @@
 @import "tailwindcss";
+@plugin '@tailwindcss/typography';
 
 @theme {
   --font-brawler: "Brawler", serif;
- --font-source: "Source Serif 4", serif;
---font-caption: "Old Standard TT", serif;
- --font-gothic: "UnifrakturMaguntia", cursive;
+  --font-source: "Source Serif 4", serif;
+  --font-caption: "Old Standard TT", serif;
+  --font-gothic: "UnifrakturMaguntia", cursive;
   --color-dark: #1a1a1a;
   --color-light: #f0f0f0;
   --color-crimson: #DC143C;
+
+
+}
+
+
+@layer base {
+  .prose h1 {
+    font-family: "Brawler", serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin: 10px 0 20px 0;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .prose p {
+    @apply text-dark text-justify text-lg;
+  }
+
+  .prose blockquote p {
+    font-family: "Brawler", serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+    .prose blockquote {
+  
+    border-left: none;
+  }
+
+  .prose a {
+    text-decoration-color: var(--color-blue-400);
+
+    &:hover {
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+
+@utility drop-cap {
+  & p:first-of-type:not(blockquote p)::first-letter {
+    @apply float-left text-9xl pr-3 pt-1;
+  }
 }
 
 html,
@@ -20,7 +70,7 @@ body {
   margin: 20px auto;
   background: #fff;
   padding: 25px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Section */
@@ -41,30 +91,11 @@ header {
   border-bottom: 1px solid #000;
 }
 
-/* Three-column Top Teasers */
-.top-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
- font-family: "Brawler", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.1rem;
-  padding: 10px 0;
-  border-bottom: 2px solid #000;
-}
-
-.top-nav div {
-  padding: 0 15px;
-}
-.top-nav div:not(:last-child) {
-  border-right: 1px solid #ccc;
-}
-
 /* MAIN CONTENT GRID */
 .main-grid {
   display: grid;
-  grid-template-columns: 3fr 1.5fr 3.5fr; /* Headline | Opinion | Image */
+  grid-template-columns: 3fr 1.5fr 3.5fr;
+  /* Headline | Opinion | Image */
   gap: 25px;
   margin-top: 20px;
 }
@@ -79,7 +110,7 @@ header {
 
 @media (max-width: 600px) {
   .main-grid {
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -88,14 +119,14 @@ header {
   font-size: 4.5rem;
   line-height: 1.1;
   margin: 0 0 15px 0;
-   font-family: "Brawler", serif;
+  font-family: "Brawler", serif;
   font-weight: 700;
   font-style: normal;
   letter-spacing: -3px;
 }
 
 .byline {
-   font-family: "Brawler", serif;
+  font-family: "Brawler", serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -106,7 +137,8 @@ header {
 
 /* Multi-column Text Body */
 .article-body {
-  column-count: 2; /* Mimics narrow newspaper columns */
+  column-count: 2;
+  /* Mimics narrow newspaper columns */
   column-gap: 20px;
   text-align: justify;
   hyphens: auto;
@@ -137,7 +169,7 @@ header {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.1;
-   font-family: "Brawler", serif;
+  font-family: "Brawler", serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -145,45 +177,53 @@ header {
 /* Image with Caption */
 .hero-image-container img {
   width: 100%;
-  filter: grayscale(10%); /* Slight newsprint desaturation */
+  filter: grayscale(10%);
+  /* Slight newsprint desaturation */
 }
 
-  .caption {
-    @apply font-caption italic pb-4 text-[#555] mb-7 border-b border-light;
-        }
+.caption {
+  @apply font-caption italic pb-4 text-[#555] mb-7 border-b border-light;
+}
+
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 3px solid #000; /* Keeps the heavy black divider */
+  border-top: 3px solid #000;
+  /* Keeps the heavy black divider */
 }
 
 .review-card {
   padding: 10px;
-  border-top: 8px solid #333; /* Default dark grey bar */
+  border-top: 8px solid #333;
+  /* Default dark grey bar */
 }
 
 /* Grayscale Color Coding */
-.review-card.red { 
-  border-top-color: #333333; /* Darkest Grey */
-  background-color: #f5f5f5; 
+.review-card.red {
+  border-top-color: #333333;
+  /* Darkest Grey */
+  background-color: #f5f5f5;
 }
 
-.review-card.yellow { 
-  border-top-color: #666666; /* Medium-Dark Grey */
-  background-color: #f9f9f9; 
+.review-card.yellow {
+  border-top-color: #666666;
+  /* Medium-Dark Grey */
+  background-color: #f9f9f9;
 }
 
-.review-card.pink { 
-  border-top-color: #999999; /* Medium-Light Grey */
-  background-color: #fafafa; 
+.review-card.pink {
+  border-top-color: #999999;
+  /* Medium-Light Grey */
+  background-color: #fafafa;
 }
 
-.review-card.blue { 
-  border-top-color: #cccccc; /* Lightest Grey */
-  background-color: #ffffff; 
+.review-card.blue {
+  border-top-color: #cccccc;
+  /* Lightest Grey */
+  background-color: #ffffff;
 }
 
 .review-card img {
@@ -191,12 +231,12 @@ header {
   height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
-  filter: grayscale(100%); 
+  filter: grayscale(100%);
 }
 
 .review-card h3 {
   font-family: "Brawler", serif;
-    font-size: 1.1rem;
+  font-size: 1.1rem;
   margin: 0 0 8px 0;
   line-height: 1.1;
   text-transform: uppercase;
@@ -215,6 +255,7 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .news-button {
   display: inline-block;
   padding: 8px 20px;
@@ -226,12 +267,12 @@ header {
   font-weight: bold;
   font-size: 0.8rem;
   letter-spacing: 1px;
-  
+
   /* The "Newspaper" Border */
   border: 1px solid #000;
   outline: 3px solid #000;
   outline-offset: -5px;
-  
+
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -245,107 +286,196 @@ header {
 
 
 
+/* ARTICLE LAYOUT */
+.article-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+/* Content Styles */
+
+
+.article-meta {
+  font-family: "Brawler", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 25px;
+}
+
+.featured-image {
+  width: 100%;
+  filter: grayscale(20%);
+  margin-bottom: 10px;
+}
+
+.caption {
+  font-family: "Old Standard TT", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Pull Quote */
+.pull-quote {
+  font-family: "Brawler", serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 30px 0;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Sidebar Styles */
+.related-sidebar h3 {
+  font-family: "Brawler", serif;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+}
+
+.mini-card {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mini-card img {
+  width: 100%;
+  filter: grayscale(100%);
+  height: 120px;
+  object-fit: cover;
+}
+
+.mini-card h4 {
+  font-family: "Brawler", serif;
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+
+
+@media (max-width: 800px) {
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
 
 
-        .blog-card {
-            /* Important: prevents cards from breaking across columns */
-            break-inside: avoid;
-            margin-bottom: 40px;
-            display: block;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-            text-decoration: none;
-            color: inherit;
-        }
 
-        /* PORTRAIT IMAGE STYLING */
-        .thumbnail-wrapper {
-            width: 100%;
-            /* 3:4 Portrait Aspect Ratio */
-            aspect-ratio: 3 / 4; 
-            overflow: hidden;
-            border: 1px solid #000;
-            margin-bottom: 15px;
-            background: #eee;
-        }
 
-        .blog-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%);
-            transition: 0.3s ease;
-        }
 
-        .blog-card:hover img {
-            filter: grayscale(0%);
-        }
 
-        .blog-card h3 {
-            font-family: "Brawler", serif;
-            
-            font-size: 1.5rem;
-            line-height: 1.1;
-            margin: 10px 0;
-            font-weight: 700;
-        }
 
-        .blog-card p {
-            font-size: 0.95rem;
-            line-height: 1.4;
-            color: #333;
-        }
+.blog-card {
+  /* Important: prevents cards from breaking across columns */
+  break-inside: avoid;
+  margin-bottom: 40px;
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+}
 
-        .category {
-            font-family: "Brawler", serif;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+/* PORTRAIT IMAGE STYLING */
+.thumbnail-wrapper {
+  width: 100%;
+  /* 3:4 Portrait Aspect Ratio */
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border: 1px solid #000;
+  margin-bottom: 15px;
+  background: #eee;
+}
 
-        /* Responsive */
-        /* @media (max-width: 900px) { .blog-masonry { column-count: 2; } }
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.blog-card:hover img {
+  filter: grayscale(0%);
+}
+
+.blog-card h3 {
+  font-family: "Brawler", serif;
+
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.category {
+  font-family: "Brawler", serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+/* @media (max-width: 900px) { .blog-masonry { column-count: 2; } }
         @media (max-width: 600px) { .blog-masonry { column-count: 1; } } */
 
 
-            /* Header Section */
-        header.mainpage {
-            border-bottom: 5px solid #000;
-            margin-bottom: 30px;
-            text-align: center;
-        }
+/* Header Section */
+header.mainpage {
+  border-bottom: 5px solid #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-       .mainpage .masthead {
-            font-family: "UnifrakturMaguntia", cursive;
-            font-size: 3.5rem;
-            margin: 0;
-            padding: 10px 0;
-            text-decoration: none;
-            color: #000;
-            display: block;
-        }
+.mainpage .masthead {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
 
-       .mainpage .breadcrumb {
-            font-family: "Brawler", serif;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            padding: 10px 0;
-            border-top: 1px solid #000;
-        }
+.mainpage .breadcrumb {
+  font-family: "Brawler", serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+}
 
-        
-        .archive-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+
+.archive-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -382,7 +512,8 @@ header {
 }
 
 .stars {
-  color: #d4af37; /* Gold */
+  color: #d4af37;
+  /* Gold */
   letter-spacing: 2px;
 }
 
@@ -409,9 +540,41 @@ header {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 10px; /* small baseline for row height */
+  grid-auto-rows: 10px;
+  /* small baseline for row height */
   gap: 1.5rem;
 }
+
 .item {
   grid-row: span calc(var(--row-span, 10));
+}
+
+
+/* blog detail header */
+
+
+/* Header Section */
+header.detail-header {
+  border-bottom: 5px solid #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.detail-header .masthead {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.detail-header .breadcrumb {
+  font-family: "Brawler", serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  border-top: 1px solid #000;
 }

@@ -13,7 +13,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <div className="newspaper-page">
+    
         <Header />
 
         <main className="main-grid">
@@ -45,7 +45,6 @@ export default function Home() {
           </section>
         </main>
         <FeaturedReviews />
-      </div>
     </>
   );
 }

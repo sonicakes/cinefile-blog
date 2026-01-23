@@ -1,10 +1,21 @@
 import { Outlet } from "react-router";
+import TopNav from "~/components/TopNav";
 const MainLayout = () => {
   return (
     <>
-      <section className="max-w-6xl mx-auto px-6 my-8">
+      {/* <section className="max-w-6xl mx-auto px-6 my-8"> */}
+              <div className="newspaper-page">
+
+            <header className="mainpage">
+      <TopNav />
+      <a href="#" className="masthead">
+        The Cinefile Blog
+      </a>
+
+    </header>
         <Outlet />
-      </section>
+        </div>
+      {/* </section> */}
     </>
   );
 };

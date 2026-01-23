@@ -4,6 +4,7 @@ import { MdCheck } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
 import { MdOutlineStarHalf } from "react-icons/md";
 import { MdFormatQuote } from "react-icons/md";
+import { Link } from "react-router";
 
 const BlogCard = ({
   blog,
@@ -13,8 +14,9 @@ const BlogCard = ({
   classExtra: string;
 }) => {
   return (
+      <Link to={blog.slug} className={classExtra}>
     <article
-      className={`${classExtra} item border-2 border-dark  cursor-pointer transition  duration-300 group relative z-10`}
+      className={`item border-2 border-dark  cursor-pointer transition  duration-300 group relative z-10`}
     >
       <div className="relative">
         <img
@@ -91,6 +93,7 @@ const BlogCard = ({
         <button className="inline-block text-dark group-hover:text-crimson transition duration-300 border-gray-600 group-hover:border-crimson border-t border-b border-dotted cursor-pointer tracking-wider font-gothic text-2xl hover:scale-110 mt-6">read full review</button>
       </div>
     </article>
+         </Link>
   );
 };
 

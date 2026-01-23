@@ -1,11 +1,34 @@
 import { NavLink } from "react-router";
 
 const TopNav = () => {
+
+  const baseClasses = 'px-3.5 hover:text-crimson hover:underline transition'
+  const activeClasses = 'text-crimson px-3.5'
+  const menuTitles = 
+    [
+      {
+      path: '/',
+      label: 'HOme - "the front page'
+      },
+        {
+      path: '/about',
+      label: 'What is cinefile blog?'
+      },
+          {
+      path: '/blog',
+      label: 'See all film reviews'
+      },
+            {
+      path: '/contact',
+      label: 'Contact Chief Editor (moi)'
+      },
+    ]
+  
   return (
-    <div className="top-nav">
-      <NavLink to="/about"  className={({ isActive }) => (isActive ? 'text-crimson' : '')}>What is Cinefile Blog?</NavLink>
-      <NavLink to="/blog" className={({ isActive }) => (isActive ? 'text-crimson' : '')}>Read All Movie Reviews</NavLink>
-      <NavLink to="/contact" className={({ isActive }) => (isActive ? 'text-crimson' : '')}>Contact Chief Editor (aka moi)</NavLink>
+    <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-brawler font-bold text-base py-4 border-b-2 border-dark divide-x divide-[#ccc]">
+    {menuTitles.map((menuLink) => (
+      <NavLink className={({ isActive }) => (isActive ? activeClasses : baseClasses)} to={menuLink.path}>{menuLink.label}</NavLink>
+    ))}
     </div>
   );
 };
