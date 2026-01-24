@@ -8,7 +8,7 @@ const TopNav = () => {
     [
       {
       path: '/',
-      label: 'Home - "the front page'
+      label: 'Home - "the front page"'
       },
         {
       path: '/about',

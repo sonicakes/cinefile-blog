@@ -3,7 +3,7 @@ const HeadlineBlock = () => {
     <section className="headline-block">
       <h2>Movie Reviews Nobody Asked For</h2>
       <div className="byline">
-        By Me, Myself & I | Chief political correspondent
+        By Me, Myself & I | Chief film critic
       </div>
       <div className="article-body">
         <p>

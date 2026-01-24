@@ -15,14 +15,6 @@
 
 
 @layer base {
-  .prose h1 {
-    font-family: "Brawler", serif;
-    font-size: 3.5rem;
-    line-height: 1;
-    margin: 10px 0 20px 0;
-    font-weight: 700;
-    letter-spacing: -1px;
-  }
 
   .prose p {
     @apply text-dark text-justify text-lg;
@@ -45,6 +37,16 @@
     border-left: none;
   }
 
+  .prose h6 {
+    @apply custom-caption relative -top-7.5;
+  }
+
+  .prose img {
+    @apply grayscale contrast-75 brightness-90
+         hover:grayscale-0 hover:contrast-110 hover:brightness-105
+         transition-all duration-700 max-h-150;
+  }
+
   .prose a {
     text-decoration-color: var(--color-blue-400);
 
@@ -54,10 +56,20 @@
   }
 }
 
+@layer utilities {
+    .prose h1 {
+    @apply text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight;
+  }
+}
+
 @utility drop-cap {
   & p:first-of-type:not(blockquote p)::first-letter {
-    @apply float-left text-9xl pr-3 pt-1;
+    @apply float-left text-6xl pr-3 pt-1 leading-[0.8] font-gothic;
   }
+}
+
+@utility custom-caption {
+  @apply font-caption italic text-gray-600 pb-2 pt-1.5 border-b border-gray-300 text-sm;
 }
 
 html,
@@ -134,7 +146,6 @@ body {
 /* Multi-column Text Body */
 .article-body {
   column-count: 2;
-  /* Mimics narrow newspaper columns */
   column-gap: 20px;
   text-align: justify;
   hyphens: auto;

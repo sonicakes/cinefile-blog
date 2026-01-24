@@ -1,13 +1,23 @@
-# Mulholland Drive - we don't stop here.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare, nibh ut condimentum euismod, nisl ex sodales enim, eu dictum mauris dolor sed sem. 
 
-Nunc at magna pharetra, imperdiet risus sed, tempus nibh. Praesent consectetur vehicula molestie. Pellentesque et sapien velit. Suspendisse potenti. Donec nisi lorem, ornare vel laoreet et, mollis ut nisi. Nullam sit amet elit condimentum, mollis libero ac, maximus libero. Donec congue at magna condimentum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et lorem et lacus aliquam eleifend.
+My first watch of this Lynch classic happened back in Russia in the early 00s, with my Mum. Whether is was on TV or DVD, I can't recall, only that we were definitely Lynch & Naomi Watts fans and  fans and would not miss it for the world.
 
-Etiam non elit id dui molestie porta. Proin tincidunt scelerisque ante eget bibendum. Vestibulum sed eros eget turpis pulvinar tincidunt. Donec a tempus velit. Nulla fringilla vulputate urna, ac condimentum lacus semper sit amet. Fusce id sapien non tortor dapibus congue. Vivamus tristique, sapien ut ultricies pretium, dui nisl volutpat ipsum, in volutpat quam dui et nibh. Duis scelerisque massa quis mi interdum iaculis. Ut hendrerit dui sed ante porttitor blandit. Integer mi leo, lobortis sit amet ornare eu, sodales vitae nibh. Sed tristique nisi ut urna rhoncus porttitor. Quisque magna odio, efficitur vitae nunc at, vestibulum elementum sapien. Donec et enim quis est aliquam semper non id diam. Nullam pulvinar nunc nec tempus suscipit. Quisque nibh ante, cursus vel diam luctus, lobortis facilisis libero. Cras gravida volutpat diam tincidunt maximus.
+I remember playing a detective and trying to deduce all the clues about this movie, with no apparent success. Little did I know that this is not how one enjoys a Lynch film.
+
+In fact, one should dispense all disbelief and just accept everything as it is. No pondering, no wondering, no meandering. Just absorb the art, let it melt and swaddle you in a cacoon.
+
+On my first rewatch, I still could not let go of the inner detective, even though I completely forgot what the twist was and what to look for. I did not re-spoil  myself before this recent re-watch and just went straight into it. I have no regrets. This movies can be watched over, and over, whether you remember the twist or not. I mean, its probably best to wait 20 years between rewatches so it kinda feels like new but you still retain the feeling that you have seen and loved it before. 
+
+I was looking for things, I definitely remembered the blue key. But what it was for, I could not recall.
+
+Opposite to the *'blew my mind completely'* kind of feeling of the initial watch, this time I more of a *'aaaah - thats what it it!'* feeling. I did not need post-movie reddit trip or just detective work to put clues together. It was clear as day to me: first part is a dream. Second part is reality. Life is a dream, maybe, or most likely nothing means nothing. 
+
+![Neo blue cat](/images/neo-blue-cat.png) 
+###### No hay banda! There is no band! Il n'est pas de orquestra! Source: selfie, accidental blue neo noir.
+
+I love how Lynch tells a dream - it does feel like one, if I recall any of my dreams. PEople from the past and people I just saw in a grocery store pop up, they are maybe different characters. Everything is shiny and nice, but at some point that comes a 'glitch' moment, similar to what Diane has at club Silencio, when it all shudders, you feel like something is wrong, and hey, soon you will wake up. Imagining yourself dead or someone else dead or alive or vice versa, that happens a lot too. To me, at least.
+
 
 > I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.
 
-Phasellus porttitor dapibus feugiat. Nam quis aliquet metus. Pellentesque luctus consectetur magna, eget mattis magna euismod nec. Nullam posuere pretium mi, sit amet tristique neque fringilla eu. Maecenas congue, turpis et congue ornare, tellus leo imperdiet justo, a fringilla tortor erat ac turpis. Suspendisse mattis egestas quam, cursus laoreet tellus ullamcorper eget. Phasellus vulputate, mi sit amet rutrum ultricies, tellus risus gravida est, ut venenatis lectus urna porta erat. Nullam id felis enim. Praesent sagittis mauris et ante commodo dignissim. Phasellus vel sodales neque.
 
-
-Phasellus porttitor dapibus feugiat. Nam quis aliquet metus. Pellentesque luctus consectetur magna, eget mattis magna euismod nec. Nullam posuere pretium mi, sit amet tristique neque fringilla eu. Maecenas congue, turpis et congue ornare, tellus leo imperdiet justo, a fringilla tortor erat ac turpis. Suspendisse mattis egestas quam, cursus laoreet tellus ullamcorper eget. Phasellus vulputate, mi sit amet rutrum ultricies, tellus risus gravida est, ut venenatis lectus urna porta erat. Nullam id felis enim. Praesent sagittis mauris et ante commodo dignissim. Phasellus vel sodales neque.
+I have always been a Lynch fan, but I can't say I unconditionally love all his work. Twin Peaks - movie and TV show both have a special place in my heart (see this article), but some films like Blue Velvet (here) or even Inland Empire (here), are a little too Lynchian for me (no offence Mr Lynch - it's all subjective and I still think you are an amazing creator). Mullholland Dr. , however, is a kind of movie that has a great story, beautiful main characters and weird things happening all over. Despite it being not scary at all (well, almost, now I remember that black-ish creature from behind Winkie's diner, it kind of jumped on me tbh), I will proudly give this 8 out of 10 blue boxes (how does it fit inside the purse? And inside a woman's purse, specifically? Maybe this is kind of Harry Potter scenario from book 7 where Hermoine has a botomless bag that still looks cutesy small.)

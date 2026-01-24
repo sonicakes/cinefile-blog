@@ -1,6 +1,7 @@
 [
     {
     "title": "Mulholland Drive",
+    "meta_title": "Mulholland Drive: We Don't Stop Here.",
     "slug": "mulholland-drive",
     "excerpt": "A woman with no memory stumbles out of a car wreck in the Hollywood hills and drifts into the life of an eager young actress.",
     "year": "2001",
@@ -10,16 +11,41 @@
     "location": "movies-waiting-old; Mubi",
     "quote": "I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.",
     "run_time": "1h 20m",
-    "genres": "Drama, Mystery, Avant-Garde, Thriller, Horror",
+    "genres": ["Drama", "Mystery", "Film Noir", "Thriller", "Horror", "Lynch"],
     "image": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop",
-    "image_description": "The famous hills of Hollywood. Reversed."
-
+    "image_description": "Welcome to Doowylloh.",
+    "review_provided": true,
+    "rating": 8,
+    "rating_metric": "blue boxes that fit in your purse",
+    "would_rewatch": true,
+    "would_recommend": true
+  },
+    {
+    "title": "inland empire",
+    "meta_title": "Inland Empire Strikes Back.",
+    "slug": "inland-empire",
+    "excerpt": "A woman enters a role and loses herself. Sets become homes, time unravels, and reality slips sideways. *Inland Empire* watches back.",
+    "year": "2006",
+    "director": "david lynch",
+    "watched_previously": "yes",
+    "availability": ["on pc, mubi"],
+    "genres": ["Drama", "Mystery", "Avant-Garde", "Thriller", "Horror", "Lynch"],
+    "location": "movies-waiting-old",
+    "image": "https://images.unsplash.com/photo-1675277455844-d9868b3e2f2e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  
+    "image_description": "Hey! Look at me. And tell me if you've known me before.",
+    "review_provided": true,
+    "rating": 3,
+    "run_time": "3h",
+    "quote": "What is the meaning of rabbits? Are they for business or pleasure?",
+    "rating_metric": "rabbits that do some casual ironing",
+    "would_rewatch": false,
+    "would_recommend": false
   },
     {
     "title": "the hunger",
     "year": "1983",
     "run_time": "1h 37m",
-    "genres": "Drama, Supernatural, Vampire, Horror",
+    "genres": ["Supernatural", "Mystery", "Vampire", "Thriller", "Horror"],
     "director": "tony scott",
     "watched_previously": "no",
     "availability": ["on pc"],
@@ -27,6 +53,7 @@
     "image_description": "ankh symbol, gothic mansion",
     "image": "https://images.unsplash.com/photo-1697547098891-6df4b0b200f4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "the-hunger",
+    "review_provided": false,
     "excerpt": "In this neon-soaked gothic thriller, an ancient vampire promises her lovers eternal life—but forgets to mention that eternal youth isn't part of the deal. As her companion rapidly withers away, she lures a brilliant doctor into a seductive, blood-stained world of immortality and obsession."
   },
   {
@@ -165,18 +192,7 @@
     "image_description": "vintage typewriter, 1940s newspaper",
     "image": "https://images.unsplash.com/photo-1561040377-60432c7afee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0"
   },
-  {
-    "title": "inland empire",
-    "slug": "inland-emprire",
-    "excerpt": "A woman enters a role and loses herself. Sets become homes, time unravels, and reality slips sideways. *Inland Empire* watches back.",
-    "year": "2006",
-    "director": "david lynch",
-    "watched_previously": "no",
-    "availability": ["on pc"],
-    "location": "movies-waiting-old",
-    "image_description": "distorted face shadow, dark red curtain",
-    "image": "https://images.unsplash.com/photo-1675277455844-d9868b3e2f2e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
+
   {
     "title": "m - fritz lang",
     "year": "1931",
