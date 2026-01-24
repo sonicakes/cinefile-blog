@@ -46,7 +46,7 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
       <NavLink className="hover:underline hover:text-crimson transition" to="/blog">Film Reviews</NavLink>  / <b>{postMeta.title}</b>
       </div>
       {/* end breadcrumb */}
-      <div className="grid grid-cols-[2fr_1fr] gap-10 py-4">
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
         <BlogDetailMain postMeta={postMeta} markdown={markdown} />
 
         <aside className="related-sidebar">
