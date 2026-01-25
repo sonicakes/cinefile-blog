@@ -21,6 +21,27 @@
     "would_recommend": true
   },
     {
+    "title": "funny games",
+    "slug": "funny-games",
+    "excerpt": "Michael Haneke’s Funny Games is not a typical thriller; it is an assault on the viewer. As a family is held hostage in their own holiday home, the captors treat their suffering as a game, even addressing the camera to ensure the audience is 'enjoying' the spectacle of their systematic destruction.",
+    "year": "1997",
+    "director": "michael haneke",
+    "watched_previously": "yes",
+    "availability": ["on pc"],
+    "location": "movies-waiting-old",
+    "image": "https://images.unsplash.com/photo-1632693128710-f466d1d01a77?q=60&w=400&fm=webp&fit=crop",
+    "image_description": "Are you game?",
+    "review_provided": true,
+    "rating": 7,
+    "rating_metric": "golf balls in your pocket",
+    "would_rewatch": false,
+    "would_recommend": true,
+    "meta_title": "I did not laugh once watching 'Funny Games'. Have you?",
+    "quote": "Discomfort, dread and doom. I did not laugh once.",
+    "run_time": "109m"
+
+  },
+    {
     "title": "inland empire",
     "meta_title": "Inland Empire Strikes Back.",
     "slug": "inland-empire",
@@ -168,18 +189,7 @@
     "image_description": "neon bar sign, mexican desert sunset",
     "image": "https://images.unsplash.com/photo-1666410262945-a66f50ca449c?q=60&w=400&fm=webp&fit=crop"
   },
-  {
-    "title": "funny games",
-    "slug": "funny-games",
-    "excerpt": "Michael Haneke’s Funny Games is not a typical thriller; it is an assault on the viewer. As a family is held hostage in their own holiday home, the captors treat their suffering as a game, even addressing the camera to ensure the audience is 'enjoying' the spectacle of their systematic destruction.",
-    "year": "1997",
-    "director": "michael haneke",
-    "watched_previously": "no",
-    "availability": ["on pc"],
-    "location": "movies-waiting-old",
-    "image_description": "white gloves, golf ball",
-    "image": "https://images.unsplash.com/photo-1632693128710-f466d1d01a77?q=60&w=400&fm=webp&fit=crop"
-  },
+
   {
     "title": "his girl friday",
     "slug": "his-girl-friday",

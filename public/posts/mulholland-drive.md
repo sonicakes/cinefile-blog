@@ -14,7 +14,7 @@ Opposite to the *'blew my mind completely'* kind of feeling of the initial watch
 ![Neo blue cat](/images/neo-blue-cat.png) 
 ###### No hay banda! There is no band! Il n'est pas de orquestra! Source: selfie, accidental blue neo noir.
 
-I love how Lynch tells a dream - it does feel like one, if I recall any of my dreams. PEople from the past and people I just saw in a grocery store pop up, they are maybe different characters. Everything is shiny and nice, but at some point that comes a 'glitch' moment, similar to what Diane has at club Silencio, when it all shudders, you feel like something is wrong, and hey, soon you will wake up. Imagining yourself dead or someone else dead or alive or vice versa, that happens a lot too. To me, at least.
+I love how Lynch tells a dream - it does feel like one, if I recall any of my dreams. People from the past and people I just saw in a grocery store pop up, they are maybe different characters. Everything is shiny and nice, but at some point that comes a 'glitch' moment, similar to what Diane has at club Silencio, when it all shudders, you feel like something is wrong, and hey, soon you will wake up. Imagining yourself dead or someone else dead or alive or vice versa, that happens a lot too. To me, at least.
 
 
 > I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.
