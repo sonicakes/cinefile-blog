@@ -9,12 +9,7 @@ import { MdFormatQuote } from "react-icons/md";
 import { Link, NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
 
-import {
-  FaSpotify,
-  FaArrowRight,
-  FaImdb,
-  FaWikipediaW,
-} from "react-icons/fa";
+import { FaSpotify, FaArrowRight, FaImdb, FaWikipediaW } from "react-icons/fa";
 
 export async function loader({ request, params }: Route.LoaderArgs) {
   const { slug } = params;
@@ -51,7 +46,13 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
     <>
       {/* breadcrumb */}
       <div className="border-b-5 border-dark text-center font-brawler uppercase text-xs tracking-widest py-2.5 bt-dark border-t">
-      <NavLink className="hover:underline hover:text-crimson transition" to="/blog">Film Reviews</NavLink>  / <b>{postMeta.title}</b>
+        <NavLink
+          className="hover:underline hover:text-crimson transition"
+          to="/blog"
+        >
+          Film Reviews
+        </NavLink>{" "}
+        / <b>{postMeta.title}</b>
       </div>
       {/* end breadcrumb */}
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
@@ -119,7 +120,9 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
               <h3 className="font-brawler uppercase font-bold pb-1 text-base">
                 SYNOPSIS
               </h3>
-              <p className="columns-1 lg:columns-2 gap-5 text-justify hyphens-auto text-[15px]">{postMeta.excerpt}</p>
+              <p className="columns-1 lg:columns-2 gap-5 text-justify hyphens-auto text-[15px]">
+                {postMeta.excerpt}
+              </p>
             </div>
             <hr className="border-t-3 my-5 border-double border-gray-600"></hr>
 
@@ -182,52 +185,23 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
           </div>
         </aside>
       </div>
+
       <MovieFooter
-  spotifyEpisodes={[
-    {
-      title: "Mulholland Drive — Dreams, Doubles & Dread",
-      url: "https://open.spotify.com/episode/xxxxx",
-      podcastName: 'Evolution of Horror',
-
-    },
-        {
-      title: "Funny games ",
-      url: "https://open.spotify.com/episode/xxxxx",
-      podcastName: 'Psychoanalysis',
-
-    },
-           {
-      title: "Lynch ",
-      url: "https://open.spotify.com/episode/xxxxx",
-      podcastName: 'Final girls',
-
-    },
-  ]}
-  letterboxdUrl="https://letterboxd.com/yourprofile"
-  contactUrl ="https://letterboxd.com/yourprofile"
-  nextMovie={{
-    title: "Inland Empire",
-    year: 2006,
-    reason: "If you thought this was confusing, buckle up.",
-    url: "/blog/inland-empire",
-    thumbnailUrl: "/images/piano.jpg"
-  }}
-
-  resources={[
-  {
-    label: "IMDb",
-    url: "https://www.imdb.com/title/tt0166924/",
-    icon: <FaImdb />,
-  },
-  {
-    label: "Wikipedia",
-    url: "https://en.wikipedia.org/wiki/Mulholland_Drive_(film)",
-    icon: <FaWikipediaW />,
-  },
-]}
-
-/>
-
+        spotifyEpisodes={postMeta.spotify_episodes}
+        nextMovie={postMeta.next_movie}
+        resources={[
+          {
+            label: "IMDb",
+            url: "https://www.imdb.com/title/tt0166924/",
+            icon: <FaImdb />,
+          },
+          {
+            label: "Wikipedia",
+            url: "https://en.wikipedia.org/wiki/Mulholland_Drive_(film)",
+            icon: <FaWikipediaW />,
+          },
+        ]}
+      />
     </>
   );
 };

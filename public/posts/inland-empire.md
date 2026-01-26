@@ -1,6 +1,6 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare, nibh ut condimentum euismod, nisl ex sodales enim, eu dictum mauris dolor sed sem. 
+This was an interesting exploration of Lynch's work. A 3-hour-long exploration, by the end of which I still am not sure what 'Inland Empire' refers to? Is is the world that Nicki steps into? Or am I missing something? 
 
-Nunc at magna pharetra, imperdiet risus sed, tempus nibh. Praesent consectetur vehicula molestie. Pellentesque et sapien velit. Suspendisse potenti. Donec nisi lorem, ornare vel laoreet et, mollis ut nisi. Nullam sit amet elit condimentum, mollis libero ac, maximus libero. Donec congue at magna condimentum gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et lorem et lacus aliquam eleifend.
+I confess I haven't gone to Reddit or elsewhere to find things out. I guess I tried to abandon my disbelief and enjoy the art..
 
 ![I am rabbit](/images/rabbit.jpg) 
 ###### Are we all just rabbits? Tell us, David Lynch, if you've known us before. Source: me as La Lapine Noire.

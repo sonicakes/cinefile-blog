@@ -71,25 +71,14 @@ I could never really answer that question, although more likely I was, indeed, b
 
 To clarify, I'm not saying those situations are similar, just that the feelings evoked in me were of the same caliber. I actually felt it even before the 'trap' was set - when those 2 'nice young men' only came to the door, I already felt uneasy. They did not seem nice to me. Partly, of course, I was aware of the plot (being spoilt by the pod previously), but something about them just repulsed me from the get-go. Especially the dark-haired gentleman, he instilled instant fear and loathing in me. Can't explain it, but it was quite visceral. I met people like this character in real life, and they never failed to terrify me. It seems to me that their perverse nature is often peeking a little from their 'normal' surface, and it's unsettling, to say the least.
 
-And now, it's time for a second story! Why? I say, WHY NOT!!! Similar to the movie reviews no one asked for, I am delivering some stories that no one cares for. :)
-
-Opposite to what you might think comes next (another Russian ganster mob story), this one occured in the magical land of OZ. Which, among some other incidents, shattered my illusion of 'safest place on earth where nothing bad ever happens'. Bad things happend everywhere, but it's less commonplace in Australia than Russia. Well, live and learn!
-
-This could be funny if I wasn't wired with STRANGER=DANGER mentality, aka Russian mentality. We once lived in an apartment unit, on the 8th floor. With an open balcony. One of the benefits of living so high, I thought, would be a near impossibility of anyone getting in via climbing. 
-
-**NEAR** is a key word here. One evening my life partner and I were watching something on the TV, maybe Netflix or similar. Eating dinner. Then I yell 'babeee!!' because a dark shadow appears on the balcony (we could see it from the room). This was shocking because this is the last thing I expected to see - I mean, how would anyone climb as high as 8 floors from the outside????? And why did he land on OUR floor, in OUR apartment balcony??? Where was he going? (it was definitely a man this time. How old or what he looked like, I could not tell, because similarly to the Russian IT story, I was too scared to look stranger in the eye. I guess, good programming with STRANGER=DANGER business...). 
-
-![balcony apartment](https://images.unsplash.com/photo-1583829841565-e01225513c7a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) 
-###### Could it be that balcony is a public space?  Source: Unsplash, David Tip
-
-My first reaction was to grab my phone and dial the police. This was obvisouly an intrusion, he came from the balcony, none of us knew him, I suspected he was armed, and that familiar doom and dread was kicking in. Panic was not too far away. While the man was throwing his remaining leg over the fence, I was yelling 'Im calling the police!" on the top of my lungs and just being visibly enraged and shaken. Meanwhile, my Significant Other was calm as a cucumber, came to the balcony and HELPED THE STRANGER from the balcony fence to the landing. He then proceeded to calmly listen to the EVIL INTRUDER explain that he was going somewhere else, or something equally plausible in the circumstances, while I was fuming on the couch with a 000 ready to dial on my phone. My SO and EVIL STRANGER then exited the balcony, and the man kind of quietly left through the front door to the sound of me yelling 'POLICE, I WILL CALL THE POLICE, THIS IS TRESSPASSING!!!', while simultaneously avoiding eye contact or any looks towards the source of evil. So much for detective work!
-
-I guess I was as much shocked by the whole occurrence of the balcony arrival as I was by the calm and genuinely HELPFUL reaction from my SO. Whilst I assumed the worst (and I mean, really? Wouldn't you?), my SO, in fact, did not make any judgement, and solely acted as a decent fellow human. His environment did not instill distrust and fear towards the unknown creatures just landing themselves on you 8-story apartment one day. I can't say whether it's a good thing or not, things could have gone completely different that day, but lucky for us it did not. I think I would have gone with my intention of calling the police and apprehending this act of tresspassing (balcony-passing?), if the whole thing didn't go super quickly and strangely without consequences.
-
 ![wink wink](https://images.unsplash.com/photo-1622754220170-46587fa7647b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdpbmtpbmd8ZW58MHx8MHx8fDA%3D) 
 ###### Are we at feature film length yet?  Source: Unsplash, Guillermo Diaz
 
 What I'm trying to say is with those ramblings, that the feeling of dread, doom and discomfort from the real sistuations I experiences, re-surfaced in FG movie. That's why I'm awarding it 7 golf balls that fit in your shorts (so..3 in one pocket and 4 in the other? Or would you have back pockets as well?). If it wasn't for Rolfie, it would rate higher.
+
+***
+
+All in all, solid watch. Disturbing. I would recommend, but not for faint-hearted. And don't expect to laugh.
 
 
 

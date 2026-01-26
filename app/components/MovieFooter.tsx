@@ -12,8 +12,6 @@ type Resource = {
 
 type ReviewFooterProps = {
   spotifyEpisodes?: { title: string; podcastName: string; url: string }[];
-  letterboxdUrl: string;
-  contactUrl: string;
   nextMovie: {
     title: string;
     year?: number;
@@ -26,8 +24,7 @@ type ReviewFooterProps = {
 
 const MovieFooter = ({
   spotifyEpisodes = [],
-  letterboxdUrl,
-  contactUrl,
+
   nextMovie,
   resources = [],
 }: ReviewFooterProps) => {
@@ -79,13 +76,13 @@ const MovieFooter = ({
               Direct your inquiries, praise, or cinematic rebuttals to our desk via the following channels.
             </p>
             <nav className="flex flex-col gap-4  text-sm font-bold uppercase tracking-tight">
-              <a href={letterboxdUrl} className="flex items-center gap-3 group">
+              <a href="https://letterboxd.com/sonicakes/" className="flex items-center gap-3 group">
                 <div className="p-2 border border-dark group-hover:bg-crimson group-hover:text-white transition-all">
                   <FaLetterboxd className="text-xl" />
                 </div>
                 <span className="border-b border-black group-hover:border-b-2 group-hover:border-crimson">Follow me on Letterboxd</span>
               </a>
-              <a href={contactUrl} className="flex items-center gap-3 group">
+              <a href="/contact" className="flex items-center gap-3 group">
                 <div className="p-2 border border-black group-hover:bg-black group-hover:text-white transition-all">
                   <FaEnvelope className="text-xl" />
                 </div>
@@ -95,16 +92,17 @@ const MovieFooter = ({
           </div>
         </section>
 
-        <section className="p-8 ">
+
+        <section className="p-8">
           <h4 className="mb-8 text-xs uppercase tracking-[0.2em] border-b border-black pb-2 inline-block ">
             watch next
           </h4>
-          <a href={nextMovie.url} className="flex flex-col sm:flex-row gap-6 group">
-            {nextMovie.thumbnailUrl && (
+          <a href={nextMovie && nextMovie.url} className="flex flex-col sm:flex-row gap-6 group">
+            {nextMovie && nextMovie.thumbnailUrl && (
               <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
                 <img 
-                  src={nextMovie.thumbnailUrl} 
-                  alt={nextMovie.title} 
+                  src={ nextMovie && nextMovie.thumbnailUrl} 
+                  alt={ nextMovie && nextMovie.title} 
                   className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
                 />
                 <div className="absolute inset-0 border-8 border-transparent group-hover:border-black/10 pointer-events-none"></div>
@@ -112,11 +110,11 @@ const MovieFooter = ({
             )}
             <div className="flex flex-col justify-center">
               <h5 className="text-2xl font-brawler capitalize font-bold leading-none tracking-tighter group-hover:text-crimson">
-                {nextMovie.title} {nextMovie.year && <span className="font-normal opacity-60">({nextMovie.year})</span>}
+                { nextMovie && nextMovie.title} { nextMovie && nextMovie.year && <span className="font-normal opacity-60">({nextMovie.year})</span>}
               </h5>
-              {nextMovie.reason && (
+              {nextMovie && nextMovie.reason && (
                 <p className="mt-3 text-sm leading-tight text-gray-600 font-medium">
-                  {nextMovie.reason}
+                  { nextMovie && nextMovie.reason}
                 </p>
               )}
             </div>

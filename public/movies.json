@@ -1,5 +1,5 @@
 [
-    {
+  {
     "title": "Mulholland Drive",
     "meta_title": "Mulholland Drive: We Don't Stop Here.",
     "slug": "mulholland-drive",
@@ -18,9 +18,28 @@
     "rating": 8,
     "rating_metric": "blue boxes that fit in your purse",
     "would_rewatch": true,
-    "would_recommend": true
+    "would_recommend": true,
+        "next_movie": {
+      "title": "Inland Empire",
+      "reason": "Hey, do you wanna see some cool rabbits? They do ironing and watch TV!",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "/images/parkrun-rabbit.jpg"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Mulholland Drive (2001)",
+        "url": "https://open.spotify.com/episode/3WB0I6KDlnkRUp99aKnqyq?si=9f73cad8b4c54f86",
+        "podcastName": "Horror Queers"
+      },
+
+      {
+        "title": "Dreams/Mulholland Drive (2001) PART 1",
+        "url": "https://open.spotify.com/episode/4m4Z56wKRnD31atwfroJQq?si=c3d5fe64304641bb",
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      }
+    ]
   },
-    {
+  {
     "title": "funny games",
     "slug": "funny-games",
     "excerpt": "Michael Haneke’s Funny Games is not a typical thriller; it is an assault on the viewer. As a family is held hostage in their own holiday home, the captors treat their suffering as a game, even addressing the camera to ensure the audience is 'enjoying' the spectacle of their systematic destruction.",
@@ -38,10 +57,32 @@
     "would_recommend": true,
     "meta_title": "I did not laugh once watching 'Funny Games'. Have you?",
     "quote": "Discomfort, dread and doom. I did not laugh once.",
-    "run_time": "109m"
-
+    "run_time": "109m",
+    "next_movie": {
+      "title": "Killing of a sacred deer",
+      "reason": "Are you keen to keep playing with life and death (and your family's too)? Check out this *funny* gem by Yorgos Lathimos.",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "/images/wall.JPG"
+    },
+    "spotify_episodes": [
+      {
+        "title": "161 - Funny Games (1997)",
+        "url": "https://open.spotify.com/episode/3Vtk3sU9PieBtx8bESBvep?si=8efe7ae9b40f4fa0",
+        "podcastName": "Random Number Generator Horror Podcast #9"
+      },
+      {
+        "title": "Home Invasion pt20: Funny Games (1997/2007)",
+        "url": "https://open.spotify.com/episode/4m8zAo9mZoiRzP7yLMo8AS?si=0e4d7b4871eb4b7f",
+        "podcastName": "The Evolution of Horror"
+      },
+      {
+        "title": "Episode 63. Play Dead: Funny Games (1997)",
+        "url": "https://open.spotify.com/episode/4LfJsf54HTqtpTno9nxbsG?si=02fbd9ed7c654bd6",
+        "podcastName": "Faculty of horror"
+      }
+    ]
   },
-    {
+  {
     "title": "inland empire",
     "meta_title": "Inland Empire Strikes Back.",
     "slug": "inland-empire",
@@ -50,9 +91,16 @@
     "director": "david lynch",
     "watched_previously": "yes",
     "availability": ["on pc, mubi"],
-    "genres": ["Drama", "Mystery", "Avant-Garde", "Thriller", "Horror", "Lynch"],
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Avant-Garde",
+      "Thriller",
+      "Horror",
+      "Lynch"
+    ],
     "location": "movies-waiting-old",
-    "image": "https://images.unsplash.com/photo-1675277455844-d9868b3e2f2e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  
+    "image": "https://images.unsplash.com/photo-1675277455844-d9868b3e2f2e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "image_description": "Hey! Look at me. And tell me if you've known me before.",
     "review_provided": true,
     "rating": 3,
@@ -60,9 +108,15 @@
     "quote": "What is the meaning of rabbits? Are they for business or pleasure?",
     "rating_metric": "rabbits that do some casual ironing",
     "would_rewatch": false,
-    "would_recommend": false
+    "would_recommend": false,
+            "next_movie": {
+      "title": "Mulholland Drive",
+      "reason": "Silencio!",
+      "url": "/blog/mulholland-drive",
+      "thumbnailUrl": "/images/ozzz.jpg"
+    }
   },
-    {
+  {
     "title": "the hunger",
     "year": "1983",
     "run_time": "1h 37m",
@@ -660,14 +714,12 @@
     "image": "https://images.unsplash.com/photo-1621441481502-d63fe7ff50dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9yY2hpZCUyMGZsb3dlciUyQyUyMHR5cGV3cml0ZXIlMjBrZXlzfGVufDB8fDB8fHww",
     "slug": "adaptation",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-
   },
   {
     "title": "kill bill vol 1 &2",
     "year": "2003-04",
-            "slug": "kill-bill",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
+    "slug": "kill-bill",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "quentin tarantino",
     "watched_previously": "yes",
     "availability": ["pc"],
@@ -684,9 +736,8 @@
     "location": "movies-archive",
     "image_description": "green library, rainy city street",
     "image": "https://images.unsplash.com/photo-1747110325376-f2b08d19178f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBsaWJyYXJ5JTJDJTIwcmFpbnklMjBjaXR5JTIwc3RyZWV0fGVufDB8fDB8fHww",
-        "slug": "seven",
+    "slug": "seven",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-
   },
   {
     "title": "shutter island",
@@ -697,9 +748,8 @@
     "location": "movies-archive",
     "image_description": "cliffs ocean storm, match light",
     "image": "",
-        "slug": "shutter-island",
+    "slug": "shutter-island",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-
   },
   {
     "title": "the godfather p1-3",
@@ -710,9 +760,8 @@
     "location": "movies-archive",
     "image_description": "puppet strings, orange fruit",
     "image": "",
-        "slug": "the-godfather",
+    "slug": "the-godfather",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-
   },
   {
     "title": "2001: a space odyssey",
@@ -725,7 +774,6 @@
     "image": "",
     "slug": "2001-space-odyssey",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-
   },
 
   {
@@ -779,9 +827,8 @@
   {
     "title": "ball of fire",
     "year": "1941",
-     "slug": "ball-of-fire",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
+    "slug": "ball-of-fire",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "howard hawks",
     "watched_previously": "no",
     "availability": ["pc"],
@@ -793,9 +840,8 @@
     "title": "bringing up baby",
     "year": "1938",
     "director": "howard hawks",
-     "slug": "bringing-up-baby",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
+    "slug": "bringing-up-baby",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "watched_previously": "no",
     "availability": ["pc"],
     "location": "movies",
@@ -809,20 +855,16 @@
     "watched_previously": "no",
     "availability": ["pc"],
     "location": "movies",
-                        "slug": "rebecca",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
-
+    "slug": "rebecca",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "image_description": "large mansion gates, ocean waves cliff",
     "image": "https://images.unsplash.com/photo-1615484398374-529a69c53a09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFyZ2UlMjBtYW5zaW9uJTIwZ2F0ZXMlMkMlMjBvY2VhbiUyMHdhdmVzfGVufDB8fDB8fHww"
   },
   {
     "title": "nosferatu",
     "year": "1922",
-                        "slug": "nosferatu",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
-
+    "slug": "nosferatu",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "f.w. murnau",
     "watched_previously": "yes",
     "availability": ["pc"],
@@ -834,10 +876,8 @@
     "title": "freaks",
     "year": "1932",
     "director": "tod browning",
-                    "slug": "freaks",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
-
+    "slug": "freaks",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "watched_previously": "no",
     "availability": ["pc"],
     "location": "movies",
@@ -847,10 +887,8 @@
   {
     "title": "metropolis",
     "year": "1927",
-                "slug": "metropolis",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
-
+    "slug": "metropolis",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "fritz lang",
     "watched_previously": "yes",
     "availability": ["pc"],
@@ -867,18 +905,14 @@
     "location": "movies",
     "image_description": "swimming pool murky, school hallway",
     "image": "https://images.unsplash.com/photo-1757889692983-897930ee8638?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN3aW1taW5nJTIwcG9vbCUyMG11cmt5JTJDJTIwc2Nob29sJTIwaGFsbHdheXxlbnwwfHwwfHx8MA%3D%3D",
-            "slug": "diabolique",
+    "slug": "diabolique",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-
-
-    
   },
   {
     "title": "the haunting",
     "year": "1963",
-        "slug": "the-haunting",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
+    "slug": "the-haunting",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "robert wise",
     "watched_previously": "no",
     "availability": ["pc"],
@@ -888,9 +922,8 @@
   },
   {
     "title": "before i wake",
-        "slug": "before-i-wake",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
-,
+    "slug": "before-i-wake",
+    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "year": "2016",
     "director": "mike flanagan",
     "watched_previously": "no",
@@ -960,7 +993,7 @@
     "image": "https://images.unsplash.com/photo-1564855101177-b3fac36e00e0?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 
-   {
+  {
     "title": "the lodger",
     "year": "1927",
     "slug": "the-lodger",
@@ -972,7 +1005,7 @@
     "image_description": "",
     "image": "https://images.unsplash.com/photo-1722715682021-7865c3926247?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhpdGNoY29ja3xlbnwwfHwwfHx8MA%3D%3D"
   },
-   {
+  {
     "title": "rear window",
     "year": "1954",
     "slug": "rear-window",
@@ -984,7 +1017,7 @@
     "image_description": "",
     "image": "https://images.unsplash.com/photo-1535803295577-56201df34de7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
-     {
+  {
     "title": "rope",
     "year": "1948",
     "slug": "rope",
