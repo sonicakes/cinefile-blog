@@ -11,6 +11,7 @@ const BlogDetailMain = ({
   markdown: string;
 }) => {
   return (
+    <>
     <article className="main-content">
       {/* <div className="flex justify-between border-y border-gray-300 items-center py-5">
             <div className="font-brawler uppercase tracking-wide font-medium text-lg">
@@ -45,7 +46,10 @@ const BlogDetailMain = ({
       <NavLink to="/blog" className="inline-block text-dark hover:text-crimson transition duration-300 border-gray-600 hover:border-crimson border-t border-b border-dotted cursor-pointer tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
         back to all reviews
       </NavLink>
+
     </article>
+    
+    </>
   );
 };
 

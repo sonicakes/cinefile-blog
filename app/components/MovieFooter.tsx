@@ -1,0 +1,145 @@
+import { FaLetterboxd, FaEnvelope } from "react-icons/fa6";
+import {
+  FaSpotify,
+  FaArrowRight,
+} from "react-icons/fa";
+
+type Resource = {
+  label: string;
+  url: string;
+  icon?: React.ReactNode;
+};
+
+type ReviewFooterProps = {
+  spotifyEpisodes?: { title: string; podcastName: string; url: string }[];
+  letterboxdUrl: string;
+  contactUrl: string;
+  nextMovie: {
+    title: string;
+    year?: number;
+    reason?: string;
+    url: string;
+    thumbnailUrl?: string; 
+  };
+  resources?: Resource[];
+};
+
+const MovieFooter = ({
+  spotifyEpisodes = [],
+  letterboxdUrl,
+  contactUrl,
+  nextMovie,
+  resources = [],
+}: ReviewFooterProps) => {
+  return (
+    <footer className="w-full mt-20 border-t-[6px] border-dark pt-1  text-dark">
+      <section className="border-b-2 border-dark">
+        <div className="px-6 py-4 bg-dark text-white flex items-center justify-between">
+          <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em] flex items-center gap-3">
+            <FaSpotify className=" text-lg" />
+            Recommended Podcasts about this movie
+          </h4>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black border-x border-black">
+          {spotifyEpisodes.length ? (
+            spotifyEpisodes.map((ep, i) => (
+              <a 
+                key={i} 
+                href={ep.url} 
+                className="p-6 hover:bg-neutral-100 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <span className="block text-xs uppercase text-neutral-500 tracking-wide font-semibold mb-1 leading-none">
+                    {ep.podcastName}
+                  </span>
+                  <h5 className="text-xl font-brawler font-bold leading-tight group-hover:underline group-hover:text-crimson decoration-2">
+                    {ep.title}
+                  </h5>
+                </div>
+                <div className="mt-4 text-gray-600 font-medium flex items-center text-xs uppercase tracking-widest transition-transform duration-300 origin-bottom-left group-hover:scale-x-110">
+                  Listen Now <FaArrowRight className="ml-2 text-[8px]" />
+                </div>
+              </a>
+            ))
+          ) : (
+            <p className="p-6 italic text-neutral-500">No recent audio dispatches found.</p>
+          )}
+        </div>
+      </section>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 border-b-4 bg-light border-black border-double">
+        
+        <section className="p-8 border-b bg-neutral-50 md:border-b-0 md:border-r border-black">
+          <h4 className="mb-8 text-xs uppercase tracking-[0.2em] border-b border-black pb-2 inline-block">
+            Correspondence
+          </h4>
+          <div className="space-y-6">
+            <p className="text-lg leading-snug italic text-gray-600 max-w-sm">
+              Direct your inquiries, praise, or cinematic rebuttals to our desk via the following channels.
+            </p>
+            <nav className="flex flex-col gap-4  text-sm font-bold uppercase tracking-tight">
+              <a href={letterboxdUrl} className="flex items-center gap-3 group">
+                <div className="p-2 border border-dark group-hover:bg-crimson group-hover:text-white transition-all">
+                  <FaLetterboxd className="text-xl" />
+                </div>
+                <span className="border-b border-black group-hover:border-b-2 group-hover:border-crimson">Follow me on Letterboxd</span>
+              </a>
+              <a href={contactUrl} className="flex items-center gap-3 group">
+                <div className="p-2 border border-black group-hover:bg-black group-hover:text-white transition-all">
+                  <FaEnvelope className="text-xl" />
+                </div>
+                <span className="border-b border-black group-hover:border-b-2 group-hover:border-crimson">Contact the Critic</span>
+              </a>
+            </nav>
+          </div>
+        </section>
+
+        <section className="p-8 ">
+          <h4 className="mb-8 text-xs uppercase tracking-[0.2em] border-b border-black pb-2 inline-block ">
+            watch next
+          </h4>
+          <a href={nextMovie.url} className="flex flex-col sm:flex-row gap-6 group">
+            {nextMovie.thumbnailUrl && (
+              <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
+                <img 
+                  src={nextMovie.thumbnailUrl} 
+                  alt={nextMovie.title} 
+                  className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
+                />
+                <div className="absolute inset-0 border-8 border-transparent group-hover:border-black/10 pointer-events-none"></div>
+              </div>
+            )}
+            <div className="flex flex-col justify-center">
+              <h5 className="text-2xl font-brawler capitalize font-bold leading-none tracking-tighter group-hover:text-crimson">
+                {nextMovie.title} {nextMovie.year && <span className="font-normal opacity-60">({nextMovie.year})</span>}
+              </h5>
+              {nextMovie.reason && (
+                <p className="mt-3 text-sm leading-tight text-gray-600 font-medium">
+                  {nextMovie.reason}
+                </p>
+              )}
+            </div>
+          </a>
+        </section>
+      </div>
+
+      <div className="px-6 py-4 flex flex-wrap items-center gap-x-10 gap-y-2 border-b border-black">
+        <span className=" text-[10px]  uppercase tracking-[.3em] text-neutral-400">Reference Desk:</span>
+        {resources.map((res, i) => (
+          <a key={i} href={res.url} className="text-[11px] font-bold uppercase hover:text-crimson hover:underline flex items-center gap-2">
+            {res.icon} {res.label}
+          </a>
+        ))}
+      </div>
+
+      <div className="px-6 pt-8 pb-2 flex justify-center">
+        <div className="text-xs leading-tight font-bold uppercase tracking-widest opacity-50">
+          Designed, developed and deployed by sonicakes in 2026. All critique is subjective and personal opinion of sonicakes only. </div>
+       
+      </div>
+    </footer>
+  );
+};
+
+export default MovieFooter;
