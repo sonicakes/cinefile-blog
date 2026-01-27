@@ -5,11 +5,10 @@ import { MdCheck } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
 import BlogDetailMain from "~/components/BlogDetailMain";
 import { MdOutlineStarHalf } from "react-icons/md";
-import { MdFormatQuote } from "react-icons/md";
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
 
-import { FaSpotify, FaArrowRight, FaImdb, FaWikipediaW } from "react-icons/fa";
+import { FaImdb, FaWikipediaW } from "react-icons/fa";
 
 export async function loader({ request, params }: Route.LoaderArgs) {
   const { slug } = params;
@@ -189,18 +188,7 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
       <MovieFooter
         spotifyEpisodes={postMeta.spotify_episodes}
         nextMovie={postMeta.next_movie}
-        resources={[
-          {
-            label: "IMDb",
-            url: "https://www.imdb.com/title/tt0166924/",
-            icon: <FaImdb />,
-          },
-          {
-            label: "Wikipedia",
-            url: "https://en.wikipedia.org/wiki/Mulholland_Drive_(film)",
-            icon: <FaWikipediaW />,
-          },
-        ]}
+        
       />
     </>
   );

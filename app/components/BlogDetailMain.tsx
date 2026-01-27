@@ -2,7 +2,22 @@ import ReactMarkdown from "react-markdown";
 import type { PostMeta } from "~/types";
 import Date from "~/components/Date";
 import { NavLink } from "react-router";
+import { FaImdb, FaWikipediaW } from "react-icons/fa6";
 
+
+const resources=[
+          {
+            label: "IMDb",
+            url: "https://www.imdb.com/title/tt0166924/",
+            icon: <FaImdb />,
+          },
+          {
+            label: "Wikipedia",
+            url: "https://en.wikipedia.org/wiki/Mulholland_Drive_(film)",
+            icon: <FaWikipediaW />,
+          },
+        ];
+        
 const BlogDetailMain = ({
   postMeta,
   markdown,
@@ -13,12 +28,6 @@ const BlogDetailMain = ({
   return (
     <>
     <article className="main-content">
-      {/* <div className="flex justify-between border-y border-gray-300 items-center py-5">
-            <div className="font-brawler uppercase tracking-wide font-medium text-lg">
-              <span>Film Reviews/</span>
-              <span className="font-bold">{postMeta.title}</span>
-            </div>
-          </div> */}
       <Date />
       <h1 className="text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight leading-15">
         {postMeta.meta_title ? postMeta.meta_title : postMeta.title}
@@ -46,6 +55,15 @@ const BlogDetailMain = ({
       <NavLink to="/blog" className="inline-block text-dark hover:text-crimson transition duration-300 border-gray-600 hover:border-crimson border-t border-b border-dotted cursor-pointer tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
         back to all reviews
       </NavLink>
+
+        <div className="px-6 py-4 flex flex-wrap items-center gap-x-10 gap-y-2 border-b border-black">
+        <span className=" text-[10px]  uppercase tracking-[.3em] text-neutral-400">Sources:</span>
+        {resources.map((res, i) => (
+          <a key={i} href={res.url} className="text-[11px] font-bold uppercase hover:text-crimson hover:underline flex items-center gap-2">
+            {res.icon} {res.label}
+          </a>
+        ))}
+      </div>
 
     </article>
     
