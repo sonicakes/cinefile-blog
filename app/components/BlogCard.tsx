@@ -5,6 +5,8 @@ import {
   MdComputer,
   MdOutlineStarHalf,
   MdFormatQuote,
+  MdCalendarMonth,
+  MdDoNotDisturb
 } from "react-icons/md";
 import { Link } from "react-router";
 
@@ -24,11 +26,12 @@ const BlogCard = ({
     director,
     run_time,
     rating,
-    watched_previously,
+    watched,
     location,
     excerpt,
     quote,
     genres,
+    date_reviewed
   } = blog;
 
   // 1. Dynamic Wrapper: Wraps content in a Link only if a review exists
@@ -41,6 +44,7 @@ const BlogCard = ({
       <div className={classExtra}>{children}</div>
     );
 
+
   return (
     <Wrapper>
       <article
@@ -52,16 +56,13 @@ const BlogCard = ({
       >
         {/* Image Section */}
         <div className="relative overflow-hidden">
-          {" "}
-          {/* overflow-hidden is key for the slide effect */}
           <img
             className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition duration-700"
             src={image || "./images/front.jpg"}
             alt={title}
           />
-          {review_provided ? (
-            /* Star Rating if review exists */
-            <div className="text-white bg-linear-to-l from-black px-4 py-1.5 absolute top-0 right-0 flex gap-1 justify-end font-bold font-brawler text-base">
+          {review_provided && watched ? (
+            <div className="text-white bg-linear-to-l flex-wrap from-black px-4 py-1.5 absolute top-0 right-0 flex gap-1 justify-end font-bold font-brawler text-base">
               <MdOutlineStarHalf size="20" />
               <MdOutlineStarHalf size="20" />
               <span>{rating && rating}</span>
@@ -71,12 +72,14 @@ const BlogCard = ({
             <div className="absolute top-0 right-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out bg-crimson text-white px-4 py-1.5 font-bold font-brawler uppercase tracking-widest text-sm shadow-lg">
               Review Pending
             </div>
-          )}
+          )
+          }
         </div>
 
         {/* Content Section */}
         <div className="p-6 bg-white group-hover:bg-dark group-hover:text-light duration-700 transition">
           <header>
+
             <h2 className="text-3xl uppercase group-hover:text-crimson transition duration-700 font-brawler font-bold tracking-wide">
               {title} <span>({year})</span>
             </h2>
@@ -86,21 +89,36 @@ const BlogCard = ({
           </header>
 
           {/* Genres */}
-          <div className="text-xs uppercase pt-2 pb-4 flex gap-2 font-semibold flex-wrap">
-            {genres?.map((genre) => (
+          {genres && (
+
+                   <div className="text-xs uppercase pt-2 pb-4 flex gap-2 font-semibold flex-wrap">
+            {genres.map((genre) => (
               <span
                 key={genre}
-                className="bg-light transition duration-700 group-hover:bg-gray-600 group-hover:text-gray-100 px-2 py-1 border border-gray-600"
+                className="bg-light transition duration-700 group-hover:bg-neutral-600 group-hover:text-gray-100 px-2 py-1 border border-gray-600"
               >
                 {genre}
               </span>
             ))}
           </div>
+          )}
+   
 
           {/* Metadata Grid */}
-          <div className="font-bold tracking-wide font-brawler flex gap-x-4 gap-y-1 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-700">
+          <div className="font-bold tracking-wide font-brawler flex pt-2 gap-x-4 gap-y-1.5 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-700">
+           {review_provided && date_reviewed && (
+              <MetaItem Icon={MdCalendarMonth} text={`reviewed ${new Date(date_reviewed).toDateString()}`} fullWidth/>
+
+           )}
             <MetaItem Icon={MdOutlineWatchLater} text={run_time || "1hr 15m"} />
-            <MetaItem Icon={MdCheck} text={`Seen - ${watched_previously}`} />
+         
+         {watched ? (
+            <MetaItem Icon={MdCheck} text={`watched`} />
+
+         ) : (
+            <MetaItem Icon={MdDoNotDisturb} text={`not seen yet`} />
+
+         )}
             <MetaItem Icon={MdComputer} text={location} fullWidth />
           </div>
 

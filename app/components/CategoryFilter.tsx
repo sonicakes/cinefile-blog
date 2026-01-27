@@ -19,10 +19,10 @@ const CategoryFilter = () => {
   };
 
   return (
-    <div className="flex items-center gap-4 text-xs uppercase font-semibold select-none">
-      <span className="text-gray-500">Filter by</span>
+    <div className="flex items-center gap-1 text-xs uppercase font-semibold select-none">
+      <span className="text-neutral-500">Filter by</span>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1">
         {/* Prev Arrow */}
         <button 
           onClick={prevSlide} 
@@ -37,7 +37,7 @@ const CategoryFilter = () => {
           {categories.slice(startIndex, startIndex + visibleCount).map((category) => (
             <span
               key={category}
-              className="bg-light border border-gray-600 px-3 py-1 transition duration-300 hover:bg-gray-600 hover:text-gray-100 cursor-pointer whitespace-nowrap"
+              className="bg-light border border-gray-600 px-3 py-1 transition duration-300 hover:bg-crimson hover:text-gray-100 cursor-pointer whitespace-nowrap"
             >
               {category}
             </span>

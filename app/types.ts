@@ -11,7 +11,7 @@ export type PostMeta = {
   image: string;
   location?: string;
   year: string;
-  watched_previously: string;
+  watched: boolean;
   director?: string;
   quote?: string;
   genres?: string[];
@@ -39,3 +39,9 @@ export type Stat = {
       time: number;
       words: number
 }
+export type SearchInputProps = {
+    searchQuery: string;
+    onSearchChange: (value: string) => void;
+    onClearChange: () => void;
+}
+

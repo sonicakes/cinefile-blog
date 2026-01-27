@@ -8,6 +8,7 @@ import { MdOutlineStarHalf } from "react-icons/md";
 import { NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
 import readingTime from 'reading-time';
+import { useState } from "react";
 
 export async function loader({ request, params }: Route.LoaderArgs) {
   const { slug } = params;
@@ -44,7 +45,7 @@ type BlogPostDetailsPageProps = {
 
 const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
   const { postMeta, markdown, stats } = loaderData;
-  
+
     console.log(stats, 'stats!')
 
   return (
