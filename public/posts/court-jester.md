@@ -43,10 +43,8 @@ Before we conclude, one thing I noticed, that [Glynis Johns](https://en.wikipedi
 ![Glynis Johns in 1953](https://upload.wikimedia.org/wikipedia/commons/e/e2/Glynis_Johns_-_still.jpg)
 ###### Johns in 1953.  Source: Unknown photographer, Two Cities Films, United Artists, Public domain, via Wikimedia Commons
 
-![Film Lady in 2013](/images/foxy.jpg)
-###### Film Lady circa 2013. Tell me we're not twins?  Source: Film Lady's Facebook. 
-
-NOTE: *I promise that no foxes, red or black were harmed in the photo above. It was a fake fox( phew! )*.
+![Film Lady in 2013](/images/soni.jpg)
+###### Film Lady in 2025. Tell me we're not twins?  Source: Film Lady's Facebook. 
 
 ***
 All in all, 10/10 baby bottoms with purple pimpernels. Would recommend and would rewatch every time I need a mood lift!

@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
-import type { PostMeta } from "~/types";
-import Date from "~/components/Date";
+import type { PostMeta, Stat } from "~/types";
+import Info from "~/components/Info";
 import { NavLink } from "react-router";
 import { FaImdb, FaWikipediaW } from "react-icons/fa6";
 
@@ -21,14 +21,20 @@ const resources=[
 const BlogDetailMain = ({
   postMeta,
   markdown,
+  stats
 }: {
   postMeta: PostMeta;
   markdown: string;
+  stats: Stat
 }) => {
   return (
     <>
     <article className="main-content">
-      <Date />
+      <Info 
+        postDate={postMeta.date_reviewed} 
+        readTime={stats.text}
+        wordCount={stats.words}
+      />
       <h1 className="text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight leading-15">
         {postMeta.meta_title ? postMeta.meta_title : postMeta.title}
       </h1>

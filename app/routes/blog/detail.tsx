@@ -1,5 +1,5 @@
 import type { Route } from "./+types";
-import type { PostMeta } from "~/types";
+import type { PostMeta, Stat } from "~/types";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdCheck } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
@@ -7,8 +7,7 @@ import BlogDetailMain from "~/components/BlogDetailMain";
 import { MdOutlineStarHalf } from "react-icons/md";
 import { NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
-
-import { FaImdb, FaWikipediaW } from "react-icons/fa";
+import readingTime from 'reading-time';
 
 export async function loader({ request, params }: Route.LoaderArgs) {
   const { slug } = params;
@@ -25,22 +24,29 @@ export async function loader({ request, params }: Route.LoaderArgs) {
   //dynamically import the raw markdown
   //the name of posts md file should match the slug names exactly
   const markdown = await import(`/posts/${slug}.md?raw`);
-
+  const stats = readingTime(markdown.default);
   return {
     postMeta,
     markdown: markdown.default,
+    stats
   };
 }
+
+
 
 type BlogPostDetailsPageProps = {
   loaderData: {
     postMeta: PostMeta;
     markdown: string;
+    stats: Stat
   };
 };
 
 const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
-  const { postMeta, markdown } = loaderData;
+  const { postMeta, markdown, stats } = loaderData;
+  
+    console.log(stats, 'stats!')
+
   return (
     <>
       {/* breadcrumb */}
@@ -55,7 +61,11 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
       </div>
       {/* end breadcrumb */}
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
-        <BlogDetailMain postMeta={postMeta} markdown={markdown} />
+        <BlogDetailMain 
+        postMeta={postMeta} 
+        markdown={markdown}
+        stats={stats}
+        />
 
         <aside className="related-sidebar">
           <div className="py-4 mb-5 border-t px-4 border-gray-300 bg-light">

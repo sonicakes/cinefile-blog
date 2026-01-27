@@ -1,6 +1,8 @@
 export type PostMeta = {
   id: string;
   title: string;
+  date_reviewed?: string;
+  read_time?: string;
   meta_title?: string;
   excerpt: string;
   date?: string;
@@ -29,3 +31,11 @@ export type PostMeta = {
     thumbnailUrl?: string;
   };
 };
+
+export type Stat = {
+  
+      minutes: number;
+      text: string;
+      time: number;
+      words: number
+}
