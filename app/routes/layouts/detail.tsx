@@ -11,7 +11,7 @@ const DetailLayout = () => {
       </header> */}
 
       <header>
-        <NavLink to="/" className="text-center tracking-tight block text-6xl font-gothic py-6">The Cinefile Blog</NavLink>
+        <NavLink to="/" className="text-center tracking-tight block text-5xl lg:text-6xl font-gothic py-6">The Cinefile Blog</NavLink>
     </header>
       <Outlet />
     </div>
