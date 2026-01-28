@@ -29,8 +29,8 @@ const CategoryFilter = () => {
   };
 
   return (
-    <div className="w-auto py-1 md:py-0 flex-col flex md:flex-row justify-center md:justify-start items-center gap-1 md:gap-0 text-[10px] md:text-xs uppercase font-semibold select-none">
-      <span className="text-neutral-500 w-full lg:w-auto text-center lg:text-left block lg:inline">Filter by</span>
+    <div className="py-1 md:py-0 flex-col flex md:flex-row justify-center md:justify-start items-center gap-1 md:gap-0 text-[10px] md:text-xs uppercase font-semibold select-none">
+      <span className="text-neutral-500 w-full md:w-auto text-center md:text-left">Filter by</span>
 
       <div className="flex items-center gap-1 justify-between">
         <button
@@ -42,7 +42,7 @@ const CategoryFilter = () => {
         </button>
 
         <div
-          className="flex gap-2 lg:gap-3 
+          className="flex gap-2 md:gap-3 
         justify-center"
         >
           {categories
@@ -50,7 +50,7 @@ const CategoryFilter = () => {
             .map((category) => (
               <span
                 key={category}
-                className="bg-light border border-gray-600 px-1.5 lg:px-3 py-0.5 lg:py-1 transition duration-300 hover:bg-crimson hover:text-gray-100 cursor-pointer whitespace-nowrap"
+                className="bg-light border border-gray-600 px-1.5 md:px-3 py-0.5 md:py-1 transition duration-300 hover:bg-crimson hover:text-gray-100 cursor-pointer whitespace-nowrap"
               >
                 {category}
               </span>

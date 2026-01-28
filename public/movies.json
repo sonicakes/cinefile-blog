@@ -41,6 +41,53 @@
     ]
   },
   {
+    "title": "Texas Chainsaw Massacre",
+    "date_reviewed": "2026-01-28",
+    "meta_title": "And the Scream Queen Award goes to...",
+    "slug": "texas-chainsaw-massacre",
+    "excerpt": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way, they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
+    "year": "1974",
+    "director": "tobe hooper",
+    "watched": true,
+    "availability": ["Shudder"],
+    "location": "shudder",
+    "quote": "That Sally gal sure can scream, alright.",
+    "run_time": "83m",
+    "genres": ["Horror", "Slasher", "Crime"],
+    "image": "https://images.unsplash.com/photo-1474742509976-ddec6b387356?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "Never liked chainsaws. They're so loud. But not as loud as this movie's ultimate survivor's screams.",
+    "review_provided": true,
+    "rating": 9,
+    "rating_metric": "lampshades with genuine leather touch",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Halloween",
+      "reason": "Don't worry, this guy does not carry a chainsaw. He's just escaped from a mental institution.",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1724380597868-f01bf63f87be?q=80&w=1156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Folk Horror Pt8: The Texas Chain Saw Massacre",
+        "url": "https://open.spotify.com/episode/29sUX38rxI9f3e4wUEBVwl?si=8e5fd662cd56455c",
+        "podcastName": "The Evolution of Horror"
+      },
+
+      {
+        "title": "Episode 11.Family Dinner: The Texas Chain Saw Massacre(1974)",
+        "url": "https://open.spotify.com/episode/7HUTkyieJcvuIWgM2EM4N1?si=91d3c70ea4ce47fd",
+        "podcastName": "Faculty of horror"
+      },
+      {
+        "title": "Comfort Horror/The Texas Chain Saw Massacre(1974) with Katie Rife",
+        "url": "https://open.spotify.com/episode/4nPtkU7jwbphERtAWcMvB9?si=feb59490472d4324",
+
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      }
+    ]
+  },
+  {
     "title": "blue velvet",
     "date_reviewed": "2026-01-24",
     "quote": "Young Kyle MacLachlan. That's all you need to know.",

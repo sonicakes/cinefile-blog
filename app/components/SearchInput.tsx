@@ -18,7 +18,7 @@ const SearchInput = ({
       />
       <MdOutlineSearch
         size={22}
-        className="absolute top-1/2 left-2 -translate-y-1/2 text-neutral-500"
+        className="absolute top-1/2 left-2 -translate-y-1/2 text-neutral-dark"
       />
       {searchQuery != "" && (
         <MdClose
