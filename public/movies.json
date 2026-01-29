@@ -1,4 +1,47 @@
 [
+    {
+    "title": "Battleship Potemkin",
+    "slug": "battleship-potemkin",
+    "excerpt": "A dramatized account of a great Russian naval mutiny and a resultant public demonstration, showing support, which brought on a police massacre.",
+    "year": "1925",
+    "director": "Sergei Eisenstein",
+    "watched": false,
+    "availability": ["on pc, Mubi"],
+    "location": "youtube",
+    "run_time": "1h 15m",
+    "genres": ["Drama", "History", "War", "Silent"],
+    "image": "https://images.unsplash.com/photo-1723063197401-69459255fa2e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "War is no joke.",
+    "review_provided": false
+  },
+
+    {
+    "title": "Little Shop of Horrors",
+    "date_reviewed": "2026-01-29",
+    "meta_title": "How much is for Audrey Junior over there?",
+    "slug": "little-shop-of-horrors",
+    "excerpt": "Seymour works in a skid row florist shop and is in love with his beautiful co-worker, Audrey. He creates a new plant that not only talks but cannot survive without human flesh and blood.",
+    "year": "1960",
+    "director": "Roger Corman",
+    "watched": true,
+    "availability": ["YT, Plex"],
+    "location": "YT, Plex",
+    "run_time": "1h 12m",
+    "genres": ["Horror", "Comedy", "Fantasy"],
+    "image": "https://images.unsplash.com/photo-1667877878850-a61c7ba37e80?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "F-E-E-D M-E-E",
+    "review_provided": true,
+    "rating": 7,
+    "rating_metric": "Audrey Juniors, the carnivorus plants that Seymour cross-bred",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Day of the Triffids",
+      "reason": "What if Audrey Junior had a family?",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1598389751928-0f316db41d2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlaXJkJTIwZmxvd2VyfGVufDB8fDB8fHww"
+    }
+  },
   {
     "title": "Mulholland Drive",
     "date_reviewed": "2026-01-24",

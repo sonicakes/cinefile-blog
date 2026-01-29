@@ -46,8 +46,6 @@ type BlogPostDetailsPageProps = {
 const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
   const { postMeta, markdown, stats } = loaderData;
 
-    console.log(stats, 'stats!')
-
   return (
     <>
       {/* breadcrumb */}
