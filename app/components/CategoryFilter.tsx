@@ -16,7 +16,7 @@ const CategoryFilter = () => {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 3;
+  const visibleCount = 5;
 
   const nextSlide = () => {
     setStartIndex((prev) =>
@@ -29,8 +29,8 @@ const CategoryFilter = () => {
   };
 
   return (
-    <div className="py-1 md:py-0 flex-col flex md:flex-row justify-center md:justify-start items-center gap-1 md:gap-0 text-[10px] md:text-xs uppercase font-semibold select-none">
-      <span className="text-neutral-500 w-full md:w-auto text-center md:text-left">Filter by</span>
+    <div className=" w-full py-1 md:py-0 flex-col flex md:flex-row justify-center items-center gap-1 md:gap-0 text-[10px] md:text-xs uppercase font-semibold select-none">
+      {/* <span className="text-neutral-500 w-full md:w-auto text-center md:text-left">Filter by</span> */}
 
       <div className="flex items-center gap-1 justify-between">
         <button

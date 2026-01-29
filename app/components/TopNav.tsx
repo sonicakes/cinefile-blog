@@ -10,14 +10,15 @@ const TopNav = () => {
     },
 
     {
+      path: "/about",
+      label: "About Cinefile Blog",
+    },
+
+    {
       path: "/blog",
       label: "See all film reviews",
     },
 
-    {
-      path: "/watchlist",
-      label: "My Watchlist",
-    },
     {
       path: "/contact",
       label: "Contact Chief Editor (moi)",

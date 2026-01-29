@@ -45,3 +45,5 @@ export type SearchInputProps = {
     onClearChange: () => void;
 }
 
+
+export type SortOption = 'newest' | 'oldest' | 'alphabetical';

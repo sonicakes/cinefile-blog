@@ -8,7 +8,7 @@ const SearchInput = ({
   onClearChange,
 }: SearchInputProps) => {
   return (
-    <div className="relative w-full md:w-1/4">
+    <div className="relative w-full">
       <input
         type="text"
         placeholder="search movie..."
