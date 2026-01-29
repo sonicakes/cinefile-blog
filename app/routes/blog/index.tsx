@@ -22,32 +22,36 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
   const [showWatched, setShowWatched] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const filteredPosts = posts.filter((post) => {
     const query = searchQuery.toLowerCase();
+
+    // 1. Search Logic
     const matchesSearch =
       post.title.toLowerCase().includes(query) ||
       post.excerpt.toLowerCase().includes(query);
 
+    // 2. Watched Status
     const matchesWatchedStatus = post.watched === showWatched;
 
-    return matchesSearch && matchesWatchedStatus;
+    // 3. Category Logic (Array check)
+    // If no category is selected, return true.
+    // Otherwise, check if the selected string exists in the post.genres array.
+    const matchesCategory =
+      !selectedCategory || post.genres?.includes(selectedCategory);
+
+    return matchesSearch && matchesWatchedStatus && matchesCategory;
   });
 
-  // Sort Logic
+  // 3. Sort Logic (Applied to the filtered results)
   const sortedPosts = [...filteredPosts].sort((a, b) => {
-    // Convert strings to timestamps, defaulting to 0 if the date is missing
     const dateA = a.date_reviewed ? new Date(a.date_reviewed).getTime() : 0;
     const dateB = b.date_reviewed ? new Date(b.date_reviewed).getTime() : 0;
 
-    if (sortOrder === "newest") {
-      return dateB - dateA;
-    }
-    if (sortOrder === "oldest") {
-      return dateA - dateB;
-    }
+    if (sortOrder === "newest") return dateB - dateA;
+    if (sortOrder === "oldest") return dateA - dateB;
     if (sortOrder === "alphabetical") {
-      // localeCompare handles strings safely
       return (a.title || "").localeCompare(b.title || "");
     }
     return 0;
@@ -67,27 +71,42 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
             }}
           />
 
-       
-             <SortSelector
+          <SortSelector
             currentSort={sortOrder}
             onSortChange={(order) => setSortOrder(order)}
           />
 
-                              <ToggleWatched showWatched={showWatched} onToggle={setShowWatched} />
-
+          <ToggleWatched showWatched={showWatched} onToggle={setShowWatched} />
         </div>
         <div className="flex gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
-          <CategoryFilter />
+          <CategoryFilter
+            selectedCategory={selectedCategory}
+            onSelectCategory={setSelectedCategory}
+          />
+          <div className="w-full text-neutral-500 flex items-center gap-1 justify-end font-brawler lowercase tracking-wide">
+            <span className="text-neutral-600">
+              showing{" "}
+              {searchQuery ? "results for " + '"' + searchQuery + ':"' : ""}
+            </span>
+            <span className="text-base text-crimson font-bold">
+              
+              {filteredPosts.length} </span>
+
+              <span className="text-base font-semibold">
+                / {posts.length}
+              
+              </span>
+              
+              <span>{selectedCategory ? selectedCategory : ""} movie{filteredPosts.length > 1 ? "s" : ""}
+            </span>
+
+            <span>{`${showWatched ? "Watched" : "To watch"} `}</span>
+          </div>
         </div>
       </section>
 
-      <section
-        className=" 
-    grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 md:p-4 grid-flow-dense"
-      >
-        {posts.length === 0 ? (
-          <p>not found any posts</p>
-        ) : (
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 md:p-4 grid-flow-dense">
+        {sortedPosts.length > 0 ? (
           sortedPosts.map((post: PostMeta, index: number) => (
             <BlogCard
               blog={post}
@@ -95,6 +114,34 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
               classExtra={index % 3 === 0 ? "md:col-span-2" : "md:col-span-1"}
             />
           ))
+        ) : (
+          <div className="col-span-full py-20 text-center flex flex-col items-center gap-2">
+            <p className="text-xl font-brawler font-semibold text-dark">
+              {searchQuery
+                ? `No results found for "${searchQuery}"`
+                : "No blogs found"}
+            </p>
+
+            {selectedCategory && (
+              <p className="text-sm text-neutral-400">
+                Try looking in a different category than
+                <span className="italic text-neutral-600 font-semibold">
+                  "{selectedCategory}"
+                </span>
+              </p>
+            )}
+
+            <button
+              onClick={() => {
+                setSearchQuery("");
+                setSelectedCategory(null);
+              }}
+              className="mt-4 cursor-pointer text-xs uppercase underline tracking-widest hover:text-crimson transition"
+            >
+              Clear all filters
+            </button>
+
+          </div>
         )}
       </section>
     </>

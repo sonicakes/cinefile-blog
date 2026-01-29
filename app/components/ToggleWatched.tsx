@@ -12,7 +12,7 @@ const ToggleWatched = ({ showWatched, onToggle }: ToggleWatchedProps) => {
       <button
         onClick={() => onToggle(!showWatched)}
         className="relative w-10 h-5 bg-neutral-300 cursor-pointer rounded-full p-1 transition-colors duration-200 focus:outline-none"
-        style={{ backgroundColor: showWatched ? '#1a1a1a' : '#d1d5db' }}
+        style={{ backgroundColor: showWatched ? 'crimson' : '#d1d5db' }}
       >
         <div
           className={`bg-white w-3 h-3 rounded-full shadow-md transform transition-transform duration-200 ${
