@@ -84,6 +84,46 @@
     ]
   },
   {
+    "title": "The Music Man",
+    "date_reviewed": "2026-01-30",
+    "meta_title": "The Music Man will play. With your savings, then your feelings.",
+    "slug": "the-music-man",
+    "excerpt": "Traveling con artist Harold Hill targets the naïve residents of a small town in 1910s Iowa by posing as a boys’ bandleader to raise money before he can skip town.",
+    "year": "1962",
+    "director": "Morton DaCosta",
+    "watched": true,
+    "availability": ["on pc"],
+    "location": "movies-waiting-old",
+    "run_time": "151m",
+    "genres": ["Comedy", "Family", "Music", "Romance"],
+    "image": "https://images.unsplash.com/photo-1545538331-e77f8b74599d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG11c2ljJTIwbWFufGVufDB8fDB8fHww",
+    "image_description": "You don't need to learn to play an instrument. The instrument will play you.",
+    "review_provided": true,
+    "rating": 7,
+    "rating_metric": "singing shapoopies",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Singing in the  Rain",
+      "reason": "Got your raincoats ready? Gene Kelly invites you to another musical.",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "/images/parkrun-rabbit.jpg"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Mulholland Drive (2001)",
+        "url": "https://open.spotify.com/episode/3WB0I6KDlnkRUp99aKnqyq?si=9f73cad8b4c54f86",
+        "podcastName": "Horror Queers"
+      },
+
+      {
+        "title": "Dreams/Mulholland Drive (2001) PART 1",
+        "url": "https://open.spotify.com/episode/4m4Z56wKRnD31atwfroJQq?si=c3d5fe64304641bb",
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      }
+    ]
+  },
+  {
     "title": "Texas Chainsaw Massacre",
     "date_reviewed": "2026-01-28",
     "meta_title": "And the Scream Queen Award goes to...",
@@ -292,7 +332,7 @@
       "title": "Mulholland Drive",
       "reason": "Silencio!",
       "url": "/blog/mulholland-drive",
-      "thumbnailUrl": "/images/ozzz.jpg"
+      "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
     },
     "spotify_episodes": [
       {
@@ -336,12 +376,13 @@
       "title": "Mulholland Drive",
       "reason": "Silencio!",
       "url": "/blog/mulholland-drive",
-      "thumbnailUrl": "/images/ozzz.jpg"
+      "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
     },
     "excerpt": "An American oil company sends a man to Scotland to buy up an entire village where they want to build a refinery. But things don’t go as expected."
   },
   {
     "title": "court jester",
+    "date_reviewed": "2026-01-27",
     "meta_title": "Fantastic Mr Fox: The Origins of Courtly Camp.",
     "year": "1955",
     "quote": "My new tattoo reads: 'You never outfox the fox'.",
@@ -361,10 +402,10 @@
     "would_recommend": true,
 
     "next_movie": {
-      "title": "Mulholland Drive",
-      "reason": "Silencio!",
-      "url": "/blog/mulholland-drive",
-      "thumbnailUrl": "/images/ozzz.jpg"
+      "title": "The Music Man",
+      "reason": "Would you like to try some shapoopies?",
+      "url": "/blog/the-music-man",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1545538331-e77f8b74599d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG11c2ljJTIwbWFufGVufDB8fDB8fHww"
     },
     "excerpt": "A hapless carnival performer masquerades as the court jester as part of a plot against a usurper who has overthrown the rightful king of England."
   },

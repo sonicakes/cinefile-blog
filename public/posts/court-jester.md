@@ -5,7 +5,7 @@ you never outfox the fox...
 you never outfox the fox...
 ```
 
-This is most jolly, most joyful experience the movie can be to me. I will sing the Fox song (no, not the one [*'What does the fox say?'*](), although it came to mind once or twice) and *'Life better be'* songs all the time. I will quote *'The Doge did what the Doge does'* and *'The pellet with the poison's in the vessel with the pestle; the chalice from the palace has the brew that is true!'* over and over. My whole Aussie family adores this movie (that's how I got introduced to it, actually). I was further taken by the campiness, the music, the performances, the chaos of it all. Love at first sight, followed by endless rewatches.
+This is most jolly, most joyful experience the movie can be to me. I will sing the Fox song (no, not the one [*'What does the fox say?'*](https://youtu.be/jofNR_WkoCE?si=Frzouaug1XCqsLw5), although it came to mind once or twice) and *'Life better be'* songs all the time. I will quote *'The Doge did what the Doge does'* and *'The pellet with the poison's in the vessel with the pestle; the chalice from the palace has the brew that is true!'* over and over. My whole Aussie family adores this movie (that's how I got introduced to it, actually). I was further taken by the campiness, the music, the performances, the chaos of it all. Love at first sight, followed by endless rewatches.
 
 ![One Foxy Gentleman](/images/danny.png) 
 ###### Un-outfoxable Mr Black Fox at Gryffindor.  Source: Gemini-generated image, prompt: 'image that combines court jester and black fox, illustrating court jester 1955 movie'
@@ -43,8 +43,8 @@ Before we conclude, one thing I noticed, that [Glynis Johns](https://en.wikipedi
 ![Glynis Johns in 1953](https://upload.wikimedia.org/wikipedia/commons/e/e2/Glynis_Johns_-_still.jpg)
 ###### Johns in 1953.  Source: Unknown photographer, Two Cities Films, United Artists, Public domain, via Wikimedia Commons
 
-![Film Lady in 2013](/images/soni.jpg)
-###### Film Lady in 2025. Tell me we're not twins?  Source: Film Lady's Facebook. 
+![Film Lady in early 2010s](/images/clone.JPG)
+###### Film Lady in early 2010s. Tell me we're not twins?  Source: Film Lady's Facebook. 
 
 ***
 All in all, 10/10 baby bottoms with purple pimpernels. Would recommend and would rewatch every time I need a mood lift!
