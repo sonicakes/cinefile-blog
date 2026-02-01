@@ -7,8 +7,13 @@ import {
   MdFormatQuote,
   MdCalendarMonth,
   MdDoNotDisturb,
+  MdTv,
+  MdHome,
 } from "react-icons/md";
+import { FaYoutube } from "react-icons/fa";
+import { SiMubi, SiPlex, SiTubi } from "react-icons/si";
 import { Link } from "react-router";
+import { PiDiscDuotone } from "react-icons/pi";
 
 const BlogCard = ({
   blog,
@@ -27,7 +32,7 @@ const BlogCard = ({
     run_time,
     rating,
     watched,
-    location,
+    availability,
     excerpt,
     quote,
     genres,
@@ -43,6 +48,33 @@ const BlogCard = ({
       <div className={classExtra}>{children}</div>
     );
 
+  const getIconByMedium = (medium: string) => {
+    switch (medium.toLowerCase()) {
+      case "youtube":
+        return FaYoutube;
+      case "mubi":
+        return SiMubi;
+      case "plex":
+        return SiPlex;
+      case "tubi":
+        return SiTubi;
+      case "dvd":
+      case "library dvd":
+      case "home dvd":
+        return PiDiscDuotone;
+      case "tv":
+      case "television":
+        return MdTv;
+      case "pc":
+      case "home collection":
+      case "home movies":
+      case "home":
+        return MdHome;
+      default:
+        return MdComputer;
+    }
+  };
+
   return (
     <Wrapper>
       <article
@@ -55,7 +87,7 @@ const BlogCard = ({
         <div className="relative overflow-hidden">
           <img
             className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition duration-700"
-            src={image || "./images/pic.jpg"}
+            src={image || "./images/gallery.jpg"}
             alt={title}
           />
           {review_provided && watched ? (
@@ -102,14 +134,24 @@ const BlogCard = ({
                 fullWidth
               />
             )}
-            <MetaItem Icon={MdOutlineWatchLater} text={run_time || "1hr 15m"} />
 
-            {watched ? (
+              {watched ? (
               <MetaItem Icon={MdCheck} text={`watched`} />
             ) : (
               <MetaItem Icon={MdDoNotDisturb} text={`not seen yet`} />
             )}
-            <MetaItem Icon={MdComputer} text={location} fullWidth />
+            <MetaItem Icon={MdOutlineWatchLater} text={run_time || "1hr 15m"} />
+
+          
+
+            {availability &&
+              availability.map((item, index) => (
+                <MetaItem
+                  key={index}
+                  Icon={getIconByMedium(item.medium)}
+                  text={item.medium}
+                />
+              ))}
           </div>
 
           <hr className="border-t-3 my-5 border-double border-gray-600" />

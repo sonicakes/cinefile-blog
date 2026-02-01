@@ -1,17 +1,21 @@
-This was an interesting exploration of Lynch's work. A 3-hour-long exploration, by the end of which I still am not sure what 'Inland Empire' refers to? Is is the world that Nicki steps into? Or am I missing something? 
+Lucky for me, I am an only child. As such, my parents would never have to go travel my school and ask the principal who, in his opinion, was better? They would more likely follow [Last-In-First-Out]() approach, since I wasn't gonna cure Cancer or go to the Moon anyways. 
 
-I confess I haven't gone to Reddit or elsewhere to find things out. I guess I tried to abandon my disbelief and enjoy the art..
+Much like the light-hearted intro above, Lanthimos' *'Killing of a Sacred Deer'* does not hold off on delivering *'WTF did I just watch'* kind of aftertaste after the final scene is played out. It expands on a famous 'Sophie's Choice' - an impossible choice of trying to rank your loved ones on a scale of 1 to 10 depending on their valuability to you (or the world). Similar to shows like [The Weakest Link]('https://en.wikipedia.org/wiki/The_Weakest_Link_(British_game_show)') or Big Brother(), the loser gets the boot (in our case - the shoot).
 
-![I am rabbit](/images/rabbit.jpg) 
-###### Are we all just rabbits? Tell us, David Lynch, if you've known us before. Source: me as La Lapine Noire.
+Even knowing I will probably never have to make Sophie's choice (well, it's ANYONE BUT MY DOG, really), this movie got me thinking a lot. 'But what if...' kept going in circles in my head, trying to see which family member has wronged me recently to deserve elimination (THE DOG IS ABSOLUTELY OUT OF THE QUESTION).
 
-Etiam non elit id dui molestie porta. Proin tincidunt scelerisque ante eget bibendum. Vestibulum sed eros eget turpis pulvinar tincidunt. Donec a tempus velit. Nulla fringilla vulputate urna, ac condimentum lacus semper sit amet. Fusce id sapien non tortor dapibus congue. Vivamus tristique, sapien ut ultricies pretium, dui nisl volutpat ipsum, in volutpat quam dui et nibh. Duis scelerisque massa quis mi interdum iaculis. Ut hendrerit dui sed ante porttitor blandit. Integer mi leo, lobortis sit amet ornare eu, sodales vitae nibh. Sed tristique nisi ut urna rhoncus porttitor. Quisque magna odio, efficitur vitae nunc at, vestibulum elementum sapien. Donec et enim quis est aliquam semper non id diam. Nullam pulvinar nunc nec tempus suscipit. Quisque nibh ante, cursus vel diam luctus, lobortis facilisis libero. Cras gravida volutpat diam tincidunt maximus.
+![Title Card](https://upload.wikimedia.org/wikipedia/en/f/f1/The_weakest_link_UK_titlecard.png) 
+###### The title card for the BBC quiz show, The Weakest Link. Source: Wikipedia.
 
-> Another interpretation of Sophie's Choice - this time the parent included.
 
-Phasellus porttitor dapibus feugiat. Nam quis aliquet metus. Pellentesque luctus consectetur magna, eget mattis magna euismod nec. Nullam posuere pretium mi, sit amet tristique neque fringilla eu. Maecenas congue, turpis et congue ornare, tellus leo imperdiet justo, a fringilla tortor erat ac turpis. Suspendisse mattis egestas quam, cursus laoreet tellus ullamcorper eget. Phasellus vulputate, mi sit amet rutrum ultricies, tellus risus gravida est, ut venenatis lectus urna porta erat. Nullam id felis enim. Praesent sagittis mauris et ante commodo dignissim. Phasellus vel sodales neque.
+What strikes me the most about KOTSD is the deadpan dialogue and delivery of actors playing out this insane scenario. Dr Daddy tries to make a rational choice of comparing his 2 kids (I guess for him the wife was out of the question. Hey, it's Nicole Kidman, after all...). But of course, he cannot make that choice, so he leaves it to fate & just plays wholesome game of Russian roulette with the fam. Spoiler alert: the boy is out.
 
-![We are rabbits](/images/parkrun-rabbit.jpg) 
-###### Are we humans? Or are we rabbits? Source: one of the [parkrun's](https://www.parkrun.com.au/) Easter participants.
+I guess the matter-of-factness of the situation unfolding is here to highlight the absurdity of it. I was convinced that Dr Daddy will be good enough at least to maaaybe offer himself as sacrifice? I am not sure that it was ever a choice, but still. A noble Daddy would.
 
-Phasellus porttitor dapibus feugiat. Nam quis aliquet metus. Pellentesque luctus consectetur magna, eget mattis magna euismod nec. Nullam posuere pretium mi, sit amet tristique neque fringilla eu. Maecenas congue, turpis et congue ornare, tellus leo imperdiet justo, a fringilla tortor erat ac turpis. Suspendisse mattis egestas quam, cursus laoreet tellus ullamcorper eget. Phasellus vulputate, mi sit amet rutrum ultricies, tellus risus gravida est, ut venenatis lectus urna porta erat. Nullam id felis enim. Praesent sagittis mauris et ante commodo dignissim. Phasellus vel sodales neque.
+Or maybe even like call BS on ..., call the police, call the priest...Do something rather than - 'OK so I guess I have to see which member of my fam is more dispensable'. Nah. He accepts it at face value, and kids do serious competition to gain Daddy's votes. Mummy is lucky she is Nicole Kidman, or she'd have to participate in Family Olympics too.
+
+I really enjoyed the whole circus of it, the darkness of it. I think it could be better without the supernatural plot of a curse being put on the family & them dying one by one by a mysterious illness. ... could just kill off them by man-made weapons instead. It would still be terrifying for me.
+
+***
+
+All in all, 8/10 sacred deers that never appeared in the movie. My wisdom to you is this: love everyone in your family equally, but when push comes to shove, SAVE THE DOG FIRST.

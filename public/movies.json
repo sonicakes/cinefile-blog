@@ -6,12 +6,19 @@
     "year": "1925",
     "director": "Sergei Eisenstein",
     "watched": false,
-    "availability": ["on pc, Mubi"],
-    "location": "youtube",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "run_time": "1h 15m",
     "genres": ["Drama", "History", "War", "Silent"],
     "image": "https://images.unsplash.com/photo-1723063197401-69459255fa2e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "image_description": "War is no joke.",
     "review_provided": false
   },
 
@@ -24,8 +31,16 @@
     "year": "1960",
     "director": "Roger Corman",
     "watched": true,
-    "availability": ["YT, Plex"],
-    "location": "YT, Plex",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "run_time": "1h 12m",
     "genres": ["Horror", "Comedy", "Fantasy"],
     "image": "https://images.unsplash.com/photo-1667877878850-a61c7ba37e80?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -51,8 +66,15 @@
     "year": "2001",
     "director": "david lynch",
     "watched": true,
-    "availability": ["on pc, Mubi"],
-    "location": "movies-waiting-old; Mubi",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection"
+      }
+    ],
     "quote": "I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.",
     "run_time": "1h 20m",
     "genres": ["Drama", "Mystery", "Film Noir", "Thriller", "Horror", "Lynch"],
@@ -92,8 +114,16 @@
     "year": "1962",
     "director": "Morton DaCosta",
     "watched": true,
-    "availability": ["on pc"],
-    "location": "movies-waiting-old",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
     "run_time": "151m",
     "genres": ["Comedy", "Family", "Music", "Romance"],
     "image": "https://images.unsplash.com/photo-1545538331-e77f8b74599d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG11c2ljJTIwbWFufGVufDB8fDB8fHww",
@@ -132,8 +162,12 @@
     "year": "1974",
     "director": "tobe hooper",
     "watched": true,
-    "availability": ["Shudder"],
-    "location": "shudder",
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      }
+    ],
     "quote": "That Sally gal sure can scream, alright.",
     "run_time": "83m",
     "genres": ["Horror", "Slasher", "Crime"],
@@ -172,49 +206,32 @@
   },
   {
     "title": "Scary Movie 3",
-    "date_reviewed": "2026-01-28",
+    "date_reviewed": "2026-01-31",
     "meta_title": "Hold up..Is '8 Mile' a Horror Movie?",
     "slug": "scary-movie-3",
     "excerpt": "In the third installment of the Scary Movie franchise, news anchorwoman Cindy Campbell has to investigate mysterious crop circles and killing video tapes, and help the President stop an alien invasion in the process.",
-    "year": "1974",
-    "director": "tobe hooper",
+    "year": "2003",
+    "director": "David Zucker",
     "watched": true,
-    "availability": ["Shudder"],
-    "location": "shudder",
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/"
+      }
+    ],
     "run_time": "84m",
-    "genres": ["Horror", "Slasher", "Crime"],
-    "image": "https://images.unsplash.com/photo-1474742509976-ddec6b387356?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "image_description": "Never liked chainsaws. They're so loud. But not as loud as this movie's ultimate survivor's screams.",
+    "genres": ["Comedy", "Satire", "Spoof"],
+    "image": "https://images.unsplash.com/photo-1758525862351-24cdf722d414?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "I'm not scared, you're scared.",
     "review_provided": true,
-    "rating": 9,
-    "rating_metric": "lampshades with genuine leather touch",
     "would_rewatch": true,
     "would_recommend": true,
     "next_movie": {
-      "title": "Halloween",
-      "reason": "Don't worry, this guy does not carry a chainsaw. He's just escaped from a mental institution.",
-      "url": "/blog/inland-empire",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1724380597868-f01bf63f87be?q=80&w=1156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    "spotify_episodes": [
-      {
-        "title": "Folk Horror Pt8: The Texas Chain Saw Massacre",
-        "url": "https://open.spotify.com/episode/29sUX38rxI9f3e4wUEBVwl?si=8e5fd662cd56455c",
-        "podcastName": "The Evolution of Horror"
-      },
-
-      {
-        "title": "Episode 11.Family Dinner: The Texas Chain Saw Massacre(1974)",
-        "url": "https://open.spotify.com/episode/7HUTkyieJcvuIWgM2EM4N1?si=91d3c70ea4ce47fd",
-        "podcastName": "Faculty of horror"
-      },
-      {
-        "title": "Comfort Horror/The Texas Chain Saw Massacre(1974) with Katie Rife",
-        "url": "https://open.spotify.com/episode/4nPtkU7jwbphERtAWcMvB9?si=feb59490472d4324",
-
-        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
-      }
-    ]
+      "title": "The Ring",
+      "reason": "Here you go - this is the real deal.",
+      "url": "/blog/the-ring",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1687193191982-2e3a19d7612f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
   },
   {
     "title": "blue velvet",
@@ -239,8 +256,16 @@
     "year": "1986",
     "director": "david lynch",
     "watched": true,
-    "availability": ["on pc", "Mubi"],
-    "location": "movies-waiting-old",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
     "image_description": "blue velvet fabric, red roses white fence",
     "image": "https://images.unsplash.com/photo-1606941060060-3d317be9947c?q=60&w=400&fm=webp&fit=crop",
     "spotify_episodes": [
@@ -265,8 +290,16 @@
     "year": "1997",
     "director": "michael haneke",
     "watched": true,
-    "availability": ["on pc"],
-    "location": "movies-waiting-old",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
     "image": "https://images.unsplash.com/photo-1632693128710-f466d1d01a77?q=60&w=400&fm=webp&fit=crop",
     "image_description": "Are you game?",
     "review_provided": true,
@@ -310,16 +343,20 @@
     "year": "2017",
     "director": "Yorgos Lanthimos",
     "watched": true,
-    "availability": ["Mubi"],
-    "location": "Mubi",
+    "availability": [
+      {
+        "medium": "Mubi",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      }
+    ],
     "image": "https://images.unsplash.com/photo-1543782248-03e2c5a93e18?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "image_description": "No actual deer were sacrificed during this movie review.",
     "review_provided": true,
     "rating": 8,
-    "rating_metric": "three-legged sacred deer",
+    "rating_metric": "mystical sacred deer",
     "would_rewatch": true,
     "would_recommend": true,
-    "meta_title": "Identify the weakest link in your family.",
+    "meta_title": "Congratulations. You're the weakest link in your family.",
     "quote": "Another interpretation of Sophie's Choice - this time the parent included.",
     "run_time": "121m",
     "next_movie": {
@@ -354,7 +391,16 @@
     "year": "2006",
     "director": "david lynch",
     "watched": true,
-    "availability": ["on pc, mubi"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
     "genres": [
       "Drama",
       "Mystery",
@@ -363,7 +409,6 @@
       "Horror",
       "Lynch"
     ],
-    "location": "movies-waiting-old",
     "image": "https://images.unsplash.com/photo-1675277455844-d9868b3e2f2e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "image_description": "Hey! Look at me. And tell me if you've known me before.",
     "review_provided": true,
@@ -394,6 +439,172 @@
     ]
   },
   {
+    "title": "Bugonia",
+    "slug": "bugonia",
+    "excerpt": "Two conspiracy obsessed young men kidnap the high-powered CEO of a major company, convinced that she is an alien intent on destroying planet Earth.",
+    "year": "2025",
+    "director": "Yorgos Lanthimos",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "media/movies/_new"
+      }
+    ],
+    "genres": ["Science Fiction", "Comedy", "Thriller"],
+    "review_provided": false,
+    "run_time": "118m",
+    "next_movie": {
+      "title": "Mulholland Drive",
+      "reason": "Dive into more Yorgos Lanthimos with this non-canine-related movie.",
+      "url": "/blog/doogtooth",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Mind & Body Pt30: Mulholland Drive(2001) & Inland Empire(2006)",
+        "url": "https://open.spotify.com/episode/2ZvLApHuqGqlhsKkcFwUpu?si=808eebe911114354",
+        "podcastName": "The Evolution of Horror"
+      },
+      {
+        "title": "Ep31: Inland Empire, David Lynch, 2006",
+        "url": "https://open.spotify.com/episode/0z1qBOzpZel1WiN83bvq3c?si=447c6392e30b4d16",
+        "podcastName": "Unpleasant Movie Podcasrs"
+      }
+    ]
+  },
+  {
+    "title": "One battle after another",
+    "meta_title": "Inland Empire Strikes Back.",
+    "slug": "one-battle-after-another",
+    "excerpt": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "year": "2025",
+    "director": "Paul Thomas Anderson",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "genres": ["Action", "Crime", "Comedy", "Thriller"],
+    "review_provided": false
+  },
+  {
+    "title": "The Loved Ones",
+    "slug": "the-loved-ones",
+    "excerpt": "When Brent turns down his classmate Lola’s invitation to the prom, she concocts a wildly violent plan for revenge.",
+    "year": "2009",
+    "director": "Sean Byrne",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "genres": ["Horror", "Violent", "Gory"],
+    "location": "media/movies/waiting/_old",
+    "review_provided": false,
+    "spotify_episodes": [
+      {
+        "title": "Self-Harm/Loved Ones(2009)",
+        "url": "https://open.spotify.com/episode/3sIFvprZUCIDe0qjdeIYdM?si=5cb6d2f585314c73",
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      },
+      {
+        "title": "Ep31: Inland Empire, David Lynch, 2006",
+        "url": "https://open.spotify.com/episode/0z1qBOzpZel1WiN83bvq3c?si=447c6392e30b4d16",
+        "podcastName": "Unpleasant Movie Podcasrs"
+      }
+    ]
+  },
+
+  {
+    "title": "pontypool",
+    "genres": ["Horror", "Mystery", "Science Fiction"],
+
+    "year": "2008",
+    "run_time": "97m",
+    "director": "Bruce McDonald",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "review_provided": false,
+    "location": "media/movies",
+    "slug": "pontypool",
+    "excerpt": "When disc jockey Grant Mazzy reports to his basement radio station in the Canadian town of Pontypool, he thinks it’s just another day at work. But when he hears reports of a virus that turns people into zombies, Mazzy barricades himself in the radio booth and tries to figure out a way to warn his listeners about the virus and its unlikely mode of transmission."
+  },
+  {
+    "title": "the gift",
+    "date_reviewed": "2026-02-02",
+    "meta_title": "Oh, the gift of life.",
+    "genres": ["Mystery", "Thriller", "Drama"],
+    "year": "2015",
+    "quote": "The past is not done with you.",
+    "run_time": "108m",
+    "director": "Joel Edgerton",
+    "watched": true,
+    "availability": [
+      {
+        "medium": "Library DVD",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "review_provided": true,
+    "rating": 8,
+    "image_description": "Good things happen to good people.",
+    "image": "https://images.unsplash.com/photo-1589948516895-db76617cb753?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "slug": "the-gift",
+    "rating_metric": "creepy monkey masks",
+    "would_rewatch": true,
+    "would_recommend": true,
+
+    "next_movie": {
+      "title": "Mulholland Drive",
+      "reason": "Want more of that Home Invasion vibe? Come on in!",
+      "url": "/blog/mulholland-drive",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
+    },
+    "excerpt": "Simon and Robyn are a young married couple whose life is going as planned until a chance run-in with Simon’s high school acquaintance sends their world into a tailspin."
+  },
+
+  {
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "year": "1964",
+    "run_time": "95m",
+    "director": "Stanley Kubrick",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "review_provided": false,
+    "slug": "dr-strangelove",
+
+    "next_movie": {
+      "title": "Mulholland Drive",
+      "reason": "Silencio!",
+      "url": "/blog/mulholland-drive",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
+    },
+    "excerpt": "After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop it."
+  },
+  {
     "title": "local hero",
     "date_reviewed": "2026-01-25",
     "meta_title": "Stunning Scotland & Sentimental Seashells.",
@@ -402,7 +613,16 @@
     "run_time": "111m",
     "director": "bill forsyth",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "review_provided": true,
     "rating": 7,
     "location": "movies",
@@ -431,7 +651,16 @@
     "genres": ["Comedy", "Musical", "Family", "Satire", "Funny"],
     "director": "Norman Panama, Melvin Frank",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "review_provided": true,
     "rating": 10,
     "location": "movies",
@@ -457,7 +686,16 @@
     "genres": ["Supernatural", "Mystery", "Vampire", "Thriller", "Horror"],
     "director": "tony scott",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "ankh symbol, gothic mansion",
     "image": "https://images.unsplash.com/photo-1697547098891-6df4b0b200f4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -472,7 +710,16 @@
     "year": "1988",
     "director": "john mctiernan",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "skyscraper night, air duct, broken glass",
     "image": "https://images.unsplash.com/photo-1575919220112-0d5a2dc6a4b6?q=60&w=400&fm=webp&fit=crop"
@@ -484,7 +731,16 @@
     "excerpt": "Twelve terrorists. One cop. The odds are against John McClane... that’s just the way he likes it.' Trapped inside a sealed skyscraper with nothing but his service revolver and his wits, a gritty detective must outsmart a sophisticated criminal mastermind in a lethal game of cat-and-mouse.",
     "director": "cristian mungiu",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "cold hotel room, eastern europe architecture, shadowy hallway",
     "image": "https://images.unsplash.com/photo-1558690194-73ec1bdbc5aa?q=60&w=400&fm=webp&fit=crop"
@@ -496,7 +752,16 @@
     "excerpt": "Twelve terrorists. One cop. The odds are against John McClane... that’s just the way he likes it.' Trapped inside a sealed skyscraper with nothing but his service revolver and his wits, a gritty detective must outsmart a sophisticated criminal mastermind in a lethal game of cat-and-mouse.",
     "director": "lars von trier",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "deep dark forest, foggy woods, nature decay",
     "image": "https://images.unsplash.com/photo-1759892588129-5e236ccdb3c8?q=60&w=400&fm=webp&fit=crop"
@@ -509,7 +774,16 @@
     "excerpt": "Twelve terrorists. One cop. The odds are against John McClane... that’s just the way he likes it.' Trapped inside a sealed skyscraper with nothing but his service revolver and his wits, a gritty detective must outsmart a sophisticated criminal mastermind in a lethal game of cat-and-mouse.",
     "director": "blake edwards",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "pearl necklace, coffee croissant window, new york morning",
     "image": "https://images.unsplash.com/photo-1636619608432-77941d282b32?q=60&w=400&fm=webp&fit=crop"
@@ -522,7 +796,16 @@
 
     "director": "john boorman",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "mist river canoe, deep forest river",
     "image": "https://images.unsplash.com/photo-1532015769533-2442ddad5513?q=60&w=400&fm=webp&fit=crop"
@@ -535,7 +818,16 @@
     "year": "2003",
     "director": "lars von trier",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "chalk outlines, minimalist stage",
     "image": "https://images.unsplash.com/photo-1635596374710-0c59e6d8ab5f?q=60&w=400&fm=webp&fit=crop"
@@ -548,7 +840,16 @@
     "excerpt": "Twelve terrorists. One cop. The odds are against John McClane... that’s just the way he likes it.' Trapped inside a sealed skyscraper with nothing but his service revolver and his wits, a gritty detective must outsmart a sophisticated criminal mastermind in a lethal game of cat-and-mouse.",
 
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "las vegas neon, desert highway",
     "image": "https://images.unsplash.com/photo-1599648918303-ed96326b78c2?q=60&w=400&fm=webp&fit=crop"
@@ -561,7 +862,16 @@
 
     "director": "robert rodriguez",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "neon bar sign, mexican desert sunset",
     "image": "https://images.unsplash.com/photo-1666410262945-a66f50ca449c?q=60&w=400&fm=webp&fit=crop"
@@ -574,7 +884,16 @@
     "year": "1940",
     "director": "howard hawks",
     "watched": true,
-    "availability": ["yt", "pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old; watch later",
     "image_description": "vintage typewriter, 1940s newspaper",
     "image": "https://images.unsplash.com/photo-1561040377-60432c7afee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0"
@@ -587,7 +906,16 @@
     "excerpt": "A city listens. A killer whistles. Fear spreads faster than guilt in Fritz Lang’s *M*.",
     "director": "fritz lang",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "shadow on wall, clock face",
     "image": "https://images.unsplash.com/photo-1701294458496-59a3fd98c2ba?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -599,7 +927,16 @@
     "excerpt": "Last Tango in Paris is a haunting look at the intersection of grief and obsession. As two strangers attempt to strip away their identities and lose themselves in one another, they discover that the walls they build to keep the world out cannot protect them from the reality of who they are.",
     "director": "bernardo bertolucci",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "empty apartment window, parisian balcony",
     "image": "https://images.unsplash.com/photo-1632606469465-d148fd8e148d?q=80&w=657&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -611,7 +948,16 @@
     "excerpt": "A modern-day retelling of the story of Job, Leviathan follows a man’s desperate struggle to save his ancestral home from a corrupt mayor. Against the stark beauty of the Russian Arctic, it is a haunting examination of what happens when a citizen is crushed by the very institutions meant to protect him.",
     "director": "andrey zvyagintsev",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "whale skeleton, rough arctic sea",
     "image": ""
@@ -623,7 +969,16 @@
     "year": "2008",
     "director": "pascal laugier",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "cold concrete cellar, rusty metal",
     "image": "https://images.unsplash.com/photo-1612058237353-6213b412a1c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -635,7 +990,16 @@
     "year": "2011",
     "director": "lars von trier",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "blue planet, forest bride",
     "image": "https://images.unsplash.com/photo-1750885036774-ebb7361fda8e?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -647,7 +1011,16 @@
     "year": "1966",
     "director": "ingmar bergman",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "two faces overlapping, black and white portrait",
     "image": "https://images.unsplash.com/photo-1765459920459-1ff745c499d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBvcnRyYWl0JTIwMiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
@@ -659,7 +1032,16 @@
     "excerpt": "Set against the rugged, beautiful coastline of Carmel, Play Misty for Me is a tense psychological study of a man hunted by a woman he barely knows. It’s a chilling reminder that behind a friendly voice on the radio, there may be a mind spiraling out of control.",
     "director": "clint eastwood",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "radio microphone, california coastline",
     "image": "https://images.unsplash.com/photo-1512923161115-7526d726f380?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -671,7 +1053,16 @@
     "year": "2007",
     "director": "darrell roodt",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "tall grass shadow, lion stalking",
     "image": ""
@@ -683,7 +1074,16 @@
     "year": "1994",
     "director": "quentin tarantino",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "milkshake cherry, briefcase glow",
     "image": "https://images.unsplash.com/photo-1641549058491-8a3442385da0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVscCUyMGZpY3Rpb258ZW58MHx8MHx8fDA%3D"
@@ -695,7 +1095,16 @@
     "excerpt": "Part man, part machine, all cop. In a crime-ridden future Detroit, a murdered police officer is resurrected as an unstoppable cyborg—only to realize that his true creators may be more dangerous than the criminals he was built to hunt.",
     "director": "paul verhoeven",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "futuristic city police, chrome metal texture",
     "image": "https://images.unsplash.com/photo-1567722066835-84bb115226b4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -707,7 +1116,16 @@
     "year": "1992",
     "director": "martin brest",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "tango dance, ferrari",
     "image": "https://images.unsplash.com/photo-1637345877917-a3bd513e8078?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -719,7 +1137,16 @@
     "year": "1993",
     "director": "steven spielberg",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "barbed wire black and white, red coat isolated",
     "image": ""
@@ -731,7 +1158,16 @@
     "year": "1972",
     "director": "andrei tarkovsky",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "space station window, swirling ocean water",
     "image": "https://images.unsplash.com/photo-1702536473571-148e8e3e20b2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -743,7 +1179,16 @@
     "excerpt": "To escape the mob, two musicians go undercover in the best way they know how: by joining an all-girl band in drag. It’s a hilarious, high-speed chase involving a ukulele-playing Marilyn Monroe, a persistent millionaire, and the funniest identity crisis ever caught on film.",
     "director": "billy wilder",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "jazz saxophone, 1920s dress",
     "image": "https://images.unsplash.com/photo-1725830071503-d705ef4a0975?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -755,7 +1200,16 @@
     "excerpt": "",
     "director": "tim burton",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "straight razor, barber chair",
     "image": "https://images.unsplash.com/photo-1611313151697-d626e818dddf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyYmVyJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D"
@@ -767,7 +1221,16 @@
     "excerpt": "",
     "director": "andrew jones",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "spooky asylum hallway, old brick hospital",
     "image": "https://images.unsplash.com/photo-1583322593092-1fdf70ae266d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -779,7 +1242,16 @@
     "year": "1963",
     "director": "alfred hitchcock",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "crows on fence, flying bird silhouette",
     "image": "https://images.unsplash.com/photo-1685310898874-a4f8e862c531?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -791,7 +1263,16 @@
     "year": "1980",
     "director": "john landis",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "black fedora, police car chase",
     "image": "https://images.unsplash.com/photo-1595971294624-80bcf0d7eb24?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -801,7 +1282,16 @@
     "year": "2008",
     "director": "mark herman",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "fence wire sky, empty swing",
     "image": "https://images.unsplash.com/photo-1660737840825-d8318806bfe1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -812,8 +1302,17 @@
     "title": "the bridge on the river kwai",
     "year": "1957",
     "director": "david lean",
-    "watched": true,
-    "availability": ["on pc"],
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "jungle bridge, bamboo structure",
     "image": "https://images.unsplash.com/photo-1715741159531-5c18c2aac86b?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -827,7 +1326,16 @@
     "excerpt": "",
     "director": "david cronenberg",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "shattered mirror, insect wing",
     "image": "https://images.unsplash.com/photo-1568689341045-c58407fee7a8?q=80&w=1097&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -839,7 +1347,16 @@
     "excerpt": "the-good-the-bad-the-ugly excerpt",
     "director": "sergio leone",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "cemetery sunset, western poncho",
     "image": "https://images.unsplash.com/photo-1632676950239-1f48cf05021d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNlbWV0ZXJ5JTIwc3Vuc2V0JTJDJTIwd2VzdGVybiUyMHBvbmNob3xlbnwwfHwwfHx8MA%3D%3D"
@@ -849,7 +1366,16 @@
     "year": "1940",
     "director": "charles chaplin",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "world globe, vintage microphone",
     "image": "https://images.unsplash.com/photo-1698809061964-18097d97506f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -862,7 +1388,16 @@
     "year": "2008",
     "director": "carter smith",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "vine covered ruins, ancient temple jungle",
     "image": "https://images.unsplash.com/photo-1732427414019-e072de8f0e7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -874,7 +1409,16 @@
     "year": "2001",
     "director": "guillermo del toro",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "unexploded bomb, spanish orphanage",
     "image": "https://images.unsplash.com/photo-1695331453328-d7a73909a1d7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -888,7 +1432,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "robin hardy",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "burning man statue, may day mask",
     "image": "https://images.unsplash.com/photo-1619277418608-a8e7a0d4fa35?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -897,13 +1450,20 @@
     "title": "the wizard of oz",
     "year": "1939",
     "slug": "the-wizard-of-oz",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
+    "run_time": "1h 5m",
+    "quote": "A documentary about a Russian girl moving to Australia. Toto was purchased separately upon arrival.",
+    "genres": ["Adventure", "Fantasy", "Family"],
+    "excerpt": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
     "director": "victor fleming",
-    "watched": true,
-    "availability": ["on pc"],
-    "location": "movies-waiting-old",
-    "image_description": "red poppy field, tornado",
-    "image": "./images/oz.jpg"
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
+    "image_description": "My Toto is better than your Toto.",
+    "image": "./images/toto.jpg"
   },
   {
     "title": "videodrome",
@@ -912,8 +1472,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "david cronenberg",
     "watched": false,
-    "availability": ["on pc"],
-    "location": "movies-waiting-old",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "image_description": "static television, glitch art",
     "image": "https://images.unsplash.com/photo-1690041066826-6284d0745a87?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -924,10 +1492,19 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "pedro almodóvar",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "red flowers, spanish village",
-    "image": "https://images.unsplash.com/photo-1764006943044-dfe14f652ed8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwZmxvd2VycyUyQyUyMHNwYW5pc2glMjB2aWxsYWdlfGVufDB8fDB8fHww"
+    "image": "https://images.unsplash.com/photo-1764006943044-dfe14f652ed8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwZmxvd2VycyUyQyUyMHNwYW5Home Collection2glMjB2aWxsYWdlfGVufDB8fDB8fHww"
   },
 
   {
@@ -935,7 +1512,16 @@
     "year": "2011",
     "director": "lynne ramsay",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting-old",
     "image_description": "red paint splash, archery bow",
     "image": "https://images.unsplash.com/flagged/photo-1565056755239-74fdddae5461?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -947,7 +1533,16 @@
     "year": "2005",
     "director": "ang lee",
     "watched": true,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting",
     "image_description": "mountain range lake, cowboy hat",
     "image": "https://images.unsplash.com/photo-1591159007838-92bd350b3b3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -959,7 +1554,16 @@
     "year": "2017",
     "director": "craig gillespie",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting",
     "image_description": "ice skates, ice rink",
     "image": "https://images.unsplash.com/photo-1669184773984-b1a177330ee9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -971,7 +1575,16 @@
     "year": "1946",
     "director": "frank capra",
     "watched": false,
-    "availability": ["on pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting",
     "image_description": "snowy bridge, bell ringing",
     "image": "https://images.unsplash.com/photo-1583738509943-9211590d9d2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNub3d5JTIwYnJpZGdlJTJDJTIwYmVsbCUyMHJpbmdpbmd8ZW58MHx8MHx8fDA%3D",
@@ -983,7 +1596,16 @@
     "year": "1920",
     "director": "robert wiene",
     "watched": true,
-    "availability": ["yt", "pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "watch later; movies-waiting",
     "image_description": "expressionist architecture, jagged shadows",
     "image": "https://images.unsplash.com/photo-1580979357222-6d9f2e9ec62f?q=80&w=1111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -995,7 +1617,16 @@
     "year": "1950",
     "director": "akira kurosawa",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting",
     "image_description": "heavy rain gate, forest sunlight",
     "image": "https://images.unsplash.com/photo-1672951468738-553ac2125a7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGVhdnklMjByYWluJTIwZ2F0ZSUyQyUyMGZvcmVzdCUyMHN1bmxpZ2h0fGVufDB8fDB8fHww",
@@ -1007,7 +1638,16 @@
     "year": "1992",
     "director": "quentin tarantino",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting",
     "image_description": "men in suits, warehouse interior",
     "image": "https://images.unsplash.com/photo-1583737077382-3f51318d6074?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbiUyMGluJTIwc3VpdHMlMkMlMjB3YXJlaG91c2UlMjBpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D",
@@ -1021,7 +1661,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "robert eggers",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-waiting",
     "image_description": "lighthouse storm, siren",
     "image": "https://images.unsplash.com/photo-1625486067632-152e5729e6c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHRob3VzZSUyMHN0b3JtJTJDJTIwc2lyZW58ZW58MHx8MHx8fDA%3D"
@@ -1031,7 +1680,16 @@
     "year": "2013",
     "director": "spike jonze",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-archive",
     "image_description": "orchid flower, typewriter keys",
     "image": "https://images.unsplash.com/photo-1621441481502-d63fe7ff50dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9yY2hpZCUyMGZsb3dlciUyQyUyMHR5cGV3cml0ZXIlMjBrZXlzfGVufDB8fDB8fHww",
@@ -1045,7 +1703,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "quentin tarantino",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-archive",
     "image_description": "katana sword, yellow motorcycle",
     "image": "https://images.unsplash.com/photo-1625718977087-073bc5a52a50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2F0YW5hJTIwc3dvcmQlMkMlMjB5ZWxsb3clMjBtb3RvcmN5Y2xlfGVufDB8fDB8fHww"
@@ -1055,7 +1722,16 @@
     "year": "1995",
     "director": "david fincher",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-archive",
     "image_description": "green library, rainy city street",
     "image": "https://images.unsplash.com/photo-1747110325376-f2b08d19178f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBsaWJyYXJ5JTJDJTIwcmFpbnklMjBjaXR5JTIwc3RyZWV0fGVufDB8fDB8fHww",
@@ -1067,7 +1743,16 @@
     "year": "2010",
     "director": "martin scorsese",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-archive",
     "image_description": "cliffs ocean storm, match light",
     "image": "",
@@ -1079,7 +1764,16 @@
     "year": "1972, 1974, 1990",
     "director": "francis ford coppola",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies-archive",
     "image_description": "puppet strings, orange fruit",
     "image": "",
@@ -1091,7 +1785,16 @@
     "year": "1968",
     "director": "stanley kubrick",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "starry space, white monolith",
     "image": "",
@@ -1104,7 +1807,16 @@
     "year": "2021",
     "director": "phil tippett",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "steampunk monster, rusty gears",
     "image": "https://images.unsplash.com/photo-1725205336673-a3d56d46c33f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHN0ZWFtcHVuayUyMG1vbnN0ZXJ8ZW58MHx8MHx8fDA%3D",
@@ -1116,7 +1828,16 @@
     "year": "2024",
     "director": "francis ford coppola",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "gold city, futuristic new york",
     "image": "https://images.unsplash.com/photo-1635519358852-dab09e38446e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdvbGQlMjBjaXR5JTJDfGVufDB8fDB8fHww",
@@ -1130,7 +1851,16 @@
     "year": "1934",
     "director": "frank capra",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "night bus, hitchhiking",
     "image": "https://images.unsplash.com/photo-1542378142-a5b26c0e870b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -1142,7 +1872,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "howard hawks",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "library books stacks, nightclub singer",
     "image": "https://images.unsplash.com/photo-1622371729389-f18a9d26a84a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxpYnJhcnklMjBib29rcyUyMHN0YWNrcyUyQyUyMG5pZ2h0Y2x1YiUyMHNpbmdlcnxlbnwwfHwwfHx8MA%3D%3D"
@@ -1154,7 +1893,16 @@
     "slug": "bringing-up-baby",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "leopard, dinosaur skeleton",
     "image": "https://images.unsplash.com/photo-1616128417743-c3a6992a65e7?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -1164,7 +1912,16 @@
     "year": "1940",
     "director": "alfred hitchcock",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "slug": "rebecca",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
@@ -1178,7 +1935,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "f.w. murnau",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "vampire shadow stairs, rats",
     "image": "https://images.unsplash.com/photo-1722649949654-f568c675f065?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -1190,7 +1956,16 @@
     "slug": "freaks",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "circus tent, vintage sideshow",
     "image": "https://images.unsplash.com/photo-1496086363406-27fbdabb8593?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2lyY3VzJTIwdGVudCUyQyUyMHZpbnRhZ2UlMjBzaWRlc2hvd3xlbnwwfHwwfHx8MA%3D%3D"
@@ -1202,7 +1977,16 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "fritz lang",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "art deco city, robot silhouette",
     "image": "https://images.unsplash.com/photo-1723642203358-1d10749adfd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwZGVjbyUyMGNpdHklMkMlMjByb2JvdCUyMHNpbGhvdWV0dGV8ZW58MHx8MHx8fDA%3D"
@@ -1212,7 +1996,16 @@
     "year": "1955",
     "director": "henri-georges clouzot",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "swimming pool murky, school hallway",
     "image": "https://images.unsplash.com/photo-1757889692983-897930ee8638?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN3aW1taW5nJTIwcG9vbCUyMG11cmt5JTJDJTIwc2Nob29sJTIwaGFsbHdheXxlbnwwfHwwfHx8MA%3D%3D",
@@ -1226,10 +2019,19 @@
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "director": "robert wise",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "spiral staircase, statue in dark",
-    "image": "https://images.unsplash.com/photo-1682448228151-e60212ed9130?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BpcmFsJTIwc3RhaXJjYXNlJTJDJTIwc3RhdHVlJTIwaW4lMjBkYXJrfGVufDB8fDB8fHww"
+    "image": "https://images.unsplash.com/photo-1682448228151-e60212ed9130?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BHome CollectionmFsJTIwc3RhaXJjYXNlJTJDJTIwc3RhdHVlJTIwaW4lMjBkYXJrfGVufDB8fDB8fHww"
   },
   {
     "title": "before i wake",
@@ -1238,7 +2040,16 @@
     "year": "2016",
     "director": "mike flanagan",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "butterflies, child sleeping",
     "image": "https://images.unsplash.com/photo-1544116748-f4b794771ac0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnV0dGVyZmxpZXMlMkMlMjBjaGlsZCUyMHNsZWVwaW5nfGVufDB8fDB8fHww"
@@ -1248,7 +2059,16 @@
     "year": "1926",
     "director": "buster keaton, clyde bruckman",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "steam locomotive, civil war cannon",
     "image": "https://images.unsplash.com/photo-1613702953620-9dcd978d8bd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlYW0lMjBsb2NvbW90aXZlJTJDJTIwY2l2aWwlMjB3YXIlMjBjYW5ub258ZW58MHx8MHx8fDA%3D",
@@ -1260,7 +2080,16 @@
     "year": "1976",
     "director": "sidney lumet",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "news studio, television monitors",
     "image": "https://images.unsplash.com/photo-1651465531201-7e430660fd82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3cyUyMHN0dWRpbyUyQyUyMHRlbGV2aXNpb24lMjBtb25pdG9yc3xlbnwwfHwwfHx8MA%3D%3D",
@@ -1272,7 +2101,16 @@
     "year": "1962",
     "director": "herk harvey",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "abandoned carnival, ghostly face in water",
     "image": "./images/carni.jpg",
@@ -1284,10 +2122,19 @@
     "year": "1960",
     "director": "kim ki-young",
     "watched": false,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "staircase shadow, rat poison",
-    "image": "https://images.unsplash.com/photo-1664877628791-3ae710ff5a68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhaXJjYXNlJTIwc2hhZG93JTJDJTIwcmF0JTIwcG9pc29ufGVufDB8fDB8fHww",
+    "image": "https://images.unsplash.com/photo-1664877628791-3ae710ff5a68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhaXJjYXNlJTIwc2hhZG93JTJDJTIwcmF0JTIwcG9Home Collection29ufGVufDB8fDB8fHww",
     "slug": "housemaid-1960",
     "excerpt": "When a middle-class family hires a mysterious housemaid to help with their new home, a single moment of infidelity sparks a depraved cycle of blackmail and revenge. In this claustrophobic masterpiece, the very house intended to signify their success becomes a gilded cage of psychological terror."
   },
@@ -1298,7 +2145,16 @@
     "excerpt": "On a lonely journey back to Earth, a commercial crew encounters a terrifying alien species with a deadly life cycle. Trapped in a steel tomb millions of miles from help, their only goal is to survive the night.",
     "director": "ridley scott",
     "watched": true,
-    "availability": ["pc"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "movies",
     "image_description": "egg texture, space corridor",
     "image": "https://images.unsplash.com/photo-1564855101177-b3fac36e00e0?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -1311,7 +2167,16 @@
     "excerpt": "The Lodger is a classic silent thriller directed by Alfred Hitchcock and is often regarded as his first true masterpiece. Released in 1927, the film tells the suspenseful story of a mysterious lodger suspected of being a serial killer terrorizing fog-covered London.",
     "director": "alfred hitchcock",
     "watched": true,
-    "availability": ["YT"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "",
     "image_description": "",
     "image": "https://images.unsplash.com/photo-1722715682021-7865c3926247?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhpdGNoY29ja3xlbnwwfHwwfHx8MA%3D%3D"
@@ -1323,7 +2188,16 @@
     "excerpt": "A bored photographer recovering from a broken leg passes the time by watching his neighbors and begins to suspect one of them of murder.",
     "director": "alfred hitchcock",
     "watched": true,
-    "availability": ["YT"],
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "location": "",
     "image_description": "",
     "image": "https://images.unsplash.com/photo-1535803295577-56201df34de7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -1335,9 +2209,16 @@
     "excerpt": "Two men try to convince themselves they've committed the perfect murder by hosting a dinner party after strangling a former classmate to death.",
     "director": "alfred hitchcock",
     "watched": true,
-    "availability": ["YT"],
-    "location": "",
-    "image_description": "",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
     "image": "https://images.unsplash.com/photo-1518536674115-4f83c88ebf50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvcGV8ZW58MHx8MHx8fDA%3D"
   }
 ]

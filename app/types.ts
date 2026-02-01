@@ -7,9 +7,8 @@ export type PostMeta = {
   excerpt: string;
   date?: string;
   slug: string;
-  availability: Array<string>;
+  availability?: { medium: string; location: string; }[];
   image: string;
-  location?: string;
   year: string;
   watched: boolean;
   director?: string;
