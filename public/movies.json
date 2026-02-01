@@ -1,5 +1,5 @@
 [
-    {
+  {
     "title": "Battleship Potemkin",
     "slug": "battleship-potemkin",
     "excerpt": "A dramatized account of a great Russian naval mutiny and a resultant public demonstration, showing support, which brought on a police massacre.",
@@ -15,7 +15,7 @@
     "review_provided": false
   },
 
-    {
+  {
     "title": "Little Shop of Horrors",
     "date_reviewed": "2026-01-29",
     "meta_title": "How much is for Audrey Junior over there?",
@@ -170,7 +170,7 @@
       }
     ]
   },
-   {
+  {
     "title": "Scary Movie 3",
     "date_reviewed": "2026-01-28",
     "meta_title": "Hold up..Is '8 Mile' a Horror Movie?",
@@ -376,25 +376,20 @@
     "would_recommend": false,
     "next_movie": {
       "title": "Mulholland Drive",
-      "reason": "Silencio!",
+      "reason": "Slightly more approachable David Lynch. Silencio!",
       "url": "/blog/mulholland-drive",
       "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
     },
     "spotify_episodes": [
       {
-        "title": "161 - Funny Games (1997)",
-        "url": "https://open.spotify.com/episode/3Vtk3sU9PieBtx8bESBvep?si=8efe7ae9b40f4fa0",
-        "podcastName": "Random Number Generator Horror Podcast #9"
-      },
-      {
-        "title": "Home Invasion pt20: Funny Games (1997/2007)",
-        "url": "https://open.spotify.com/episode/4m8zAo9mZoiRzP7yLMo8AS?si=0e4d7b4871eb4b7f",
+        "title": "Mind & Body Pt30: Mulholland Drive(2001) & Inland Empire(2006)",
+        "url": "https://open.spotify.com/episode/2ZvLApHuqGqlhsKkcFwUpu?si=808eebe911114354",
         "podcastName": "The Evolution of Horror"
       },
       {
-        "title": "Episode 63. Play Dead: Funny Games (1997)",
-        "url": "https://open.spotify.com/episode/4LfJsf54HTqtpTno9nxbsG?si=02fbd9ed7c654bd6",
-        "podcastName": "Faculty of horror"
+        "title": "Ep31: Inland Empire, David Lynch, 2006",
+        "url": "https://open.spotify.com/episode/0z1qBOzpZel1WiN83bvq3c?si=447c6392e30b4d16",
+        "podcastName": "Unpleasant Movie Podcasrs"
       }
     ]
   },

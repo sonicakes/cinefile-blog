@@ -63,7 +63,7 @@ const MovieFooter = ({
         </section>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 border-b-4 bg-light border-black border-double">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-light">
         <section className="p-8 border-b bg-neutral-50 md:border-b-0 md:border-r border-black">
           <h4 className="mb-8 text-xs uppercase tracking-[0.2em] border-b border-black pb-2 inline-block">
             Correspondence
@@ -134,12 +134,12 @@ const MovieFooter = ({
         </section>
       </div>
 
-      <div className="px-6 pt-8 pb-2 flex justify-center">
+      {/* <div className="px-6 pt-8 pb-2 flex justify-center">
         <div className="text-xs leading-tight font-bold uppercase tracking-widest opacity-50">
           Designed, developed and deployed by sonicakes in 2026. All critique is
           subjective and personal opinion of sonicakes only.{" "}
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

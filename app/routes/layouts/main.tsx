@@ -1,5 +1,7 @@
 import { NavLink, Outlet } from "react-router";
+import MainFooter from "~/components/MainFooter";
 import TopNav from "~/components/TopNav";
+
 const MainLayout = () => {
   return (
     <div className="newspaper-page">
@@ -13,8 +15,9 @@ const MainLayout = () => {
         </NavLink>
       </header>
       <main>
-      <Outlet />
+        <Outlet />
       </main>
+      <MainFooter />
     </div>
   );
 };

@@ -11,7 +11,7 @@ const FeaturedReviews = () => {
           </div>
 
           <div className="review-card yellow">
-            <img src="./images/ozzz.jpg" alt="Review 2" />
+            <img src="./images/ozsploit.jpg" alt="Review 2" />
             <h3>The cost of OZ-sploitation</h3>
             <p>
               Is the Wizard of OZ indeed Wonderful? Or is it all just clickbait?

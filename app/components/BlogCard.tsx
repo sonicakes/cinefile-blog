@@ -55,7 +55,7 @@ const BlogCard = ({
         <div className="relative overflow-hidden">
           <img
             className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition duration-700"
-            src={image || "./images/front.jpg"}
+            src={image || "./images/pic.jpg"}
             alt={title}
           />
           {review_provided && watched ? (

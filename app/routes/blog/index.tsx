@@ -6,6 +6,7 @@ import SearchInput from "~/components/SearchInput";
 import CategoryFilter from "~/components/CategoryFilter";
 import SortSelector from "~/components/SortSelector";
 import ToggleWatched from "~/components/ToggleWatched";
+import Pagination from "~/components/Pagination";
 
 export async function loader({
   request,
@@ -23,28 +24,23 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
   const [showWatched, setShowWatched] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 5;
 
   const filteredPosts = posts.filter((post) => {
     const query = searchQuery.toLowerCase();
 
-    // 1. Search Logic
     const matchesSearch =
       post.title.toLowerCase().includes(query) ||
       post.excerpt.toLowerCase().includes(query);
 
-    // 2. Watched Status
     const matchesWatchedStatus = post.watched === showWatched;
-
-    // 3. Category Logic (Array check)
-    // If no category is selected, return true.
-    // Otherwise, check if the selected string exists in the post.genres array.
     const matchesCategory =
       !selectedCategory || post.genres?.includes(selectedCategory);
 
     return matchesSearch && matchesWatchedStatus && matchesCategory;
   });
 
-  // 3. Sort Logic (Applied to the filtered results)
   const sortedPosts = [...filteredPosts].sort((a, b) => {
     const dateA = a.date_reviewed ? new Date(a.date_reviewed).getTime() : 0;
     const dateB = b.date_reviewed ? new Date(b.date_reviewed).getTime() : 0;
@@ -57,6 +53,12 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
     return 0;
   });
 
+  const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
+  console.log(totalPages)
+  const indexOfLast = currentPage * postsPerPage;
+  const indexOfFirst = indexOfLast - postsPerPage;
+  const currentPosts = sortedPosts.slice(indexOfFirst, indexOfLast);
+
   return (
     <>
       <section className="py-4 md:px-4 md:pb-2 border-b border-neutral-300 flex flex-col gap-2">
@@ -65,39 +67,52 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
             searchQuery={searchQuery}
             onSearchChange={(query) => {
               setSearchQuery(query);
+              setCurrentPage(1);
             }}
             onClearChange={() => {
               setSearchQuery("");
+              setCurrentPage(1);
             }}
           />
 
           <SortSelector
             currentSort={sortOrder}
-            onSortChange={(order) => setSortOrder(order)}
+            onSortChange={(order) => {
+              setSortOrder(order);
+              setCurrentPage(1);
+            }}
           />
 
-          <ToggleWatched showWatched={showWatched} onToggle={setShowWatched} />
+          <ToggleWatched
+            showWatched={showWatched}
+            onToggle={(v) => {
+              setShowWatched(v);
+              setCurrentPage(1);
+            }}
+          />
         </div>
         <div className="flex gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           <CategoryFilter
             selectedCategory={selectedCategory}
-            onSelectCategory={setSelectedCategory}
+            onSelectCategory={(c) => {
+              setSelectedCategory(c);
+              setCurrentPage(1);
+            }}
           />
           <div className="w-full text-neutral-500 flex items-center gap-1 justify-end font-brawler lowercase tracking-wide">
             <span className="text-neutral-600">
-              showing{" "}
+              showing
               {searchQuery ? "results for " + '"' + searchQuery + ':"' : ""}
             </span>
             <span className="text-base text-crimson font-bold">
-              
-              {filteredPosts.length} </span>
+              {filteredPosts.length}{" "}
+            </span>
 
-              <span className="text-base font-semibold">
-                / {posts.length}
-              
-              </span>
-              
-              <span>{selectedCategory ? selectedCategory : ""} movie{filteredPosts.length > 1 ? "s" : ""}
+            <span className="text-base font-semibold">/ {posts.length}</span>
+
+            <span>
+              {selectedCategory ? selectedCategory : ""} movie
+              {filteredPosts.length > 1 ? "s" : ""}
             </span>
 
             <span>{`${showWatched ? "Watched" : "To watch"} `}</span>
@@ -106,8 +121,8 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
       </section>
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 md:p-4 grid-flow-dense">
-        {sortedPosts.length > 0 ? (
-          sortedPosts.map((post: PostMeta, index: number) => (
+        {currentPosts.length > 0 ? (
+          currentPosts.map((post: PostMeta, index: number) => (
             <BlogCard
               blog={post}
               key={post.slug}
@@ -140,10 +155,17 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
             >
               Clear all filters
             </button>
-
           </div>
         )}
       </section>
+
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={(page: number) => setCurrentPage(page)}
+        />
+      )}
     </>
   );
 };

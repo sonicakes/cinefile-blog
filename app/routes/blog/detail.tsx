@@ -116,7 +116,7 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
 
               <div className="flex gap-1 items-center ">
                 <MdCheck color="crimson" size="20" /> Seen-
-                {postMeta.watched_previously}
+                {postMeta.watched}
               </div>
               <div className="flex gap-1 items-center w-full">
                 <MdComputer color="crimson" size="20" /> {postMeta.location}

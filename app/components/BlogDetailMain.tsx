@@ -5,18 +5,18 @@ import { NavLink } from "react-router";
 import { FaImdb, FaWikipediaW } from "react-icons/fa6";
 
 
-const resources=[
-          {
-            label: "IMDb",
-            url: "https://www.imdb.com/title/tt0166924/",
-            icon: <FaImdb />,
-          },
-          {
-            label: "Wikipedia",
-            url: "https://en.wikipedia.org/wiki/Mulholland_Drive_(film)",
-            icon: <FaWikipediaW />,
-          },
-        ];
+// const resources=[
+//           {
+//             label: "IMDb",
+//             url: "https://www.imdb.com/title/tt0166924/",
+//             icon: <FaImdb />,
+//           },
+//           {
+//             label: "Wikipedia",
+//             url: "https://en.wikipedia.org/wiki/Mulholland_Drive_(film)",
+//             icon: <FaWikipediaW />,
+//           },
+//         ];
         
 const BlogDetailMain = ({
   postMeta,
@@ -62,14 +62,14 @@ const BlogDetailMain = ({
         back to all reviews
       </NavLink>
 
-        <div className="px-6 py-4 flex flex-wrap items-center gap-x-10 gap-y-2 border-b border-black">
+        {/* <div className="px-6 py-4 flex flex-wrap items-center gap-x-10 gap-y-2 border-b border-black">
         <span className=" text-[10px]  uppercase tracking-[.3em] text-neutral-400">Sources:</span>
         {resources.map((res, i) => (
           <a key={i} href={res.url} className="text-[11px] font-bold uppercase hover:text-crimson hover:underline flex items-center gap-2">
             {res.icon} {res.label}
           </a>
         ))}
-      </div>
+      </div> */}
 
     </article>
     

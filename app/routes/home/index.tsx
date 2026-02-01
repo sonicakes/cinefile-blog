@@ -32,15 +32,15 @@ export default function Home() {
               <h4>
                 Is this decade right for me? Tips for time travel on a budget.
               </h4>
-              <small>FILM LADY</small>
+              <small>SAME LADY</small>
             </div>
           </aside>
 
           <section className="hero-image-container">
             <img src="./images/front.jpg" alt="News Image" />
-            <p className="caption">
-              <strong>Fradulent Femme Fatale:</strong> No one asked, but I will
-              answer. Photo: R.Parker
+            <p className="custom-caption">
+              Frightening Femme Fatale: No one asked, but I will
+              answer. Source: said femme at Hydro Majestic Hotel in 2025.
             </p>
           </section>
         </main>
