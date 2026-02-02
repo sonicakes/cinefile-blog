@@ -35,10 +35,6 @@
       {
         "medium": "Youtube",
         "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
-        "medium": "Home Collection",
-        "location": "/media/movies/archive"
       }
     ],
     "run_time": "1h 12m",
@@ -68,11 +64,8 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
-        "medium": "Home Collection"
+        "medium": "Mubi",
+        "location": "https://mubi.com/en/au/films/mulholland-drive"
       }
     ],
     "quote": "I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.",
@@ -116,10 +109,6 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/waiting/_old"
       }
@@ -136,20 +125,14 @@
     "next_movie": {
       "title": "Singing in the  Rain",
       "reason": "Got your raincoats ready? Gene Kelly invites you to another musical.",
-      "url": "/blog/inland-empire",
-      "thumbnailUrl": "/images/parkrun-rabbit.jpg"
+      "url": "/blog/singing-in-the-rain",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1622630972853-9e36b1e1a600?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "spotify_episodes": [
       {
-        "title": "Mulholland Drive (2001)",
-        "url": "https://open.spotify.com/episode/3WB0I6KDlnkRUp99aKnqyq?si=9f73cad8b4c54f86",
-        "podcastName": "Horror Queers"
-      },
-
-      {
-        "title": "Dreams/Mulholland Drive (2001) PART 1",
-        "url": "https://open.spotify.com/episode/4m4Z56wKRnD31atwfroJQq?si=c3d5fe64304641bb",
-        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+        "title": "The Music Man (1962) - Best Picture Rankings",
+        "url": "https://open.spotify.com/episode/2IbppBF3z3fKWYv9anh63z?si=4f8e0a5ca2bf44ee",
+        "podcastName": "The Rank Podcast"
       }
     ]
   },
@@ -165,7 +148,7 @@
     "availability": [
       {
         "medium": "Shudder",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+        "location": "https://www.shudder.com/movies/watch/the-texas-chain-saw-massacre/425866499d2b1164"
       }
     ],
     "quote": "That Sally gal sure can scream, alright.",
@@ -199,7 +182,6 @@
       {
         "title": "Comfort Horror/The Texas Chain Saw Massacre(1974) with Katie Rife",
         "url": "https://open.spotify.com/episode/4nPtkU7jwbphERtAWcMvB9?si=feb59490472d4324",
-
         "podcastName": "Psychoanalysis: A horror Therapy Podcast"
       }
     ]
@@ -234,6 +216,22 @@
     }
   },
   {
+    "title": "The Collector",
+    "slug": "the-collector",
+    "year": "2009",
+    "director": "Marcus Dunstan",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://www.shudder.com/movies/watch/the-collector/5c22a82919ca1df4"
+      }
+    ],
+    "run_time": "100m",
+    "genres": ["Horror"],
+    "review_provided": false
+  },
+  {
     "title": "blue velvet",
     "date_reviewed": "2026-01-24",
     "quote": "Young Kyle MacLachlan. That's all you need to know.",
@@ -257,10 +255,6 @@
     "director": "david lynch",
     "watched": true,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/waiting/_old"
@@ -342,7 +336,7 @@
     "availability": [
       {
         "medium": "Mubi",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+        "location": "https://mubi.com/en/au/films/the-killing-of-a-sacred-deer"
       }
     ],
     "image": "https://images.unsplash.com/photo-1543782248-03e2c5a93e18?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -379,8 +373,8 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+        "medium": "Mubi",
+        "location": "https://mubi.com/en/au/films/inland-empire"
       },
       {
         "medium": "Home Collection",
@@ -441,23 +435,11 @@
     "review_provided": false,
     "run_time": "118m",
     "next_movie": {
-      "title": "Mulholland Drive",
+      "title": "Dogtooth",
       "reason": "Dive into more Yorgos Lanthimos with this non-canine-related movie.",
       "url": "/blog/doogtooth",
       "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
-    },
-    "spotify_episodes": [
-      {
-        "title": "Mind & Body Pt30: Mulholland Drive(2001) & Inland Empire(2006)",
-        "url": "https://open.spotify.com/episode/2ZvLApHuqGqlhsKkcFwUpu?si=808eebe911114354",
-        "podcastName": "The Evolution of Horror"
-      },
-      {
-        "title": "Ep31: Inland Empire, David Lynch, 2006",
-        "url": "https://open.spotify.com/episode/0z1qBOzpZel1WiN83bvq3c?si=447c6392e30b4d16",
-        "podcastName": "Unpleasant Movie Podcasrs"
-      }
-    ]
+    }
   },
   {
     "title": "One battle after another",
@@ -503,9 +485,14 @@
         "podcastName": "Psychoanalysis: A horror Therapy Podcast"
       },
       {
-        "title": "Ep31: Inland Empire, David Lynch, 2006",
-        "url": "https://open.spotify.com/episode/0z1qBOzpZel1WiN83bvq3c?si=447c6392e30b4d16",
-        "podcastName": "Unpleasant Movie Podcasrs"
+        "title": "Ep52: The Dark Side of Oz: Wolf Creek(2005) & The Loved Ones(2009)",
+        "url": "https://open.spotify.com/episode/4DFgRTY2dsJ1Z0cDhZBhtl?si=d009ff8c55714b1e",
+        "podcastName": "Faculty of horror"
+      },
+      {
+        "title": "The Loved Ones(2009) feat. Dirty Little Horror",
+        "url": "https://open.spotify.com/episode/3LdV7U4lu8osCN7e9pTu50?si=59bee7dc51624089",
+        "podcastName": "Horror Queers"
       }
     ]
   },
@@ -513,7 +500,6 @@
   {
     "title": "pontypool",
     "genres": ["Horror", "Mystery", "Science Fiction"],
-
     "year": "2008",
     "run_time": "97m",
     "director": "Bruce McDonald",
@@ -557,12 +543,11 @@
     "rating_metric": "creepy monkey masks",
     "would_rewatch": true,
     "would_recommend": true,
-
     "next_movie": {
-      "title": "Mulholland Drive",
+      "title": "The Collector",
       "reason": "Want more of that Home Invasion vibe? Come on in!",
-      "url": "/blog/mulholland-drive",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop"
+      "url": "/blog/the-collector",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1676721603786-acf29e5a43a4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "excerpt": "Simon and Robyn are a young married couple whose life is going as planned until a chance run-in with Simon’s high school acquaintance sends their world into a tailspin."
   },
@@ -581,7 +566,6 @@
     ],
     "review_provided": false,
     "slug": "dr-strangelove",
-
     "next_movie": {
       "title": "Mulholland Drive",
       "reason": "Silencio!",
@@ -601,7 +585,7 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
+        "medium": "SBS",
         "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
       },
       {
@@ -618,7 +602,6 @@
     "rating_metric": "seashells from a stunning Scottish beach",
     "would_rewatch": true,
     "would_recommend": true,
-
     "next_movie": {
       "title": "Mulholland Drive",
       "reason": "Silencio!",
@@ -639,24 +622,18 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
     "review_provided": true,
     "rating": 10,
-    "location": "movies",
     "image_description": "What does the fox say?",
     "image": "/images/fool.jpg",
     "slug": "court-jester",
     "rating_metric": "babies with purple pimpernels on their bottoms",
     "would_rewatch": true,
     "would_recommend": true,
-
     "next_movie": {
       "title": "The Music Man",
       "reason": "Would you like to try some shapoopies?",
@@ -674,15 +651,10 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "ankh symbol, gothic mansion",
     "image": "https://images.unsplash.com/photo-1697547098891-6df4b0b200f4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "the-hunger",
@@ -697,10 +669,6 @@
     "director": "john mctiernan",
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -719,10 +687,6 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
@@ -739,10 +703,6 @@
     "director": "lars von trier",
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -762,10 +722,6 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
@@ -784,10 +740,6 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
@@ -800,15 +752,10 @@
     "title": "dogville",
     "slug": "dogville",
     "excerpt": "Twelve terrorists. One cop. The odds are against John McClane... that’s just the way he likes it.' Trapped inside a sealed skyscraper with nothing but his service revolver and his wits, a gritty detective must outsmart a sophisticated criminal mastermind in a lethal game of cat-and-mouse.",
-
     "year": "2003",
     "director": "lars von trier",
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -824,13 +771,8 @@
     "director": "terry gilliam",
     "slug": "fear-loathing-vegas",
     "excerpt": "Twelve terrorists. One cop. The odds are against John McClane... that’s just the way he likes it.' Trapped inside a sealed skyscraper with nothing but his service revolver and his wits, a gritty detective must outsmart a sophisticated criminal mastermind in a lethal game of cat-and-mouse.",
-
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -880,7 +822,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old; watch later",
     "image_description": "vintage typewriter, 1940s newspaper",
     "image": "https://images.unsplash.com/photo-1561040377-60432c7afee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0"
   },
@@ -902,7 +843,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "shadow on wall, clock face",
     "image": "https://images.unsplash.com/photo-1701294458496-59a3fd98c2ba?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -923,7 +863,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "empty apartment window, parisian balcony",
     "image": "https://images.unsplash.com/photo-1632606469465-d148fd8e148d?q=80&w=657&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -943,10 +882,7 @@
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
-    ],
-    "location": "movies-waiting-old",
-    "image_description": "whale skeleton, rough arctic sea",
-    "image": ""
+    ]
   },
   {
     "title": "martyrs",
@@ -956,10 +892,6 @@
     "director": "pascal laugier",
     "watched": true,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -977,10 +909,6 @@
     "director": "lars von trier",
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -1007,7 +935,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "two faces overlapping, black and white portrait",
     "image": "https://images.unsplash.com/photo-1765459920459-1ff745c499d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBvcnRyYWl0JTIwMiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
   },
@@ -1028,7 +955,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "radio microphone, california coastline",
     "image": "https://images.unsplash.com/photo-1512923161115-7526d726f380?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1040,10 +966,6 @@
     "director": "darrell roodt",
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -1061,10 +983,6 @@
     "director": "quentin tarantino",
     "watched": false,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -1091,7 +1009,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "futuristic city police, chrome metal texture",
     "image": "https://images.unsplash.com/photo-1567722066835-84bb115226b4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1112,7 +1029,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "tango dance, ferrari",
     "image": "https://images.unsplash.com/photo-1637345877917-a3bd513e8078?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1132,10 +1048,7 @@
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
-    ],
-    "location": "movies-waiting-old",
-    "image_description": "barbed wire black and white, red coat isolated",
-    "image": ""
+    ]
   },
   {
     "title": "solaris",
@@ -1146,15 +1059,10 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "space station window, swirling ocean water",
     "image": "https://images.unsplash.com/photo-1702536473571-148e8e3e20b2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1167,15 +1075,10 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "jazz saxophone, 1920s dress",
     "image": "https://images.unsplash.com/photo-1725830071503-d705ef4a0975?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1196,7 +1099,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "straight razor, barber chair",
     "image": "https://images.unsplash.com/photo-1611313151697-d626e818dddf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyYmVyJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D"
   },
@@ -1217,49 +1119,36 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "spooky asylum hallway, old brick hospital",
     "image": "https://images.unsplash.com/photo-1583322593092-1fdf70ae266d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "title": "the birds",
     "slug": "the-birds",
-    "excerpt": "",
     "year": "1963",
     "director": "alfred hitchcock",
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "crows on fence, flying bird silhouette",
     "image": "https://images.unsplash.com/photo-1685310898874-a4f8e862c531?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "title": "the blues brothers",
     "slug": "the-blues-brothers",
-    "excerpt": "",
     "year": "1980",
     "director": "john landis",
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "black fedora, police car chase",
     "image": "https://images.unsplash.com/photo-1595971294624-80bcf0d7eb24?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1278,11 +1167,9 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "fence wire sky, empty swing",
     "image": "https://images.unsplash.com/photo-1660737840825-d8318806bfe1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "slug": "the-boy-in-the-striped-pyjamas",
-    "excerpt": ""
+    "slug": "the-boy-in-the-striped-pyjamas"
   },
   {
     "title": "the bridge on the river kwai",
@@ -1299,30 +1186,22 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "jungle bridge, bamboo structure",
     "image": "https://images.unsplash.com/photo-1715741159531-5c18c2aac86b?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "slug": "the-bridge-on-the-river-kwai",
-    "excerpt": "exc river"
+    "slug": "the-bridge-on-the-river-kwai"
   },
   {
     "title": "the fly",
     "year": "1986",
     "slug": "the-fly",
-    "excerpt": "",
     "director": "david cronenberg",
     "watched": true,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "shattered mirror, insect wing",
     "image": "https://images.unsplash.com/photo-1568689341045-c58407fee7a8?q=80&w=1097&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1343,7 +1222,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "cemetery sunset, western poncho",
     "image": "https://images.unsplash.com/photo-1632676950239-1f48cf05021d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNlbWV0ZXJ5JTIwc3Vuc2V0JTJDJTIwd2VzdGVybiUyMHBvbmNob3xlbnwwfHwwfHx8MA%3D%3D"
   },
@@ -1362,7 +1240,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "world globe, vintage microphone",
     "image": "https://images.unsplash.com/photo-1698809061964-18097d97506f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "the-great-dictator",
@@ -1384,7 +1261,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "vine covered ruins, ancient temple jungle",
     "image": "https://images.unsplash.com/photo-1732427414019-e072de8f0e7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "the-ruins",
@@ -1405,7 +1281,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "unexploded bomb, spanish orphanage",
     "image": "https://images.unsplash.com/photo-1695331453328-d7a73909a1d7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "the-devils-backbone",
@@ -1428,7 +1303,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "burning man statue, may day mask",
     "image": "https://images.unsplash.com/photo-1619277418608-a8e7a0d4fa35?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1488,7 +1362,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "red flowers, spanish village",
     "image": "https://images.unsplash.com/photo-1764006943044-dfe14f652ed8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwZmxvd2VycyUyQyUyMHNwYW5Home Collection2glMjB2aWxsYWdlfGVufDB8fDB8fHww"
   },
@@ -1508,11 +1381,9 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting-old",
     "image_description": "red paint splash, archery bow",
     "image": "https://images.unsplash.com/flagged/photo-1565056755239-74fdddae5461?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "slug": "we-need-to-talk-about-kevin",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
+    "slug": "we-need-to-talk-about-kevin"
   },
   {
     "title": "brokeback mt",
@@ -1521,10 +1392,6 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
@@ -1532,8 +1399,7 @@
     "location": "movies-waiting",
     "image_description": "mountain range lake, cowboy hat",
     "image": "https://images.unsplash.com/photo-1591159007838-92bd350b3b3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "slug": "brokeback-mt",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
+    "slug": "brokeback-mt"
   },
   {
     "title": "i,tonya",
@@ -1550,7 +1416,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting",
     "image_description": "ice skates, ice rink",
     "image": "https://images.unsplash.com/photo-1669184773984-b1a177330ee9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "i-tonya",
@@ -1571,7 +1436,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting",
     "image_description": "snowy bridge, bell ringing",
     "image": "https://images.unsplash.com/photo-1583738509943-9211590d9d2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNub3d5JTIwYnJpZGdlJTJDJTIwYmVsbCUyMHJpbmdpbmd8ZW58MHx8MHx8fDA%3D",
     "slug": "its-a-wonderful-night",
@@ -1592,7 +1456,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "watch later; movies-waiting",
     "image_description": "expressionist architecture, jagged shadows",
     "image": "https://images.unsplash.com/photo-1580979357222-6d9f2e9ec62f?q=80&w=1111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "cabinet-of-caligari",
@@ -1657,7 +1520,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-waiting",
     "image_description": "lighthouse storm, siren",
     "image": "https://images.unsplash.com/photo-1625486067632-152e5729e6c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlnaHRob3VzZSUyMHN0b3JtJTJDJTIwc2lyZW58ZW58MHx8MHx8fDA%3D"
   },
@@ -1676,7 +1538,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-archive",
     "image_description": "orchid flower, typewriter keys",
     "image": "https://images.unsplash.com/photo-1621441481502-d63fe7ff50dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9yY2hpZCUyMGZsb3dlciUyQyUyMHR5cGV3cml0ZXIlMjBrZXlzfGVufDB8fDB8fHww",
     "slug": "adaptation",
@@ -1699,7 +1560,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-archive",
     "image_description": "katana sword, yellow motorcycle",
     "image": "https://images.unsplash.com/photo-1625718977087-073bc5a52a50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a2F0YW5hJTIwc3dvcmQlMkMlMjB5ZWxsb3clMjBtb3RvcmN5Y2xlfGVufDB8fDB8fHww"
   },
@@ -1718,7 +1578,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-archive",
     "image_description": "green library, rainy city street",
     "image": "https://images.unsplash.com/photo-1747110325376-f2b08d19178f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBsaWJyYXJ5JTJDJTIwcmFpbnklMjBjaXR5JTIwc3RyZWV0fGVufDB8fDB8fHww",
     "slug": "seven",
@@ -1739,7 +1598,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-archive",
     "image_description": "cliffs ocean storm, match light",
     "image": "",
     "slug": "shutter-island",
@@ -1760,7 +1618,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies-archive",
     "image_description": "puppet strings, orange fruit",
     "image": "",
     "slug": "the-godfather",
@@ -1781,7 +1638,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "starry space, white monolith",
     "image": "",
     "slug": "2001-space-odyssey",
@@ -1803,7 +1659,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "steampunk monster, rusty gears",
     "image": "https://images.unsplash.com/photo-1725205336673-a3d56d46c33f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHN0ZWFtcHVuayUyMG1vbnN0ZXJ8ZW58MHx8MHx8fDA%3D",
     "slug": "mad-god",
@@ -1816,19 +1671,17 @@
     "watched": false,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+        "medium": "Mubi",
+        "location": "https://mubi.com/en/au/films/megalopolis-2021"
       },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "gold city, futuristic new york",
     "image": "https://images.unsplash.com/photo-1635519358852-dab09e38446e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdvbGQlMjBjaXR5JTJDfGVufDB8fDB8fHww",
-    "slug": "megalopolis",
-    "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
+    "slug": "megalopolis"
   },
   {
     "title": "it happened one night",
@@ -1841,13 +1694,8 @@
       {
         "medium": "Youtube",
         "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
-        "medium": "Home Collection",
-        "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "night bus, hitchhiking",
     "image": "https://images.unsplash.com/photo-1542378142-a5b26c0e870b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1868,7 +1716,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "library books stacks, nightclub singer",
     "image": "https://images.unsplash.com/photo-1622371729389-f18a9d26a84a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxpYnJhcnklMjBib29rcyUyMHN0YWNrcyUyQyUyMG5pZ2h0Y2x1YiUyMHNpbmdlcnxlbnwwfHwwfHx8MA%3D%3D"
   },
@@ -1883,13 +1730,8 @@
       {
         "medium": "Youtube",
         "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
-        "medium": "Home Collection",
-        "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "leopard, dinosaur skeleton",
     "image": "https://images.unsplash.com/photo-1616128417743-c3a6992a65e7?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -1902,13 +1744,8 @@
       {
         "medium": "Youtube",
         "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
-        "medium": "Home Collection",
-        "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "slug": "rebecca",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script.",
     "image_description": "large mansion gates, ocean waves cliff",
@@ -1925,10 +1762,6 @@
       {
         "medium": "Youtube",
         "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
-        "medium": "Home Collection",
-        "location": "/media/movies/archive"
       }
     ],
     "location": "movies",
@@ -1952,7 +1785,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "circus tent, vintage sideshow",
     "image": "https://images.unsplash.com/photo-1496086363406-27fbdabb8593?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2lyY3VzJTIwdGVudCUyQyUyMHZpbnRhZ2UlMjBzaWRlc2hvd3xlbnwwfHwwfHx8MA%3D%3D"
   },
@@ -1973,7 +1805,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "art deco city, robot silhouette",
     "image": "https://images.unsplash.com/photo-1723642203358-1d10749adfd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwZGVjbyUyMGNpdHklMkMlMjByb2JvdCUyMHNpbGhvdWV0dGV8ZW58MHx8MHx8fDA%3D"
   },
@@ -1992,7 +1823,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "swimming pool murky, school hallway",
     "image": "https://images.unsplash.com/photo-1757889692983-897930ee8638?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN3aW1taW5nJTIwcG9vbCUyMG11cmt5JTJDJTIwc2Nob29sJTIwaGFsbHdheXxlbnwwfHwwfHx8MA%3D%3D",
     "slug": "diabolique",
@@ -2015,7 +1845,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "spiral staircase, statue in dark",
     "image": "https://images.unsplash.com/photo-1682448228151-e60212ed9130?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BHome CollectionmFsJTIwc3RhaXJjYXNlJTJDJTIwc3RhdHVlJTIwaW4lMjBkYXJrfGVufDB8fDB8fHww"
   },
@@ -2036,7 +1865,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "butterflies, child sleeping",
     "image": "https://images.unsplash.com/photo-1544116748-f4b794771ac0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnV0dGVyZmxpZXMlMkMlMjBjaGlsZCUyMHNsZWVwaW5nfGVufDB8fDB8fHww"
   },
@@ -2055,7 +1883,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "steam locomotive, civil war cannon",
     "image": "https://images.unsplash.com/photo-1613702953620-9dcd978d8bd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlYW0lMjBsb2NvbW90aXZlJTJDJTIwY2l2aWwlMjB3YXIlMjBjYW5ub258ZW58MHx8MHx8fDA%3D",
     "slug": "the-general",
@@ -2076,7 +1903,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "news studio, television monitors",
     "image": "https://images.unsplash.com/photo-1651465531201-7e430660fd82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3cyUyMHN0dWRpbyUyQyUyMHRlbGV2aXNpb24lMjBtb25pdG9yc3xlbnwwfHwwfHx8MA%3D%3D",
     "slug": "the-network",
@@ -2097,7 +1923,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "abandoned carnival, ghostly face in water",
     "image": "./images/carni.jpg",
     "slug": "carnival-of-souls",
@@ -2118,7 +1943,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "staircase shadow, rat poison",
     "image": "https://images.unsplash.com/photo-1664877628791-3ae710ff5a68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhaXJjYXNlJTIwc2hhZG93JTJDJTIwcmF0JTIwcG9Home Collection29ufGVufDB8fDB8fHww",
     "slug": "housemaid-1960",
@@ -2141,7 +1965,6 @@
         "location": "/media/movies/archive"
       }
     ],
-    "location": "movies",
     "image_description": "egg texture, space corridor",
     "image": "https://images.unsplash.com/photo-1564855101177-b3fac36e00e0?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
@@ -2155,17 +1978,10 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
-    ],
-    "location": "",
-    "image_description": "",
-    "image": "https://images.unsplash.com/photo-1722715682021-7865c3926247?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhpdGNoY29ja3xlbnwwfHwwfHx8MA%3D%3D"
+    ]
   },
   {
     "title": "rear window",
@@ -2183,10 +1999,7 @@
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
-    ],
-    "location": "",
-    "image_description": "",
-    "image": "https://images.unsplash.com/photo-1535803295577-56201df34de7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
   },
   {
     "title": "rope",
@@ -2197,14 +2010,9 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
-    ],
-    "image": "https://images.unsplash.com/photo-1518536674115-4f83c88ebf50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvcGV8ZW58MHx8MHx8fDA%3D"
+    ]
   }
 ]

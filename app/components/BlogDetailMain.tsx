@@ -20,7 +20,7 @@ const BlogDetailMain = ({
           readTime={stats.text}
           wordCount={stats.words}
         />
-        <h1 className="text-5xl lg:text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight leading-12 lg:leading-15">
+        <h1 className="text-5xl wrap-break-word lg:text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight leading-12 lg:leading-15">
           {postMeta.meta_title ? postMeta.meta_title : postMeta.title}
         </h1>
         <img

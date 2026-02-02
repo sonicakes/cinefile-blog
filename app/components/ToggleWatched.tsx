@@ -5,7 +5,7 @@ interface ToggleWatchedProps {
 
 const ToggleWatched = ({ showWatched, onToggle }: ToggleWatchedProps) => {
   return (
-    <div className="flex items-center gap-2 select-none w-full justify-end">
+    <div className="flex items-center gap-2 select-none w-full justify-center md:justify-end">
       <span className={`transition-colors ${!showWatched ? 'text-neutral-700 font-bold' : 'text-neutral-400'}`}>
         to watch
       </span>

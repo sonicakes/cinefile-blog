@@ -62,7 +62,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   return (
     <>
       <section className="py-4 md:px-4 md:pb-2 border-b border-neutral-300 flex flex-col gap-2">
-        <div className=" border-b border-neutral-300 pb-4 grid grid-cols-[2fr_1fr_1fr] gap-5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
+        <div className=" border-b border-neutral-300 pb-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr] gap-5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           <SearchInput
             searchQuery={searchQuery}
             onSearchChange={(query) => {
@@ -91,7 +91,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
             }}
           />
         </div>
-        <div className="flex gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
+        <div className="flex flex-wrap md:flex-nowrap gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           <CategoryFilter
             selectedCategory={selectedCategory}
             onSelectCategory={(c) => {
@@ -99,21 +99,16 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
               setCurrentPage(1);
             }}
           />
-          <div className="w-full text-neutral-500 flex items-center gap-1 justify-end font-brawler lowercase tracking-wide">
+          <div className="w-full text-neutral-500 flex items-center gap-1 justify-center md:justify-end font-brawler lowercase tracking-wide">
             <span className="text-neutral-600">
               showing
               {searchQuery ? "results for " + '"' + searchQuery + ':"' : ""}
             </span>
-            <span className="text-base text-crimson font-bold">
-              {filteredPosts.length}{" "}
+            <span className="text-sm lg:text-base text-crimson font-bold">
+              {filteredPosts.length}
             </span>
 
-            <span className="text-base font-semibold">/ {posts.length}</span>
-
-            <span>
-              {selectedCategory ? selectedCategory : ""} movie
-              {filteredPosts.length > 1 ? "s" : ""}
-            </span>
+            <span className="text-sm lg:text-base font-semibold">/ {posts.length}</span>
 
             <span>{`${showWatched ? "Watched" : "To watch"} `}</span>
           </div>
