@@ -2,13 +2,13 @@ import type { Route } from "./+types";
 import type { PostMeta, Stat } from "~/types";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { MdCheck } from "react-icons/md";
-import { MdComputer } from "react-icons/md";
 import BlogDetailMain from "~/components/BlogDetailMain";
 import { MdOutlineStarHalf } from "react-icons/md";
 import { NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
-import readingTime from 'reading-time';
-import { useState } from "react";
+import readingTime from "reading-time";
+import MetaItem from "~/components/MetaItem";
+import { getIconByMedium } from "~/helpers";
 
 export async function loader({ request, params }: Route.LoaderArgs) {
   const { slug } = params;
@@ -22,24 +22,20 @@ export async function loader({ request, params }: Route.LoaderArgs) {
 
   if (!postMeta) throw new Response("not found", { status: 404 });
 
-  //dynamically import the raw markdown
-  //the name of posts md file should match the slug names exactly
   const markdown = await import(`/posts/${slug}.md?raw`);
   const stats = readingTime(markdown.default);
   return {
     postMeta,
     markdown: markdown.default,
-    stats
+    stats,
   };
 }
-
-
 
 type BlogPostDetailsPageProps = {
   loaderData: {
     postMeta: PostMeta;
     markdown: string;
-    stats: Stat
+    stats: Stat;
   };
 };
 
@@ -48,7 +44,6 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
 
   return (
     <>
-      {/* breadcrumb */}
       <div className="border-b-5 border-dark text-center font-brawler uppercase text-xs tracking-widest py-2.5 bt-dark border-t">
         <NavLink
           className="hover:underline hover:text-crimson transition"
@@ -58,14 +53,8 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
         </NavLink>{" "}
         / <b>{postMeta.title}</b>
       </div>
-      {/* end breadcrumb */}
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
-        <BlogDetailMain 
-        postMeta={postMeta} 
-        markdown={markdown}
-        stats={stats}
-        />
-
+        <BlogDetailMain postMeta={postMeta} markdown={markdown} stats={stats} />
         <aside className="related-sidebar">
           <div className="py-4 mb-5 border-t px-4 border-gray-300 bg-light">
             <div className="flex gap-1 pb-5 justify-end items-center">
@@ -82,7 +71,6 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
                 ({postMeta.rating && postMeta.rating}/10)
               </span>
             </div>
-
             <div className="flex justify-between items-start">
               <div className="">
                 <h2 className="text-xl font-brawler font-bold tracking-wide capitalize">
@@ -95,7 +83,6 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
                 </p>
               </div>
             </div>
-
             {/* Genres */}
             <div className="text-[10px] uppercase pt-2 pb-4 flex gap-1.5 font-semibold flex-wrap">
               {postMeta.genres?.map((genre) => (
@@ -107,7 +94,6 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
                 </span>
               ))}
             </div>
-
             <div className="font-bold tracking-wide font-brawler flex gap-1 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-300">
               <div className="flex gap-1 items-center">
                 <MdOutlineWatchLater color="crimson" size="20" />{" "}
@@ -119,11 +105,17 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
                 {postMeta.watched}
               </div>
               <div className="flex gap-1 items-center w-full">
-                <MdComputer color="crimson" size="20" /> {postMeta.location}
+                {postMeta.availability &&
+                  postMeta.availability.map((item, index) => (
+                    <MetaItem
+                      key={index}
+                      Icon={getIconByMedium(item.medium)}
+                      text={item.medium}
+                    />
+                  ))}
               </div>
             </div>
             <hr className="border-t-3 my-5 border-double border-gray-600" />
-
             <div className="text-sm bt-1 border-gray-300 leading-5">
               <h3 className="font-brawler uppercase font-bold pb-1 text-base">
                 SYNOPSIS
@@ -133,7 +125,6 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
               </p>
             </div>
             <hr className="border-t-3 my-5 border-double border-gray-600"></hr>
-
             <div className="text-sm bt-1 border-gray-300 pb-2 leading-5">
               <h3 className="font-brawler uppercase font-bold pb-1 text-base">
                 VERDICT
@@ -163,7 +154,6 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
             </div>
           </div>
           <div>
-            {" "}
             <div className="flex justify-between mb-5 border-y border-gray-300 items-center py-5">
               <h3 className="font-brawler tracking-wide uppercase">
                 Related Blogs
@@ -193,11 +183,9 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
           </div>
         </aside>
       </div>
-
       <MovieFooter
         spotifyEpisodes={postMeta.spotify_episodes}
         nextMovie={postMeta.next_movie}
-        
       />
     </>
   );

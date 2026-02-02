@@ -292,10 +292,6 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/waiting/_old"
       }
@@ -357,29 +353,19 @@
     "would_rewatch": true,
     "would_recommend": true,
     "meta_title": "Congratulations. You're the weakest link in your family.",
-    "quote": "Another interpretation of Sophie's Choice - this time the parent included.",
+    "quote": "Another interpretation of Sophie's Choice.",
     "run_time": "121m",
     "next_movie": {
-      "title": "Sophie's Choice",
-      "reason": "Are you keen to keep playing with life and death (and your family's too)? Check out this *funny* gem by Yorgos Lathimos.",
-      "url": "/blog/inland-empire",
-      "thumbnailUrl": "/images/wall.JPG"
+      "title": "Funny Games",
+      "reason": "Enjoyed playing Russian roulette & Weakest Link? Why not try 'Funny Games' next?",
+      "url": "/blog/funny-games",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1632693128710-f466d1d01a77?q=60&w=400&fm=webp&fit=crop"
     },
     "spotify_episodes": [
       {
-        "title": "161 - Funny Games (1997)",
-        "url": "https://open.spotify.com/episode/3Vtk3sU9PieBtx8bESBvep?si=8efe7ae9b40f4fa0",
-        "podcastName": "Random Number Generator Horror Podcast #9"
-      },
-      {
-        "title": "Home Invasion pt20: Funny Games (1997/2007)",
-        "url": "https://open.spotify.com/episode/4m8zAo9mZoiRzP7yLMo8AS?si=0e4d7b4871eb4b7f",
-        "podcastName": "The Evolution of Horror"
-      },
-      {
-        "title": "Episode 63. Play Dead: Funny Games (1997)",
-        "url": "https://open.spotify.com/episode/4LfJsf54HTqtpTno9nxbsG?si=02fbd9ed7c654bd6",
-        "podcastName": "Faculty of horror"
+        "title": "The Killing of a Sacred Deer (2017)",
+        "url": "https://open.spotify.com/episode/0XLpRCgdbiqbVYEfXKeUte?si=b9f36d2c4f384c3c",
+        "podcastName": "Horror Queers"
       }
     ]
   },
