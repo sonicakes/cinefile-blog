@@ -121,7 +121,7 @@ const BlogCard = ({
               <h3 className="font-brawler uppercase font-bold pb-1 text-base">
                 Synopsis
               </h3>
-              <p className="article-body">{excerpt}</p>
+              <p className="columns-1 lg:columns-2 gap-5 text-justify hyphens-auto text-[15px]">{excerpt}</p>
             </div>
           )}
           {quote && (

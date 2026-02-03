@@ -118,7 +118,7 @@ import { getIconByMedium } from "~/helpers";
               </p>
             </div>
             <div className="mini-card">
-              <img src="/images/front.jpg" alt="Review" />
+              <img src="/images/wednesday.JPG" alt="Review" />
               <h4>Wednesday Woes</h4>
               <p>
                 <small>Why mid-week cinema is dying...</small>

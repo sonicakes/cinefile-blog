@@ -9,10 +9,7 @@
   --color-dark: #1a1a1a;
   --color-light: #f0f0f0;
   --color-crimson: #DC143C;
-
-
 }
-
 
 @layer base {
 
@@ -33,7 +30,6 @@
   }
 
     .prose blockquote {
-  
     border-left: none;
   }
 
@@ -69,7 +65,7 @@
 }
 
 @utility custom-caption {
-  @apply font-caption italic text-gray-600 pb-2 pt-1.5 border-b border-gray-300 text-sm;
+  @apply font-caption italic text-neutral-600 pb-2 pt-1.5 border-b border-gray-300 text-sm;
 }
 
 html,
@@ -78,119 +74,21 @@ body {
 }
 
 .newspaper-page {
-  max-width: 1100px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  @apply max-w-275 my-5 mx-auto bg-white p-6 shadow-md;
 }
 
-
-
-.masthead {
-  text-align: center;
-  font-family: "UnifrakturMaguntia", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 6rem;
-  letter-spacing: -2px;
-  margin: 0;
-  padding: 10px 0;
-  border-bottom: 1px solid #000;
-}
-
-/* MAIN CONTENT GRID */
-.main-grid {
-  display: grid;
-  grid-template-columns: 3fr 1.5fr 3.5fr;
-  /* Headline | Opinion | Image */
-  gap: 25px;
-  margin-top: 20px;
-}
-
-/* Tablet/Mobile refinement */
-
-@media (max-width: 900px) {
-  .main-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Headline Styles */
-.headline-block h2 {
-  font-size: 4.5rem;
-  line-height: 1.1;
-  margin: 0 0 15px 0;
-  font-family: "Brawler", serif;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: -3px;
-}
-
-.byline {
-  font-family: "Brawler", serif;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  border-top: 1px solid #000;
-  padding-top: 5px;
-}
-
-/* Multi-column Text Body */
-.article-body {
-  column-count: 2;
-  column-gap: 20px;
-  text-align: justify;
-  hyphens: auto;
-  font-size: 0.95rem;
-}
-
-.article-body p::first-letter {
-  float: left;
-  font-size: 4rem;
-  line-height: 1;
-  padding-right: 8px;
-  font-weight: bold;
-}
-
-/* Sidebar Styling */
 .opinion-sidebar {
   border-left: 1px solid #ddd;
   padding-left: 15px;
 }
 
-.sidebar-item {
+/* .sidebar-item {
   margin-bottom: 20px;
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
-}
-
-.sidebar-item h4 {
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.1;
-  font-family: "Brawler", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Image with Caption */
-.hero-image-container img {
-  width: 100%;
-  filter: grayscale(10%);
-  /* Slight newsprint desaturation */
-}
-
-/* .caption {
-  @apply font-caption italic pb-4 text-[#555] mb-7 border-b border-light;
 } */
+
+
 
 .reviews-grid {
   display: grid;
