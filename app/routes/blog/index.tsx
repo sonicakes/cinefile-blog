@@ -32,7 +32,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
 
     const matchesSearch =
       post.title.toLowerCase().includes(query) ||
-      post.excerpt.toLowerCase().includes(query);
+     post.excerpt && post.excerpt.toLowerCase().includes(query);
 
     const matchesWatchedStatus = post.watched === showWatched;
     const matchesCategory =

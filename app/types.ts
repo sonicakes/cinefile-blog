@@ -4,7 +4,7 @@ export type PostMeta = {
   date_reviewed?: string;
   read_time?: string;
   meta_title?: string;
-  excerpt: string;
+  excerpt?: string;
   date?: string;
   slug: string;
   availability?: { medium: string; location: string; }[];

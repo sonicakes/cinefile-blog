@@ -14,18 +14,21 @@ const AboutPage = () => {
         </div>
 
         <div className="prose max-w-none leading-relaxed text-lg">
-          {/* FLOAT BOX START */}
-  <div className="float-left mr-6 mb-4 w-full md:w-72 border p-4 border-dark border-dashed">
-    <img
-      src="./images/wannabe-actress.jpg"
-      alt="Author Portrait"
-      className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition duration-700"
-    />
-    <p className="text-sm mt-2 custom-caption italic leading-tight">
-      Seen here at the Hydro Majestic Hotel in 2025.
-    </p>
-  </div>
-  {/* FLOAT BOX END */}
+         
+
+                            {/* FLOAT BOX START */}
+          <div className="md:float-left w-full md:mr-6 md:w-72">
+            <img
+              src="./images/wannabe-actress.jpg"
+              style={{margin: 0}}
+              alt="Author Portrait"
+              className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition duration-700"
+            />
+            <p className="text-sm mt-2 custom-caption italic leading-tight">
+              Seen here at the Hydro Majestic Hotel in 2025.
+            </p>
+          </div>
+          {/* FLOAT BOX END */}
           <p className="mb-4 first-letter:text-7xl first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:leading-none">
             I am a descendant of Russian Royal family — this makes for a
             wonderful small (or medium-sized) talk. My maiden name in Russian
@@ -33,22 +36,36 @@ const AboutPage = () => {
             me for life.
           </p>
 
+
+
+
           <p className="mb-4">
             <span className="italic">The Cinefile Blog</span> is a collection of
-            <span className="font-semibold"> movie reviews nobody asked for</span>. It
-            is a digital archive of my recent obsession with not just watching a
-            movie and forgetting about it, but also putting my thoughts on in on
-            a digital paper (hey I've always dreamed to be on the front page of
-            a newspaper!). The goal is to give my humblest opinion on a movie,
-            rate it on a scale from 1 to 10 using some objects from the movie (I
-            borrowed this concept from Random Horro Podcast).
+            <span className="font-semibold ml-1.5">
+          
+               movie reviews nobody asked for
+            </span>
+            . It is a digital archive of my recent obsession with not just
+            watching a movie and forgetting about it, but also putting my
+            thoughts on in on a digital paper (hey I've always dreamed to be on
+            the front page of a newspaper!). The goal is to give my humblest
+            opinion on a movie, rate it on a scale from 1 to 10 using some
+            objects from the movie (I borrowed this concept from Random Horro
+            Podcast).
           </p>
+
+          
+  
 
           <p className="mb-4">
             So whilst it's mostly for me, myself and I (don't forget the dog!),
             I'd be pleased if others read it too! I try to include my own photos
             that are funny or thematic (I love dressing up), plus occassional
             (yeah right) dog pics.
+          </p>
+
+               <p className="mb-4">
+            Oh right - it was first created to practice React router v7 framework mode combining blogs content in 'md' format with their meta in json. Then I realised how much I enjoyed writing content for those blogs :)
           </p>
 
           <h3 className="text-2xl font-bold font-brawler mt-8 uppercase">
@@ -99,29 +116,35 @@ const AboutPage = () => {
                 My All Time Fave Movies
               </h4>
               <ul className="list-inside list-disc space-y-1">
-                <li>Possession (1981) - Re-watch</li>
-                <li>Suspiria - Color Theory Study</li>
-                <li>The Lighthouse - For the Vibes</li>
+                <li>Requiem for a dream (2000)</li>
+                <li>The Ring (2002)</li>
+                <li>Twin Peaks - TV show but still...(1989)</li>
+                <li>Nightmare on Elm St (1984)</li>
+                <li>The Court Jester (1955)</li>
+                <li>Mulholland Drive (2001)</li>
+                <li>The Substance (2025)</li>
+                <li>Parasite (2019)</li>
               </ul>
             </div>
             <div className="border border-dark p-4 border-l-4">
               <h4 className="font-bold border-b border-dark mb-2">
                 Podcast Faves
               </h4>
-              <p className="italic underline">
-                "Evolution of the Slasher" - Ep. 42
-              </p>
-              <p className="mt-2 text-xs">
-                Note: Need to fact-check the Final Girl trope theory mentioned
-                at 22:04.
-              </p>
+              <ul className="list-inside list-disc space-y-1">
+                <li> Evolution of Horror</li>
+                <li> Faculty of Horror</li>
+                <li> Horror Queers</li>
+                <li> Random Number Generator Horror Podcast No. 9</li>
+                <li> Final Girls</li>
+                <li> Antiquarium of Sinister Happenings</li>
+                <li> The No Sleep Podcast</li>
+              </ul>
             </div>
           </div>
         </section>
       </div>
 
       <aside>
-
         <AsideMeta
           postMeta={{
             id: "666",
