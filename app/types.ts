@@ -8,9 +8,9 @@ export type PostMeta = {
   date?: string;
   slug: string;
   availability?: { medium: string; location: string; }[];
-  image: string;
+  image?: string;
   year: string;
-  watched: boolean;
+  watched: boolean | null;
   director?: string;
   quote?: string;
   genres?: string[];
