@@ -465,10 +465,13 @@
   {
     "title": "The Loved Ones",
     "slug": "the-loved-ones",
+    "meta_title": "Finally, A Final Boy 🩶",
     "excerpt": "When Brent turns down his classmate Lola’s invitation to the prom, she concocts a wildly violent plan for revenge.",
     "year": "2009",
+    "image": "https://images.unsplash.com/photo-1602679602866-c8bbbfac6d94?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "director": "Sean Byrne",
-    "watched": false,
+    "image_description": "Am I Not Pretty Enough?",
+    "watched": true,
     "availability": [
       {
         "medium": "Home Collection",
@@ -477,7 +480,10 @@
     ],
     "genres": ["Horror", "Violent", "Gory"],
     "location": "media/movies/waiting/_old",
-    "review_provided": false,
+    "rating": 8,
+    "date_reviewed": "2026-02-03",
+    "rating_metric": "Frog Princes",
+    "review_provided": true,
     "spotify_episodes": [
       {
         "title": "Self-Harm/Loved Ones(2009)",
