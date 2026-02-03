@@ -54,7 +54,6 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   });
 
   const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
-  console.log(totalPages)
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFirst = indexOfLast - postsPerPage;
   const currentPosts = sortedPosts.slice(indexOfFirst, indexOfLast);

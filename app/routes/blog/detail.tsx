@@ -22,11 +22,18 @@ export async function loader({ request, params }: Route.LoaderArgs) {
 
   if (!postMeta) throw new Response("not found", { status: 404 });
 
-  const markdown = await import(`/posts/${slug}.md?raw`);
-  const stats = readingTime(markdown.default);
+  // const markdown = await import(`/posts/${slug}.md?raw`);
+  const modules = import.meta.glob('/posts/*.md', { query: '?raw', import: 'default' });
+  const path = `/posts/${slug}.md`;
+  if (!(path in modules)) {
+    throw new Response("Post not found", { status: 404 });
+  }
+
+  const markdown = await modules[path]();
+  const stats = readingTime(markdown);
   return {
     postMeta,
-    markdown: markdown.default,
+    markdown: markdown,
     stats,
   };
 }
