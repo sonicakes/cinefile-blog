@@ -1,6 +1,6 @@
 const MainFooter = () => {
     return (   
-    <div className="px-6 pb-2 pt-8 mt-8 w-full uppercase text-neutral-500 tracking-wide font-semibold border-t-4 border-double border-dark">
+    <div className=" pb-2 pt-8 mt-8 w-full uppercase text-neutral-500 tracking-wide font-semibold border-t-4 border-double border-dark">
         <div className="text-xs leading-tight w-full flex flex-wrap gap-2">
          <p> 
             <span className="italic font-bold text-neutral-600">@The Cinefile Blog {new Date().getFullYear()}</span> is Designed, developed and deployed by 

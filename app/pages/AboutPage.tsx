@@ -14,13 +14,11 @@ const AboutPage = () => {
         </div>
 
         <div className="prose max-w-none leading-relaxed text-lg">
-         
-
-                            {/* FLOAT BOX START */}
+          {/* FLOAT BOX START */}
           <div className="md:float-left w-full md:mr-6 md:w-72">
             <img
               src="./images/wannabe-actress.jpg"
-              style={{margin: 0}}
+              style={{ margin: 0 }}
               alt="Author Portrait"
               className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition duration-700"
             />
@@ -36,14 +34,10 @@ const AboutPage = () => {
             me for life.
           </p>
 
-
-
-
           <p className="mb-4">
             <span className="italic">The Cinefile Blog</span> is a collection of
             <span className="font-semibold ml-1.5">
-          
-               movie reviews nobody asked for
+              movie reviews nobody asked for
             </span>
             . It is a digital archive of my recent obsession with not just
             watching a movie and forgetting about it, but also putting my
@@ -54,9 +48,6 @@ const AboutPage = () => {
             Podcast).
           </p>
 
-          
-  
-
           <p className="mb-4">
             So whilst it's mostly for me, myself and I (don't forget the dog!),
             I'd be pleased if others read it too! I try to include my own photos
@@ -64,8 +55,11 @@ const AboutPage = () => {
             (yeah right) dog pics.
           </p>
 
-               <p className="mb-4">
-            Oh right - it was first created to practice React router v7 framework mode combining blogs content in 'md' format with their meta in json. Then I realised how much I enjoyed writing content for those blogs :)
+          <p className="mb-4">
+            Oh right - it was first created to practice React router v7
+            framework mode combining blogs content in 'md' format with their
+            meta in json. Then I realised how much I enjoyed writing content for
+            those blogs :)
           </p>
 
           <h3 className="text-2xl font-bold font-brawler mt-8 uppercase">

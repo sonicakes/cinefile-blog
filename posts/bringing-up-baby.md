@@ -1,51 +1,24 @@
-Move over, Wes Anderson. Before you even thought about your so-called 'Fantastic' Mr Fox, there was the Original = the Un-outfoxable Mr Black Fox, as portrayed by Danny Kaye in 1955 'Court Jester'. So, I ask, who is an *auteur* now?
+For a movie that has Baby in its title, we see surprisingly little of it. I feel like I was cat-fished (*leopard-fished*, although technically still correct - Baby is a big cat). The movie poster features a little leopard seated in a baby feeding chair and Mum & Dad (Dad's wearing a woman's robe) hovering around the Baby.
 
-```
-you never outfox the fox...
-you never outfox the fox...
-```
+There wasn't even a scene like that. The audacity to include that cute picture to lure the innocents!
 
-This is most jolly, most joyful experience the movie can be to me. I will sing the Fox song (no, not the one [*'What does the fox say?'*](https://youtu.be/jofNR_WkoCE?si=Frzouaug1XCqsLw5), although it came to mind once or twice) and *'Life better be'* songs all the time. I will quote *'The Doge did what the Doge does'* and *'The pellet with the poison's in the vessel with the pestle; the chalice from the palace has the brew that is true!'* over and over. My whole Aussie family adores this movie (that's how I got introduced to it, actually). I was further taken by the campiness, the music, the performances, the chaos of it all. Love at first sight, followed by endless rewatches.
+Eh well. I still found the movie amuzing. I don't agree with Susan that David (played by Cary Grant) looks bad in glasses - he looks different, but still cute. Charming. Maybe we could try a different style glasses, not sure Harry Potter look works, but he's a-oh-kay to me. Suz got some weird preconceptions about glasses - maybe he appears too smart for her liking. Although she could use some of that brain matter from time to time...
 
-![One Foxy Gentleman](/images/danny.png) 
-###### Un-outfoxable Mr Black Fox at Gryffindor.  Source: Gemini-generated image, prompt: 'image that combines court jester and black fox, illustrating court jester 1955 movie'
+> A leopard can't change its spots. But Susan can change her opinion on Cary Grant wearing glasses.
 
-I literally cannot recommend it enough. It will lift my mood if I'm sad, it will make me prance around the room if I'm already feeling goofy. I will try to mimic the whistle and fail miserably, then just go back to 
-```
-...there′s one of me,
- two of me, three of me,
-  four of me,
-   five, six, seven
-sorry, no more of me...
-```
- to no end in sight.
+So, what did we get instead of a Baby Leopard in a pram? (we didn't get that, and we weren't really promised any, that's just me daydreamnig).
 
-At first I was convinced this movie was a musical, until I got into studying film history & genres on a deeper level and it looked like it was not classified as musical after all. To me, the songs and performances are intrinsical to experiencing CJ, however, if we judge it from musical definition - they do not, in fact, advance the plot, or are an essential part of the plot without which the movie would not make sense. 
-
-> A leopard can't change its spots.
-
-
-In my personal classification though, I put it in 'Musical', since I cannot imagine CJ without the main titles.
-
-``` 
-Life could not better be / 
-Better be, better be / 
-It could not possibly / 
-No sirrah, sir-rah, sirree! / 
-Songs could not gayer be / 
-Sound your do-re-o-mi, re-mi-fa-so-la-see, fa-la-la-la follow me! /
-```
-
-Another important note - the campiness is exaggerated for me by the fact that such an obviously gay actor is performing 'straight' court jester sequences with two main ladies of CJ. The ridiculousness of it all. I know that it was not faux-pas to be gay in 1955, but there are some of the funny winks in the dialogue/songs, e.g. *Songs could not gayer be...* from above.
-
-Before we conclude, one thing I noticed, that [Glynis Johns](https://en.wikipedia.org/wiki/Glynis_Johns)' (playing Gene)  face reminded me of my own. Same round shape, blue eyes, brown hair...there's something about it. I might be wrong but...
-
-![Glynis Johns in 1953](https://upload.wikimedia.org/wikipedia/commons/e/e2/Glynis_Johns_-_still.jpg)
-###### Johns in 1953.  Source: Unknown photographer, Two Cities Films, United Artists, Public domain, via Wikimedia Commons
-
-![Film Lady in early 2010s](/images/clone.JPG)
-###### Film Lady in early 2010s. Tell me we're not twins?  Source: Film Lady's Facebook. 
+- There was indeed a leopard. Small. Seemed the size of my adult labrador (she is small tho).
+- Baby Leopard was cute as.
+- I wonder how they filmed it all..Coz Baby couldn't be CGI in 1938. Like, was it a well-trained pet leopard? How many chicken were sacrificed to get Baby on the roof?
+- There was a cute doggy named George and he was funny and mischievious (but if I was George I would never give up my new bone. Finders keepers, mate.)
+- Baby Leodaddy did wear a woman's robe. Too bad it wasn't also leopard-patterned.
+- Chaos & rapid scenes. Everything happens so quickly and becomes absurd as fast. Loved the energy of it.
+- Susan (played by Katherine Hepburn) definitely was growing on me as the movie progressed. I started with wanting to punch her in the face (she is so annoying, omg, pls shut up & get out of my way..I have this order and discipline and you are distrupting it all!). But then, half an hour in, I found myself enjoying her persona & actually cheering her on to break David's act of 'serious man'.
 
 ***
-All in all, 10/10 baby bottoms with purple pimpernels. Would recommend and would rewatch every time I need a mood lift!
+I think it's a funny, silly movie that leaves a good after-feeling about the main protagonists getting together at the end. What didn't leave a good feeling was the fact that Susan's aunt had ordered a 'tamed' baby leopard to be delivered to her city residence...Umm lady, this is a wild animal, not a pussycat. Well, its a wild pussycat. It can eat you for breakfast.
+
+**8/10** baby leopards. I'm still fuming about absence of a scene featuring Dave & Suz feeding Baby in a toddler kitchen chair.
+
 

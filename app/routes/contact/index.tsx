@@ -18,9 +18,9 @@ const ContactPage = ({ actionData }: Route.ComponentProps) => {
         </div>
 
         <div className="flex justify-between text-[11px] font-bold flex-wrap uppercase border-b border-neutral-400 py-2 mt-2">
-          <span>Vol. LXIV</span>
+          <span className='grayscale'>Vol. ♾️</span>
           <span>{new Date().toLocaleDateString()}</span>
-          <span>Price: Your Two Cents</span>
+          <span>Price: Your 2 Cents</span>
         </div>
       </header>
 
@@ -78,7 +78,6 @@ const ContactPage = ({ actionData }: Route.ComponentProps) => {
           />
         </div>
 
-        {/* Message */}
         <div className="md:col-span-2">
           <label
             htmlFor="message"
@@ -89,7 +88,7 @@ const ContactPage = ({ actionData }: Route.ComponentProps) => {
           <textarea
             id="message"
             name="message"
-            placeholder="Your cinefiles are a pile of pup crap, and here's why..."
+            placeholder="Your cinefiles are a pile of pup crap 💩, and here's why..."
             rows={6}
             className="w-full border-2 border-dark bg-transparent p-3 leading-relaxed focus:outline-none focus:bg-white"
           />

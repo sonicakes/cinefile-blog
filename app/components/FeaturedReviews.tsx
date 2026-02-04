@@ -31,7 +31,9 @@ const FeaturedBlogs = () => {
       category: "HOT TAKE",
       image: "./images/wednesday.JPG",
       span: "md:col-span-3 md:row-span-1",
-      horizontal: true
+      horizontal: true,
+      excerpt: "My love for little evil Wednesday and her 2 black braids caught me unabashed."
+
     }
   ];
 
