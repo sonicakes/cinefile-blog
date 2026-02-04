@@ -221,14 +221,35 @@
     "year": "2009",
     "director": "Marcus Dunstan",
     "watched": false,
+    "image": "https://images.unsplash.com/photo-1677621237679-6b7ba95a142a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "excerpt": "Desperate to repay his debt to his ex-wife, an ex-con plots a heist at his new employer’s country home, unaware that a second criminal has also targeted the property, and rigged it with a series of deadly traps.",
     "availability": [
       {
         "medium": "Shudder",
         "location": "https://www.shudder.com/movies/watch/the-collector/5c22a82919ca1df4"
       }
     ],
-    "run_time": "100m",
-    "genres": ["Horror"],
+    "run_time": "90m",
+    "genres": ["Horror", "Thriller"],
+    "review_provided": false
+  },
+  {
+    "title": "The Collection",
+    "image": "https://images.unsplash.com/photo-1646972463404-6ba338ca31fb?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    "slug": "the-collection",
+    "year": "2012",
+    "director": "Marcus Dunstan",
+    "watched": false,
+    "excerpt": "Arkin escapes with his life from the vicious grips of “The Collector” during an entrapment party where he adds beautiful Elena to his “Collection.” Instead of recovering from the trauma, Arkin is suddenly abducted from the hospital by mercenaries hired by Elena’s wealthy father. Arkin is blackmailed to team up with the mercenaries and track down The Collector’s booby trapped warehouse and save Elena.",
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://www.shudder.com/movies/watch/the-collection/756dcfc1aac9eb06"
+      }
+    ],
+    "run_time": "82m",
+    "genres": ["Horror", "Thriller"],
     "review_provided": false
   },
   {
@@ -505,6 +526,7 @@
 
   {
     "title": "pontypool",
+    "image": "https://images.unsplash.com/photo-1540913850165-6ff297eba144?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9udHlwb29sfGVufDB8fDB8fHww",
     "genres": ["Horror", "Mystery", "Science Fiction"],
     "year": "2008",
     "run_time": "97m",
@@ -562,6 +584,7 @@
     "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
     "year": "1964",
     "run_time": "95m",
+    "image": "https://images.unsplash.com/photo-1719856331249-ef3bce2a5304?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "director": "Stanley Kubrick",
     "watched": false,
     "availability": [
@@ -830,7 +853,7 @@
       }
     ],
     "image_description": "vintage typewriter, 1940s newspaper",
-    "image": "https://images.unsplash.com/photo-1561040377-60432c7afee0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0"
+    "image": "https://images.unsplash.com/photo-1524668951403-d44b28200ce0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 
   {
@@ -877,6 +900,7 @@
     "title": "leviathan",
     "year": "2014",
     "slug": "leviathan",
+    "image": "https://images.unsplash.com/photo-1633974777962-51ebe1b67a98?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "excerpt": "A modern-day retelling of the story of Job, Leviathan follows a man’s desperate struggle to save his ancestral home from a corrupt mayor. Against the stark beauty of the Russian Arctic, it is a haunting examination of what happens when a citizen is crushed by the very institutions meant to protect him.",
     "director": "andrey zvyagintsev",
     "watched": false,
@@ -980,7 +1004,7 @@
     ],
     "location": "movies-waiting-old",
     "image_description": "tall grass shadow, lion stalking",
-    "image": ""
+    "image": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1159&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "title": "pulp fiction",
@@ -1574,12 +1598,8 @@
     "title": "se7en",
     "year": "1995",
     "director": "david fincher",
-    "watched": false,
+    "watched": true,
     "availability": [
-      {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
       {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
@@ -1597,16 +1617,12 @@
     "watched": true,
     "availability": [
       {
-        "medium": "Youtube",
-        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
-      },
-      {
         "medium": "Home Collection",
         "location": "/media/movies/archive"
       }
     ],
     "image_description": "cliffs ocean storm, match light",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1643667222336-9adb206dd1b1?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "shutter-island",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
   },
@@ -1626,7 +1642,7 @@
       }
     ],
     "image_description": "puppet strings, orange fruit",
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1629338129605-e48e4fd6df4b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "the-godfather",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
   },
@@ -1634,6 +1650,7 @@
     "title": "2001: a space odyssey",
     "year": "1968",
     "director": "stanley kubrick",
+    "image": "https://images.unsplash.com/photo-1676944229887-b2def0f94185?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "watched": false,
     "availability": [
       {
@@ -1646,7 +1663,6 @@
       }
     ],
     "image_description": "starry space, white monolith",
-    "image": "",
     "slug": "2001-space-odyssey",
     "excerpt": "'Im as mad as hell, and Im not gonna take this anymore!' This iconic cry for help sparks a media firestorm in Sidney Lumet’s masterpiece. It is a cynical, fast-paced dive into a world where corporate profit outweighs human life and the 'truth' is just another script."
   },
@@ -1792,7 +1808,7 @@
     ],
     "location": "movies",
     "image_description": "vampire shadow stairs, rats",
-    "image": "https://images.unsplash.com/photo-1722649949654-f568c675f065?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1733519844886-4bf080bf78db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZhbXBpcmUlMjBnb3RoaWMlMjBtYWxlfGVufDB8fDB8fHww"
   },
   {
     "title": "freaks",
@@ -2012,6 +2028,7 @@
   {
     "title": "rear window",
     "year": "1954",
+    "image": "https://images.unsplash.com/photo-1736520235966-84c81a5cbb5a?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "slug": "rear-window",
     "excerpt": "A bored photographer recovering from a broken leg passes the time by watching his neighbors and begins to suspect one of them of murder.",
     "director": "alfred hitchcock",
@@ -2029,6 +2046,7 @@
   },
   {
     "title": "rope",
+    "image": "https://images.unsplash.com/photo-1579692583151-7d8ea6fb212c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "year": "1948",
     "slug": "rope",
     "excerpt": "Two men try to convince themselves they've committed the perfect murder by hosting a dinner party after strangling a former classmate to death.",
