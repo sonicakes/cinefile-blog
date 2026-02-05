@@ -28,7 +28,7 @@ export default function Home() {
             text="Tips to Time-Travel on a Modest Budget"
             imgPath="./images/gallery.jpg"
             caption="SAME LADY"
-            url="/blog"
+            url="/contact"
           />
         </aside>
         <section>
@@ -43,7 +43,7 @@ export default function Home() {
           </p>
         </section>
       </main>
-      <FeaturedReviews />
+      {/* <FeaturedReviews /> */}
     </>
   );
 }

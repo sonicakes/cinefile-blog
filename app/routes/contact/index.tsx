@@ -1,9 +1,8 @@
-import type { Route } from './+types';
+import type { Route } from "./+types";
 
 const ContactPage = ({ actionData }: Route.ComponentProps) => {
   return (
     <div className="max-w-4xl mx-auto my-4 px-10 py-12 bg-light border-2 border-neutral-300 shadow-md">
-      
       <header className="mb-10">
         <div className="text-center border-b-[3px] border-dark pb-4">
           <p className="text-xs uppercase tracking-[0.3em] font-bold">
@@ -18,13 +17,12 @@ const ContactPage = ({ actionData }: Route.ComponentProps) => {
         </div>
 
         <div className="flex justify-between text-[11px] font-bold flex-wrap uppercase border-b border-neutral-400 py-2 mt-2">
-          <span className='grayscale'>Vol. ♾️</span>
+          <span className="grayscale">Vol. ♾️</span>
           <span>{new Date().toLocaleDateString()}</span>
           <span>Price: Your 2 Cents</span>
         </div>
       </header>
 
-      {/* Body */}
       <form
         action="https://formspree.io/f/xnnvdgvr"
         method="post"
@@ -94,15 +92,13 @@ const ContactPage = ({ actionData }: Route.ComponentProps) => {
           />
         </div>
 
-        {/* Footer */}
         <div className="md:col-span-2 border-t-[3px] border-dark pt-6 mt-4">
-
-           <button 
+          <button
             type="submit"
-           className="inline-block text-dark cursor-pointer hover:text-crimson transition duration-700 border-neutral-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
-              submit form
-            </button>
-
+            className="inline-block pointer-events-none text-dark cursor-pointer hover:text-crimson transition duration-700 border-neutral-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6"
+          >
+            submit form
+          </button>
         </div>
       </form>
     </div>

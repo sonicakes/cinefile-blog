@@ -4,7 +4,7 @@ const MainFooter = () => {
         <div className="text-xs leading-tight w-full flex flex-wrap gap-2">
          <p> 
             <span className="italic font-bold text-neutral-600">@The Cinefile Blog {new Date().getFullYear()}</span> is Designed, developed and deployed by 
-            <a className="italic hover:underline text-crimson" href="#">@sonicakes</a>.
+            <a className="italic hover:underline text-crimson" href="https://github.com/sonicakes" target="_blank">@sonicakes</a>.
             </p> 
           <p>All critique is
           subjective and a personal opinion of the author.</p>
@@ -14,7 +14,7 @@ const MainFooter = () => {
             <a className="italic hover:underline text-crimson" href="https://gemini.google.com/app" target="_blank"> Gemini</a>.
             </p>
             <p>Most imagery sourced from <a className="italic hover:underline text-crimson" href="https://unsplash.com/" target="_blank"> Unsplash</a>
- , whilst the remainder is taken by <a className="italic hover:underline text-crimson" href="#">@sonicakes</a> & feature the author herself and/or her dog.
+ , whilst the remainder is taken by <a className="italic hover:underline text-crimson" href="https://github.com/sonicakes" target="_blank">@sonicakes</a> & feature the author herself and/or her dog.
  </p>
         </div>
       </div> );

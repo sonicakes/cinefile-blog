@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FeaturedBlogs = () => {
   const blogs = [
@@ -9,6 +10,7 @@ const FeaturedBlogs = () => {
       image: "./images/toto.jpg",
       span: "md:col-span-2 md:row-span-2",
       special: true,
+      url: "/blog/bringing-up-baby",
       excerpt: "Film Lady explains the new rules of admittance to the land of OZ: dogs of all sizes and breeds are accepted now."
     },
     {
@@ -17,6 +19,7 @@ const FeaturedBlogs = () => {
       category: "AESTHETIC",
       image: "./images/scare.jpg",
       span: "md:col-span-1 md:row-span-1",
+      url: "/blog/the-music-man",
     },
     {
       id: 3,
@@ -24,6 +27,7 @@ const FeaturedBlogs = () => {
       category: "DIRECTOR SPOTLIGHT",
       image: "./images/wall.JPG",
       span: "md:col-span-1 md:row-span-1",
+      url: "/blog/court-jester",
     },
     {
       id: 4,
@@ -31,6 +35,7 @@ const FeaturedBlogs = () => {
       category: "HOT TAKE",
       image: "./images/wednesday.JPG",
       span: "md:col-span-3 md:row-span-1",
+      url: "/blog/mulholland-drive",
       horizontal: true,
       excerpt: "My love for little evil Wednesday and her 2 black braids caught me unabashed."
 
@@ -43,10 +48,7 @@ const FeaturedBlogs = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {blogs.map((blog) => (
-          <div 
-            key={blog.id} 
-            className={`group cursor-pointer border border-neutral-600 p-4 transition-all hover:border-black ${blog.span} flex flex-col`}
-          >
+          <Link to={blog.url}       key={blog.id}  className={`group cursor-pointer border border-neutral-600 p-4 transition-all hover:border-black ${blog.span} flex flex-col`}>
             <div className={`overflow-hidden mb-4 ${blog.horizontal ? 'md:flex md:gap-6 items-center' : ''}`}>
               <img 
                 src={blog.image} 
@@ -67,7 +69,8 @@ const FeaturedBlogs = () => {
                 )}
               </div>
             </div>
-          </div>
+          </Link>
+        
         ))}
       </div>
     </section>
