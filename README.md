@@ -66,8 +66,8 @@ So, why the newspaper aesthetics? I thought I wanted to make my blog reviews a b
 
 I have looked up a few websites that inspired me as well:
 
-- example 1
-- example 2
+- [This Russian Site of media company](https://batenka.ru/)
+- [This amazing portfolio that looks like a newspaper](https://www.niccolomiranda.com/)
 
 There was a physical medie that had an influence - a good ol' newspaper, mate! The one and only, [Sydney Morning Herald](https://www.smh.com.au/). I was inspired for design of my Front Page by these issues (see screenshots below):
 
@@ -84,12 +84,12 @@ So yeah, there's a lot of fun to be had with the newspaper style site. On my fut
 
 ## Links
 
-[The Cinefile Blog](https://cinefile-blog.netlify.app/blog) - deployed live on Netlify.
+[The Cinefile Blog](https://cinefile-blog.netlify.app/) - deployed live on Netlify.
 
 ## 📸 Screenshots
 
 Desktop home
-![desktop home](/public/images/desktop-home.png)
+![desktop home](/public/images/home-desk.png)
 Mobile home
 ![mobile home](/public/images/mobile-home.png)
 Desktop reviews grid
@@ -136,13 +136,13 @@ Desktop Contact Page
 | **Icons** | React Icons - Material Design |
 | **Routing support on Netlify** | @netlify/vite-plugin-react-router |
 
-## Future Dev/Laundry List
+## 🧺 Future Dev/Laundry List
 
 1. Wire Contact Form to send emails to a dedicated cinefile blog address. Probably using Form spree since it's coming up on my classes schedule.
 
 2. Research & implement the 'red standout' effect that will be present on mobile & tablet devices that do not have hover interaction. Whether it's a matter of creating masks for each imagery piece (every time-consuming) or a CSS/JS-based approach (would be great to apply some effects dynamically, bypassing Adobe CC Suite), that is still for me to investigate & play around with.
 
-3. Kind of bouncing from the previous point - it would be great to eventually creat unique cool poster-like art that actually has deep reds color-highlighted, similar to what [this podcast]() is doing for each of their movie discussion episode.
+3. Kind of bouncing from the previous point - it would be great to eventually creat unique cool poster-like art that actually has deep reds color-highlighted, similar to what [this podcast](https://www.nightvalepresents.com/rnghpn9) is doing for each of their movie discussion episode.
 
 4. Document the Design System in Figma. My initial goal was to create full design in Figma but, as I like to do with pet projects, I dove into playing with dev while adjusting my design on the go (so that it underwent about 20 iterations and ofc, I'm like, I should've done design 1st!).
 
@@ -151,6 +151,9 @@ Desktop Contact Page
 6. Connect to official data from TMDB & FE Management Tool (as described earlier).
 
 7. Dynamic choice of 'Featured Reviews' to appear on the home page. I've commented out that section coz I don't quite like the design of it. Anyway, I was just passing them as an array of items to the respective component, but would be easy to maybe get the most rated or most recent 3-4 to appear as featured. Will def come back to it.
+
+*Not a fan of current 'featured' section, so it's commented out for now.*
+![desktop home](/public/images/desktop-home.png)
 
 8. Wire up the 'Relevant Blogs' ```<aside>``` section, currently hard-coded. Same dynamic choice principle as above would apply.
 
@@ -176,7 +179,7 @@ Desktop Contact Page
 
 18. Want to do something else with the menu rather than just an awkward stack. I've played with a burger, but with only 4 links I feel I want an easier access without the whole burger slide-ins. Need a bit of R&D playtime for this one.
 
-## 🏁 Running locally
+## 🖥️ Running locally
 
 ### Prerequisites
 * Node.js (v18.0.0 or higher)
