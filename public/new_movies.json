@@ -1,0 +1,450 @@
+[
+  {
+    "title": "Battleship Potemkin",
+    "slug": "battleship-potemkin",
+    "excerpt": "A dramatized account of a great Russian naval mutiny and a resultant public demonstration, showing support, which brought on a police massacre.",
+    "year": "1925",
+    "director": "Sergei Eisenstein",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "run_time": "1h 15m",
+    "genres": ["Drama", "History", "War", "Silent"],
+    "image": "https://images.unsplash.com/photo-1723063197401-69459255fa2e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "review_provided": false
+  },
+  {
+    "title": "Little Shop of Horrors",
+    "date_reviewed": "2026-01-29",
+    "meta_title": "How much is for Audrey Junior over there?",
+    "slug": "little-shop-of-horrors",
+    "excerpt": "Seymour works in a skid row florist shop and is in love with his beautiful co-worker, Audrey. He creates a new plant that not only talks but cannot survive without human flesh and blood.",
+    "year": "1960",
+    "director": "Roger Corman",
+    "watched": true,
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      }
+    ],
+    "run_time": "1h 12m",
+    "genres": ["Horror", "Comedy", "Fantasy"],
+    "image": "https://images.unsplash.com/photo-1667877878850-a61c7ba37e80?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "F-E-E-D M-E-E",
+    "review_provided": true,
+    "rating": 7,
+    "rating_metric": "Audrey Juniors, the carnivorus plants that Seymour cross-bred",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Day of the Triffids",
+      "reason": "What if Audrey Junior had a family?",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1598389751928-0f316db41d2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlaXJkJTIwZmxvd2VyfGVufDB8fDB8fHww"
+    }
+  },
+  {
+    "title": "Mulholland Drive",
+    "date_reviewed": "2026-01-24",
+    "meta_title": "Mulholland Drive: We Don't Stop Here.",
+    "slug": "mulholland-drive",
+    "excerpt": "A woman with no memory stumbles out of a car wreck in the Hollywood hills and drifts into the life of an eager young actress.",
+    "year": "2001",
+    "director": "david lynch",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/297o",
+    "availability": [
+      {
+        "medium": "Mubi",
+        "location": "https://mubi.com/en/au/films/mulholland-drive"
+      }
+    ],
+    "quote": "I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.",
+    "run_time": "1h 20m",
+    "genres": ["Drama", "Mystery", "Film Noir", "Thriller", "Horror", "Lynch"],
+    "image": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop",
+    "image_description": "Welcome to Doowylloh.",
+    "review_provided": true,
+    "rating": 8,
+    "rating_metric": "blue boxes that fit in your purse",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Inland Empire",
+      "reason": "Hey, do you wanna see some cool rabbits? They do ironing and watch TV!",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "/images/parkrun-rabbit.jpg"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Mulholland Drive (2001)",
+        "url": "https://open.spotify.com/episode/3WB0I6KDlnkRUp99aKnqyq?si=9f73cad8b4c54f86",
+        "podcastName": "Horror Queers"
+      },
+      {
+        "title": "Dreams/Mulholland Drive (2001) PART 1",
+        "url": "https://open.spotify.com/episode/4m4Z56wKRnD31atwfroJQq?si=c3d5fe64304641bb",
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      }
+    ]
+  },
+  {
+    "title": "The Music Man",
+    "date_reviewed": "2026-01-30",
+    "meta_title": "The Music Man will play. With your savings, then your feelings.",
+    "slug": "the-music-man",
+    "excerpt": "Traveling con artist Harold Hill targets the naïve residents of a small town in 1910s Iowa by posing as a boys’ bandleader to raise money before he can skip town.",
+    "year": "1962",
+    "director": "Morton DaCosta",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/1PFg",
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
+    "run_time": "151m",
+    "genres": ["Comedy", "Family", "Music", "Romance"],
+    "image": "https://images.unsplash.com/photo-1545538331-e77f8b74599d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG11c2ljJTIwbWFufGVufDB8fDB8fHww",
+    "image_description": "You don't need to learn to play an instrument. The instrument will play you.",
+    "review_provided": true,
+    "rating": 7,
+    "rating_metric": "singing shapoopies",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Singing in the Rain",
+      "reason": "Got your raincoats ready? Gene Kelly invites you to another musical.",
+      "url": "/blog/singing-in-the-rain",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1622630972853-9e36b1e1a600?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "spotify_episodes": [
+      {
+        "title": "The Music Man (1962) - Best Picture Rankings",
+        "url": "https://open.spotify.com/episode/2IbppBF3z3fKWYv9anh63z?si=4f8e0a5ca2bf44ee",
+        "podcastName": "The Rank Podcast"
+      }
+    ]
+  },
+  {
+    "title": "Texas Chainsaw Massacre",
+    "date_reviewed": "2026-01-28",
+    "meta_title": "And the Scream Queen Award goes to...",
+    "slug": "texas-chainsaw-massacre",
+    "excerpt": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way, they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
+    "year": "1974",
+    "director": "tobe hooper",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/1lcS",
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://www.shudder.com/movies/watch/the-texas-chain-saw-massacre/425866499d2b1164"
+      }
+    ],
+    "quote": "That Sally gal sure can scream, alright.",
+    "run_time": "83m",
+    "genres": ["Horror", "Slasher", "Crime"],
+    "image": "https://images.unsplash.com/photo-1474742509976-ddec6b387356?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "Never liked chainsaws. They're so loud. But not as loud as this movie's ultimate survivor's screams.",
+    "review_provided": true,
+    "rating": 9,
+    "rating_metric": "lampshades with genuine leather touch",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Halloween",
+      "reason": "Don't worry, this guy does not carry a chainsaw. He's just escaped from a mental institution.",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1724380597868-f01bf63f87be?q=80&w=1156&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Folk Horror Pt8: The Texas Chain Saw Massacre",
+        "url": "https://open.spotify.com/episode/29sUX38rxI9f3e4wUEBVwl?si=8e5fd662cd56455c",
+        "podcastName": "The Evolution of Horror"
+      },
+      {
+        "title": "Episode 11.Family Dinner: The Texas Chain Saw Massacre(1974)",
+        "url": "https://open.spotify.com/episode/7HUTkyieJcvuIWgM2EM4N1?si=91d3c70ea4ce47fd",
+        "podcastName": "Faculty of horror"
+      },
+      {
+        "title": "Comfort Horror/The Texas Chain Saw Massacre(1974) with Katie Rife",
+        "url": "https://open.spotify.com/episode/4nPtkU7jwbphERtAWcMvB9?si=feb59490472d4324",
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      }
+    ]
+  },
+  {
+    "title": "Scary Movie 3",
+    "date_reviewed": "2026-01-31",
+    "meta_title": "Hold up..Is '8 Mile' a Horror Movie?",
+    "slug": "scary-movie-3",
+    "excerpt": "In the third installment of the Scary Movie franchise, news anchorwoman Cindy Campbell has to investigate mysterious crop circles and killing video tapes, and help the President stop an alien invasion in the process.",
+    "year": "2003",
+    "director": "David Zucker",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/1TSo",
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/"
+      }
+    ],
+    "run_time": "84m",
+    "genres": ["Comedy", "Satire", "Spoof"],
+    "image": "https://images.unsplash.com/photo-1758525862351-24cdf722d414?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image_description": "I'm not scared, you're scared.",
+    "review_provided": true,
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "The Ring",
+      "reason": "Here you go - this is the real deal.",
+      "url": "/blog/the-ring",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1687193191982-2e3a19d7612f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  },
+  {
+    "title": "The Collector",
+    "slug": "the-collector",
+    "year": "2009",
+    "director": "Marcus Dunstan",
+    "watched": false,
+    "image": "https://images.unsplash.com/photo-1677621237679-6b7ba95a142a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "excerpt": "Desperate to repay his debt to his ex-wife, an ex-con plots a heist at his new employer’s country home, unaware that a second criminal has also targeted the property, and rigged it with a series of deadly traps.",
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://www.shudder.com/movies/watch/the-collector/5c22a82919ca1df4"
+      }
+    ],
+    "run_time": "90m",
+    "genres": ["Horror", "Thriller"],
+    "review_provided": false
+  },
+  {
+    "title": "The Collection",
+    "image": "https://images.unsplash.com/photo-1646972463404-6ba338ca31fb?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "slug": "the-collection",
+    "year": "2012",
+    "director": "Marcus Dunstan",
+    "watched": false,
+    "letterboxd_uri": "https://boxd.it/4lKm",
+    "excerpt": "Arkin escapes with his life from the vicious grips of “The Collector” during an entrapment party where he adds beautiful Elena to his “Collection.”",
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://www.shudder.com/movies/watch/the-collection/756dcfc1aac9eb06"
+      }
+    ],
+    "run_time": "82m",
+    "genres": ["Horror", "Thriller"],
+    "review_provided": false
+  },
+  {
+    "title": "Blue Velvet",
+    "date_reviewed": "2026-01-24",
+    "quote": "Young Kyle MacLachlan. That's all you need to know.",
+    "run_time": "1h 20m",
+    "genres": ["Crime", "Mystery", "Film Noir", "Thriller", "Horror", "Lynch"],
+    "review_provided": false,
+    "rating": 9,
+    "rating_metric": "moldy human ears filled crawling with ants",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Inland Empire",
+      "reason": "Hey, do you wanna see some cool rabbits? They do ironing and watch TV!",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "/images/parkrun-rabbit.jpg"
+    },
+    "meta_title": "Is that you, Salvador Dali? We've got an ear with ants.",
+    "slug": "blue-velvet",
+    "excerpt": "The discovery of a severed human ear found in a field leads a young man on an investigation related to a beautiful, mysterious nightclub singer and a group of psychopathic criminals who have kidnapped her child.",
+    "year": "1986",
+    "director": "david lynch",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/29BI",
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/waiting/_old"
+      }
+    ],
+    "image_description": "blue velvet fabric, red roses white fence",
+    "image": "https://images.unsplash.com/photo-1606941060060-3d317be9947c?q=60&w=400&fm=webp&fit=crop",
+    "spotify_episodes": [
+      {
+        "title": "Mulholland Drive (2001)",
+        "url": "https://open.spotify.com/episode/3WB0I6KDlnkRUp99aKnqyq?si=9f73cad8b4c54f86",
+        "podcastName": "Horror Queers"
+      }
+    ]
+  },
+  {
+    "title": "Funny Games",
+    "slug": "funny-games",
+    "date_reviewed": "2026-01-24",
+    "excerpt": "Michael Haneke’s Funny Games is not a typical thriller; it is an assault on the viewer. As a family is held hostage in their own holiday home by two polite yet psychopathic young men.",
+    "year": "1997",
+    "director": "Michael Haneke",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/1WKM",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      }
+    ],
+    "run_time": "1h 48m",
+    "genres": ["Horror", "Thriller", "Crime"],
+    "review_provided": false
+  },
+  {
+    "title": "Rear Window",
+    "year": "1954",
+    "image": "https://images.unsplash.com/photo-1736520235966-84c81a5cbb5a?q=80&w=1169&auto=format&fit=crop",
+    "slug": "rear-window",
+    "excerpt": "A bored photographer recovering from a broken leg passes the time by watching his neighbors and begins to suspect one of them of murder.",
+    "director": "alfred hitchcock",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/2a6Q",
+    "availability": [
+      {
+        "medium": "Youtube",
+        "location": "https://youtu.be/a_bkBbrdyyw?si=fPOPfx6rSImqy2_l"
+      },
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "review_provided": false
+  },
+  {
+    "title": "Rope",
+    "year": "1948",
+    "image": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=1170&auto=format&fit=crop",
+    "slug": "rope",
+    "excerpt": "Two brilliant young aesthetics murder a former classmate, hide the body in a chest, and then host a dinner party with the chest as the centerpiece.",
+    "director": "alfred hitchcock",
+    "watched": false,
+    "availability": [
+      {
+        "medium": "Home Collection",
+        "location": "/media/movies/archive"
+      }
+    ],
+    "review_provided": false
+  },
+  {
+    "title": "28 Years Later: The Bone Temple",
+    "year": "2026",
+    "watched": false,
+    "letterboxd_uri": "https://boxd.it/MwlA",
+    "date_added": "2026-01-24"
+  },
+  {
+    "title": "Raw",
+    "year": "2016",
+    "watched": false,
+    "letterboxd_uri": "https://boxd.it/dLd2",
+    "date_added": "2026-01-24"
+  },
+  {
+    "title": "The Housemaid",
+    "year": "2025",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/QFEO",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "Gone Girl",
+    "year": "2014",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/6hQu",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "The Woman in the Window",
+    "year": "2021",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/iT56",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "Suspiria",
+    "year": "1977",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/1SNW",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "Whiplash",
+    "year": "2014",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/7bQA",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "year": "1988",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/20eA",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "The Fifth Element",
+    "year": "1997",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/71k",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "Possession",
+    "year": "1981",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/1BPm",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "mother!",
+    "year": "2017",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/dgRU",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "American Psycho",
+    "year": "2000",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/28Vs",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "Parasite",
+    "year": "2019",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/hTha",
+    "date_watched": "2026-01-24"
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "year": "2003",
+    "watched": true,
+    "letterboxd_uri": "https://boxd.it/70w",
+    "date_watched": "2026-01-24"
+  }
+]
