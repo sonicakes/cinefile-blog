@@ -21,14 +21,14 @@ const BlogCard = ({
   const {
     review_provided,
     slug,
+    year,
+    rating,
+    img,
     title,
     image,
-    year,
     director,
     run_time,
-    rating,
     watched,
-    availability,
     excerpt,
     quote,
     genres,
@@ -56,14 +56,14 @@ const BlogCard = ({
         <div className="relative overflow-hidden">
           <img
             className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition duration-700"
-            src={image || "./images/gallery.jpg"}
+            src={img || "./images/gallery.jpg"}
             alt={title}
           />
           {review_provided && watched ? (
             <div className="text-white bg-linear-to-l flex-wrap from-black px-4 py-1.5 absolute top-0 right-0 flex gap-1 justify-end font-bold font-brawler text-base">
               <MdOutlineStarHalf size="20" />
               <MdOutlineStarHalf size="20" />
-              <span>{rating && rating}</span>
+              {/* <span>{rating && rating}</span> */}
             </div>
           ) : (
             <div className="absolute top-0 right-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out bg-crimson text-white px-4 py-1.5 font-bold font-brawler uppercase tracking-widest text-sm shadow-lg">
@@ -82,14 +82,23 @@ const BlogCard = ({
           </header>
           {genres && (
             <div className="text-xs uppercase pt-2 pb-4 flex gap-2 font-semibold flex-wrap">
-              {genres.map((genre) => (
+              {/* {genres.map((genre) => (
                 <span
                   key={genre}
                   className="bg-light transition duration-700 group-hover:bg-neutral-600 group-hover:text-gray-100 px-2 py-1 border border-gray-600"
                 >
                   {genre}
                 </span>
-              ))}
+              ))} */}
+                        {genres.map((genre) => (
+  <span 
+    key={genre.id}
+    className="bg-light transition duration-700 group-hover:bg-neutral-600 group-hover:text-gray-100 px-2 py-1 border border-gray-600"
+
+  >
+    {genre.name} {/* ✅ This works because it's a string */}
+  </span>
+))}
             </div>
           )}
           <div className="font-bold tracking-wide font-brawler flex pt-2 gap-x-4 gap-y-1.5 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-700">
@@ -106,14 +115,14 @@ const BlogCard = ({
               <MetaItem Icon={MdDoNotDisturb} text={`not seen yet`} />
             )}
             <MetaItem Icon={MdOutlineWatchLater} text={run_time || "1hr 15m"} />
-            {availability &&
+            {/* {availability &&
               availability.map((item, index) => (
                 <MetaItem
                   key={index}
                   Icon={getIconByMedium(item.medium)}
                   text={item.medium}
                 />
-              ))}
+              ))} */}
           </div>
           <hr className="border-t-3 my-5 border-double border-gray-600" />
           {excerpt && (

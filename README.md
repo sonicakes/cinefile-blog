@@ -82,6 +82,80 @@ So yeah, there's a lot of fun to be had with the newspaper style site. On my fut
 - effect of highlighting lines with a marker when you copy some content or maybe where your mouse traces
 - using a library like Framer Motion or AOS alongside Tailwind, trigger the color return as the user scrolls down the page. I've seen this effect on one of the websites, its pretty neat.
 
+## Development Process
+
+Example data of a watched movie item & review is provided:
+```json
+ {
+    "title": "Mulholland Drive",
+    "date_reviewed": "2026-01-24",
+    "meta_title": "Mulholland Drive: We Don't Stop Here.",
+    "slug": "mulholland-drive",
+    "excerpt": "A woman with no memory stumbles out of a car wreck in the Hollywood hills and drifts into the life of an eager young actress.",
+    "year": "2001",
+    "director": "david lynch",
+    "watched": true,
+    "availability": [
+      {
+        "medium": "Mubi",
+        "location": "https://mubi.com/en/au/films/mulholland-drive"
+      }
+    ],
+    "quote": "I remember watching it with my Mum as a child and trying to deduce all the clues - with little success.",
+    "run_time": "1h 20m",
+    "genres": ["Drama", "Mystery", "Film Noir", "Thriller", "Horror", "Lynch"],
+    "image": "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?q=60&w=400&fm=webp&fit=crop",
+    "image_description": "Welcome to Doowylloh.",
+    "review_provided": true,
+    "rating": 8,
+    "rating_metric": "blue boxes that fit in your purse",
+    "would_rewatch": true,
+    "would_recommend": true,
+    "next_movie": {
+      "title": "Inland Empire",
+      "reason": "Hey, do you wanna see some cool rabbits? They do ironing and watch TV!",
+      "url": "/blog/inland-empire",
+      "thumbnailUrl": "/images/rabbit.jpg"
+    },
+    "spotify_episodes": [
+      {
+        "title": "Mulholland Drive (2001)",
+        "url": "https://open.spotify.com/episode/3WB0I6KDlnkRUp99aKnqyq?si=9f73cad8b4c54f86",
+        "podcastName": "Horror Queers"
+      },
+
+      {
+        "title": "Dreams/Mulholland Drive (2001) PART 1",
+        "url": "https://open.spotify.com/episode/4m4Z56wKRnD31atwfroJQq?si=c3d5fe64304641bb",
+        "podcastName": "Psychoanalysis: A horror Therapy Podcast"
+      }
+    ]
+  },
+```
+
+Example data of a movie item that I haven't watched & review is not provided:
+```json
+   {
+    "title": "The Collector",
+    "slug": "the-collector",
+    "year": "2009",
+    "director": "Marcus Dunstan",
+    "watched": false,
+    "image": "https://images.unsplash.com/photo-1677621237679-6b7ba95a142a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "excerpt": "Desperate to repay his debt to his ex-wife, an ex-con plots a heist at his new employer’s country home, unaware that a second criminal has also targeted the property, and rigged it with a series of deadly traps.",
+    "availability": [
+      {
+        "medium": "Shudder",
+        "location": "https://www.shudder.com/movies/watch/the-collector/5c22a82919ca1df4"
+      }
+    ],
+    "run_time": "90m",
+    "genres": ["Horror", "Thriller"],
+    "review_provided": false
+  },
+```
+
+
 ## Links
 
 [The Cinefile Blog](https://cinefile-blog.netlify.app/) - deployed live on Netlify.

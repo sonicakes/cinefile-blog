@@ -1,5 +1,5 @@
 import type { Route } from "./+types";
-import type { PostMeta, SortOption } from "~/types";
+import type { PostMeta, SortOption, StrapiPost, StrapiResponse } from "~/types";
 import BlogCard from "~/components/BlogCard";
 import { useState } from "react";
 import SearchInput from "~/components/SearchInput";
@@ -11,18 +11,56 @@ import Pagination from "~/components/Pagination";
 export async function loader({
   request,
 }: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
-  const url = new URL("/movies.json", request.url);
-  const res = await fetch(url.href);
-  if (!res.ok) throw new Error("Failed to fetch data");
-  const data = await res.json();
+  // const url = new URL("/movies.json", request.url);
+  // const res = await fetch(url.href);
+  // if (!res.ok) throw new Error("Failed to fetch data");
+  // const data = await res.json();
 
-  return { posts: data };
+  // return { posts: data };
+  const res = await fetch(
+    `${import.meta.env.VITE_API_URL}/movies?populate=*`,
+  );
+
+  if (!res.ok) throw new Error("Failed to fetch blog posts");
+
+  const json: StrapiResponse<StrapiPost> = await res.json();
+
+  const posts = json.data.map((item) => ({
+    id: item.id,
+    title: item.title,
+    rating: item.rating,
+    year: item.year,
+    date_reviewed: item.date_reviewed,
+    meta_title: item.meta_title,
+    body_blog: item.body_blog,
+    slug: item.slug,
+    excerpt: item.excerpt,
+    watched: item.watched,
+    director: item.director,
+    would_recommend: item.would_recommend,
+    would_rewatch: item.would_rewatch,
+    review_provided: item.review_provided,
+    letterboxd_uri: item.letterboxd_uri,
+    image_description: item.image_description,
+    image: item.image,
+    img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.url}`,
+    rating_metric: item.rating_metric,
+    quote: item.quote,
+    run_time: item.run_time,
+    genres: item.genres?.map((genre) => ({
+    id: genre.id,
+    name: genre.name,
+    
+  })) || [],
+  }));
+  return { posts };
 }
 const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const { posts } = loaderData;
+  console.log(posts, 'posts!')
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
-  const [showWatched, setShowWatched] = useState(true);
+  // const [showWatched, setShowWatched] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 5;
@@ -32,13 +70,14 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
 
     const matchesSearch =
       post.title.toLowerCase().includes(query) ||
-     post.excerpt && post.excerpt.toLowerCase().includes(query);
+      (post.excerpt && post.excerpt.toLowerCase().includes(query));
 
-    const matchesWatchedStatus = post.watched === showWatched;
-    const matchesCategory =
-      !selectedCategory || post.genres?.includes(selectedCategory);
+    // const matchesWatchedStatus = post.watched === showWatched;
+    // const matchesCategory =
+    //   !selectedCategory || post.genres?.includes(selectedCategory);
 
-    return matchesSearch && matchesWatchedStatus && matchesCategory;
+    return matchesSearch ;
+    // && matchesWatchedStatus && matchesCategory;
   });
 
   const sortedPosts = [...filteredPosts].sort((a, b) => {
@@ -82,22 +121,24 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
             }}
           />
 
-          <ToggleWatched
+          {/* <ToggleWatched
             showWatched={showWatched}
             onToggle={(v) => {
               setShowWatched(v);
               setCurrentPage(1);
             }}
-          />
+          /> */}
         </div>
         <div className="flex flex-wrap md:flex-nowrap gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
-          <CategoryFilter
+          {/* <CategoryFilter
             selectedCategory={selectedCategory}
             onSelectCategory={(c) => {
               setSelectedCategory(c);
               setCurrentPage(1);
             }}
-          />
+          /> */}
+          {/* todo - category filter */}
+
           <div className="w-full text-neutral-500 flex items-center gap-1 justify-center md:justify-end font-brawler lowercase tracking-wide">
             <span className="text-neutral-600">
               showing
@@ -107,9 +148,11 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
               {filteredPosts.length}
             </span>
 
-            <span className="text-sm lg:text-base font-semibold">/ {posts.length}</span>
+            <span className="text-sm lg:text-base font-semibold">
+              / {posts.length}
+            </span>
 
-            <span>{`${showWatched ? "Watched" : "To watch"} `}</span>
+            {/* <span>{`${showWatched ? "Watched" : "To watch"} `}</span> */}
           </div>
         </div>
       </section>
