@@ -38,7 +38,7 @@ export async function loader({
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    image: item.image,
+    image_detail: item.image_detail,
     img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.url}`,
     rating_metric: item.rating_metric,
     quote: item.quote,

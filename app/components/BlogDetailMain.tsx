@@ -24,14 +24,14 @@ const BlogDetailMain = ({
           {postMeta.meta_title ? postMeta.meta_title : postMeta.title}
         </h1>
         <img
-          src={postMeta.image ? postMeta.image : "/images/gallery.jpg"}
+          src={postMeta.image_detail ? postMeta.image_detail : "/images/gallery.jpg"}
           alt={postMeta.title}
           className="w-full grayscale contrast-75 brightness-90
          hover:grayscale-0 hover:contrast-110 hover:brightness-105
          transition-all duration-700"
         />
         <p className="font-caption italic text-gray-600 mb-7 pb-2 pt-1.5 border-b border-gray-300 text-sm">
-          {postMeta.image
+          {postMeta.image_detail
             ? postMeta.image_description &&
               postMeta.image_description + " Photo: Unsplash"
             : "Photo: Red Gallery, Hydro Majestic Hotel 2025. Photo by author."}

@@ -9,12 +9,12 @@ import { FaSpotify, FaArrowRight } from "react-icons/fa";
 
 type ReviewFooterProps = {
   spotifyEpisodes?: { title: string; podcastName: string; url: string }[];
-  nextMovie: {
-    title: string;
+  nextMovie?: {
+    title?: string;
     year?: number;
     reason?: string;
-    url: string;
-    thumbnailUrl?: string;
+    url?: string;
+    thumbnail_url?: string;
   };
 };
 
@@ -105,10 +105,10 @@ const MovieFooter = ({
             href={nextMovie && nextMovie.url}
             className="flex flex-col sm:flex-row gap-6 group"
           >
-            {nextMovie && nextMovie.thumbnailUrl && (
+            {nextMovie && nextMovie.thumbnail_url && (
               <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
                 <img
-                  src={nextMovie && nextMovie.thumbnailUrl}
+                  src={nextMovie && nextMovie.thumbnail_url}
                   alt={nextMovie && nextMovie.title}
                   className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
                 />
@@ -133,13 +133,6 @@ const MovieFooter = ({
           </a>
         </section>
       </div>
-
-      {/* <div className="px-6 pt-8 pb-2 flex justify-center">
-        <div className="text-xs leading-tight font-bold uppercase tracking-widest opacity-50">
-          Designed, developed and deployed by sonicakes in 2026. All critique is
-          subjective and personal opinion of sonicakes only.{" "}
-        </div>
-      </div> */}
     </footer>
   );
 };

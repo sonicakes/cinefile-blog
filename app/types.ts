@@ -49,12 +49,19 @@ export type PostMeta = {
   review_provided: boolean;
   letterboxd_uri: string;
   image_description: string;
-  image: string;
+  image_detail: string;
   rating_metric: string;
   quote: string;
   run_time: string;
+  next_movie?: {
+    title?: string;
+    reason?: string;
+    thumbnail_url?: string;
+    movie?: StrapiPost;
+  };
+  availability?: { medium: string; location: string }[];
   img?: string;
-  genres: { id: string; name: string; }[];
+  genres: { id: string; name: string }[];
 };
 
 export type Stat = {
@@ -92,10 +99,17 @@ export type StrapiPost = {
   review_provided: boolean;
   letterboxd_uri: string;
   image_description: string;
-  image: string;
+  image_detail: string;
   rating_metric: string;
   quote: string;
   run_time: string;
+  next_movie?: {
+    title?: string;
+    reason?: string;
+    thumbnail_url?: string;
+    movie?: StrapiPost;
+  };
+  availability?: { medium: string; location: string }[];
   year: string;
   img?: {
     url: string;
@@ -106,5 +120,5 @@ export type StrapiPost = {
       large?: { url: string };
     };
   };
- genres: { id: string; name: string; documentId: string; }[]; 
+  genres: { id: string; name: string; documentId: string }[];
 };

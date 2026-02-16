@@ -4,6 +4,7 @@ import { MdCheck } from "react-icons/md";
 import { MdOutlineStarHalf } from "react-icons/md";
 import MetaItem from "~/components/MetaItem";
 import { getIconByMedium } from "~/helpers";
+import { Link } from "react-router";
 
 const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
   return (
@@ -52,17 +53,20 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
           </div>
 
           <div className="flex gap-1 items-center ">
-            <MdCheck color="crimson" size="20" /> Seen-
+            <MdCheck color="crimson" size="20" /> Seen
             {postMeta.watched}
           </div>
           <div className="flex gap-1 items-center w-full">
             {postMeta.availability &&
               postMeta.availability.map((item, index) => (
-                <MetaItem
+                <a href={item.location} target="_blank" rel="noopener noreferrer">
+                     <MetaItem
                   key={index}
                   Icon={getIconByMedium(item.medium)}
                   text={item.medium}
                 />
+                </a>
+             
               ))}
           </div>
         </div>

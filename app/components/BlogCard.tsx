@@ -25,7 +25,7 @@ const BlogCard = ({
     rating,
     img,
     title,
-    image,
+    image_detail,
     director,
     run_time,
     watched,
