@@ -33,6 +33,7 @@
 
 export type PostMeta = {
   id: string;
+  documentId: string;
   title: string;
   date_reviewed: string;
   year: string;
@@ -53,7 +54,7 @@ export type PostMeta = {
   quote: string;
   run_time: string;
   img?: string;
-  genres: { id: string; name: string; }[]; // This means "an array containing any number of objects"
+  genres: { id: string; name: string; }[];
 };
 
 export type Stat = {
@@ -105,5 +106,5 @@ export type StrapiPost = {
       large?: { url: string };
     };
   };
- genres: { id: string; name: string; documentId: string; }[]; // This means "an array containing any number of objects"
+ genres: { id: string; name: string; documentId: string; }[]; 
 };

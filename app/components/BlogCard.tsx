@@ -20,7 +20,7 @@ const BlogCard = ({
 }) => {
   const {
     review_provided,
-    slug,
+    documentId,
     year,
     rating,
     img,
@@ -37,7 +37,7 @@ const BlogCard = ({
 
   const Wrapper = ({ children }: { children: React.ReactNode }) =>
     review_provided ? (
-      <Link to={slug} className={classExtra}>
+      <Link to={`/blog/${documentId}`} className={classExtra}>
         {children}
       </Link>
     ) : (
@@ -63,7 +63,7 @@ const BlogCard = ({
             <div className="text-white bg-linear-to-l flex-wrap from-black px-4 py-1.5 absolute top-0 right-0 flex gap-1 justify-end font-bold font-brawler text-base">
               <MdOutlineStarHalf size="20" />
               <MdOutlineStarHalf size="20" />
-              {/* <span>{rating && rating}</span> */}
+              <span>{rating && rating}</span>
             </div>
           ) : (
             <div className="absolute top-0 right-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out bg-crimson text-white px-4 py-1.5 font-bold font-brawler uppercase tracking-widest text-sm shadow-lg">

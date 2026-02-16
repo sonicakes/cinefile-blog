@@ -11,12 +11,7 @@ import Pagination from "~/components/Pagination";
 export async function loader({
   request,
 }: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
-  // const url = new URL("/movies.json", request.url);
-  // const res = await fetch(url.href);
-  // if (!res.ok) throw new Error("Failed to fetch data");
-  // const data = await res.json();
 
-  // return { posts: data };
   const res = await fetch(
     `${import.meta.env.VITE_API_URL}/movies?populate=*`,
   );
@@ -27,6 +22,7 @@ export async function loader({
 
   const posts = json.data.map((item) => ({
     id: item.id,
+    documentId: item.documentId,
     title: item.title,
     rating: item.rating,
     year: item.year,
@@ -57,7 +53,6 @@ export async function loader({
 }
 const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const { posts } = loaderData;
-  console.log(posts, 'posts!')
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
   // const [showWatched, setShowWatched] = useState(true);

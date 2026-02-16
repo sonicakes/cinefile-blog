@@ -1,51 +1,68 @@
-import type { Route } from "./+types";
-import type { PostMeta, Stat } from "~/types";
+import type { Route } from "./+types/detail";
+import type { Stat, StrapiPost, StrapiResponse } from "~/types";
 import BlogDetailMain from "~/components/BlogDetailMain";
 import { NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
 import readingTime from "reading-time";
 import AsideMeta from "~/components/AsideMeta";
 
-export async function loader({ request, params }: Route.LoaderArgs) {
-  const { slug } = params;
-  const url = new URL("/movies.json", request.url);
-  const res = await fetch(url.href);
+export async function loader({ params }: Route.LoaderArgs) {
+  const { id } = params;
 
-  if (!res.ok) throw new Error("Failed to fetch data");
+  const res = await fetch(
+    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=*`,
+  );
 
-  const index = await res.json();
-  const postMeta = index.find((post: PostMeta) => post.slug === slug);
+  console.log(res)
 
-  if (!postMeta) throw new Response("not found", { status: 404 });
+  if (!res.ok) throw new Error("Failed to fetch blog deets data");
 
-  const modules = import.meta.glob("/posts/*.md", {
-    query: "?raw",
-    import: "default",
-  });
-  const path = `/posts/${slug}.md`;
-  if (!(path in modules)) {
-    throw new Response("Post not found", { status: 404 });
-  }
+  const json: StrapiResponse<StrapiPost> = await res.json();
 
-  const markdown = await modules[path]();
-  const stats = readingTime(markdown);
+  if (!json.data.length) throw new Response("not found", { status: 404 });
+  const item = json.data[0];
+  console.log(item)
+  const post = {
+    id: item.id,
+    documentId: item.documentId,
+    title: item.title,
+    rating: item.rating,
+    year: item.year,
+    date_reviewed: item.date_reviewed,
+    meta_title: item.meta_title,
+    body_blog: item.body_blog,
+    slug: item.slug,
+    excerpt: item.excerpt,
+    watched: item.watched,
+    director: item.director,
+    would_recommend: item.would_recommend,
+    would_rewatch: item.would_rewatch,
+    review_provided: item.review_provided,
+    letterboxd_uri: item.letterboxd_uri,
+    image_description: item.image_description,
+    image: item.image,
+    img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.url}`,
+    rating_metric: item.rating_metric,
+    quote: item.quote,
+    run_time: item.run_time,
+    genres:
+      item.genres?.map((genre) => ({
+        id: genre.id,
+        name: genre.name,
+      })) || [],
+  };
+
+  const stats = readingTime(post.body_blog || "");
   return {
-    postMeta,
-    markdown: markdown,
-    stats,
+    post,
+    stats
   };
 }
 
-type BlogPostDetailsPageProps = {
-  loaderData: {
-    postMeta: PostMeta;
-    markdown: string;
-    stats: Stat;
-  };
-};
 
-const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
-  const { postMeta, markdown, stats } = loaderData;
+const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
+  const { post, stats } = loaderData;
+
 
   return (
     <>
@@ -56,16 +73,20 @@ const BlogPostDetailsPage = ({ loaderData }: BlogPostDetailsPageProps) => {
         >
           Film Reviews
         </NavLink>{" "}
-        / <b>{postMeta.title}</b>
+        / <b>{post.title}</b>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
-        <BlogDetailMain postMeta={postMeta} markdown={markdown} stats={stats} />
-        <AsideMeta postMeta={postMeta} />
+        <BlogDetailMain
+          postMeta={post}
+          markdown={post.body_blog}
+          stats={stats}
+        />
+        <AsideMeta postMeta={post} />
       </div>
-      <MovieFooter
+      {/* <MovieFooter
         spotifyEpisodes={postMeta.spotify_episodes}
         nextMovie={postMeta.next_movie}
-      />
+      /> */}
     </>
   );
 };

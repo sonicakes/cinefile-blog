@@ -1,6 +1,8 @@
 # 🎬 The Cinefile blog 
 **Movie reviews no one asked for.**
 
+*Currently in dev*
+
 The Cinefile blog is a movie reviews site that is stylized to look like a newspaper. The premise is that this is a bloggy newspaper that a pretentious *Film Lady* - the author of the site & reviews (aka me) made about her precious movie opinions. She thinks her insights are awfully deep & unique.
 
 The tone I was going for: fake pretentiousness, humour, self-deprecation.
@@ -159,6 +161,8 @@ Example data of a movie item that I haven't watched & review is not provided:
 ## Links
 
 [The Cinefile Blog](https://cinefile-blog.netlify.app/) - deployed live on Netlify.
+
+**NOTE**: BE is still in dev, so FE will crash.
 
 ## 📸 Screenshots
 
