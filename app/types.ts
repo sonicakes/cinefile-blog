@@ -1,64 +1,32 @@
-// export type PostMeta = {
-//   id: string;
-//   title: string;
-//   date_reviewed?: string;
-//   read_time?: string;
-//   meta_title?: string;
-//   excerpt?: string;
-//   date?: string;
-//   slug: string;
-//   availability?: { medium: string; location: string }[];
-//   image?: string;
-//   year: string;
-//   watched: boolean | null;
-//   director?: string;
-//   quote?: string;
-//   genres?: string[];
-//   image_description?: string;
-//   run_time?: string;
-//   review_provided?: boolean;
-//   rating?: number;
-//   rating_metric?: string;
-//   would_recommend?: boolean;
-//   would_rewatch?: boolean;
-//   spotify_episodes?: { title: string; podcastName: string; url: string }[];
-//   next_movie?: {
-//     title?: string;
-//     year?: number;
-//     reason?: string;
-//     url?: string;
-//     thumbnailUrl?: string;
-//   };
-// };
-
 export type PostMeta = {
   id: string;
   documentId: string;
   title: string;
   date_reviewed: string;
+  date_watched: string;
   year: string;
   rating: number;
   meta_title: string;
   body_blog: string;
-  slug: string;
   excerpt: string;
-  watched: boolean;
   director: string;
   would_recommend: boolean;
   would_rewatch: boolean;
   review_provided: boolean;
   letterboxd_uri: string;
   image_description: string;
-  image_detail: string;
   rating_metric: string;
   quote: string;
   run_time: string;
   next_movie?: {
-    title?: string;
     reason?: string;
-    thumbnail_url?: string;
     movie?: StrapiPost;
   };
+  spotify_episodes?: {
+    title?: string;
+    url?: string;
+    podcastName: string;
+  }[];
   availability?: { medium: string; location: string }[];
   img?: string;
   genres: { id: string; name: string }[];
@@ -88,27 +56,28 @@ export type StrapiPost = {
   rating: number;
   title: string;
   date_reviewed: string;
+  date_watched: string;
   meta_title: string;
   body_blog: string;
-  slug: string;
   excerpt: string;
-  watched: boolean;
   director: string;
   would_recommend: boolean;
   would_rewatch: boolean;
   review_provided: boolean;
   letterboxd_uri: string;
   image_description: string;
-  image_detail: string;
   rating_metric: string;
   quote: string;
   run_time: string;
   next_movie?: {
-    title?: string;
     reason?: string;
-    thumbnail_url?: string;
     movie?: StrapiPost;
   };
+  spotify_episodes?: {
+    title?: string;
+    url?: string;
+    podcastName: string;
+  }[];
   availability?: { medium: string; location: string }[];
   year: string;
   img?: {

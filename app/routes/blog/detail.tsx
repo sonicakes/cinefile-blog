@@ -10,7 +10,7 @@ export async function loader({ params }: Route.LoaderArgs) {
   const { id } = params;
 
   const res = await fetch(
-    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=availability&populate=genres&populate=img`,
+    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
   );
 
   if (!res.ok) throw new Error("Failed to fetch blog deets data");
@@ -19,7 +19,9 @@ export async function loader({ params }: Route.LoaderArgs) {
 
   if (!json.data.length) throw new Response("not found", { status: 404 });
   const item = json.data[0];
-  console.log(item)
+
+  console.log(item);
+
   const post = {
     id: item.id,
     documentId: item.documentId,
@@ -29,32 +31,33 @@ export async function loader({ params }: Route.LoaderArgs) {
     date_reviewed: item.date_reviewed,
     meta_title: item.meta_title,
     body_blog: item.body_blog,
-    slug: item.slug,
     excerpt: item.excerpt,
-    watched: item.watched,
     director: item.director,
     would_recommend: item.would_recommend,
     would_rewatch: item.would_rewatch,
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    image_detail: item.image_detail,
-    img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.url}`,
+    img: item.img?.url && item.img.url,
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,
-      next_movie: {
-    title: item.next_movie?.title,
-    reason: item.next_movie?.reason,
-    thumbnail_url: item.next_movie?.thumbnail_url,
-    movie: item.next_movie?.movie
-  },
+    next_movie: {
+      reason: item.next_movie?.reason,
+      movie: item.next_movie?.movie,
+    },
+     spotify_episodes:
+      item.spotify_episodes?.map((ep) => ({
+        title: ep.title,
+        url: ep.url,
+        podcastName: ep.podcastName
+      })) || [],
     genres:
       item.genres?.map((genre) => ({
         id: genre.id,
         name: genre.name,
       })) || [],
-          availability:
+    availability:
       item.availability?.map((vl) => ({
         medium: vl.medium,
         location: vl.location,
@@ -64,15 +67,14 @@ export async function loader({ params }: Route.LoaderArgs) {
   const stats = readingTime(post.body_blog || "");
   return {
     post,
-    stats
+    stats,
   };
 }
-
 
 const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
   const { post, stats } = loaderData;
 
-console.log('post', post)
+  console.log("post", post);
   return (
     <>
       <div className="border-b-5 border-dark text-center font-brawler uppercase text-xs tracking-widest py-2.5 bt-dark border-t">
@@ -81,7 +83,7 @@ console.log('post', post)
           to="/blog"
         >
           Film Reviews
-        </NavLink>{" "}
+        </NavLink>
         / <b>{post.title}</b>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
@@ -93,7 +95,7 @@ console.log('post', post)
         <AsideMeta postMeta={post} />
       </div>
       <MovieFooter
-        // spotifyEpisodes={post.spotify_episodes}
+        spotifyEpisodes={post.spotify_episodes}
         nextMovie={post.next_movie}
       />
     </>

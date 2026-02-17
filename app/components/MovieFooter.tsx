@@ -1,5 +1,6 @@
 import { FaLetterboxd, FaEnvelope } from "react-icons/fa6";
 import { FaSpotify, FaArrowRight } from "react-icons/fa";
+import type { StrapiPost } from "~/types";
 
 // type Resource = {
 //   label: string;
@@ -10,11 +11,8 @@ import { FaSpotify, FaArrowRight } from "react-icons/fa";
 type ReviewFooterProps = {
   spotifyEpisodes?: { title: string; podcastName: string; url: string }[];
   nextMovie?: {
-    title?: string;
-    year?: number;
     reason?: string;
-    url?: string;
-    thumbnail_url?: string;
+    movie?: StrapiPost
   };
 };
 
@@ -39,6 +37,7 @@ const MovieFooter = ({
                 <a
                   key={i}
                   href={ep.url}
+                  target="_blank"
                   className="p-6 hover:bg-neutral-100 transition-colors group flex flex-col justify-between"
                 >
                   <div>
@@ -102,31 +101,36 @@ const MovieFooter = ({
             watch next
           </h4>
           <a
-            href={nextMovie && nextMovie.url}
+            href={nextMovie && nextMovie.movie && `/blog/${nextMovie.movie.documentId}`}
             className="flex flex-col sm:flex-row gap-6 group"
           >
-            {nextMovie && nextMovie.thumbnail_url && (
+            {nextMovie && nextMovie.movie?.img && (
               <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
                 <img
-                  src={nextMovie && nextMovie.thumbnail_url}
-                  alt={nextMovie && nextMovie.title}
+                  src={nextMovie && nextMovie.movie.img}
+                  alt={nextMovie && nextMovie.movie.title}
                   className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
                 />
                 <div className="absolute inset-0 border-8 border-transparent group-hover:border-black/10 pointer-events-none"></div>
               </div>
             )}
             <div className="flex flex-col justify-center">
+                 {nextMovie && nextMovie.reason && (
+                <p className="text-xs uppercase pb-1 leading-tight text-neutral-400">
+                  {nextMovie && nextMovie.reason}
+                </p>
+              )}
               <h5 className="text-2xl font-brawler capitalize font-bold leading-none tracking-tighter group-hover:text-crimson">
-                {nextMovie && nextMovie.title}{" "}
-                {nextMovie && nextMovie.year && (
-                  <span className="font-normal opacity-60">
-                    ({nextMovie.year})
+                {nextMovie && nextMovie.movie?.title}
+                {nextMovie && nextMovie.movie?.year && (
+                  <span className="font-normal opacity-60 pl-1">
+                    ({nextMovie.movie.year})
                   </span>
                 )}
               </h5>
-              {nextMovie && nextMovie.reason && (
-                <p className="mt-3 text-sm leading-tight text-gray-600 font-medium">
-                  {nextMovie && nextMovie.reason}
+              {nextMovie && nextMovie.movie?.excerpt && (
+                <p className="mt-3 text-sm line-clamp-2 leading-tight text-neutral-600 font-medium">
+                  {nextMovie.movie.excerpt}
                 </p>
               )}
             </div>

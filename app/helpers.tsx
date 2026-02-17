@@ -1,4 +1,4 @@
-import { MdComputer, MdTv, MdHome } from "react-icons/md";
+import { MdComputer, MdTv, MdHome, MdAirplanemodeActive } from "react-icons/md";
 import { FaYoutube } from "react-icons/fa";
 import { SiMubi, SiPlex, SiTubi } from "react-icons/si";
 import { PiDiscDuotone } from "react-icons/pi";
@@ -7,6 +7,8 @@ export const getIconByMedium = (medium: string) => {
   switch (medium.toLowerCase()) {
     case "youtube":
       return FaYoutube;
+    case "plane":
+      return MdAirplanemodeActive;
     case "mubi":
       return SiMubi;
     case "plex":
