@@ -24,7 +24,7 @@ const BlogDetailMain = ({
       </h1>
       <img
         src={
-          postMeta.image_detail ? postMeta.image_detail : "/images/gallery.jpg"
+          postMeta.img ? postMeta.img : "/images/gallery.jpg"
         }
         alt={postMeta.title}
         className="w-full grayscale contrast-75 brightness-90
@@ -32,7 +32,7 @@ const BlogDetailMain = ({
          transition-all duration-700"
       />
       <p className="font-caption italic text-gray-600 mb-7 pb-2 pt-1.5 border-b border-gray-300 text-sm">
-        {postMeta.image_detail
+        {postMeta.img
           ? postMeta.image_description &&
             postMeta.image_description + " Photo: Unsplash"
           : "Photo: Red Gallery, Hydro Majestic Hotel 2025. Photo by author."}

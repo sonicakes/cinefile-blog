@@ -10,7 +10,7 @@ export async function loader({ params }: Route.LoaderArgs) {
   const { id } = params;
 
   const res = await fetch(
-    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=availability&populate=genres&populate=img`,
+    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
   );
 
   if (!res.ok) throw new Error("Failed to fetch blog deets data");
@@ -31,16 +31,13 @@ export async function loader({ params }: Route.LoaderArgs) {
     date_reviewed: item.date_reviewed,
     meta_title: item.meta_title,
     body_blog: item.body_blog,
-    slug: item.slug,
     excerpt: item.excerpt,
-    watched: item.watched,
     director: item.director,
     would_recommend: item.would_recommend,
     would_rewatch: item.would_rewatch,
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    image_detail: item.image_detail,
     img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.url}`,
     rating_metric: item.rating_metric,
     quote: item.quote,
@@ -49,6 +46,12 @@ export async function loader({ params }: Route.LoaderArgs) {
       reason: item.next_movie?.reason,
       movie: item.next_movie?.movie,
     },
+     spotify_episodes:
+      item.spotify_episodes?.map((ep) => ({
+        title: ep.title,
+        url: ep.url,
+        podcastName: ep.podcastName
+      })) || [],
     genres:
       item.genres?.map((genre) => ({
         id: genre.id,
@@ -92,7 +95,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
         <AsideMeta postMeta={post} />
       </div>
       <MovieFooter
-        // spotifyEpisodes={post.spotify_episodes}
+        spotifyEpisodes={post.spotify_episodes}
         nextMovie={post.next_movie}
       />
     </>

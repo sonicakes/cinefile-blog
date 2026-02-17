@@ -23,18 +23,16 @@ export async function loader({
     rating: item.rating,
     year: item.year,
     date_reviewed: item.date_reviewed,
+    date_watched: item.date_watched,
     meta_title: item.meta_title,
     body_blog: item.body_blog,
-    slug: item.slug,
     excerpt: item.excerpt,
-    watched: item.watched,
     director: item.director,
     would_recommend: item.would_recommend,
     would_rewatch: item.would_rewatch,
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    image_detail: item.image_detail,
     img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.url}`,
     rating_metric: item.rating_metric,
     quote: item.quote,
@@ -56,7 +54,6 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const { posts } = loaderData;
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
-  // const [showWatched, setShowWatched] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 5;
@@ -67,13 +64,12 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
     const matchesSearch =
       post.title.toLowerCase().includes(query) ||
       (post.excerpt && post.excerpt.toLowerCase().includes(query));
-
-    // const matchesWatchedStatus = post.watched === showWatched;
+    //TODO: bring back category filters
     // const matchesCategory =
     //   !selectedCategory || post.genres?.includes(selectedCategory);
 
     return matchesSearch;
-    // && matchesWatchedStatus && matchesCategory;
+    //  && matchesCategory;
   });
 
   const sortedPosts = [...filteredPosts].sort((a, b) => {
@@ -116,14 +112,6 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
               setCurrentPage(1);
             }}
           />
-
-          {/* <ToggleWatched
-            showWatched={showWatched}
-            onToggle={(v) => {
-              setShowWatched(v);
-              setCurrentPage(1);
-            }}
-          /> */}
         </div>
         <div className="flex flex-wrap md:flex-nowrap gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           {/* <CategoryFilter
@@ -133,7 +121,6 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
               setCurrentPage(1);
             }}
           /> */}
-          {/* todo - category filter */}
 
           <div className="w-full text-neutral-500 flex items-center gap-1 justify-center md:justify-end font-brawler lowercase tracking-wide">
             <span className="text-neutral-600">
@@ -147,8 +134,6 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
             <span className="text-sm lg:text-base font-semibold">
               / {posts.length}
             </span>
-
-            {/* <span>{`${showWatched ? "Watched" : "To watch"} `}</span> */}
           </div>
         </div>
       </section>
@@ -158,7 +143,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
           currentPosts.map((post: PostMeta, index: number) => (
             <BlogCard
               blog={post}
-              key={post.slug}
+              key={post.documentId}
               classExtra={index % 3 === 0 ? "md:col-span-2" : "md:col-span-1"}
             />
           ))
