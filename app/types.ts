@@ -54,9 +54,7 @@ export type PostMeta = {
   quote: string;
   run_time: string;
   next_movie?: {
-    title?: string;
     reason?: string;
-    thumbnail_url?: string;
     movie?: StrapiPost;
   };
   availability?: { medium: string; location: string }[];
@@ -104,9 +102,7 @@ export type StrapiPost = {
   quote: string;
   run_time: string;
   next_movie?: {
-    title?: string;
     reason?: string;
-    thumbnail_url?: string;
     movie?: StrapiPost;
   };
   availability?: { medium: string; location: string }[];

@@ -19,7 +19,9 @@ export async function loader({ params }: Route.LoaderArgs) {
 
   if (!json.data.length) throw new Response("not found", { status: 404 });
   const item = json.data[0];
-  console.log(item)
+
+  console.log(item);
+
   const post = {
     id: item.id,
     documentId: item.documentId,
@@ -43,18 +45,16 @@ export async function loader({ params }: Route.LoaderArgs) {
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,
-      next_movie: {
-    title: item.next_movie?.title,
-    reason: item.next_movie?.reason,
-    thumbnail_url: item.next_movie?.thumbnail_url,
-    movie: item.next_movie?.movie
-  },
+    next_movie: {
+      reason: item.next_movie?.reason,
+      movie: item.next_movie?.movie,
+    },
     genres:
       item.genres?.map((genre) => ({
         id: genre.id,
         name: genre.name,
       })) || [],
-          availability:
+    availability:
       item.availability?.map((vl) => ({
         medium: vl.medium,
         location: vl.location,
@@ -64,15 +64,14 @@ export async function loader({ params }: Route.LoaderArgs) {
   const stats = readingTime(post.body_blog || "");
   return {
     post,
-    stats
+    stats,
   };
 }
-
 
 const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
   const { post, stats } = loaderData;
 
-console.log('post', post)
+  console.log("post", post);
   return (
     <>
       <div className="border-b-5 border-dark text-center font-brawler uppercase text-xs tracking-widest py-2.5 bt-dark border-t">
@@ -81,7 +80,7 @@ console.log('post', post)
           to="/blog"
         >
           Film Reviews
-        </NavLink>{" "}
+        </NavLink>
         / <b>{post.title}</b>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">

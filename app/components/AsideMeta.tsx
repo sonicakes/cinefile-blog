@@ -1,10 +1,7 @@
 import type { PostMeta } from "~/types";
-import { MdOutlineWatchLater } from "react-icons/md";
-import { MdCheck } from "react-icons/md";
-import { MdOutlineStarHalf } from "react-icons/md";
+import { MdOutlineRecommend, MdOutlineStarHalf, MdOutlineWatchLater, MdOutlineRepeat } from "react-icons/md";
 import MetaItem from "~/components/MetaItem";
 import { getIconByMedium } from "~/helpers";
-import { Link } from "react-router";
 
 const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
   return (
@@ -46,27 +43,35 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
             </span>
           ))}
         </div>
+        {/* TODO: add date watched/date reviewed */}
         <div className="font-bold tracking-wide font-brawler flex gap-1 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-300">
           <div className="flex gap-1 items-center">
-            <MdOutlineWatchLater color="crimson" size="20" />{" "}
+            <MdOutlineWatchLater color="crimson" size="20" />
             {postMeta.run_time ? postMeta.run_time : "1hr 15m"}
           </div>
-
-          <div className="flex gap-1 items-center ">
-            <MdCheck color="crimson" size="20" /> Seen
-            {postMeta.watched}
+          <div className="flex gap-1 items-center">
+            <MdOutlineRecommend color="crimson" size="20" /> recommend
+            {postMeta.would_recommend}
+          </div>
+             <div className="flex gap-1 items-center">
+            <MdOutlineRepeat color="crimson" size="20" /> rewatchable
+            {postMeta.would_rewatch}
           </div>
           <div className="flex gap-1 items-center w-full">
             {postMeta.availability &&
               postMeta.availability.map((item, index) => (
-                <a href={item.location} target="_blank" rel="noopener noreferrer">
-                     <MetaItem
-                  key={index}
-                  Icon={getIconByMedium(item.medium)}
-                  text={item.medium}
-                />
+                <a
+                  href={item.location}
+                  className="hover:underline transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MetaItem
+                    key={index}
+                    Icon={getIconByMedium(item.medium)}
+                    text={item.medium}
+                  />
                 </a>
-             
               ))}
           </div>
         </div>
@@ -90,22 +95,6 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
             </span>
             <span>{postMeta.rating_metric && postMeta.rating_metric}</span>
           </p>
-        </div>
-        <div className="text-sm items-center leading-5 pb-2 flex gap-2 justify-between">
-          <span className="font-brawler text-xs text-gray-600 italic font-semibold">
-            Would recommend it to others?
-          </span>
-          <span className="font-semibold uppercase">
-            {postMeta.would_recommend ? "yes" : "no"}
-          </span>
-        </div>
-        <div className="text-sm flex gap-2 items-center font-semibold pb-2 justify-between leading-5">
-          <span className="text-xs italic font-brawler text-gray-600">
-            Would you watch it again?
-          </span>
-          <span className="font-semibold uppercase">
-            {postMeta.would_rewatch ? "yes" : "no"}
-          </span>
         </div>
       </div>
       <div>

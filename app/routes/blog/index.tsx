@@ -5,16 +5,12 @@ import { useState } from "react";
 import SearchInput from "~/components/SearchInput";
 import CategoryFilter from "~/components/CategoryFilter";
 import SortSelector from "~/components/SortSelector";
-import ToggleWatched from "~/components/ToggleWatched";
 import Pagination from "~/components/Pagination";
 
 export async function loader({
   request,
 }: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
-
-  const res = await fetch(
-    `${import.meta.env.VITE_API_URL}/movies?populate=*`,
-  );
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/movies?populate=*`);
 
   if (!res.ok) throw new Error("Failed to fetch blog posts");
 
@@ -43,11 +39,16 @@ export async function loader({
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,
-    genres: item.genres?.map((genre) => ({
-    id: genre.id,
-    name: genre.name,
-    
-  })) || [],
+    availability:
+      item.availability?.map((vl) => ({
+        medium: vl.medium,
+        location: vl.location,
+      })) || [],
+    genres:
+      item.genres?.map((genre) => ({
+        id: genre.id,
+        name: genre.name,
+      })) || [],
   }));
   return { posts };
 }
@@ -71,7 +72,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
     // const matchesCategory =
     //   !selectedCategory || post.genres?.includes(selectedCategory);
 
-    return matchesSearch ;
+    return matchesSearch;
     // && matchesWatchedStatus && matchesCategory;
   });
 

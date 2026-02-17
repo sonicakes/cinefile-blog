@@ -25,14 +25,14 @@ const BlogCard = ({
     rating,
     img,
     title,
-    image_detail,
     director,
     run_time,
-    watched,
+    would_recommend,
     excerpt,
     quote,
     genres,
     date_reviewed,
+    availability,
   } = blog;
 
   const Wrapper = ({ children }: { children: React.ReactNode }) =>
@@ -59,7 +59,7 @@ const BlogCard = ({
             src={img || "./images/gallery.jpg"}
             alt={title}
           />
-          {review_provided && watched ? (
+          {review_provided ? (
             <div className="text-white bg-linear-to-l flex-wrap from-black px-4 py-1.5 absolute top-0 right-0 flex gap-1 justify-end font-bold font-brawler text-base">
               <MdOutlineStarHalf size="20" />
               <MdOutlineStarHalf size="20" />
@@ -82,23 +82,14 @@ const BlogCard = ({
           </header>
           {genres && (
             <div className="text-xs uppercase pt-2 pb-4 flex gap-2 font-semibold flex-wrap">
-              {/* {genres.map((genre) => (
+              {genres.map((genre) => (
                 <span
-                  key={genre}
+                  key={genre.id}
                   className="bg-light transition duration-700 group-hover:bg-neutral-600 group-hover:text-gray-100 px-2 py-1 border border-gray-600"
                 >
-                  {genre}
+                  {genre.name}
                 </span>
-              ))} */}
-                        {genres.map((genre) => (
-  <span 
-    key={genre.id}
-    className="bg-light transition duration-700 group-hover:bg-neutral-600 group-hover:text-gray-100 px-2 py-1 border border-gray-600"
-
-  >
-    {genre.name} {/* ✅ This works because it's a string */}
-  </span>
-))}
+              ))}
             </div>
           )}
           <div className="font-bold tracking-wide font-brawler flex pt-2 gap-x-4 gap-y-1.5 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-700">
@@ -109,20 +100,20 @@ const BlogCard = ({
                 fullWidth
               />
             )}
-            {watched ? (
-              <MetaItem Icon={MdCheck} text={`watched`} />
+            {would_recommend ? (
+              <MetaItem Icon={MdCheck} text={`recommended`} />
             ) : (
               <MetaItem Icon={MdDoNotDisturb} text={`not seen yet`} />
             )}
             <MetaItem Icon={MdOutlineWatchLater} text={run_time || "1hr 15m"} />
-            {/* {availability &&
+            {availability &&
               availability.map((item, index) => (
-                <MetaItem
-                  key={index}
-                  Icon={getIconByMedium(item.medium)}
-                  text={item.medium}
-                />
-              ))} */}
+                  <MetaItem
+                    key={index}
+                    Icon={getIconByMedium(item.medium)}
+                    text={item.medium}
+                  />
+              ))}
           </div>
           <hr className="border-t-3 my-5 border-double border-gray-600" />
           {excerpt && (
@@ -130,7 +121,9 @@ const BlogCard = ({
               <h3 className="font-brawler uppercase font-bold pb-1 text-base">
                 Synopsis
               </h3>
-              <p className="columns-1 lg:columns-2 gap-5 text-justify hyphens-auto text-[15px]">{excerpt}</p>
+              <p className="columns-1 lg:columns-2 gap-5 text-justify hyphens-auto text-[15px]">
+                {excerpt}
+              </p>
             </div>
           )}
           {quote && (
