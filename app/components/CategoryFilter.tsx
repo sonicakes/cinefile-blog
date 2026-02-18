@@ -13,7 +13,7 @@ const CategoryFilter = ({
   categories
 }: CategoryFilterProps) => {
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 5;
+  const visibleCount = 8;
 
   const nextSlide = () => {
     setStartIndex((prev) =>

@@ -102,7 +102,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   return (
     <>
       <section className="py-4 md:px-4 md:pb-2 border-b border-neutral-300 flex flex-col gap-2">
-        <div className=" border-b border-neutral-300 pb-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr] gap-5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
+        <div className=" border-b border-neutral-300 pb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr] gap-5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           <SearchInput
             searchQuery={searchQuery}
             onSearchChange={(query) => {
