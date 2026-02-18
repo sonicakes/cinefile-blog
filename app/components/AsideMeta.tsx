@@ -74,8 +74,8 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
                 >
                   <MetaItem
                     key={index}
-                    Icon={getIconByMedium(item.medium)}
-                    text={item.medium}
+                    Icon={getIconByMedium(item.source)}
+                    text={item.source}
                   />
                 </a>
               ))}

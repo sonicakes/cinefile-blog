@@ -7,16 +7,24 @@ import CategoryFilter from "~/components/CategoryFilter";
 import SortSelector from "~/components/SortSelector";
 import Pagination from "~/components/Pagination";
 
-export async function loader({
-  request,
-}: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
-  const res = await fetch(`${import.meta.env.VITE_API_URL}/movies?populate=*`);
+export async function loader({ request }: Route.LoaderArgs) {
+  const apiUrl = import.meta.env.VITE_API_URL;
 
-  if (!res.ok) throw new Error("Failed to fetch blog posts");
+  const [moviesRes, genresRes] = await Promise.all([
+    fetch(`${apiUrl}/movies?populate=*`),
+    fetch(`${apiUrl}/genres`),
+  ]);
 
-  const json: StrapiResponse<StrapiPost> = await res.json();
+  if (!moviesRes.ok || !genresRes.ok) {
+    throw new Error("Failed to fetch data from API");
+  }
 
-  const posts = json.data.map((item) => ({
+  const [moviesJson, genresJson] = await Promise.all([
+    moviesRes.json(),
+    genresRes.json(),
+  ]);
+
+  const posts = moviesJson.data.map((item: StrapiPost) => ({
     id: item.id,
     documentId: item.documentId,
     title: item.title,
@@ -39,7 +47,7 @@ export async function loader({
     run_time: item.run_time,
     availability:
       item.availability?.map((vl) => ({
-        medium: vl.medium,
+        source: vl.source,
         location: vl.location,
       })) || [],
     genres:
@@ -48,10 +56,13 @@ export async function loader({
         name: genre.name,
       })) || [],
   }));
-  return { posts };
+  return {
+    posts,
+    categories: genresJson.data.map((g: any) => g.name),
+  };
 }
 const BlogPage = ({ loaderData }: Route.ComponentProps) => {
-  const { posts } = loaderData;
+  const { posts, categories } = loaderData;
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -64,12 +75,11 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
     const matchesSearch =
       post.title.toLowerCase().includes(query) ||
       (post.excerpt && post.excerpt.toLowerCase().includes(query));
-    //TODO: bring back category filters
-    // const matchesCategory =
-    //   !selectedCategory || post.genres?.includes(selectedCategory);
+    const matchesCategory =
+      !selectedCategory ||
+      post.genres?.some((genre) => genre.name === selectedCategory);
 
-    return matchesSearch;
-    //  && matchesCategory;
+    return matchesSearch && matchesCategory;
   });
 
   const sortedPosts = [...filteredPosts].sort((a, b) => {
@@ -92,7 +102,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   return (
     <>
       <section className="py-4 md:px-4 md:pb-2 border-b border-neutral-300 flex flex-col gap-2">
-        <div className=" border-b border-neutral-300 pb-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr] gap-5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
+        <div className=" border-b border-neutral-300 pb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr] gap-5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           <SearchInput
             searchQuery={searchQuery}
             onSearchChange={(query) => {
@@ -114,13 +124,14 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
           />
         </div>
         <div className="flex flex-wrap md:flex-nowrap gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
-          {/* <CategoryFilter
+          <CategoryFilter
+            categories={categories}
             selectedCategory={selectedCategory}
             onSelectCategory={(c) => {
               setSelectedCategory(c);
               setCurrentPage(1);
             }}
-          /> */}
+          />
 
           <div className="w-full text-neutral-500 flex items-center gap-1 justify-center md:justify-end font-brawler lowercase tracking-wide">
             <span className="text-neutral-600">

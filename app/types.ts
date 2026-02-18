@@ -27,7 +27,7 @@ export type PostMeta = {
     url?: string;
     podcastName: string;
   }[];
-  availability?: { medium: string; location: string }[];
+  availability?: { source: string; location: string }[];
   img?: string;
   genres: { id: string; name: string }[];
 };
@@ -78,7 +78,7 @@ export type StrapiPost = {
     url?: string;
     podcastName: string;
   }[];
-  availability?: { medium: string; location: string }[];
+  availability?: { source: string; location: string }[];
   year: string;
   img?: {
     url: string;

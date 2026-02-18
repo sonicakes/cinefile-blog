@@ -1,18 +1,19 @@
 import { MdArrowLeft, MdArrowRight } from "react-icons/md";
-import React, { useState } from "react";
-import { categories } from "~/constants";
+import { useState } from "react";
 
 interface CategoryFilterProps {
   selectedCategory: string | null;
   onSelectCategory: (category: string | null) => void;
+  categories: Array<any>
 }
 
 const CategoryFilter = ({
   selectedCategory,
   onSelectCategory,
+  categories
 }: CategoryFilterProps) => {
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 5;
+  const visibleCount = 8;
 
   const nextSlide = () => {
     setStartIndex((prev) =>
