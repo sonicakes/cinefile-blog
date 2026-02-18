@@ -59,7 +59,7 @@ export async function loader({ params }: Route.LoaderArgs) {
       })) || [],
     availability:
       item.availability?.map((vl) => ({
-        medium: vl.medium,
+        source: vl.source,
         location: vl.location,
       })) || [],
   };

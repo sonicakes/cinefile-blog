@@ -39,7 +39,7 @@ export async function loader({
     run_time: item.run_time,
     availability:
       item.availability?.map((vl) => ({
-        medium: vl.medium,
+        source: vl.source,
         location: vl.location,
       })) || [],
     genres:

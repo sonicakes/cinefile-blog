@@ -129,8 +129,8 @@ const BlogCard = ({
               availability.map((item, index) => (
                   <MetaItem
                     key={index}
-                    Icon={getIconByMedium(item.medium)}
-                    text={item.medium}
+                    Icon={getIconByMedium(item.source)}
+                    text={item.source}
                   />
               ))}
           </div>
