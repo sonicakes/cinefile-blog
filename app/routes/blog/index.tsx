@@ -24,6 +24,8 @@ export async function loader({ request }: Route.LoaderArgs) {
     genresRes.json(),
   ]);
 
+  console.log('movies json', moviesJson)
+
   const posts = moviesJson.data.map((item: StrapiPost) => ({
     id: item.id,
     documentId: item.documentId,
@@ -41,7 +43,7 @@ export async function loader({ request }: Route.LoaderArgs) {
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    img: item.img?.url && item.img.url,
+    img: item.img?.url && item.img.formats?.medium?.url,
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,
@@ -63,13 +65,14 @@ export async function loader({ request }: Route.LoaderArgs) {
 }
 const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const { posts, categories } = loaderData;
+  console.log('posts', posts)
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 5;
 
-  const filteredPosts = posts.filter((post) => {
+  const filteredPosts = posts.filter((post:StrapiPost) => {
     const query = searchQuery.toLowerCase();
 
     const matchesSearch =
