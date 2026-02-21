@@ -29,7 +29,7 @@ const BlogDetailMain = ({
         alt={postMeta.title}
         className="w-full grayscale contrast-75 brightness-90
          hover:grayscale-0 hover:contrast-110 hover:brightness-105
-         transition-all duration-700"
+         transition-all duration-700 max-h-1/2 object-cover"
       />
       <p className="font-caption italic text-gray-600 mb-7 pb-2 pt-1.5 border-b border-gray-300 text-sm">
         {postMeta.img
