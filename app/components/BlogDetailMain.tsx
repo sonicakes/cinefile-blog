@@ -2,7 +2,6 @@ import ReactMarkdown from "react-markdown";
 import type { PostMeta, Stat } from "~/types";
 import Info from "~/components/Info";
 import { NavLink } from "react-router";
-import { getImageUrl } from "~/helpers";
 
 const BlogDetailMain = ({
   postMeta,
@@ -13,9 +12,6 @@ const BlogDetailMain = ({
   markdown: string;
   stats?: Stat;
 }) => {
-
-  const imageSrc = postMeta.img && getImageUrl(postMeta.img);
-  
   return (
     <article className="main-content">
       <Info
@@ -28,7 +24,7 @@ const BlogDetailMain = ({
       </h1>
       <img
         src={
-          postMeta.img ? imageSrc : "/images/gallery.jpg"
+          postMeta.img ? postMeta.img : "/images/gallery.jpg"
         }
         alt={postMeta.title}
         className="w-full grayscale contrast-75 brightness-90
