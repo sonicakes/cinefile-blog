@@ -6,6 +6,7 @@ import SearchInput from "~/components/SearchInput";
 import CategoryFilter from "~/components/CategoryFilter";
 import SortSelector from "~/components/SortSelector";
 import Pagination from "~/components/Pagination";
+import { getImageUrl } from "~/helpers";
 
 export async function loader({ request }: Route.LoaderArgs) {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -43,7 +44,7 @@ export async function loader({ request }: Route.LoaderArgs) {
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    img: item.img?.url && item.img.formats?.medium?.url,
+    img: item.img?.formats?.medium?.url || item.img?.url,
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,

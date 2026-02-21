@@ -38,7 +38,7 @@ export async function loader({ params }: Route.LoaderArgs) {
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
-    img: item.img?.url && item.img.formats?.medium?.url,
+    img: item.img?.url && `${import.meta.env.VITE_STRAPI_URL}${item.img.formats?.medium?.url}`,
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,

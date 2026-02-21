@@ -3,6 +3,7 @@ import { FaYoutube } from "react-icons/fa";
 import { SiMubi, SiPlex, SiTubi } from "react-icons/si";
 import { PiDiscDuotone } from "react-icons/pi";
 import { TbPumpkinScary } from "react-icons/tb";
+import type { StrapiPost } from "./types";
 
 export const getIconByMedium = (medium?: string) => {
   switch (medium?.toLowerCase()) {
@@ -33,4 +34,11 @@ export const getIconByMedium = (medium?: string) => {
     default:
       return MdComputer;
   }
+};
+
+export const getImageUrl = (imgSrc: string) => {
+  const url = imgSrc;
+    return url?.startsWith('http') 
+    ? url 
+    : `${import.meta.env.VITE_STRAPI_URL}${url}`;
 };

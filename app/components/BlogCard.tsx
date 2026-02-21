@@ -12,7 +12,7 @@ import {
   MdOutlineRepeat
 } from "react-icons/md";
 import { Link } from "react-router";
-import { getIconByMedium } from "~/helpers";
+import { getIconByMedium, getImageUrl } from "~/helpers";
 
 const BlogCard = ({
   blog,
@@ -48,6 +48,8 @@ const BlogCard = ({
     ) : (
       <div className={classExtra}>{children}</div>
     );
+        const imageSrc = img && getImageUrl(img);
+
 
   return (
     <Wrapper>
@@ -61,7 +63,7 @@ const BlogCard = ({
         <div className="relative overflow-hidden">
           <img
             className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition duration-700"
-            src={img || "./images/gallery.jpg"}
+            src={imageSrc || "./images/gallery.jpg"}
             alt={title}
           />
           {review_provided ? (
