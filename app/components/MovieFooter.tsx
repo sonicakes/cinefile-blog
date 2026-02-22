@@ -107,7 +107,7 @@ const MovieFooter = ({
             {nextMovie && nextMovie.movie?.img && (
               <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
                 <img
-                  src={nextMovie && nextMovie.movie.img}
+                  src={nextMovie && nextMovie.movie.img.formats?.thumbnail?.url}
                   alt={nextMovie && nextMovie.movie.title}
                   className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
                 />
@@ -129,7 +129,7 @@ const MovieFooter = ({
                 )}
               </h5>
               {nextMovie && nextMovie.movie?.excerpt && (
-                <p className="mt-3 text-sm line-clamp-2 leading-tight text-neutral-600 font-medium">
+                <p className="mt-3 text-sm line-clamp-3 leading-tight text-neutral-600 font-medium">
                   {nextMovie.movie.excerpt}
                 </p>
               )}

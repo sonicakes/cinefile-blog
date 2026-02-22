@@ -56,6 +56,10 @@
     .prose h1 {
     @apply text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight;
   }
+      .prose h3 {
+    @apply text-2xl font-bold font-brawler mt-8 uppercase;
+  }
+  /*  */
 }
 
 @utility drop-cap {
