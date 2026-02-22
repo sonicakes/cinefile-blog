@@ -10,7 +10,8 @@ export async function loader({ params }: Route.LoaderArgs) {
   const { id } = params;
 
   const res = await fetch(
-    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
+    
+    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
   );
 
   if (!res.ok) throw new Error("Failed to fetch blog deets data");
