@@ -1,81 +1,107 @@
+import { useEffect, useState } from "react";
+import { useLoaderData, NavLink } from "react-router";
 import type { Route } from "./+types/detail";
 import type { StrapiPost, StrapiResponse } from "~/types";
 import BlogDetailMain from "~/components/BlogDetailMain";
-import { NavLink } from "react-router";
 import MovieFooter from "~/components/MovieFooter";
-import readingTime from "reading-time";
 import AsideMeta from "~/components/AsideMeta";
+import BlogDetailSkeleton from "~/components/BlogDetailSkeleton";
+import { calculateReadingTime } from "~/helpers";
 
+// 1. Loader only returns identifiers
 export async function loader({ params }: Route.LoaderArgs) {
-  const { id } = params;
-
-  const res = await fetch(
-    
-    `${import.meta.env.VITE_API_URL}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
-  );
-
-  if (!res.ok) throw new Error("Failed to fetch blog deets data");
-
-  const json: StrapiResponse<StrapiPost> = await res.json();
-
-  if (!json.data.length) throw new Response("not found", { status: 404 });
-  const item = json.data[0];
-
-  console.log(item);
-
-  const post = {
-    id: item.id,
-    documentId: item.documentId,
-    title: item.title,
-    rating: item.rating,
-    year: item.year,
-    date_reviewed: item.date_reviewed,
-    meta_title: item.meta_title,
-    body_blog: item.body_blog,
-    excerpt: item.excerpt,
-    director: item.director,
-    would_recommend: item.would_recommend,
-    would_rewatch: item.would_rewatch,
-    review_provided: item.review_provided,
-    letterboxd_uri: item.letterboxd_uri,
-    image_description: item.image_description,
-    img: item.img?.url && item.img.formats?.medium?.url,
-    rating_metric: item.rating_metric,
-    quote: item.quote,
-    run_time: item.run_time,
-    next_movie: {
-      reason: item.next_movie?.reason,
-      movie: item.next_movie?.movie,
-    },
-     spotify_episodes:
-      item.spotify_episodes?.map((ep) => ({
-        title: ep.title,
-        url: ep.url,
-        podcastName: ep.podcastName
-      })) || [],
-    genres:
-      item.genres?.map((genre) => ({
-        id: genre.id,
-        name: genre.name,
-      })) || [],
-    availability:
-      item.availability?.map((vl) => ({
-        source: vl.source,
-        location: vl.location,
-      })) || [],
-  };
-
-  const stats = readingTime(post.body_blog || "");
   return {
-    post,
-    stats,
+    id: params.id,
+    apiUrl: import.meta.env.VITE_API_URL,
   };
 }
 
-const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
-  const { post, stats } = loaderData;
+// 2. Helper to clean up the detail data defensively
+const mapDetailData = (item: any) => {
+  if (!item) return null;
+  return {
+    ...item,
+    // Defensive check for images: tries medium format, then main url, then empty string
+    img: item.img?.formats?.medium?.url || item.img?.url || "",
+    next_movie: {
+      reason: item.next_movie?.reason || "",
+      movie: item.next_movie?.movie || null,
+    },
+    spotify_episodes: item.spotify_episodes || [],
+    genres: item.genres?.map((g: any) => ({ id: g.id, name: g.name })) || [],
+    availability: item.availability || [],
+  };
+};
 
-  console.log("post", post);
+const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
+  const { id, apiUrl } = useLoaderData<typeof loader>();
+  const [data, setData] = useState<{ post: any; stats: any } | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function getDetail() {
+      try {
+        const res = await fetch(
+          `${apiUrl}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
+        );
+
+        if (!res.ok) throw new Error("Failed to fetch");
+
+        const json: StrapiResponse<StrapiPost> = await res.json();
+
+        if (!json.data || !json.data.length) {
+          if (isMounted) setError("404");
+          return;
+        }
+
+        const cleanedPost = mapDetailData(json.data[0]);
+        const stats = calculateReadingTime(cleanedPost.body_blog || "");
+
+        if (isMounted) {
+          setData({ post: cleanedPost, stats });
+          setError(null);
+        }
+      } catch (err) {
+        console.error("Fetch Error:", err);
+        if (isMounted) setError("timeout");
+      }
+    }
+
+    setData(null);
+    setError(null);
+    getDetail();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [id, apiUrl]);
+
+  if (error === "404") {
+    return (
+      <div className="py-20 text-center font-brawler">Review not found.</div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="py-20 text-center font-brawler flex flex-col items-center gap-4">
+        <p>Server is sleeping or connection failed. Please refresh.</p>
+        <button
+          onClick={() => window.location.reload()}
+          className="text-xs uppercase underline tracking-widest hover:text-crimson transition"
+        >
+          Reload Page
+        </button>
+      </div>
+    );
+  }
+
+  if (!data) return <BlogDetailSkeleton />;
+
+  const { post, stats } = data;
+
   return (
     <>
       <div className="border-b-5 border-dark text-center font-brawler uppercase text-xs tracking-widest py-2.5 bt-dark border-t">
@@ -87,6 +113,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
         </NavLink>
         / <b>{post.title}</b>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
         <BlogDetailMain
           postMeta={post}
@@ -95,6 +122,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
         />
         <AsideMeta postMeta={post} />
       </div>
+
       <MovieFooter
         spotifyEpisodes={post.spotify_episodes}
         nextMovie={post.next_movie}
