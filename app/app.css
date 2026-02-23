@@ -86,11 +86,21 @@ body {
   padding-left: 15px;
 }
 
-/* .sidebar-item {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-} */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  animation: 
+    typewriter 2s steps(40, end),
+    blink 0.75s step-end infinite;
+}
 
 
 

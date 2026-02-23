@@ -64,13 +64,7 @@ const BlogPage = () => {
 
   if (!data) {
     return (
-      <div className="relative">
-        {/* Optional: Add a small status indicator */}
-        <div className="absolute top-4 right-4 text-xs text-neutral-400 animate-pulse">
-          Waking up server...
-        </div>
         <BlogPageSkeleton />
-      </div>
     );
   }
 
