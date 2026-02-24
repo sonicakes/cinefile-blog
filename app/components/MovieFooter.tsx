@@ -1,18 +1,12 @@
 import { FaLetterboxd, FaEnvelope } from "react-icons/fa6";
 import { FaSpotify, FaArrowRight } from "react-icons/fa";
 import type { StrapiPost } from "~/types";
-
-// type Resource = {
-//   label: string;
-//   url: string;
-//   icon?: React.ReactNode;
-// };
+import MovieWrapper from "./MovieWrapper";
 
 type ReviewFooterProps = {
   spotifyEpisodes?: { title: string; podcastName: string; url: string }[];
   nextMovie?: {
-    reason?: string;
-    movie?: StrapiPost
+    movie?: StrapiPost;
   };
 };
 
@@ -95,47 +89,60 @@ const MovieFooter = ({
             </nav>
           </div>
         </section>
+        {nextMovie?.movie && (
+          <section className="p-8">
+            <h4 className="mb-8 text-xs uppercase tracking-[0.2em] border-b border-black pb-2 inline-block ">
+              watch next
+            </h4>
+            <MovieWrapper
+              isReviewed={!!nextMovie.movie.review_provided}
+              href={`/blog/${nextMovie.movie.documentId}`}
+              className="flex flex-col sm:flex-row gap-6 group"
+            >
+              {/* IMAGE SECTION */}
+              {nextMovie.movie?.img && (
+                <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
+                  <img
+                    src={nextMovie.movie.img.formats?.thumbnail?.url}
+                    alt={nextMovie.movie.title}
+                    className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
+                  />
+                  <div className="absolute inset-0 border-8 border-transparent group-hover:border-black/10 pointer-events-none"></div>
+                </div>
+              )}
 
-        <section className="p-8">
-          <h4 className="mb-8 text-xs uppercase tracking-[0.2em] border-b border-black pb-2 inline-block ">
-            watch next
-          </h4>
-          <a
-            href={nextMovie && nextMovie.movie && `/blog/${nextMovie.movie.documentId}`}
-            className="flex flex-col sm:flex-row gap-6 group"
-          >
-            {nextMovie && nextMovie.movie?.img && (
-              <div className="relative w-32 h-32 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
-                <img
-                  src={nextMovie && nextMovie.movie.img.formats?.thumbnail?.url}
-                  alt={nextMovie && nextMovie.movie.title}
-                  className="object-cover w-full h-full scale-105 group-hover:scale-100 transition-transform"
-                />
-                <div className="absolute inset-0 border-8 border-transparent group-hover:border-black/10 pointer-events-none"></div>
-              </div>
-            )}
-            <div className="flex flex-col justify-center">
-                 {nextMovie && nextMovie.reason && (
-                <p className="text-xs uppercase pb-1 leading-tight text-neutral-400">
-                  {nextMovie && nextMovie.reason}
-                </p>
-              )}
-              <h5 className="text-2xl font-brawler capitalize font-bold leading-none tracking-tighter group-hover:text-crimson">
-                {nextMovie && nextMovie.movie?.title}
-                {nextMovie && nextMovie.movie?.year && (
-                  <span className="font-normal opacity-60 pl-1">
-                    ({nextMovie.movie.year})
-                  </span>
+              {/* CONTENT SECTION */}
+              <div className="flex flex-col justify-center">
+                {nextMovie.movie?.genres && (
+                  <div className="flex gap-0.5">
+                    {nextMovie.movie.genres.map((genre, index) => (
+                      <span
+                        key={index}
+                        className="text-xs uppercase pb-1 leading-tight text-neutral-400"
+                      >
+                        {index!=0 && ' / '}
+                        {genre.name}
+                      </span>
+                    ))}
+                  </div>
                 )}
-              </h5>
-              {nextMovie && nextMovie.movie?.excerpt && (
-                <p className="mt-3 text-sm line-clamp-3 leading-tight text-neutral-600 font-medium">
-                  {nextMovie.movie.excerpt}
-                </p>
-              )}
-            </div>
-          </a>
-        </section>
+                <h5 className="text-2xl font-brawler capitalize font-bold leading-none tracking-tighter group-hover:text-crimson">
+                  {nextMovie.movie?.title}
+                  {nextMovie.movie?.year && (
+                    <span className="font-normal opacity-60 pl-1">
+                      ({nextMovie.movie.year})
+                    </span>
+                  )}
+                </h5>
+                {nextMovie.movie?.excerpt && (
+                  <p className="mt-3 text-sm line-clamp-3 leading-tight text-neutral-600 font-medium">
+                    {nextMovie.movie.excerpt}
+                  </p>
+                )}
+              </div>
+            </MovieWrapper>
+          </section>
+        )}
       </div>
     </footer>
   );

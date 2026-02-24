@@ -19,7 +19,6 @@ export type PostMeta = {
   quote: string;
   run_time: string;
   next_movie?: {
-    reason?: string;
     movie?: StrapiPost;
   };
   spotify_episodes?: {
@@ -70,7 +69,6 @@ export type StrapiPost = {
   quote: string;
   run_time: string;
   next_movie?: {
-    reason?: string;
     movie?: StrapiPost;
   };
   spotify_episodes?: {
