@@ -2,24 +2,23 @@ export type PostMeta = {
   id: string;
   documentId: string;
   title: string;
-  date_reviewed: string;
-  date_watched: string;
+  date_reviewed?: string;
+  date_watched?: string;
   year: string;
   rating: number;
-  meta_title: string;
-  body_blog: string;
-  excerpt: string;
+  meta_title?: string;
+  body_blog?: string;
+  excerpt?: string;
   director: string;
   would_recommend: boolean;
   would_rewatch: boolean;
   review_provided: boolean;
-  letterboxd_uri: string;
-  image_description: string;
+  letterboxd_uri?: string;
+  image_description?: string;
   rating_metric: string;
-  quote: string;
+  quote?: string;
   run_time: string;
   next_movie?: {
-    reason?: string;
     movie?: StrapiPost;
   };
   spotify_episodes?: {
@@ -70,7 +69,6 @@ export type StrapiPost = {
   quote: string;
   run_time: string;
   next_movie?: {
-    reason?: string;
     movie?: StrapiPost;
   };
   spotify_episodes?: {

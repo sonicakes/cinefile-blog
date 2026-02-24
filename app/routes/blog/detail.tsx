@@ -24,7 +24,6 @@ const mapDetailData = (item: any) => {
     // Defensive check for images: tries medium format, then main url, then empty string
     img: item.img?.formats?.medium?.url || item.img?.url || "",
     next_movie: {
-      reason: item.next_movie?.reason || "",
       movie: item.next_movie?.movie || null,
     },
     spotify_episodes: item.spotify_episodes || [],
@@ -44,7 +43,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
     async function getDetail() {
       try {
         const res = await fetch(
-          `${apiUrl}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
+          `${apiUrl}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=next_movie.movie.genres&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
         );
 
         if (!res.ok) throw new Error("Failed to fetch");
