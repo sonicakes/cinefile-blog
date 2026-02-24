@@ -1,5 +1,11 @@
-import { MdComputer, MdTv, MdHome, MdAirplanemodeActive } from "react-icons/md";
-import { FaYoutube } from "react-icons/fa";
+import {
+  MdComputer,
+  MdTv,
+  MdHome,
+  MdAirplanemodeActive,
+  MdOutlineWork,
+} from "react-icons/md";
+import { FaYoutube, FaUniversity } from "react-icons/fa";
 import { SiMubi, SiPlex, SiTubi } from "react-icons/si";
 import { PiDiscDuotone } from "react-icons/pi";
 import { TbPumpkinScary } from "react-icons/tb";
@@ -16,6 +22,10 @@ export const getIconByMedium = (medium?: string) => {
       return TbPumpkinScary;
     case "plex":
       return SiPlex;
+    case "uni degree":
+      return FaUniversity;
+    case "work experience":
+      return MdOutlineWork;
     case "tubi":
       return SiTubi;
     case "dvd":
@@ -57,24 +67,25 @@ export const mapStrapiToPosts = (moviesJson: any) => {
     rating_metric: item.rating_metric,
     quote: item.quote,
     run_time: item.run_time,
-    availability: item.availability?.map((vl: any) => ({
-      source: vl.source,
-      location: vl.location,
-    })) || [],
-    genres: item.genres?.map((genre: any) => ({
-      id: genre.id,
-      name: genre.name,
-    })) || [],
+    availability:
+      item.availability?.map((vl: any) => ({
+        source: vl.source,
+        location: vl.location,
+      })) || [],
+    genres:
+      item.genres?.map((genre: any) => ({
+        id: genre.id,
+        name: genre.name,
+      })) || [],
   }));
 };
-
 
 export const calculateReadingTime = (text: string = "") => {
   const wordsPerMinute = 200;
   const numberOfWords = text.trim().split(/\s+/).length;
   const minutes = Math.ceil(numberOfWords / wordsPerMinute);
-  return { 
-    text: `${minutes} min read`, 
-    minutes 
+  return {
+    text: `${minutes} min read`,
+    minutes,
   };
 };
