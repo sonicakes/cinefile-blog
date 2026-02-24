@@ -13,7 +13,8 @@
 
 @layer base {
 
-  .prose p, .prose li {
+  .prose p,
+  .prose li {
     @apply text-dark text-justify text-lg;
   }
 
@@ -29,7 +30,7 @@
     line-height: 1.2;
   }
 
-    .prose blockquote {
+  .prose blockquote {
     border-left: none;
   }
 
@@ -38,28 +39,22 @@
   }
 
   .prose img {
-    @apply grayscale contrast-75 brightness-90
-         hover:grayscale-0 hover:contrast-110 hover:brightness-105
-         transition-all duration-700 max-h-150;
-  }
-
-  .prose a {
-    text-decoration-color: var(--color-blue-400);
-
-    &:hover {
-      text-decoration-thickness: 2px;
-    }
+    @apply grayscale contrast-75 brightness-90 hover:grayscale-0 hover:contrast-110 hover:brightness-105 transition-all duration-700 max-h-150;
   }
 }
 
 @layer utilities {
-    .prose h1 {
+  .prose h1 {
     @apply text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight;
   }
-      .prose h3 {
+
+  .prose h3 {
     @apply text-2xl font-bold font-brawler mt-8 uppercase;
   }
-  /*  */
+
+  .prose a {
+    @apply hover:text-crimson transition;
+  }
 }
 
 @utility drop-cap {
@@ -87,17 +82,24 @@ body {
 }
 
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .animate-typewriter {
   display: inline-block;
-  animation: 
+  animation:
     typewriter 2s steps(40, end),
     blink 0.75s step-end infinite;
 }
@@ -409,19 +411,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 10px;
-  /* small baseline for row height */
   gap: 1.5rem;
 }
 
 .item {
   grid-row: span calc(var(--row-span, 10));
 }
-
-
-
-
-
-
-
-
-
