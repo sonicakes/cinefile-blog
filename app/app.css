@@ -39,7 +39,7 @@
   }
 
   .prose img {
-    @apply grayscale contrast-75 brightness-90 hover:grayscale-0 hover:contrast-110 hover:brightness-105 transition-all duration-700 max-h-150;
+    @apply w-full h-full max-w-100;
   }
 }
 

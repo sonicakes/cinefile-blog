@@ -13,6 +13,7 @@ import {
 } from "react-icons/md";
 import { Link } from "react-router";
 import { getIconByMedium } from "~/helpers";
+import Reveal from "./ui/Reveal";
 
 const BlogCard = ({
   blog,
@@ -59,11 +60,13 @@ const BlogCard = ({
         }`}
       >
         <div className="relative overflow-hidden">
+          <Reveal>
           <img
-            className="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition duration-700"
+            className="w-full aspect-video object-cover"
             src={img || "./images/gallery.jpg"}
             alt={title}
           />
+          </Reveal>
           {review_provided ? (
             <div className="text-white bg-linear-to-l flex-wrap from-black px-4 py-1.5 absolute top-0 right-0 flex gap-1 justify-end font-bold font-brawler text-base">
               <MdOutlineStarHalf size="20" />

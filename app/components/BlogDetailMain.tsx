@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import type { PostMeta, Stat } from "~/types";
 import Info from "~/components/Info";
 import { NavLink } from "react-router";
+import Reveal from "./ui/Reveal";
 
 const BlogDetailMain = ({
   postMeta,
@@ -22,15 +23,15 @@ const BlogDetailMain = ({
       <h1 className="text-5xl wrap-break-word lg:text-[56px] font-brawler mt-4 mb-5 my-0 font-bold tracking-tight leading-12 lg:leading-15">
         {postMeta.meta_title ? postMeta.meta_title : postMeta.title}
       </h1>
+      <Reveal>
       <img
         src={
           postMeta.img ? postMeta.img : "/images/gallery.jpg"
         }
         alt={postMeta.title}
-        className="w-full grayscale contrast-75 brightness-90
-         hover:grayscale-0 hover:contrast-110 hover:brightness-105
-         transition-all duration-700 max-h-1/2 object-cover"
+        className="w-full max-h-120 object-cover"
       />
+      </Reveal>
       <p className="font-caption italic text-gray-600 mb-7 pb-2 pt-1.5 border-b border-gray-300 text-sm">
         {postMeta.img
           ? postMeta.image_description &&
@@ -40,7 +41,20 @@ const BlogDetailMain = ({
 
       <div className="full-text drop-cap">
         <div className="max-w-none mb-12 prose">
-          <ReactMarkdown>{markdown}</ReactMarkdown>
+          <ReactMarkdown
+          components={{
+        img: ({ node, ...props }) => (
+          <Reveal >
+            <img 
+              {...props} 
+              className="" 
+              loading="lazy" 
+              alt={props.alt || "Dynamic Content"}
+            />
+          </Reveal>
+        ),
+      }}
+          >{markdown}</ReactMarkdown>
         </div>
       </div>
 
