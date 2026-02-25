@@ -5,9 +5,6 @@ const BlogDetailSkeleton = () => {
     <div className="animate-pulse relative">
       <RenderWakeupMsg />
 
-      {/* <div className="h-10 bg-neutral-100 border-b border-t border-neutral-300 mb-4" /> */}
-
-
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
         <div className="space-y-6">
 
