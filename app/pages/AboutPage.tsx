@@ -1,4 +1,5 @@
 import AsideMeta from "~/components/AsideMeta";
+import Reveal from "~/components/ui/Reveal";
 
 const AboutPage = () => {
   return (
@@ -11,13 +12,15 @@ const AboutPage = () => {
           BY ME, MYSELF & I | CHIEF FILM CRITIC
         </div>
         <div className="prose max-w-none leading-relaxed text-lg">
-          <div className="md:float-left w-full md:mr-6 md:w-72">
+          <div className="md:float-left w-full md:mr-6 md:w-72 relative">
+            <Reveal>
             <img
               src="./images/wannabe-actress.jpg"
               style={{ margin: 0 }}
               alt="Author Portrait"
-              className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition duration-700"
+              className="w-full aspect-square object-cover"
             />
+            </Reveal>
             <p className="text-sm mt-2 custom-caption italic leading-tight">
               Seen here at the Hydro Majestic Hotel in 2025.
             </p>
