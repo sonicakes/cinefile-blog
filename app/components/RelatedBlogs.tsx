@@ -1,34 +1,93 @@
-const RelatedBlogs = () => {
-    return ( 
-            <div>
-        <div className="flex justify-between mb-5 border-y border-gray-300 items-center py-5">
-          <h3 className="font-brawler tracking-wide uppercase">
-            Related Blogs
-          </h3>
-        </div>
-        <div className="mini-card">
-          <img src="/images/soni.jpg" alt="Review" />
-          <h4>Beyond the front page: The Hydro Majestic</h4>
-          <p>
-            <small>The history of the Overlook's cousin...</small>
-          </p>
-        </div>
-        <div className="mini-card">
-          <img src="/images/wednesday.JPG" alt="Review" />
-          <h4>Wednesday Woes</h4>
-          <p>
-            <small>Why mid-week cinema is dying...</small>
-          </p>
-        </div>
-        <div className="mini-card">
-          <img src="/images/piano.jpg" alt="Review" />
-          <h4>The Cost of Oz-Sploitation</h4>
-          <p>
-            <small>Revisiting the classNameics of the outback...</small>
-          </p>
-        </div>
+import { useEffect, useState } from "react";
+import { Link } from "react-router";
+
+type RelatedMovie = {
+  documentId: string;
+  title: string;
+  excerpt: string;
+  img?: {
+    url: string;
+    formats?: {
+      thumbnail?: { url: string };
+      small?: { url: string };
+    };
+  };
+};
+
+type Props = {
+  genres: { id: string; name: string }[];
+  currentDocumentId: string;
+};
+
+const RelatedBlogs = ({ genres, currentDocumentId }: Props) => {
+  const [related, setRelated] = useState<RelatedMovie[]>([]);
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const strapiUrl = import.meta.env.VITE_STRAPI_URL;
+
+  useEffect(() => {
+    if (!genres.length) return;
+
+    const params = new URLSearchParams();
+    genres.forEach((g, i) =>
+      params.append(`filters[genres][id][$in][${i}]`, g.id)
+    );
+    params.append("filters[documentId][$ne]", currentDocumentId);
+    params.append("filters[review_provided][$eq]", "true");
+    params.append("sort", "date_reviewed:desc");
+    params.append("pagination[limit]", "3");
+    params.append("populate", "img");
+
+    fetch(`${apiUrl}/movies?${params}`)
+      .then((r) => r.json())
+      .then((json) => setRelated(json.data || []))
+      .catch(() => {});
+  }, [currentDocumentId]);
+
+  const getImg = (movie: RelatedMovie) => {
+    const raw =
+      movie.img?.formats?.small?.url ||
+      movie.img?.formats?.thumbnail?.url ||
+      movie.img?.url;
+    if (!raw) return null;
+    return raw.startsWith("http") ? raw : `${strapiUrl}${raw}`;
+  };
+
+  return (
+    <div>
+      <div className="flex justify-between mb-5 border-y border-gray-300 items-center py-5">
+        <h3 className="font-brawler tracking-wide uppercase font-semibold">Related Blogs</h3>
       </div>
-     );
-}
- 
+      {related.length === 0 && (
+        <p className="text-sm text-gray-400">No related reviews found.</p>
+      )}
+      {related.map((movie) => {
+        const imgSrc = getImg(movie);
+        return (
+          <Link
+            to={`/blog/${movie.documentId}`}
+            key={movie.documentId}
+            className="block mb-5 pb-4 border-b border-neutral-300 group cursor-pointer"
+          >
+            {imgSrc && (
+              <img
+                src={imgSrc}
+                alt={movie.title}
+                className="w-full h-28 object-cover grayscale group-hover:grayscale-0 transition duration-700"
+              />
+            )}
+            <h4 className="group-hover:text-crimson transition duration-700 pt-1 font-semibold text-lg leading-tight font-brawler tracking-tight">
+              {movie.title}
+            </h4>
+            {movie.excerpt && (
+              <small className="text-neutral-500 text-xs line-clamp-2">
+                {movie.excerpt}
+              </small>
+            )}
+          </Link>
+        );
+      })}
+    </div>
+  );
+};
+
 export default RelatedBlogs;
