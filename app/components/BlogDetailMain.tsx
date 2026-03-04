@@ -54,10 +54,10 @@ const BlogDetailMain = ({
                 </Reveal>
               ),
               p: ({ node, children, ...props }) => {
-                const hasOnlyImage =
-                  node?.children?.length === 1 &&
-                  (node.children[0] as any).tagName === "img";
-                if (hasOnlyImage) return <div>{children}</div>;
+                const hasImage = node?.children?.some(
+                  (child: any) => child.tagName === "img"
+                );
+                if (hasImage) return <div>{children}</div>;
                 return <p {...props}>{children}</p>;
               },
             }}
