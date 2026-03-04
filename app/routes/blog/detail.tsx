@@ -113,7 +113,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
         / <b>{post.title}</b>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 py-4">
         <BlogDetailMain
           postMeta={post}
           markdown={post.body_blog}

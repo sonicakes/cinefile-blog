@@ -2,14 +2,14 @@ import { MdArrowLeft, MdArrowRight } from "react-icons/md";
 import { useState } from "react";
 
 interface CategoryFilterProps {
-  selectedCategory: string | null;
-  onSelectCategory: (category: string | null) => void;
+  selectedCategories: string[];
+  onToggleCategory: (category: string | null) => void;
   categories: Array<any>
 }
 
 const CategoryFilter = ({
-  selectedCategory,
-  onSelectCategory,
+  selectedCategories,
+  onToggleCategory,
   categories
 }: CategoryFilterProps) => {
   const [startIndex, setStartIndex] = useState(0);
@@ -38,9 +38,9 @@ const CategoryFilter = ({
 
         <div className="flex flex-wrap md:flex-nowrap gap-2 lg:gap-3 justify-center">
           <div
-            onClick={() => onSelectCategory(null)}
+            onClick={() => onToggleCategory(null)}
             className={`px-1.5 lg:px-3 py-1 leading-3.5  border transition cursor-pointer ${
-              selectedCategory === null
+              selectedCategories.length === 0
                 ? "bg-crimson text-white border-crimson"
                 : "bg-light border-gray-600"
             }`}
@@ -53,9 +53,9 @@ const CategoryFilter = ({
             .map((category) => (
               <span
                 key={category}
-                onClick={() => onSelectCategory(category)}
+                onClick={() => onToggleCategory(category)}
                 className={`px-1.5 lg:px-3 border py-1 leading-3.5 transition duration-300 cursor-pointer whitespace-nowrap ${
-                  selectedCategory === category
+                  selectedCategories.includes(category)
                     ? "bg-crimson text-white border-crimson"
                     : "bg-light border-gray-600 hover:bg-crimson hover:text-gray-100"
                 }`}

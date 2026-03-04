@@ -277,7 +277,9 @@ Desktop Contact Page
 
 4.  **Run the development server**
     ```bash
-    npm run dev
+npm run dev → uses .env (localhost URLs)
+npm run dev:prod → uses .env.production (Railway URLs)
+
     ```
     Open http://localhost:5173 to see the magic happen.
 
