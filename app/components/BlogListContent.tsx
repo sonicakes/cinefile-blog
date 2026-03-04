@@ -10,7 +10,7 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
   console.log('posts', posts)
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 5;
 
@@ -21,8 +21,8 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
       post.title.toLowerCase().includes(query) ||
       (post.excerpt && post.excerpt.toLowerCase().includes(query));
     const matchesCategory =
-      !selectedCategory ||
-      post.genres?.some((genre) => genre.name === selectedCategory);
+      selectedCategories.length === 0 ||
+      post.genres?.some((genre) => selectedCategories.includes(genre.name));
 
     return matchesSearch && matchesCategory;
   });
@@ -71,9 +71,15 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
         <div className="flex flex-wrap lg:flex-nowrap gap-0.5 justify-between items-center font-brawler uppercase tracking-wider text-xs">
           <CategoryFilter
             categories={categories}
-            selectedCategory={selectedCategory}
-            onSelectCategory={(c) => {
-              setSelectedCategory(c);
+            selectedCategories={selectedCategories}
+            onToggleCategory={(c) => {
+              setSelectedCategories((prev) =>
+                c === null
+                  ? []
+                  : prev.includes(c)
+                  ? prev.filter((x) => x !== c)
+                  : [...prev, c]
+              );
               setCurrentPage(1);
             }}
           />
@@ -111,11 +117,11 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
                 : "No blogs found"}
             </p>
 
-            {selectedCategory && (
+            {selectedCategories.length > 0 && (
               <p className="text-sm text-neutral-400">
                 Try looking in a different category than
                 <span className="italic text-neutral-600 font-semibold">
-                  "{selectedCategory}"
+                  "{selectedCategories.join(", ")}"
                 </span>
               </p>
             )}
@@ -123,7 +129,7 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
             <button
               onClick={() => {
                 setSearchQuery("");
-                setSelectedCategory(null);
+                setSelectedCategories([]);
               }}
               className="mt-4 cursor-pointer text-xs uppercase underline tracking-widest hover:text-crimson transition"
             >
