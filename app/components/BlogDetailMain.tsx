@@ -42,18 +42,25 @@ const BlogDetailMain = ({
       <div className="full-text drop-cap">
         <div className="max-w-none mb-12 prose">
           <ReactMarkdown
-          components={{
-        img: ({ node, ...props }) => (
-          <Reveal >
-            <img 
-              {...props} 
-              className="" 
-              loading="lazy" 
-              alt={props.alt || "Dynamic Content"}
-            />
-          </Reveal>
-        ),
-      }}
+            components={{
+              img: ({ node, ...props }) => (
+                <Reveal>
+                  <img
+                    {...props}
+                    className=""
+                    loading="lazy"
+                    alt={props.alt || "Dynamic Content"}
+                  />
+                </Reveal>
+              ),
+              p: ({ node, children, ...props }) => {
+                const hasImage = node?.children?.some(
+                  (child: any) => child.tagName === "img"
+                );
+                if (hasImage) return <div>{children}</div>;
+                return <p {...props}>{children}</p>;
+              },
+            }}
           >{markdown}</ReactMarkdown>
         </div>
       </div>

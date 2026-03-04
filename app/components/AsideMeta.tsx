@@ -67,13 +67,13 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
             {postMeta.availability &&
               postMeta.availability.map((item, index) => (
                 <a
+                  key={index}
                   href={item.location}
                   className="hover:underline transition"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <MetaItem
-                    key={index}
                     Icon={getIconByMedium(item.source)}
                     text={item.source}
                   />
@@ -103,7 +103,7 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
           </p>
         </div>
       </div>
-      <RelatedBlogs />
+      <RelatedBlogs genres={postMeta.genres} currentDocumentId={postMeta.documentId} />
     </aside>
   );
 };
