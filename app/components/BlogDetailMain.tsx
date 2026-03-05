@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import type { PostMeta, Stat } from "~/types";
 import Info from "~/components/Info";
 import { NavLink } from "react-router";
@@ -42,6 +43,7 @@ const BlogDetailMain = ({
       <div className="full-text drop-cap">
         <div className="max-w-none mb-12 prose">
           <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
             components={{
               img: ({ node, ...props }) => (
                 <Reveal>
