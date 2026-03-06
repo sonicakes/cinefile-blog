@@ -1,11 +1,11 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { PostMeta, Stat } from "~/types";
-import Info from "~/components/Info";
+import MovieInfo from "~/components/movie/MovieInfo";
 import { NavLink } from "react-router";
-import Reveal from "./ui/Reveal";
+import Reveal from "../ui/Reveal";
 
-const BlogDetailMain = ({
+const MovieDetailMain = ({
   postMeta,
   markdown,
   stats,
@@ -16,7 +16,7 @@ const BlogDetailMain = ({
 }) => {
   return (
     <article className="main-content">
-      <Info
+      <MovieInfo
         postDate={postMeta.date_reviewed}
         readTime={stats?.text}
         wordCount={stats?.words}
@@ -77,4 +77,4 @@ const BlogDetailMain = ({
   );
 };
 
-export default BlogDetailMain;
+export default MovieDetailMain;

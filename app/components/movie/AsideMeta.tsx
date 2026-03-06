@@ -5,9 +5,9 @@ import {
   MdOutlineWatchLater,
   MdOutlineRepeat,
 } from "react-icons/md";
-import MetaItem from "~/components/MetaItem";
+import MetaItem from "./MetaItem";
 import { getIconByMedium } from "~/helpers";
-import RelatedBlogs from "./RelatedBlogs";
+import RelatedMovies from "./RelatedMovies";
 
 const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
   return (
@@ -103,7 +103,7 @@ const AsideMeta = ({ postMeta }: { postMeta: PostMeta }) => {
           </p>
         </div>
       </div>
-      <RelatedBlogs genres={postMeta.genres} currentDocumentId={postMeta.documentId} />
+      <RelatedMovies genres={postMeta.genres} currentDocumentId={postMeta.documentId} />
     </aside>
   );
 };

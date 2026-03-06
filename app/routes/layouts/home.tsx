@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import MainFooter from "~/components/MainFooter";
+import MainFooter from "~/components/layout/MainFooter";
 
 const HomeLayout = () => {
   return (

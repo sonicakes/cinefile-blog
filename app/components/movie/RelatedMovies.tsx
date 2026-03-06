@@ -19,7 +19,7 @@ type Props = {
   currentDocumentId: string;
 };
 
-const RelatedBlogs = ({ genres, currentDocumentId }: Props) => {
+const RelatedMovies = ({ genres, currentDocumentId }: Props) => {
   const [related, setRelated] = useState<RelatedMovie[]>([]);
   const apiUrl = import.meta.env.VITE_API_URL;
   const strapiUrl = import.meta.env.VITE_STRAPI_URL;
@@ -55,7 +55,7 @@ const RelatedBlogs = ({ genres, currentDocumentId }: Props) => {
   return (
     <div>
       <div className="flex justify-between mb-5 border-y border-gray-300 items-center py-5">
-        <h3 className="font-brawler tracking-wide uppercase font-semibold">Related Blogs</h3>
+        <h3 className="font-brawler tracking-wide uppercase font-semibold">Related Reviews</h3>
       </div>
       {related.length === 0 && (
         <p className="text-sm text-gray-400">No related reviews found.</p>
@@ -90,4 +90,4 @@ const RelatedBlogs = ({ genres, currentDocumentId }: Props) => {
   );
 };
 
-export default RelatedBlogs;
+export default RelatedMovies;

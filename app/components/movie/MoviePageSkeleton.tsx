@@ -1,6 +1,6 @@
-import RenderWakeupMsg from "./RenderWakeupMsg";
+import RenderWakeupMsg from "../ui/RenderWakeupMsg";
 
-const BlogCardSkeleton = ({ classExtra = "" }: { classExtra?: string }) => {
+const MovieCardSkeleton = ({ classExtra = "" }: { classExtra?: string }) => {
   return (
     <div
       className={`flex flex-col gap-4 p-4 border border-neutral-200 rounded-lg animate-pulse ${classExtra}`}
@@ -33,7 +33,8 @@ const BlogCardSkeleton = ({ classExtra = "" }: { classExtra?: string }) => {
     </div>
   );
 };
-const BlogPageSkeleton = () => {
+
+const MoviePageSkeleton = () => {
   return (
     <div className="flex flex-col">
       <RenderWakeupMsg />
@@ -51,7 +52,7 @@ const BlogPageSkeleton = () => {
         </section>
         <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 md:p-4 grid-flow-dense">
           {[...Array(6)].map((_, index) => (
-            <BlogCardSkeleton
+            <MovieCardSkeleton
               key={index}
               classExtra={index % 3 === 0 ? "md:col-span-2" : "md:col-span-1"}
             />
@@ -61,4 +62,5 @@ const BlogPageSkeleton = () => {
     </div>
   );
 };
-export default BlogPageSkeleton;
+
+export default MoviePageSkeleton;

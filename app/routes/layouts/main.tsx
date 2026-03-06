@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router";
-import MainFooter from "~/components/MainFooter";
-import TopNav from "~/components/TopNav";
+import MainFooter from "~/components/layout/MainFooter";
+import TopNav from "~/components/layout/TopNav";
 
 const MainLayout = () => {
   return (

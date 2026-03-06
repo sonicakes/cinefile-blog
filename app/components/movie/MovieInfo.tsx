@@ -1,4 +1,4 @@
-const Info = ({
+const MovieInfo = ({
   postDate,
   readTime,
   wordCount,
@@ -26,4 +26,4 @@ const Info = ({
   );
 };
 
-export default Info;
+export default MovieInfo;

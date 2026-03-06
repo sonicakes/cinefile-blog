@@ -1,12 +1,12 @@
 import { useState } from "react";
 import type { PostMeta, SortOption, StrapiPost } from "~/types";
-import BlogCard from "~/components/BlogCard";
-import SearchInput from "~/components/SearchInput";
-import CategoryFilter from "~/components/CategoryFilter";
-import SortSelector from "~/components/SortSelector";
-import Pagination from "~/components/Pagination";
+import MovieCard from "~/components/movie/MovieCard";
+import SearchInput from "~/components/ui/SearchInput";
+import CategoryFilter from "~/components/ui/CategoryFilter";
+import SortSelector from "~/components/ui/SortSelector";
+import Pagination from "~/components/ui/Pagination";
 
-const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categories: string[] }) => {
+const MovieListContent = ({ posts, categories }: { posts: StrapiPost[], categories: string[] }) => {
   console.log('posts', posts)
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
@@ -103,7 +103,7 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 md:p-4 grid-flow-dense">
         {currentPosts.length > 0 ? (
           currentPosts.map((post: StrapiPost, index: number) => (
-            <BlogCard
+            <MovieCard
               blog={post}
               key={post.documentId}
               classExtra={index % 3 === 0 ? "md:col-span-2" : "md:col-span-1"}
@@ -114,7 +114,7 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
             <p className="text-xl font-brawler font-semibold text-dark">
               {searchQuery
                 ? `No results found for "${searchQuery}"`
-                : "No blogs found"}
+                : "No movies found"}
             </p>
 
             {selectedCategories.length > 0 && (
@@ -151,5 +151,5 @@ const BlogListContent = ({ posts, categories }: { posts: StrapiPost[], categorie
 
 };
 
- 
-export default BlogListContent;
+
+export default MovieListContent;

@@ -1,6 +1,6 @@
-import RenderWakeupMsg from "./RenderWakeupMsg";
+import RenderWakeupMsg from "../ui/RenderWakeupMsg";
 
-const BlogDetailSkeleton = () => {
+const MovieDetailSkeleton = () => {
   return (
     <div className="animate-pulse relative">
       <RenderWakeupMsg />
@@ -30,4 +30,4 @@ const BlogDetailSkeleton = () => {
   );
 };
 
-export default BlogDetailSkeleton;
+export default MovieDetailSkeleton;

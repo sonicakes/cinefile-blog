@@ -13,9 +13,9 @@ import {
 } from "react-icons/md";
 import { Link } from "react-router";
 import { getIconByMedium } from "~/helpers";
-import Reveal from "./ui/Reveal";
+import Reveal from "../ui/Reveal";
 
-const BlogCard = ({
+const MovieCard = ({
   blog,
   classExtra,
 }: {
@@ -101,23 +101,23 @@ const BlogCard = ({
             </div>
           )}
           <div className="font-bold tracking-wide font-brawler flex pt-2 gap-x-4 gap-y-1.5 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-700">
-            
+
               {date_watched && (
               <MetaItem
                 Icon={MdOutlinePreview}
                 text={`${new Date(date_watched).toLocaleDateString()}`}
-                
+
               />
             )}
-            
+
             {review_provided && date_reviewed && (
               <MetaItem
                 Icon={MdMovieEdit}
                 text={`${new Date(date_reviewed).toLocaleDateString()}`}
-                
+
               />
             )}
-          
+
             {would_recommend && (
               <MetaItem Icon={MdOutlineRecommend} text={`recommend`} />
             )}
@@ -168,4 +168,4 @@ const BlogCard = ({
   );
 };
 
-export default BlogCard;
+export default MovieCard;
