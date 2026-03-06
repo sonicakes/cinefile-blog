@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { mapStrapiToPosts } from "~/helpers";
-import BlogListContent from "~/components/BlogListContent";
-import BlogPageSkeleton from "~/components/BlogPageSkeleton";
+import MovieListContent from "~/components/movie/MovieListContent";
+import MoviePageSkeleton from "~/components/movie/MoviePageSkeleton";
 
 export async function loader() {
   return {
@@ -64,11 +64,11 @@ const BlogPage = () => {
 
   if (!data) {
     return (
-        <BlogPageSkeleton />
+        <MoviePageSkeleton />
     );
   }
 
-  return <BlogListContent posts={data.posts} categories={data.categories} />;
+  return <MovieListContent posts={data.posts} categories={data.categories} />;
 };
 
 export default BlogPage;

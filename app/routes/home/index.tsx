@@ -1,8 +1,8 @@
-import Header from "~/components/Header";
+import Header from "~/components/layout/Header";
 import type { Route } from "../+types/home";
-import HeadlineBlock from "~/components/HeadlineBlock";
-import FeaturedReviews from "~/components/FeaturedReviews";
-import SidebarItem from "~/components/SidebarItem";
+import HeadlineBlock from "~/components/home/HeadlineBlock";
+import FeaturedReviews from "~/components/home/FeaturedReviews";
+import SidebarItem from "~/components/home/SidebarItem";
 
 export function meta({}: Route.MetaArgs) {
   return [

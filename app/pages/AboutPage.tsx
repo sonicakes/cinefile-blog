@@ -1,4 +1,4 @@
-import AsideMeta from "~/components/AsideMeta";
+import AsideMeta from "~/components/movie/AsideMeta";
 import Reveal from "~/components/ui/Reveal";
 
 const AboutPage = () => {

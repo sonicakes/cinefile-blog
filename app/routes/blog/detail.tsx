@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { useLoaderData, NavLink } from "react-router";
 import type { Route } from "./+types/detail";
 import type { StrapiPost, StrapiResponse } from "~/types";
-import BlogDetailMain from "~/components/BlogDetailMain";
-import MovieFooter from "~/components/MovieFooter";
-import AsideMeta from "~/components/AsideMeta";
-import BlogDetailSkeleton from "~/components/BlogDetailSkeleton";
+import MovieDetailMain from "~/components/movie/MovieDetailMain";
+import MovieFooter from "~/components/movie/MovieFooter";
+import AsideMeta from "~/components/movie/AsideMeta";
+import MovieDetailSkeleton from "~/components/movie/MovieDetailSkeleton";
 import { calculateReadingTime } from "~/helpers";
 
 // 1. Loader only returns identifiers
@@ -97,7 +97,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
     );
   }
 
-  if (!data) return <BlogDetailSkeleton />;
+  if (!data) return <MovieDetailSkeleton />;
 
   const { post, stats } = data;
 
@@ -114,7 +114,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 py-4">
-        <BlogDetailMain
+        <MovieDetailMain
           postMeta={post}
           markdown={post.body_blog}
           stats={stats}
