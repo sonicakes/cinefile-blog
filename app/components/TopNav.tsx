@@ -18,7 +18,7 @@ const TopNav = () => {
       <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr_1fr] items-center py-2 md:py-6 border-b-4 border-double border-dark">
         <NavLink className="flex justify-center border-r border-dark h-full group" to="/">
           <img
-            src="/images/clapperboard.png"
+            src="/logo.svg"
             className=" h-12 md:h-20 w-auto self-center object-cover grayscale group-hover:grayscale-0 transition duration-700"
           />
         </NavLink>
