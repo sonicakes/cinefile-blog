@@ -2,7 +2,6 @@ import type { PostMeta } from "~/types";
 import MetaItem from "./MetaItem";
 import {
   MdOutlineWatchLater,
-  MdCheck,
   MdOutlineStarHalf,
   MdFormatQuote,
   MdOutlinePreview,
@@ -82,13 +81,15 @@ const MovieCard = ({
         <div className="p-6 bg-white group-hover:bg-dark group-hover:text-light duration-700 transition">
           <header>
             <h2 className="text-3xl uppercase group-hover:text-crimson transition duration-700 font-brawler font-bold tracking-wide">
-              {title} <span>({year})</span>
+              {title} {year && <span>({year})</span>}
             </h2>
-            <p className="italic text-base py-2 text-gray-600 transition duration-700 group-hover:text-gray-100 flex gap-1">
-              Directed by <strong className="capitalize">{director}</strong>
-            </p>
+            {director && (
+              <p className="italic text-base py-2 text-gray-600 transition duration-700 group-hover:text-gray-100 flex gap-1">
+                Directed by <strong className="capitalize">{director}</strong>
+              </p>
+            )}
           </header>
-          {genres && (
+          {genres && genres.length > 0 && (
             <div className="text-xs uppercase pt-2 pb-4 flex gap-2 font-semibold flex-wrap">
               {genres.map((genre) => (
                 <span
@@ -106,7 +107,6 @@ const MovieCard = ({
               <MetaItem
                 Icon={MdOutlinePreview}
                 text={`${new Date(date_watched).toLocaleDateString()}`}
-
               />
             )}
 
@@ -127,7 +127,7 @@ const MovieCard = ({
             )}
 
 
-            <MetaItem Icon={MdOutlineWatchLater} text={run_time || "1hr 15m"} />
+            {run_time && <MetaItem Icon={MdOutlineWatchLater} text={run_time} />}
             {availability &&
               availability.map((item, index) => (
                   <MetaItem
@@ -137,7 +137,9 @@ const MovieCard = ({
                   />
               ))}
           </div>
-          <hr className="border-t-3 my-5 border-double border-gray-600" />
+          {excerpt && (
+            <hr className="border-t-3 my-5 border-double border-gray-600" />
+          )}
           {excerpt && (
             <div className="text-sm pb-4 leading-5">
               <h3 className="font-brawler uppercase font-bold pb-1 text-base">
