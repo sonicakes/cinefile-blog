@@ -143,7 +143,10 @@ const MovieListContent = ({ posts, categories }: { posts: StrapiPost[], categori
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
-          onPageChange={(page: number) => setCurrentPage(page)}
+          onPageChange={(page: number) => {
+            setCurrentPage(page);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         />
       )}
     </>
