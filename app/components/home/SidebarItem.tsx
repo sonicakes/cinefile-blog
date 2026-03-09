@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import Reveal from "~/components/ui/Reveal";
 
 const SidebarItem = ({
   imgPath,
@@ -14,10 +15,9 @@ const SidebarItem = ({
   return (
     <Link to={url}>
       <div className="sidebar-item mb-5 border-b border-neutral-300 pb-4 group cursor-pointer">
-        <img
-          src={imgPath}
-          className="h-50 grayscale object-cover group-hover:grayscale-0 transition duration-700"
-        />
+        <Reveal>
+          <img src={imgPath} className="h-50 object-cover w-full" />
+        </Reveal>
         <h4 className="group-hover:text-crimson transition duration-700 pt-1 font-semibold text-lg leading-tight font-brawler tracking-tight">
           {text}
         </h4>

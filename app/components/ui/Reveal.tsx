@@ -40,10 +40,10 @@ const Reveal: React.FC<RevealProps> = ({
     <div
       ref={domRef}
       className={`
-    overflow-hidden transition-all duration-700 ease-in-out transform-gpu
+    overflow-hidden transition-all duration-700 ease-in-out transform-gpu hover:grayscale-0
     ${
       isVisible
-        ? "grayscale-0 opacity-100 scale-100"
+        ? "grayscale-50 opacity-100 scale-100"
         : "grayscale opacity-70 scale-95"
     }
     ${className}

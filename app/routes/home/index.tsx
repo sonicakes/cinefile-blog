@@ -1,8 +1,11 @@
+import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router";
 import Header from "~/components/layout/Header";
-import type { Route } from "../+types/home";
+import type { Route } from "./+types/index";
 import HeadlineBlock from "~/components/home/HeadlineBlock";
-import FeaturedReviews from "~/components/home/FeaturedReviews";
 import SidebarItem from "~/components/home/SidebarItem";
+import type { StrapiPost } from "~/types";
+import Reveal from "~/components/ui/Reveal";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,39 +14,91 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
+export async function loader() {
+  return {
+    apiUrl: import.meta.env.VITE_API_URL,
+    strapiUrl: import.meta.env.VITE_STRAPI_URL,
+  };
+}
+
+type HomepageData = {
+  headline: string;
+  byline: string;
+  body_paragraph_1: string;
+  body_paragraph_2: string;
+  front_page_image: { url: string } | null;
+  front_page_caption: string;
+  sidebar_movies: StrapiPost[];
+};
+
 export default function Home() {
+  const { apiUrl } = useLoaderData<typeof loader>();
+  const [homepage, setHomepage] = useState<HomepageData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchHomepage() {
+      try {
+        const res = await fetch(
+          `${apiUrl}/homepage?populate[sidebar_movies][populate]=img&populate[front_page_image]=true`
+        );
+        if (!res.ok) return;
+        const json = await res.json();
+        setHomepage(json.data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchHomepage();
+  }, [apiUrl]);
+
   return (
     <>
       <Header />
-      <main className="main-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[3fr_1.5fr_3.5fr] gap-6 mt-5">
-        <HeadlineBlock />
+      <main className="main-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[3fr_1.5fr_3.5fr] gap-6 mt-5">
+        <HeadlineBlock
+          headline={homepage?.headline}
+          byline={homepage?.byline}
+          body_paragraph_1={homepage?.body_paragraph_1}
+          body_paragraph_2={homepage?.body_paragraph_2}
+        />
         <aside className="opinion-sidebar">
-          <SidebarItem
-            text="Royal Blood is Flowing Through Me"
-            imgPath="./images/royalty.jpg"
-            caption="FILM LADY"
-            url="/about"
-          />
-          <SidebarItem
-            text="Tips to Time-Travel on a Modest Budget"
-            imgPath="./images/gallery.jpg"
-            caption="SAME LADY"
-            url="/contact"
-          />
+          {isLoading ? (
+            <>
+              <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
+              <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
+            </>
+          ) : (
+            homepage?.sidebar_movies?.map((post) => (
+              <SidebarItem
+                key={post.documentId}
+                text={post.meta_title || post.title}
+                imgPath={post.img?.url ?? "./images/gallery.jpg"}
+                caption={post.director}
+                url={`/blog/${post.documentId}`}
+              />
+            ))
+          )}
         </aside>
         <section>
-          <img
-            src="./images/front-page.jpg"
-            alt="News Image"
-            className="grayscale hover:grayscale-0 transition duration-700"
-          />
-          <p className="custom-caption">
-            Frightening Femme Fatale: No one asked, but I will answer. Source:
-            said femme at Hydro Majestic Hotel in 2025.
-          </p>
+          {isLoading ? (
+            <div className="w-full aspect-video bg-neutral-200 animate-pulse" />
+          ) : (
+            <Reveal>
+              <img
+                src={homepage?.front_page_image?.url ?? "./images/front-page.jpg"}
+                alt="News Image"
+                className="w-full"
+              />
+            </Reveal>
+          )}
+          {homepage?.front_page_caption && (
+            <p className="custom-caption">{homepage.front_page_caption}</p>
+          )}
         </section>
       </main>
-      {/* <FeaturedReviews /> */}
     </>
   );
 }
