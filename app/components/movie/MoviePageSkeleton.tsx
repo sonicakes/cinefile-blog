@@ -1,5 +1,3 @@
-import RenderWakeupMsg from "../ui/RenderWakeupMsg";
-
 const MovieCardSkeleton = ({ classExtra = "" }: { classExtra?: string }) => {
   return (
     <div
@@ -37,7 +35,6 @@ const MovieCardSkeleton = ({ classExtra = "" }: { classExtra?: string }) => {
 const MoviePageSkeleton = () => {
   return (
     <div className="flex flex-col">
-      <RenderWakeupMsg />
       <section className="animate-pulse opacity-60">
         <section className="py-4 md:px-4 border-b border-neutral-300 flex flex-col gap-4 animate-pulse">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
