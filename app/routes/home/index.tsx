@@ -58,12 +58,24 @@ export default function Home() {
     <>
       <Header />
       <main className="main-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[3fr_1.5fr_3.5fr] gap-6 mt-5">
-        <HeadlineBlock
-          headline={homepage?.headline}
-          byline={homepage?.byline}
-          body_paragraph_1={homepage?.body_paragraph_1}
-          body_paragraph_2={homepage?.body_paragraph_2}
-        />
+        {isLoading ? (
+          <section className="headline-block">
+            <div className="h-20 bg-neutral-200 animate-pulse mb-4 w-3/4" />
+            <div className="h-4 bg-neutral-200 animate-pulse mb-6 w-1/2" />
+            <div className="space-y-2">
+              <div className="h-3 bg-neutral-200 animate-pulse w-full" />
+              <div className="h-3 bg-neutral-200 animate-pulse w-full" />
+              <div className="h-3 bg-neutral-200 animate-pulse w-5/6" />
+            </div>
+          </section>
+        ) : (
+          <HeadlineBlock
+            headline={homepage?.headline}
+            byline={homepage?.byline}
+            body_paragraph_1={homepage?.body_paragraph_1}
+            body_paragraph_2={homepage?.body_paragraph_2}
+          />
+        )}
         <aside className="opinion-sidebar">
           {isLoading ? (
             <>
