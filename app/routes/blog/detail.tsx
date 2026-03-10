@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, NavLink } from "react-router";
 import type { Route } from "./+types/detail";
-import type { StrapiPost, StrapiResponse } from "~/types";
+import type { RawPost } from "~/types";
+
+type StrapiResponse<T> = { data: T[] };
 import MovieDetailMain from "~/components/movie/MovieDetailMain";
 import MovieFooter from "~/components/movie/MovieFooter";
 import AsideMeta from "~/components/movie/AsideMeta";
@@ -48,7 +50,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
 
         if (!res.ok) throw new Error("Failed to fetch");
 
-        const json: StrapiResponse<StrapiPost> = await res.json();
+        const json: StrapiResponse<RawPost> = await res.json();
 
         if (!json.data || !json.data.length) {
           if (isMounted) setError("404");

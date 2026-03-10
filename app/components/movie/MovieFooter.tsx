@@ -1,12 +1,12 @@
 import { FaLetterboxd, FaEnvelope } from "react-icons/fa6";
 import { FaSpotify, FaArrowRight } from "react-icons/fa";
-import type { StrapiPost } from "~/types";
+import type { RawPost } from "~/types";
 import MovieWrapper from "./MovieWrapper";
 
 type ReviewFooterProps = {
   spotifyEpisodes?: { title: string; podcastName: string; url: string }[];
   nextMovie?: {
-    movie?: StrapiPost;
+    movie?: RawPost;
   };
 };
 

@@ -4,7 +4,7 @@ import Header from "~/components/layout/Header";
 import type { Route } from "./+types/index";
 import HeadlineBlock from "~/components/home/HeadlineBlock";
 import SidebarItem from "~/components/home/SidebarItem";
-import type { StrapiPost } from "~/types";
+import type { RawPost } from "~/types";
 import Reveal from "~/components/ui/Reveal";
 
 export function meta({}: Route.MetaArgs) {
@@ -28,7 +28,7 @@ type HomepageData = {
   body_paragraph_2: string;
   front_page_image: { url: string } | null;
   front_page_caption: string;
-  sidebar_movies: StrapiPost[];
+  sidebar_movies: RawPost[];
 };
 
 export default function Home() {

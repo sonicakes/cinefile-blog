@@ -1,4 +1,4 @@
-export type PostMeta = {
+export type Post = {
   id: string;
   documentId: string;
   title: string;
@@ -19,7 +19,7 @@ export type PostMeta = {
   quote?: string;
   run_time: string;
   next_movie?: {
-    movie?: StrapiPost;
+    movie?: RawPost;
   };
   spotify_episodes?: {
     title?: string;
@@ -31,25 +31,9 @@ export type PostMeta = {
   genres: { id: string; name: string }[];
 };
 
-export type Stat = {
-  minutes: number;
-  text: string;
-  time: number;
-  words: number;
-};
-export type SearchInputProps = {
-  searchQuery: string;
-  onSearchChange: (value: string) => void;
-  onClearChange: () => void;
-};
-
 export type SortOption = "newest" | "oldest" | "alphabetical";
 
-export type StrapiResponse<T> = {
-  data: T[];
-};
-
-export type StrapiPost = {
+export type RawPost = {
   id: string;
   documentId: string;
   rating: number;
@@ -69,7 +53,7 @@ export type StrapiPost = {
   quote: string;
   run_time: string;
   next_movie?: {
-    movie?: StrapiPost;
+    movie?: RawPost;
   };
   spotify_episodes?: {
     title?: string;

@@ -1,6 +1,13 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import type { PostMeta, Stat } from "~/types";
+import type { Post } from "~/types";
+
+type Stat = {
+  minutes: number;
+  text: string;
+  time: number;
+  words: number;
+};
 import MovieInfo from "~/components/movie/MovieInfo";
 import { NavLink } from "react-router";
 import Reveal from "../ui/Reveal";
@@ -10,7 +17,7 @@ const MovieDetailMain = ({
   markdown,
   stats,
 }: {
-  postMeta: PostMeta;
+  postMeta: Post;
   markdown: string;
   stats?: Stat;
 }) => {

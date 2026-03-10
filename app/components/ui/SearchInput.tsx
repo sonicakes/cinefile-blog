@@ -1,5 +1,10 @@
-import type { SearchInputProps } from "~/types";
 import { MdOutlineSearch } from "react-icons/md";
+
+type SearchInputProps = {
+  searchQuery: string;
+  onSearchChange: (value: string) => void;
+  onClearChange: () => void;
+};
 import { MdClose } from "react-icons/md";
 
 const SearchInput = ({

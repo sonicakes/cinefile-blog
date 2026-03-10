@@ -1,4 +1,4 @@
-import type { PostMeta } from "~/types";
+import type { Post } from "~/types";
 import MetaItem from "./MetaItem";
 import {
   MdOutlineWatchLater,
@@ -18,7 +18,7 @@ const MovieCard = ({
   blog,
   classExtra,
 }: {
-  blog: PostMeta;
+  blog: Post;
   classExtra: string;
 }) => {
   const {
