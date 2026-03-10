@@ -1,170 +1,178 @@
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import AsideMeta from "~/components/movie/AsideMeta";
+import { Link } from "react-router";
 import Reveal from "~/components/ui/Reveal";
 
-const AboutPage = () => {
+type AboutData = {
+  page_title: string;
+  byline: string;
+  bio: string;
+  portrait: { url: string } | null;
+  portrait_caption: string;
+  favourite_movies: { id: number; title: string; year: string }[];
+  favourite_podcasts: { id: number; name: string; link: string }[];
+  title: string;
+  year: string;
+  director: string;
+  run_time: string;
+  excerpt: string;
+  rating: number;
+  rating_metric: string;
+  would_recommend: boolean;
+  would_rewatch: boolean;
+  genres: { id: string; documentId: string; name: string }[];
+};
+
+const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string }) => {
+  const [about, setAbout] = useState<AboutData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchAbout() {
+      try {
+        const res = await fetch(
+          `${apiUrl}/about?populate[genres]=true&populate[portrait]=true&populate[favourite_movies]=true&populate[favourite_podcasts]=true`
+        );
+        if (!res.ok) return;
+        const json = await res.json();
+        setAbout(json.data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchAbout();
+  }, [apiUrl]);
+
+  const portraitUrl = about?.portrait?.url
+    ? about.portrait.url.startsWith("http")
+      ? about.portrait.url
+      : `${strapiUrl}${about.portrait.url}`
+    : "./images/wannabe-actress.jpg";
+
+  const asidePostMeta = about
+    ? {
+        id: "about",
+        documentId: "about",
+        title: about.title,
+        year: about.year,
+        director: about.director,
+        run_time: about.run_time,
+        excerpt: about.excerpt,
+        rating: about.rating,
+        rating_metric: about.rating_metric,
+        would_recommend: about.would_recommend,
+        would_rewatch: about.would_rewatch,
+        review_provided: false,
+        genres: about.genres?.map((g) => ({ id: String(g.id ?? g.documentId), name: g.name })) ?? [],
+        availability: [],
+      }
+    : null;
+
   return (
     <main className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-8">
       <div className="lg:col-span-2">
         <h2 className="text-5xl font-bold font-brawler mb-2 capitalize">
-          Who is this film lady?
+          {isLoading ? (
+            <div className="h-12 bg-neutral-200 animate-pulse w-3/4 rounded" />
+          ) : (
+            about?.page_title ?? "Who is this film lady?"
+          )}
         </h2>
         <div className="text-sm text-neutral-500 font-semibold border-b border-neutral-300 mb-6 pb-1">
-          BY ME, MYSELF & I | CHIEF FILM CRITIC
+          {!isLoading && (about?.byline ?? "BY ME, MYSELF & I | CHIEF FILM CRITIC")}
         </div>
-        <div className="prose max-w-none leading-relaxed text-lg">
-          <div className="md:float-left w-full md:mr-6 md:w-72 relative">
-            <Reveal>
-            <img
-              src="./images/wannabe-actress.jpg"
-              style={{ margin: 0 }}
-              alt="Author Portrait"
-              className="w-full aspect-square object-cover"
-            />
-            </Reveal>
-            <p className="text-sm mt-2 custom-caption italic leading-tight">
-              Seen here at the Hydro Majestic Hotel in 2025.
-            </p>
+
+        {isLoading ? (
+          <div className="space-y-4">
+            <div className="w-72 aspect-square bg-neutral-200 animate-pulse rounded" />
+            <div className="space-y-2 mt-4">
+              <div className="h-4 bg-neutral-200 animate-pulse w-full rounded" />
+              <div className="h-4 bg-neutral-200 animate-pulse w-full rounded" />
+              <div className="h-4 bg-neutral-200 animate-pulse w-5/6 rounded" />
+            </div>
           </div>
-          <p className="mb-4 first-letter:text-7xl first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:leading-none">
-            I am a descendant of Russian Royal family — this makes for a
-            wonderful small (or medium-sized) talk. My maiden name in Russian
-            translates literally to 'Of Princes' - hereby unofficially crowning
-            me for life.
-          </p>
-          <p className="mb-4">
-            <span className="italic">The Cinefile Blog</span> is a collection of
-            <span className="font-semibold ml-1.5">
-              movie reviews nobody asked for
-            </span>
-            . It is a digital archive of my recent obsession with not just
-            watching a movie and forgetting about it, but also putting my
-            thoughts on in on a digital paper (hey I've always dreamed to be on
-            the front page of a newspaper!). The goal is to give my humblest
-            opinion on a movie, rate it on a scale from 1 to 10 using some
-            objects from the movie (I borrowed this concept from{" "}
-            <a href="https://www.nightvalepresents.com/rnghpn9" target="_blank">
-              Random Number Generator Horror Podcast #9
-            </a>
-            ).
-          </p>
-          <p className="mb-4">
-            So whilst it's mostly for me, myself and I (don't forget the dog!),
-            I'd be pleased if others read it too! I try to include my own photos
-            that are funny or thematic (I love dressing up), plus occassional
-            (yeah right) dog pics.
-          </p>
-          <p className="mb-4">
-            Oh right - it was first created to practice React router v7
-            framework mode combining blogs content in 'md' format with their
-            meta in json. Then I realised how much I enjoyed writing content for
-            those blogs :)
-          </p>
-          <h3 className="text-2xl font-bold font-brawler mt-8 uppercase">
-            The Horror & The Heavy Rotation
-          </h3>
-          <p className="mb-4 mt-2">
-            While the average viewer seeks "escapism," I seek dread. My heart
-            belongs to the <strong>horror genre</strong>—it captured me when I
-            was 5 & binge-watched all Freddy Krueger's movies, and has not let
-            go since. If I'm not watching a film, I'm likely deep-diving into{" "}
-            <strong>horror podcasts</strong>, dissecting tropes and production
-            lore like a forensic examiner of the macabre.
-          </p>
-          <p className="mb-4 mt-2">
-            I am a giant bookworm too. I love Stephen King & horror/thriller
-            genre as well. I enjoy a good sci-fi - Ray Bradbury is #1 there.
-          </p>
-          <blockquote>
-            <p>Most imagery features the author herself and/or her dog.</p>
-          </blockquote>
-          <p>
-            I know Letterboxd exists (and yes, I’m there), but I wanted a{" "}
-            <strong>bloggy-style sanctuary</strong> to organize my watchlist &
-            reviews for watched movies. I also wanted to include illustration in
-            my reviews, have more freedom in content editing them, as well as
-            providing their location (e.g. Mubi, Shudder or Home Collection).
-          </p>
-          <p className="mt-4">
-            When I'm not at the Hydro Majestic Hotel pretending I'm in a Kubrick
-            film, I'm developing, designing, and deploying this site. And many
-            others.
-          </p>
-          <div className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 group-hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
-            see portfolio - coming soon
+        ) : (
+          <div className="prose max-w-none leading-relaxed text-lg">
+            <div className="md:float-left w-full md:mr-6 md:w-72 relative">
+              <Reveal>
+                <img
+                  src={portraitUrl}
+                  style={{ margin: 0 }}
+                  alt="Author Portrait"
+                  className="w-full aspect-square object-cover"
+                />
+              </Reveal>
+              {about?.portrait_caption && (
+                <p className="text-sm mt-2 custom-caption italic leading-tight">
+                  {about.portrait_caption}
+                </p>
+              )}
+            </div>
+            {about?.bio && (
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{about.bio}</ReactMarkdown>
+            )}
+            <Link to="/blog" className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
+              see all reviews
+            </Link>
           </div>
-        </div>
+        )}
+
+        {/* TODO: add availabilities for aside meta on about page; first letter styling of bio; editorial & classfs title flsh before load */}
+
         <section className="mt-12 border-t-4 border-double border-dark pt-8">
           <h2 className="text-3xl font-brawler font-bold uppercase mb-6 tracking-tighter bg-dark text-white inline-block px-2">
             The Editorial & Classifieds
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-mono text-sm uppercase">
-            <div className="border border-dark p-4 bg-[#fdfdfd]">
-              <h4 className="font-bold border-b border-dark mb-2">
-                My All Time Fave Movies
-              </h4>
-              <ul className="list-inside list-disc space-y-1">
-                <li>Requiem for a dream (2000)</li>
-                <li>The Ring (2002)</li>
-                <li>Twin Peaks - TV show but still...(1989)</li>
-                <li>Nightmare on Elm St (1984)</li>
-                <li>The Court Jester (1955)</li>
-                <li>Mulholland Drive (2001)</li>
-                <li>The Substance (2025)</li>
-                <li>Parasite (2019)</li>
-              </ul>
+          {isLoading ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="h-40 bg-neutral-200 animate-pulse rounded" />
+              <div className="h-40 bg-neutral-200 animate-pulse rounded" />
             </div>
-            <div className="border border-dark p-4 border-l-4">
-              <h4 className="font-bold border-b border-dark mb-2">
-                Podcast Faves
-              </h4>
-              <ul className="list-inside list-disc space-y-1">
-                <li>Evolution of Horror</li>
-                <li>Faculty of Horror</li>
-                <li>Horror Queers</li>
-                <li>Random Number Generator Horror Podcast No. 9</li>
-                <li>Final Girls</li>
-                <li>Antiquarium of Sinister Happenings</li>
-                <li>The No Sleep Podcast</li>
-              </ul>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-mono text-sm uppercase">
+              <div className="border border-dark p-4 bg-[#fdfdfd]">
+                <h4 className="font-bold border-b border-dark mb-2">My All Time Fave Movies</h4>
+                <ul className="list-inside list-disc space-y-1">
+                  {about?.favourite_movies?.map((m) => (
+                    <li key={m.id}>{m.title} ({m.year})</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="border border-dark p-4 border-l-4">
+                <h4 className="font-bold border-b border-dark mb-2">Podcast Faves</h4>
+                <ul className="list-inside list-disc space-y-1">
+                  {about?.favourite_podcasts?.map((p) => (
+                    <li key={p.id}>
+                      {p.link ? (
+                        <a href={p.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {p.name}
+                        </a>
+                      ) : (
+                        p.name
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </div>
+
       <aside>
-        <AsideMeta
-          postMeta={{
-            documentId: "666",
-            id: "cursed666",
-            title: "Film Lady",
-            excerpt:
-              "No one asked for these - but now we're all have to suffer. This lady thinks she is some kind of royalty - worse, she thinks her opinons on film matter.",
-            availability: [
-              {
-                source: "Work Experience",
-                location: "7+ yrs as in Design & Dev",
-              },
-              {
-                source: "Uni Degree",
-                location: "/media/movies/archive",
-              },
-            ],
-            year: "early 90s - present",
-            director: "me & my dog",
-            genres: [
-              { id: "1", name: "Front End Developer" },
-              { id: "2", name: "Digital Designer" },
-              { id: "3", name: "Dog Owner" },
-              { id: "4", name: "Book Lover" },
-              { id: "5", name: "Film Enthusiast" },
-            ],
-            run_time: "middle-aged",
-            review_provided: false,
-            rating: 10,
-            rating_metric: "rustic Russian royalties",
-            would_recommend: true,
-            would_rewatch: true,
-          }}
-        />
+        {isLoading || !asidePostMeta ? (
+          <div className="space-y-4 animate-pulse pt-4 border-t border-gray-300">
+            <div className="h-6 bg-neutral-200 rounded w-3/4" />
+            <div className="h-4 bg-neutral-200 rounded w-1/2" />
+            <div className="h-24 bg-neutral-200 rounded" />
+          </div>
+        ) : (
+          <AsideMeta postMeta={asidePostMeta} relatedMode="latest" />
+        )}
       </aside>
     </main>
   );
