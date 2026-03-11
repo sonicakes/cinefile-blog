@@ -58,7 +58,7 @@
 }
 
 @utility drop-cap {
-  & p:first-of-type:not(blockquote p)::first-letter {
+  & p:first-of-type:not(blockquote p):not(.custom-caption)::first-letter {
     @apply float-left text-6xl pr-3 pt-1 leading-[0.8] font-gothic;
   }
 }

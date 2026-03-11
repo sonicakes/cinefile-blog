@@ -23,6 +23,7 @@ type AboutData = {
   would_recommend: boolean;
   would_rewatch: boolean;
   genres: { id: string; documentId: string; name: string }[];
+  availability: { source: string; location: string }[];
 };
 
 const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string }) => {
@@ -33,7 +34,7 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
     async function fetchAbout() {
       try {
         const res = await fetch(
-          `${apiUrl}/about?populate[genres]=true&populate[portrait]=true&populate[favourite_movies]=true&populate[favourite_podcasts]=true`
+          `${apiUrl}/about?populate[genres]=true&populate[portrait]=true&populate[favourite_movies]=true&populate[favourite_podcasts]=true&populate[availability]=true`
         );
         if (!res.ok) return;
         const json = await res.json();
@@ -68,7 +69,7 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
         would_rewatch: about.would_rewatch,
         review_provided: false,
         genres: about.genres?.map((g) => ({ id: String(g.id ?? g.documentId), name: g.name })) ?? [],
-        availability: [],
+        availability: about.availability ?? [],
       }
     : null;
 
@@ -82,7 +83,7 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
             about?.page_title ?? "Who is this film lady?"
           )}
         </h2>
-        <div className="text-sm text-neutral-500 font-semibold border-b border-neutral-300 mb-6 pb-1">
+        <div className="text-sm text-neutral-500 font-semibold border-b border-neutral-300 mb-6 pb-1 uppercase">
           {!isLoading && (about?.byline ?? "BY ME, MYSELF & I | CHIEF FILM CRITIC")}
         </div>
 
@@ -96,7 +97,7 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
             </div>
           </div>
         ) : (
-          <div className="prose max-w-none leading-relaxed text-lg">
+          <div className="prose group max-w-none leading-relaxed text-lg drop-cap">
             <div className="md:float-left w-full md:mr-6 md:w-72 relative">
               <Reveal>
                 <img
@@ -113,7 +114,26 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
               )}
             </div>
             {about?.bio && (
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{about.bio}</ReactMarkdown>
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  a: ({ node, ...props }) => (
+                    <a {...props} target="_blank" rel="noopener noreferrer" />
+                  ),
+                  img: ({ node, ...props }) => (
+                    <Reveal groupHover>
+                      <img {...props} loading="lazy" alt={props.alt || ""} />
+                    </Reveal>
+                  ),
+                  p: ({ node, children, ...props }) => {
+                    const hasImage = node?.children?.some(
+                      (child: any) => child.tagName === "img"
+                    );
+                    if (hasImage) return <div>{children}</div>;
+                    return <p {...props}>{children}</p>;
+                  },
+                }}
+              >{about.bio}</ReactMarkdown>
             )}
             <Link to="/blog" className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
               see all reviews
@@ -121,12 +141,14 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
           </div>
         )}
 
-        {/* TODO: add availabilities for aside meta on about page; first letter styling of bio; editorial & classfs title flsh before load */}
-
         <section className="mt-12 border-t-4 border-double border-dark pt-8">
-          <h2 className="text-3xl font-brawler font-bold uppercase mb-6 tracking-tighter bg-dark text-white inline-block px-2">
-            The Editorial & Classifieds
-          </h2>
+          {isLoading ? (
+            <div className="h-9 bg-neutral-200 animate-pulse w-64 mb-6 rounded" />
+          ) : (
+            <h2 className="text-3xl font-brawler font-bold uppercase mb-6 tracking-tighter bg-dark text-white inline-block px-2">
+              The Editorial & Classifieds
+            </h2>
+          )}
           {isLoading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="h-40 bg-neutral-200 animate-pulse rounded" />
