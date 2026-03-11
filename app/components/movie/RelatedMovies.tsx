@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
+import Reveal from "~/components/ui/Reveal";
 
 type RelatedMovie = {
   documentId: string;
@@ -93,11 +94,13 @@ const RelatedMovies = ({ genres, currentDocumentId, mode = "related" }: Props) =
             className="block mb-5 pb-4 border-b border-neutral-300 group cursor-pointer"
           >
             {imgSrc && (
-              <img
-                src={imgSrc}
-                alt={movie.title}
-                className="w-full h-28 object-cover grayscale group-hover:grayscale-0 transition duration-700"
-              />
+              <Reveal groupHover>
+                <img
+                  src={imgSrc}
+                  alt={movie.title}
+                  className="w-full h-28 object-cover"
+                />
+              </Reveal>
             )}
             <h4 className="group-hover:text-crimson transition duration-700 pt-1 font-semibold text-lg leading-tight font-brawler tracking-tight">
               {movie.title}

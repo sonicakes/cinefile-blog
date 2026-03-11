@@ -59,7 +59,7 @@ const MovieCard = ({
         }`}
       >
         <div className="relative overflow-hidden">
-          <Reveal>
+          <Reveal groupHover>
           <img
             className="w-full aspect-video object-cover"
             src={img || "./images/gallery.jpg"}
