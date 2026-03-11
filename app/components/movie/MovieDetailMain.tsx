@@ -52,6 +52,9 @@ const MovieDetailMain = ({
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
+              a: ({ node, ...props }) => (
+                <a {...props} target="_blank" rel="noopener noreferrer" />
+              ),
               img: ({ node, ...props }) => (
                 <Reveal>
                   <img
