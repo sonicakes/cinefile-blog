@@ -59,7 +59,7 @@ export default function Home() {
       <Header />
       <main className="main-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[3fr_1.5fr_3.5fr] gap-6 mt-5">
         {isLoading ? (
-          <section className="headline-block">
+          <section className="headline-block order-2 md:order-1">
             <div className="h-20 bg-neutral-200 animate-pulse mb-4 w-3/4" />
             <div className="h-4 bg-neutral-200 animate-pulse mb-6 w-1/2" />
             <div className="space-y-2">
@@ -76,7 +76,7 @@ export default function Home() {
             body_paragraph_2={homepage?.body_paragraph_2}
           />
         )}
-        <aside className="opinion-sidebar">
+        <aside className="opinion-sidebar order-3 md:order-2">
           {isLoading ? (
             <>
               <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
@@ -94,7 +94,7 @@ export default function Home() {
             ))
           )}
         </aside>
-        <section>
+        <section className="order-1 md:order-2">
           {isLoading ? (
             <div className="w-full aspect-video bg-neutral-200 animate-pulse" />
           ) : (

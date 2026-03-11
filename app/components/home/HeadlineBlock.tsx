@@ -9,7 +9,7 @@ type HeadlineBlockProps = {
 
 const HeadlineBlock = ({ headline, byline, body_paragraph_1, body_paragraph_2 }: HeadlineBlockProps) => {
   return (
-    <section className="headline-block">
+    <section className="headline-block order-2 md:order-1">
       <h2 className="text-5xl md:text-7xl leading-[1.1] tracking-tight font-bold font-brawler">
         {headline ?? "Cinefile Movie Reviews"}
       </h2>
