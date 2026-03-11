@@ -4,6 +4,8 @@ import {
   MdOutlineStarHalf,
   MdOutlineWatchLater,
   MdOutlineRepeat,
+  MdOutlinePreview,
+  MdMovieEdit,
 } from "react-icons/md";
 import MetaItem from "./MetaItem";
 import { getIconByMedium } from "~/helpers";
@@ -51,8 +53,19 @@ const AsideMeta = ({ postMeta, relatedMode = "related" }: { postMeta: Post; rela
             </span>
           ))}
         </div>
-        {/* TODO: add date watched/date reviewed */}
         <div className="font-bold tracking-wide font-brawler flex gap-1 text-xs z-100 flex-wrap items-center text-gray-600 group-hover:text-gray-100 transition duration-300">
+          {postMeta.date_watched && (
+            <div className="flex gap-1 items-center">
+              <MdOutlinePreview color="crimson" size="20" />
+              {new Date(postMeta.date_watched).toLocaleDateString()}
+            </div>
+          )}
+          {postMeta.review_provided && postMeta.date_reviewed && (
+            <div className="flex gap-1 items-center">
+              <MdMovieEdit color="crimson" size="20" />
+              {new Date(postMeta.date_reviewed).toLocaleDateString()}
+            </div>
+          )}
           {postMeta.run_time && (
             <div className="flex gap-1 items-center">
               <MdOutlineWatchLater color="crimson" size="20" />
@@ -71,20 +84,28 @@ const AsideMeta = ({ postMeta, relatedMode = "related" }: { postMeta: Post; rela
           )}
           <div className="flex gap-1 items-center w-full">
             {postMeta.availability &&
-              postMeta.availability.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.location}
-                  className="hover:underline transition"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              postMeta.availability.map((item, index) =>
+                item.source.toLowerCase() === "university" || item.source.toLowerCase() === "work" ? (
                   <MetaItem
+                    key={index}
                     Icon={getIconByMedium(item.source)}
-                    text={item.source}
+                    text={item.location}
                   />
-                </a>
-              ))}
+                ) : (
+                  <a
+                    key={index}
+                    href={item.location}
+                    className="hover:underline transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MetaItem
+                      Icon={getIconByMedium(item.source)}
+                      text={item.source}
+                    />
+                  </a>
+                )
+              )}
           </div>
         </div>
         {postMeta.excerpt && (

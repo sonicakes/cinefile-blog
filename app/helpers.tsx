@@ -23,9 +23,9 @@ export const getIconByMedium = (medium?: string) => {
       return TbPumpkinScary;
     case "plex":
       return SiPlex;
-    case "uni degree":
+    case "university":
       return FaUniversity;
-    case "work experience":
+    case "work":
       return MdOutlineWork;
     case "tubi":
       return SiTubi;
