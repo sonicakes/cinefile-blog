@@ -26,47 +26,11 @@ const MovieFooter = ({
   return (
     <footer className="w-full mt-20 border-t-[6px] border-dark pt-1 text-dark">
 
-      {/* Spotify podcasts row */}
-      {spotifyEpisodes.length > 0 && (
-        <section className="border-b-2 border-dark">
-          <div className="px-6 py-5 flex items-center gap-4">
-            <FaSpotify className="text-base shrink-0" />
-            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em] shrink-0">
-              Recommended Podcasts about this movie
-            </h4>
-            <div className="flex-1 border-t border-dark" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black border-x border-black">
-            {spotifyEpisodes.map((ep, i) => (
-              <a
-                key={i}
-                href={ep.url}
-                target="_blank"
-                rel="noreferrer"
-                className="p-6 hover:bg-neutral-100 transition-colors group flex flex-col justify-between"
-              >
-                <div>
-                  <span className="block text-xs uppercase text-neutral-500 tracking-wide font-semibold mb-1 leading-none">
-                    {ep.podcastName}
-                  </span>
-                  <h5 className="text-xl font-brawler font-bold leading-tight group-hover:underline group-hover:text-crimson decoration-2">
-                    {ep.title}
-                  </h5>
-                </div>
-                <div className="mt-4 text-gray-600 font-medium flex items-center text-xs uppercase tracking-widest transition-transform duration-300 origin-bottom-left group-hover:scale-x-110">
-                  Listen Now <FaArrowRight className="ml-2 text-[8px]" />
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* Watch Next — full-width feature banner */}
       {hasNextMovie && (
         <section className="border-b-2 border-dark">
           <div className="px-6 py-5 flex items-center gap-4">
-            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em] shrink-0">
+            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em]">
               Watch Next
             </h4>
             <div className="flex-1 border-t border-dark" />
@@ -124,12 +88,48 @@ const MovieFooter = ({
         </section>
       )}
 
+      {/* Spotify podcasts row */}
+      {spotifyEpisodes.length > 0 && (
+        <section className="border-b-2 border-dark">
+          <div className="px-6 py-5 flex items-center gap-4">
+            <FaSpotify className="text-base shrink-0" />
+            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em]">
+              Recommended Podcasts about this movie
+            </h4>
+            <div className="flex-1 border-t border-dark" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black border-x border-black">
+            {spotifyEpisodes.map((ep, i) => (
+              <a
+                key={i}
+                href={ep.url}
+                target="_blank"
+                rel="noreferrer"
+                className="p-6 hover:bg-neutral-100 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <span className="block text-xs uppercase text-neutral-500 tracking-wide font-semibold mb-1 leading-none">
+                    {ep.podcastName}
+                  </span>
+                  <h5 className="text-xl font-brawler font-bold leading-tight group-hover:underline group-hover:text-crimson decoration-2">
+                    {ep.title}
+                  </h5>
+                </div>
+                <div className="mt-4 text-gray-600 font-medium flex items-center text-xs uppercase tracking-widest transition-transform duration-300 origin-bottom-left group-hover:scale-x-110">
+                  Listen Now <FaArrowRight className="ml-2 text-[8px]" />
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Further Reading row */}
       {hasFurtherReading && (
         <section className="border-b-2 border-dark">
           <div className="px-6 py-5 flex items-center gap-4">
             <MdMenuBook className="text-base shrink-0" />
-            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em] shrink-0">
+            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em]">
               Further Reading
             </h4>
             <div className="flex-1 border-t border-dark" />
@@ -180,7 +180,7 @@ const MovieFooter = ({
         <section className="border-b-2 border-dark">
           <div className="px-6 py-5 flex items-center gap-4">
             <FaGamepad className="text-base shrink-0" />
-            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em] shrink-0">
+            <h4 className="font-sans text-xs font-black uppercase tracking-[0.3em]">
               Sims 4 Scenario
             </h4>
             <div className="flex-1 border-t border-dark" />
