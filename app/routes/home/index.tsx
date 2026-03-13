@@ -4,6 +4,7 @@ import Header from "~/components/layout/Header";
 import type { Route } from "./+types/index";
 import HeadlineBlock from "~/components/home/HeadlineBlock";
 import SidebarItem from "~/components/home/SidebarItem";
+import ScoreboardSection from "~/components/home/ScoreboardSection";
 import type { RawPost } from "~/types";
 import Reveal from "~/components/ui/Reveal";
 
@@ -32,7 +33,7 @@ type HomepageData = {
 };
 
 export default function Home() {
-  const { apiUrl } = useLoaderData<typeof loader>();
+  const { apiUrl, strapiUrl } = useLoaderData<typeof loader>();
   const [homepage, setHomepage] = useState<HomepageData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -111,6 +112,7 @@ export default function Home() {
           )}
         </section>
       </main>
+      <ScoreboardSection apiUrl={apiUrl} strapiUrl={strapiUrl} />
     </>
   );
 }
