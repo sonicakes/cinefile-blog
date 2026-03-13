@@ -41,7 +41,7 @@ const MovieFooter = ({
             className="flex flex-col sm:flex-row gap-8 p-8 group hover:bg-neutral-50 transition-colors"
           >
             {nextMovie!.movie?.img && (
-              <div className="relative w-40 h-40 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500">
+              <div className="relative w-40 h-40 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 transition-all duration-500">
                 <img
                   src={
                     nextMovie!.movie.img.formats?.medium?.url ||

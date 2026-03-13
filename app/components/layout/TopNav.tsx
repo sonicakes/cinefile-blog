@@ -19,7 +19,7 @@ const TopNav = () => {
         <NavLink className="flex justify-center border-r border-dark h-full group" to="/">
           <img
             src="/logo.svg"
-            className=" h-12 md:h-20 w-auto self-center object-cover grayscale group-hover:grayscale-0 transition duration-700"
+            className=" h-12 md:h-20 w-auto self-center object-cover grayscale group-hover:duotone-crimson transition duration-700"
           />
         </NavLink>
         <h1 className="text-center py-4 font-gothic tracking-tight border-b border-dark text-4xl md:text-7xl">

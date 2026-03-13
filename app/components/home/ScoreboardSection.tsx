@@ -121,7 +121,7 @@ const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: s
                           <img
                             src={thumb}
                             alt={post.title}
-                            className="w-8 h-10 object-cover grayscale group-hover:grayscale-0 transition duration-500"
+                            className="w-8 h-10 object-cover grayscale transition duration-500"
                           />
                         ) : (
                           <div className="w-8 h-10 bg-neutral-100 border border-neutral-200" />

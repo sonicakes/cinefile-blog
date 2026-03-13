@@ -53,7 +53,7 @@ const FeaturedBlogs = () => {
               <img 
                 src={blog.image} 
                 alt={blog.title}
-                className={`w-full grayscale group-hover:grayscale-0 transition-all duration-700 object-cover ${blog.special ? 'h-130' : ''} ${blog.horizontal && !blog.special ? 'md:w-1/2 h-64' : 'h-48'}`}
+                className={`w-full grayscale transition-all duration-700 object-cover ${blog.special ? 'h-130' : ''} ${blog.horizontal && !blog.special ? 'md:w-1/2 h-64' : 'h-48'}`}
               />
               <div className={blog.horizontal ? 'md:w-1/2' : ''}>
                 <span className="text-[10px] tracking-widest text-neutral-500 uppercase font-bold border-b border-crimson mb-2 inline-block">
