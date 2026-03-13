@@ -26,6 +26,8 @@ export type Post = {
     url?: string;
     podcastName: string;
   }[];
+  further_reading?: { title: string; author?: string; url?: string }[];
+  sims_scenario?: { scenarioName: string; description?: string; url?: string }[];
   availability?: { source: string; location: string }[];
   img?: string;
   genres: { id: string; name: string }[];
@@ -60,6 +62,8 @@ export type RawPost = {
     url?: string;
     podcastName: string;
   }[];
+  further_reading?: { title: string; author?: string; url?: string }[];
+  sims_scenario?: { scenarioName: string; description?: string; url?: string }[];
   availability?: { source: string; location: string }[];
   year: string;
   img?: {
