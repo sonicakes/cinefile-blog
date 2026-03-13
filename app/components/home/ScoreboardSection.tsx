@@ -13,7 +13,7 @@ const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: s
     async function fetchPosts() {
       try {
         const res = await fetch(
-          `${apiUrl}/movies?populate[img]=true&populate[genres]=true&sort=rating:desc&pagination[limit]=100`
+          `${apiUrl}/movies?filters[review_provided][$eq]=true&populate[img]=true&populate[genres]=true&sort=rating:desc&pagination[limit]=100`
         );
         if (!res.ok) return;
         const json = await res.json();
@@ -130,7 +130,7 @@ const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: s
                       <td className="py-2 pr-4 font-semibold font-brawler group-hover:text-crimson transition-colors duration-300 max-w-32 md:max-w-50 truncate capitalize">
                         {post.title}
                       </td>
-                      <td className="py-2 pr-4 text-neutral-500 hidden sm:table-cell max-w-40 truncate">{post.director}</td>
+                      <td className="py-2 pr-4 text-neutral-500 hidden sm:table-cell max-w-40 truncate capitalize">{post.director}</td>
                       <td className="py-2 pr-4 text-neutral-500 hidden md:table-cell">{post.year}</td>
                       <td className="py-2 pr-4 hidden lg:table-cell">
                         {post.genres.slice(0, 2).map((g) => (

@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router";
 import MainFooter from "~/components/layout/MainFooter";
 import TopNav from "~/components/layout/TopNav";
+import BackToTop from "~/components/ui/BackToTop";
 
 const MainLayout = () => {
   return (
@@ -12,6 +13,7 @@ const MainLayout = () => {
         <Outlet />
       </main>
       <MainFooter />
+      <BackToTop />
     </div>
   );
 };
