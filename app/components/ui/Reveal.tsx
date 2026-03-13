@@ -4,12 +4,14 @@ interface RevealProps {
   children: ReactNode;
   threshold?: number;
   className?: string;
+  groupHover?: boolean;
 }
 
 const Reveal: React.FC<RevealProps> = ({
   children,
   threshold = 0.2,
   className = "",
+  groupHover = false,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
@@ -43,7 +45,7 @@ const Reveal: React.FC<RevealProps> = ({
     overflow-hidden transition-all duration-700 ease-in-out transform-gpu
     ${
       isVisible
-        ? "grayscale-0 opacity-100 scale-100"
+        ? "duotone-crimson opacity-100 scale-100"
         : "grayscale opacity-70 scale-95"
     }
     ${className}

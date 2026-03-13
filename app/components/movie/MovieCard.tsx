@@ -1,4 +1,4 @@
-import type { PostMeta } from "~/types";
+import type { Post } from "~/types";
 import MetaItem from "./MetaItem";
 import {
   MdOutlineWatchLater,
@@ -18,7 +18,7 @@ const MovieCard = ({
   blog,
   classExtra,
 }: {
-  blog: PostMeta;
+  blog: Post;
   classExtra: string;
 }) => {
   const {
@@ -59,7 +59,7 @@ const MovieCard = ({
         }`}
       >
         <div className="relative overflow-hidden">
-          <Reveal>
+          <Reveal groupHover>
           <img
             className="w-full aspect-video object-cover"
             src={img || "./images/gallery.jpg"}

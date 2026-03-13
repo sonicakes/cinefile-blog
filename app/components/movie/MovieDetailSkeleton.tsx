@@ -1,10 +1,6 @@
-import RenderWakeupMsg from "../ui/RenderWakeupMsg";
-
 const MovieDetailSkeleton = () => {
   return (
     <div className="animate-pulse relative">
-      <RenderWakeupMsg />
-
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 py-4">
         <div className="space-y-6">
 

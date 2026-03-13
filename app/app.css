@@ -11,6 +11,10 @@
   --color-crimson: #DC143C;
 }
 
+@utility duotone-crimson {
+  filter: grayscale(80%) sepia(5%) hue-rotate(315deg) saturate(1.2) brightness(0.92);
+}
+
 @layer base {
 
   .prose p,
@@ -58,7 +62,7 @@
 }
 
 @utility drop-cap {
-  & p:first-of-type:not(blockquote p)::first-letter {
+  & p:first-of-type:not(blockquote p):not(.custom-caption)::first-letter {
     @apply float-left text-6xl pr-3 pt-1 leading-[0.8] font-gothic;
   }
 }
@@ -222,7 +226,7 @@ body {
 
 .featured-image {
   width: 100%;
-  filter: grayscale(20%);
+  filter: grayscale(100%);
   margin-bottom: 10px;
 }
 
@@ -307,10 +311,6 @@ body {
   object-fit: cover;
   filter: grayscale(100%);
   transition: 0.3s ease;
-}
-
-.blog-card:hover img {
-  filter: grayscale(0%);
 }
 
 .blog-card h3 {

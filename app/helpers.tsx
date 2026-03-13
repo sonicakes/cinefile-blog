@@ -9,6 +9,7 @@ import { FaYoutube, FaUniversity } from "react-icons/fa";
 import { SiMubi, SiPlex, SiTubi } from "react-icons/si";
 import { PiDiscDuotone } from "react-icons/pi";
 import { TbPumpkinScary } from "react-icons/tb";
+import type { Post } from "~/types";
 
 export const getIconByMedium = (medium?: string) => {
   switch (medium?.toLowerCase()) {
@@ -22,9 +23,9 @@ export const getIconByMedium = (medium?: string) => {
       return TbPumpkinScary;
     case "plex":
       return SiPlex;
-    case "uni degree":
+    case "university":
       return FaUniversity;
-    case "work experience":
+    case "work":
       return MdOutlineWork;
     case "tubi":
       return SiTubi;
@@ -45,7 +46,7 @@ export const getIconByMedium = (medium?: string) => {
   }
 };
 
-export const mapStrapiToPosts = (moviesJson: any) => {
+export const mapStrapiToPosts = (moviesJson: any): Post[] => {
   return moviesJson.data.map((item: any) => ({
     id: item.id,
     documentId: item.documentId,

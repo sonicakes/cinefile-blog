@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, NavLink } from "react-router";
 import type { Route } from "./+types/detail";
-import type { StrapiPost, StrapiResponse } from "~/types";
+import type { RawPost } from "~/types";
+
+type StrapiResponse<T> = { data: T[] };
 import MovieDetailMain from "~/components/movie/MovieDetailMain";
 import MovieFooter from "~/components/movie/MovieFooter";
 import AsideMeta from "~/components/movie/AsideMeta";
@@ -27,6 +29,8 @@ const mapDetailData = (item: any) => {
       movie: item.next_movie?.movie || null,
     },
     spotify_episodes: item.spotify_episodes || [],
+    further_reading: item.further_reading || [],
+    sims_scenario: item.sims_scenario || [],
     genres: item.genres?.map((g: any) => ({ id: g.id, name: g.name })) || [],
     availability: item.availability || [],
   };
@@ -43,12 +47,12 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
     async function getDetail() {
       try {
         const res = await fetch(
-          `${apiUrl}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=next_movie.movie.genres&populate=availability&populate=genres&populate=img&populate=spotify_episodes`,
+          `${apiUrl}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=next_movie.movie.genres&populate=availability&populate=genres&populate=img&populate=spotify_episodes&populate=further_reading&populate=sims_scenario`,
         );
 
         if (!res.ok) throw new Error("Failed to fetch");
 
-        const json: StrapiResponse<StrapiPost> = await res.json();
+        const json: StrapiResponse<RawPost> = await res.json();
 
         if (!json.data || !json.data.length) {
           if (isMounted) setError("404");
@@ -124,6 +128,8 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
 
       <MovieFooter
         spotifyEpisodes={post.spotify_episodes}
+        furtherReading={post.further_reading}
+        simsScenarios={post.sims_scenario}
         nextMovie={post.next_movie}
       />
     </>
