@@ -27,14 +27,22 @@ const MovieListContent = ({ posts, categories }: { posts: Post[], categories: st
   });
 
   const sortedPosts = [...filteredPosts].sort((a, b) => {
-    const dateA = a.date_reviewed ? new Date(a.date_reviewed).getTime() : 0;
-    const dateB = b.date_reviewed ? new Date(b.date_reviewed).getTime() : 0;
-
-    if (sortOrder === "newest") return dateB - dateA;
-    if (sortOrder === "oldest") return dateA - dateB;
-    if (sortOrder === "alphabetical") {
-      return (a.title || "").localeCompare(b.title || "");
+    if (a.review_provided !== b.review_provided) {
+      return a.review_provided ? -1 : 1;
     }
+
+    const dateReviewedA = a.date_reviewed ? new Date(a.date_reviewed).getTime() : 0;
+    const dateReviewedB = b.date_reviewed ? new Date(b.date_reviewed).getTime() : 0;
+    const yearA = parseInt(a.year) || 0;
+    const yearB = parseInt(b.year) || 0;
+
+    if (sortOrder === "newest") return dateReviewedB - dateReviewedA;
+    if (sortOrder === "oldest") return dateReviewedA - dateReviewedB;
+    if (sortOrder === "rating-high") return b.rating - a.rating;
+    if (sortOrder === "rating-low") return a.rating - b.rating;
+    if (sortOrder === "year-newest") return yearB - yearA;
+    if (sortOrder === "year-oldest") return yearA - yearB;
+    if (sortOrder === "alphabetical") return (a.title || "").localeCompare(b.title || "");
     return 0;
   });
 
