@@ -24,7 +24,7 @@ const MovieFooter = ({
   const hasSimsScenarios = simsScenarios.length > 0;
 
   return (
-    <footer className="w-full mt-20 border-t-[6px] border-dark pt-1 text-dark">
+    <div className="w-full mt-4 border-t-[6px] border-dark pt-1 text-dark">
 
       {/* Watch Next — full-width feature banner */}
       {hasNextMovie && (
@@ -38,7 +38,7 @@ const MovieFooter = ({
           <MovieWrapper
             isReviewed={!!nextMovie!.movie!.review_provided}
             href={`/blog/${nextMovie!.movie!.documentId}`}
-            className="flex flex-col sm:flex-row gap-8 p-8 group hover:bg-neutral-50 transition-colors"
+            className="flex flex-col sm:flex-row gap-8 p-4 md:p-8 group hover:bg-neutral-50 transition-colors"
           >
             {nextMovie!.movie?.img && (
               <div className="relative w-40 h-40 shrink-0 border-2 border-black overflow-hidden grayscale contrast-125 transition-all duration-500">
@@ -226,7 +226,7 @@ const MovieFooter = ({
         </section>
       )}
 
-    </footer>
+    </div>
   );
 };
 

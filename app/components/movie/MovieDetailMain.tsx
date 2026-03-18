@@ -12,6 +12,17 @@ import MovieInfo from "~/components/movie/MovieInfo";
 import { NavLink } from "react-router";
 import Reveal from "../ui/Reveal";
 
+const injectQuoteAtMidpoint = (markdown: string, quote?: string): string => {
+  if (!quote || !markdown) return markdown;
+  const paragraphs = markdown.split(/\n\n+/);
+  const mid = Math.floor(paragraphs.length / 2);
+  return [
+    ...paragraphs.slice(0, mid),
+    `> ${quote}`,
+    ...paragraphs.slice(mid),
+  ].join("\n\n");
+};
+
 const MovieDetailMain = ({
   postMeta,
   markdown,
@@ -21,6 +32,7 @@ const MovieDetailMain = ({
   markdown: string;
   stats?: Stat;
 }) => {
+  const bodyWithQuote = injectQuoteAtMidpoint(markdown, postMeta.quote);
   return (
     <article className="main-content">
       <MovieInfo
@@ -73,7 +85,7 @@ const MovieDetailMain = ({
                 return <p {...props}>{children}</p>;
               },
             }}
-          >{markdown}</ReactMarkdown>
+          >{bodyWithQuote}</ReactMarkdown>
         </div>
       </div>
 
