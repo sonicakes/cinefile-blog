@@ -23,7 +23,7 @@ const Reveal: React.FC<RevealProps> = ({
           if (entry.isIntersecting) {
             setIsVisible(true);
           } else {
-            setIsVisible(false); 
+            setIsVisible(false);
           }
         });
       },
@@ -42,11 +42,11 @@ const Reveal: React.FC<RevealProps> = ({
     <div
       ref={domRef}
       className={`
-    overflow-hidden transition-all duration-700 ease-in-out transform-gpu
+    overflow-hidden transition-all duration-1200 ease-in-out delay-1200 transform-gpu
     ${
       isVisible
-        ? "duotone-crimson opacity-100 scale-100"
-        : "grayscale opacity-70 scale-95"
+        ? "scale-100"
+        : "grayscale scale-95"
     }
     ${className}
   `}

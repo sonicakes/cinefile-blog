@@ -13,7 +13,7 @@ const MainLayout = () => {
   const { apiUrl, strapiUrl } = useLoaderData<typeof loader>();
   return (
     <>
-      <section className="max-w-6xl mx-auto px-6 my-8">
+      <section className="max-w-6xl mx-auto my-8">
         <AboutPage apiUrl={apiUrl} strapiUrl={strapiUrl} />
       </section>
     </>

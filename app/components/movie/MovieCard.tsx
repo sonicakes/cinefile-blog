@@ -52,7 +52,7 @@ const MovieCard = ({
   return (
     <Wrapper>
       <article
-        className={`item border-2 border-dark relative z-10 transition duration-700 group ${
+        className={`[grid-row:span_10] border-2 border-dark relative z-10 transition duration-700 group ${
           review_provided
             ? "cursor-pointer pointer-events-auto"
             : "cursor-default"
@@ -160,7 +160,7 @@ const MovieCard = ({
             </blockquote>
           )}
           {review_provided && (
-            <span className="inline-block text-dark group-hover:text-crimson transition duration-700 border-gray-600 group-hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
+            <span aria-hidden="true" className="inline-block text-dark group-hover:text-crimson transition duration-700 border-gray-600 group-hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
               read full review
             </span>
           )}

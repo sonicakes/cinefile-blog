@@ -65,17 +65,18 @@ const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: s
               <div key={i} className="h-5 w-14 bg-neutral-200 animate-pulse" />
             ))
           : genres.map((g) => (
-              <span
+              <button
                 key={g}
                 onClick={() => setActiveGenre(g)}
-                className={`px-1.5 lg:px-3 py-1 leading-3.5 border transition duration-300 cursor-pointer whitespace-nowrap ${
+                aria-pressed={activeGenre === g}
+                className={`uppercase px-1.5 lg:px-3 py-1 leading-3.5 border transition duration-300 cursor-pointer whitespace-nowrap ${
                   activeGenre === g
                     ? "bg-crimson text-white border-crimson"
                     : "bg-light border-gray-600 hover:bg-crimson hover:text-gray-100"
                 }`}
               >
                 {g}
-              </span>
+              </button>
             ))}
       </div>
 
@@ -146,7 +147,7 @@ const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: s
                         {post.quote ? (
                           <span className="line-clamp-1">"{post.quote}"</span>
                         ) : (
-                          <span className="text-neutral-300">—</span>
+                          <span className="text-neutral-300" aria-hidden="true">—</span>
                         )}
                       </td>
                       <td className="py-2 text-center font-bold tabular-nums font-brawler">

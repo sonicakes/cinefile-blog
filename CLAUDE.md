@@ -1,95 +1,61 @@
-# Cinefile Blog — Claude Instructions
+# Cinefile Blog
 
-## Project Overview
-
-A newspaper-themed movie review blog built with React Router v7 (SSR), TypeScript, and Tailwind CSS v4. All content — including review body text (stored as `body_blog` in Strapi) — is dynamically fetched from a **Strapi** headless CMS. Post content is automatically backed up to the `cinefile-content` GitHub repo as Markdown files via a lifecycle hook on the Strapi backend (`src/api/movie/content-types/movie/lifecycles.ts`), which triggers `scripts/backup-posts.mjs` after every create or update. Strapi is the source of truth.
-
-## Backend (cinefile-be)
-
-The backend is a **Strapi v5** instance located in the sibling `cinefile-be/` directory. It exposes two content types — `movies` and `genres` — each following the standard Strapi structure (`content-types/`, `controllers/`, `routes/`, `services/`). A lifecycle hook on the `movie` content type (`src/api/movie/content-types/movie/lifecycles.ts`) triggers `scripts/backup-posts.mjs` after every create or update, which backs up all posts to the `cinefile-content` GitHub repo.
-
-In production, the backend runs on **Railway** with a **Neon Postgres** database (connected via `DATABASE_URL`). Locally it falls back to SQLite. The `GITHUB_TOKEN` env var must be set in Railway for the backup script to function.
+Newspaper-themed movie review blog. Reviews are authored in Strapi CMS and rendered
+with React Router v7 SSR. On every Strapi save, a lifecycle hook backs up content to a GitHub repo.
 
 ## Tech Stack
 
-- **Framework:** React Router v7 with SSR (`ssr: true`)
-- **Build tool:** Vite 7
-- **Language:** TypeScript (strict mode)
-- **Styling:** Tailwind CSS v4 with custom theme in `app/app.css`
-- **CMS:** Strapi (local: `http://localhost:1337/api`)
-- **Package manager:** npm
-- **Deployment target:** Netlify (via `@netlify/vite-plugin-react-router`)
+- React 19 + React Router 7 (SSR enabled — `react-router.config.ts`)
+- Vite 7 / TypeScript 5 (strict)
+- Tailwind CSS v4 — theme in `app/app.css:4`
+- Strapi v5 CMS — sibling dir `../cinefile-be/` (has its own CLAUDE.md)
+- Deployment: Netlify (frontend) · Railway (backend) · Neon Postgres (db)
 
-## Running the Project
+## Key Directories & Files
+
+| Path | Purpose |
+|------|---------|
+| `app/routes/` | Route components — kebab-case dirs, `index.tsx` per route |
+| `app/routes/layouts/` | Layout wrappers (`home.tsx`, `main.tsx`, `detail.tsx`) |
+| `app/components/` | Reusable components grouped by feature: `home/`, `layout/`, `movie/`, `ui/` |
+| `app/types.ts:1` | Shared types: `Post`, `RawPost` (`:45`), `SortOption` (`:36`) |
+| `app/helpers.tsx:49` | Data mappers: `mapStrapiToPosts` (`:49`), `calculateReadingTime` (`:84`), `getIconByMedium` (`:14`) |
+| `app/constants.ts` | Genre list and other constants |
+| `app/app.css` | Tailwind v4 theme + custom utilities |
+| `.react-router/` | Auto-generated — do not modify |
+
+## Environment Variables
+
+| Variable | Purpose |
+|----------|---------|
+| `VITE_API_URL` | Strapi API base URL — used in all loaders |
+| `VITE_STRAPI_URL` | Strapi origin — used for image URL construction |
+
+Set in `.env` (local) and `.env.production` (Railway URL).
+
+## Commands
 
 ```bash
-npm run dev          # development server
+npm run dev          # dev server with HMR
 npm run build        # production build
 npm run typecheck    # generate RR types + tsc check
 npm run start        # serve production build
 ```
 
-## Key File Locations
+## Behavior Instructions
 
-| Purpose | Path |
-|---|---|
-| Route config | `app/routes.ts` |
-| Global styles + Tailwind theme | `app/app.css` |
-| Shared types | `app/types.ts` |
-| Utility/helper functions | `app/helpers.tsx` |
-| Constants | `app/constants.ts` |
-| Reusable components | `app/components/` |
-| Route components | `app/routes/` |
-| Layout wrappers | `app/routes/layouts/` |
-| Vite config | `vite.config.ts` |
-| React Router config | `react-router.config.ts` |
+- Before modifying anything, show the proposed solution and explain it in plain language.
+- Ask clarifying questions on both minor and major decisions.
+- When starting a new feature or bug fix: check the current branch, show it to the user, and ask if it's the correct one. If not, ask what branch to create based on the feature/bug/task name.
+- When starting a new feature, bug fix, or architectural change: ask if the user wants to enter /plan mode before proceeding.
+- After making changes, check if any `.claude/docs/` files are affected and update them accordingly.
 
-## Path Aliases
+## Additional Documentation
 
-Use `~/` for all internal imports — it maps to `./app/`:
+Check these when relevant:
 
-```ts
-import { BlogCard } from "~/components/BlogCard";
-import type { Post } from "~/types";
-```
-
-## Coding Conventions
-
-- **Component files:** PascalCase `.tsx` (e.g., `BlogCard.tsx`)
-- **Route files:** kebab-case directories with `index.tsx`
-- **Functional components only** — no class components
-- **No ESLint config** is set up; rely on TypeScript strict mode for correctness
-- Data mapping helpers (`mapDetailData`, `mapStrapiToPosts`) live in `helpers.tsx` — extend these rather than inline mapping in components
-
-## Styling Rules
-
-- Use **Tailwind utility classes** for all layout and spacing
-- The design system is defined in `app/app.css` under `@theme` — reference existing CSS variables (`--color-dark`, `--color-crimson`, `--font-source`, etc.) rather than hardcoding values
-- Grayscale + crimson accent is the core aesthetic — don't introduce new colors without good reason
-- Typography: serif-heavy (Brawler, Source Serif 4, Old Standard TT) — match existing headings/body patterns
-- For markdown content, use the `prose` class from `@tailwindcss/typography`
-
-## Data Fetching Pattern
-
-Components fetch data client-side via `useEffect` + `useState` after the loader passes the API URL and any required IDs. Follow the established pattern:
-
-1. Loader provides `apiUrl` and ID from route params
-2. Component fetches in `useEffect`, maps response via helper in `helpers.tsx`
-3. Render loading skeleton → data or error state
-
-Strapi populate pattern: `?populate=*` for full relations.
-
-## Strapi API Notes
-
-- Local: `http://localhost:1337/api` (set in `.env`)
-- Production URL: set via `VITE_API_URL` in `.env.production`
-- Main content types: `movies`, `genres`
-- Images are served from Strapi (`VITE_STRAPI_URL`) with multiple format sizes
-
-## What to Avoid
-
-- Don't add new dependencies without checking if the need can be met by existing libraries (react-icons, react-markdown, reading-time are already available)
-- Don't inline Tailwind theme values — use the CSS variables defined in `app.css`
-- Don't use class components or legacy React patterns
-- Don't bypass TypeScript with `any` — use proper types from `app/types.ts`
-- Don't modify `.react-router/` — these are auto-generated files
+| File | When to check |
+|------|--------------|
+| `.claude/docs/architectural_patterns.md` | Data fetching, component structure, state management, skeleton loading |
+| `.claude/docs/strapi_api.md` | Strapi endpoints, query syntax, image handling, data flow |
+| `.claude/docs/styling.md` | CSS variables, Tailwind theme, custom utilities, newspaper design conventions |

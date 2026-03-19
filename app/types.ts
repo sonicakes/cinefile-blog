@@ -33,7 +33,14 @@ export type Post = {
   genres: { id: string; name: string }[];
 };
 
-export type SortOption = "newest" | "oldest" | "alphabetical";
+export type SortOption =
+  | "newest"
+  | "oldest"
+  | "alphabetical"
+  | "rating-high"
+  | "rating-low"
+  | "year-newest"
+  | "year-oldest";
 
 export type RawPost = {
   id: string;

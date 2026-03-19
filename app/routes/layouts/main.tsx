@@ -5,7 +5,7 @@ import BackToTop from "~/components/ui/BackToTop";
 
 const MainLayout = () => {
   return (
-    <div className="newspaper-page">
+    <div className="max-w-275 my-5 mx-auto bg-white p-6 shadow-md">
       <header className="border-b-5 border-dark">
         <TopNav />
       </header>

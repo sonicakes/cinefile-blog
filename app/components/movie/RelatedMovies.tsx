@@ -102,7 +102,7 @@ const RelatedMovies = ({ genres, currentDocumentId, mode = "related" }: Props) =
                 />
               </Reveal>
             )}
-            <h4 className="group-hover:text-crimson transition duration-700 pt-1 font-semibold text-lg leading-tight font-brawler tracking-tight">
+            <h4 className="group-hover:text-crimson transition duration-700 pt-1 font-semibold text-lg leading-tight font-brawler tracking-tight capitalize">
               {movie.title}
             </h4>
             {movie.excerpt && (

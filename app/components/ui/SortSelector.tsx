@@ -15,6 +15,10 @@ const SortSelector = ({ currentSort, onSortChange }: SortSelectorProps) => {
       >
         <option value="newest">Sort By: Newest Reviews First</option>
         <option value="oldest">Sort By: Oldest Reviews First</option>
+        <option value="rating-high">Sort By: Highest Rated</option>
+        <option value="rating-low">Sort By: Lowest Rated</option>
+        <option value="year-newest">Sort By: Film Year (Newest)</option>
+        <option value="year-oldest">Sort By: Film Year (Oldest)</option>
         <option value="alphabetical">Sort By: A - Z</option>
       </select>
     </div>
