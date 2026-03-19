@@ -116,7 +116,8 @@ const MovieFooter = ({
                   </h5>
                 </div>
                 <div className="mt-4 text-gray-600 font-medium flex items-center text-xs uppercase tracking-widest transition-transform duration-300 origin-bottom-left group-hover:scale-x-110">
-                  Listen Now <FaArrowRight className="ml-2 text-[8px]" />
+                  Listen Now <FaArrowRight className="ml-2 text-[8px]" aria-hidden="true" />
+                  <span className="sr-only">(opens in new tab)</span>
                 </div>
               </a>
             ))}
@@ -155,7 +156,8 @@ const MovieFooter = ({
                     </h5>
                   </div>
                   <div className="mt-4 text-gray-600 font-medium flex items-center text-xs uppercase tracking-widest transition-transform duration-300 origin-bottom-left group-hover:scale-x-110">
-                    View Book <FaArrowRight className="ml-2 text-[8px]" />
+                    View Book <FaArrowRight className="ml-2 text-[8px]" aria-hidden="true" />
+                    <span className="sr-only">(opens in new tab)</span>
                   </div>
                 </a>
               ) : (
@@ -206,7 +208,8 @@ const MovieFooter = ({
                     )}
                   </div>
                   <div className="mt-4 text-gray-600 font-medium flex items-center text-xs uppercase tracking-widest transition-transform duration-300 origin-bottom-left group-hover:scale-x-110">
-                    Play Scenario <FaArrowRight className="ml-2 text-[8px]" />
+                    Play Scenario <FaArrowRight className="ml-2 text-[8px]" aria-hidden="true" />
+                    <span className="sr-only">(opens in new tab)</span>
                   </div>
                 </a>
               ) : (

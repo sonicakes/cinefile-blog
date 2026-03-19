@@ -16,6 +16,8 @@ const Pagination: React.FC<PaginationProps> = ({
       {Array.from({ length: totalPages }, (_, idx) => (
         <button
           key={idx + 1}
+          aria-label={`Go to page ${idx + 1}`}
+          aria-current={currentPage === idx + 1 ? 'page' : undefined}
           className={`px-3 py-1 cursor-pointer border transition duration-300 ${
             currentPage === idx + 1
               ? 'bg-crimson text-light border-crimson'

@@ -23,14 +23,17 @@ const SearchInput = ({
       />
       <MdOutlineSearch
         size={22}
+        aria-hidden="true"
         className="absolute top-1/2 left-2 -translate-y-1/2 text-neutral-dark"
       />
       {searchQuery != "" && (
-        <MdClose
-          size={22}
-          className="absolute cursor-pointer hover:text-crimson transition top-1/2 right-2 -translate-y-1/2 text-neutral-500"
+        <button
           onClick={onClearChange}
-        />
+          aria-label="Clear search"
+          className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer hover:text-crimson transition text-neutral-500"
+        >
+          <MdClose size={22} aria-hidden="true" />
+        </button>
       )}
     </div>
   );

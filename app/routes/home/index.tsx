@@ -77,7 +77,7 @@ export default function Home() {
             body_paragraph_2={homepage?.body_paragraph_2}
           />
         )}
-        <aside className="opinion-sidebar order-3 md:order-2">
+        <aside className="border-l border-[#ddd] pl-4 order-3 md:order-2">
           {isLoading ? (
             <>
               <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />

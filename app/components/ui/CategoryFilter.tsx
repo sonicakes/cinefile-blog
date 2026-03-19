@@ -37,31 +37,33 @@ const CategoryFilter = ({
         </button>
 
         <div className="flex flex-wrap md:flex-nowrap gap-2 lg:gap-3 justify-center">
-          <div
+          <button
             onClick={() => onToggleCategory(null)}
-            className={`px-1.5 lg:px-3 py-1 leading-3.5  border transition cursor-pointer ${
+            aria-pressed={selectedCategories.length === 0}
+            className={`uppercase px-1.5 lg:px-3 py-1 leading-3.5 border transition cursor-pointer ${
               selectedCategories.length === 0
                 ? "bg-crimson text-white border-crimson"
                 : "bg-light border-gray-600"
             }`}
           >
             All
-          </div>
+          </button>
 
           {categories
             .slice(startIndex, startIndex + visibleCount)
             .map((category) => (
-              <span
+              <button
                 key={category}
                 onClick={() => onToggleCategory(category)}
-                className={`px-1.5 lg:px-3 border py-1 leading-3.5 transition duration-300 cursor-pointer whitespace-nowrap ${
+                aria-pressed={selectedCategories.includes(category)}
+                className={`uppercase px-1.5 lg:px-3 border py-1 leading-3.5 transition duration-300 cursor-pointer whitespace-nowrap ${
                   selectedCategories.includes(category)
                     ? "bg-crimson text-white border-crimson"
                     : "bg-light border-gray-600 hover:bg-crimson hover:text-gray-100"
                 }`}
               >
                 {category}
-              </span>
+              </button>
             ))}
         </div>
 

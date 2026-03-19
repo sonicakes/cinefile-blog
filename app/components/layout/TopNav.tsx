@@ -19,6 +19,7 @@ const TopNav = () => {
         <NavLink className="flex justify-center border-r border-dark h-full group" to="/">
           <img
             src="/logo.svg"
+            alt="The Cinefile Blog — home"
             className=" h-12 md:h-20 w-auto self-center object-cover grayscale group-hover:duotone-crimson transition duration-700"
           />
         </NavLink>
