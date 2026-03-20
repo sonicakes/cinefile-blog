@@ -1,19 +1,19 @@
 import { useState } from "react";
-import type { Post, SortOption } from "~/types";
+import type { Movie, SortOption } from "~/types";
 import MovieCard from "~/components/movie/MovieCard";
 import SearchInput from "~/components/ui/SearchInput";
 import CategoryFilter from "~/components/ui/CategoryFilter";
 import SortSelector from "~/components/ui/SortSelector";
 import Pagination from "~/components/ui/Pagination";
 
-const MovieListContent = ({ posts, categories }: { posts: Post[], categories: string[] }) => {
+const MovieListContent = ({ posts, categories }: { posts: Movie[], categories: string[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOption>("newest");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 5;
 
-  const filteredPosts = posts.filter((post: Post) => {
+  const filteredMovies = posts.filter((post: Movie) => {
     const query = searchQuery.toLowerCase();
 
     const matchesSearch =
@@ -26,7 +26,7 @@ const MovieListContent = ({ posts, categories }: { posts: Post[], categories: st
     return matchesSearch && matchesCategory;
   });
 
-  const sortedPosts = [...filteredPosts].sort((a, b) => {
+  const sortedMovies = [...filteredMovies].sort((a, b) => {
     if (a.review_provided !== b.review_provided) {
       return a.review_provided ? -1 : 1;
     }
@@ -46,10 +46,10 @@ const MovieListContent = ({ posts, categories }: { posts: Post[], categories: st
     return 0;
   });
 
-  const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
+  const totalPages = Math.ceil(sortedMovies.length / postsPerPage);
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFirst = indexOfLast - postsPerPage;
-  const currentPosts = sortedPosts.slice(indexOfFirst, indexOfLast);
+  const currentMovies = sortedMovies.slice(indexOfFirst, indexOfLast);
 
   return (
     <>
@@ -97,7 +97,7 @@ const MovieListContent = ({ posts, categories }: { posts: Post[], categories: st
               {searchQuery ? "results for " + '"' + searchQuery + ':"' : ""}
             </span>
             <span className="text-sm lg:text-base text-crimson font-bold">
-              {filteredPosts.length}
+              {filteredMovies.length}
             </span>
 
             <span className="text-sm lg:text-base font-semibold">
@@ -108,8 +108,8 @@ const MovieListContent = ({ posts, categories }: { posts: Post[], categories: st
       </section>
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 py-6 md:p-4 grid-flow-dense">
-        {currentPosts.length > 0 ? (
-          currentPosts.map((post: Post, index: number) => (
+        {currentMovies.length > 0 ? (
+          currentMovies.map((post: Movie, index: number) => (
             <MovieCard
               blog={post}
               key={post.documentId}
