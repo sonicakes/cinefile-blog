@@ -1,7 +1,7 @@
 import { FaSpotify, FaArrowRight } from "react-icons/fa";
 import { FaGamepad } from "react-icons/fa6";
 import { MdMenuBook } from "react-icons/md";
-import type { RawPost } from "~/types";
+import type { RawMovie } from "~/types";
 import MovieWrapper from "./MovieWrapper";
 
 type ReviewFooterProps = {
@@ -9,7 +9,7 @@ type ReviewFooterProps = {
   furtherReading?: { title: string; author?: string; url?: string }[];
   simsScenarios?: { scenarioName: string; description?: string; url?: string }[];
   nextMovie?: {
-    movie?: RawPost;
+    movie?: RawMovie;
   };
 };
 

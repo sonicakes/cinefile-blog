@@ -1,4 +1,4 @@
-import type { Post } from "~/types";
+import type { Movie } from "~/types";
 import {
   MdOutlineRecommend,
   MdOutlineStarHalf,
@@ -11,7 +11,7 @@ import MetaItem from "./MetaItem";
 import { getIconByMedium } from "~/helpers";
 import RelatedMovies from "./RelatedMovies";
 
-const AsideMeta = ({ postMeta, relatedMode = "related" }: { postMeta: Post; relatedMode?: "related" | "latest" }) => {
+const AsideMeta = ({ postMeta, relatedMode = "related" }: { postMeta: Movie; relatedMode?: "related" | "latest" }) => {
   return (
     <aside className="related-sidebar">
       <div className="py-4 mb-5 border-t px-4 border-gray-300 bg-light">

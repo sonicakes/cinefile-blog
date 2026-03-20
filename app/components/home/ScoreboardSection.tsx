@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { mapStrapiToPosts } from "~/helpers";
-import type { Post } from "~/types";
+import type { Movie } from "~/types";
 
 const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string }) => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<Movie[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [activeGenre, setActiveGenre] = useState<string>("All");
   const navigate = useNavigate();

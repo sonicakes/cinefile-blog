@@ -18,10 +18,10 @@ const SidebarItem = ({
         <Reveal>
           <img src={imgPath} className="h-50 object-cover w-full" alt={text} />
         </Reveal>
-        <h4 className="group-hover:text-crimson transition duration-700 py-1 font-semibold text-lg leading-tight font-brawler tracking-tight">
+        <h4 className="group-hover:text-crimson transition duration-700 py-1 font-semibold text-lg leading-tight font-brawler tracking-tight capitalize">
           {text}
         </h4>
-        <small className="text-neutral-500 text-xs inline-block leading-snug">{caption}</small>
+        <small className="text-neutral-500 text-xs inline-block leading-snug first-letter:uppercase">{caption}</small>
       </div>
     </Link>
   );

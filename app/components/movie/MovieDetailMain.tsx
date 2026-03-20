@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import type { Post } from "~/types";
+import type { Movie } from "~/types";
 
 type Stat = {
   minutes: number;
@@ -28,7 +28,7 @@ const MovieDetailMain = ({
   markdown,
   stats,
 }: {
-  postMeta: Post;
+  postMeta: Movie;
   markdown: string;
   stats?: Stat;
 }) => {

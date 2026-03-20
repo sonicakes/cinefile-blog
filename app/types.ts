@@ -1,4 +1,4 @@
-export type Post = {
+export type Movie = {
   id: string;
   documentId: string;
   title: string;
@@ -19,7 +19,7 @@ export type Post = {
   quote?: string;
   run_time: string;
   next_movie?: {
-    movie?: RawPost;
+    movie?: RawMovie;
   };
   spotify_episodes?: {
     title?: string;
@@ -42,7 +42,7 @@ export type SortOption =
   | "year-newest"
   | "year-oldest";
 
-export type RawPost = {
+export type RawMovie = {
   id: string;
   documentId: string;
   rating: number;
@@ -62,7 +62,7 @@ export type RawPost = {
   quote: string;
   run_time: string;
   next_movie?: {
-    movie?: RawPost;
+    movie?: RawMovie;
   };
   spotify_episodes?: {
     title?: string;
@@ -83,4 +83,32 @@ export type RawPost = {
     };
   };
   genres: { id: string; name: string; documentId: string }[];
+};
+
+export type RawPost = {
+  id: string;
+  documentId: string;
+  title: string;
+  date?: string;
+  meta_title?: string;
+  excerpt?: string;
+  body_blog?: string;
+  image_description?: string;
+  img?: { url: string; formats?: { medium?: { url: string }; small?: { url: string } } };
+  further_reading?: { title: string; author?: string; url?: string }[];
+  spotify_episodes?: { title?: string; url?: string; podcastName: string }[];
+};
+
+export type Post = {
+  id: string;
+  documentId: string;
+  title: string;
+  date?: string;
+  meta_title?: string;
+  excerpt?: string;
+  body_blog?: string;
+  image_description?: string;
+  img?: string;
+  further_reading?: { title: string; author?: string; url?: string }[];
+  spotify_episodes?: { title?: string; url?: string; podcastName: string }[];
 };

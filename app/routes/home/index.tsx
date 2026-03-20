@@ -7,6 +7,7 @@ import SidebarItem from "~/components/home/SidebarItem";
 import ScoreboardSection from "~/components/home/ScoreboardSection";
 import type { RawPost } from "~/types";
 import Reveal from "~/components/ui/Reveal";
+import RelatedMovies from "~/components/movie/RelatedMovies";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -29,7 +30,7 @@ type HomepageData = {
   body_paragraph_2: string;
   front_page_image: { url: string } | null;
   front_page_caption: string;
-  sidebar_movies: RawPost[];
+  sidebar_posts: RawPost[];
 };
 
 export default function Home() {
@@ -41,7 +42,7 @@ export default function Home() {
     async function fetchHomepage() {
       try {
         const res = await fetch(
-          `${apiUrl}/homepage?populate[sidebar_movies][populate]=img&populate[front_page_image]=true`
+          `${apiUrl}/homepage?populate[sidebar_posts][populate]=img&populate[front_page_image]=true`
         );
         if (!res.ok) return;
         const json = await res.json();
@@ -77,24 +78,30 @@ export default function Home() {
             body_paragraph_2={homepage?.body_paragraph_2}
           />
         )}
-        <aside className="border-l border-[#ddd] pl-4 order-3 md:order-2">
-          {isLoading ? (
-            <>
-              <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
-              <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
-            </>
-          ) : (
-            homepage?.sidebar_movies?.map((post) => (
-              <SidebarItem
-                key={post.documentId}
-                text={post.meta_title || post.title}
-                imgPath={post.img?.url ?? "./images/gallery.jpg"}
-                caption={post.director}
-                url={`/blog/${post.documentId}`}
-              />
-            ))
-          )}
-        </aside>
+        {isLoading || (homepage?.sidebar_posts?.length ?? 0) > 0 ? (
+          <aside className="border-l border-[#ddd] pl-4 order-3 md:order-2">
+            {isLoading ? (
+              <>
+                <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
+                <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
+              </>
+            ) : (
+              homepage?.sidebar_posts?.map((post) => (
+                <SidebarItem
+                  key={post.documentId}
+                  text={post.meta_title || post.title}
+                  imgPath={post.img?.url ?? "./images/gallery.jpg"}
+                  caption={post.excerpt}
+                  url={`/posts/${post.documentId}`}
+                />
+              ))
+            )}
+          </aside>
+        ) : (
+          <aside className="border-l border-[#ddd] pl-4 order-3 md:order-2">
+            <RelatedMovies genres={[]} currentDocumentId="" mode="latest" />
+          </aside>
+        )}
         <section className="order-1 md:order-2">
           {isLoading ? (
             <div className="w-full aspect-video bg-neutral-200 animate-pulse" />
