@@ -4,6 +4,8 @@ import {
   MdOutlineStarHalf,
   MdOutlineWatchLater,
   MdOutlineRepeat,
+  MdOutlinePlayCircle,
+  MdOutlineHistory,
   MdOutlinePreview,
   MdMovieEdit,
 } from "react-icons/md";
@@ -80,6 +82,16 @@ const AsideMeta = ({ postMeta, relatedMode = "related" }: { postMeta: Movie; rel
           {postMeta.would_rewatch && (
             <div className="flex gap-1 items-center">
               <MdOutlineRepeat color="crimson" size="20" /> rewatchable
+            </div>
+          )}
+          {postMeta.times_watched === 1 && (
+            <div className="flex gap-1 items-center">
+              <MdOutlinePlayCircle color="crimson" size="20" /> first watch
+            </div>
+          )}
+          {postMeta.times_watched && postMeta.times_watched > 1 && (
+            <div className="flex gap-1 items-center">
+              <MdOutlineHistory color="crimson" size="20" /> Seen {postMeta.times_watched}×
             </div>
           )}
           <div className="flex gap-1 items-center w-full">

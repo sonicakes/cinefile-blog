@@ -8,7 +8,8 @@ import {
   MdDoNotDisturb,
   MdMovieEdit,
   MdOutlineRecommend,
-  MdOutlineRepeat
+  MdOutlineRepeat,
+  MdOutlineHistory
 } from "react-icons/md";
 import { Link } from "react-router";
 import { getIconByMedium } from "~/helpers";
@@ -38,6 +39,7 @@ const MovieCard = ({
     date_reviewed,
     date_watched,
     availability,
+    times_watched,
   } = blog;
 
   const Wrapper = ({ children }: { children: React.ReactNode }) =>
@@ -124,6 +126,10 @@ const MovieCard = ({
 
                {would_rewatch && (
               <MetaItem Icon={MdOutlineRepeat} text={`rewatchable`} />
+            )}
+
+            {times_watched && times_watched > 1 && (
+              <MetaItem Icon={MdOutlineHistory} text={`Seen ${times_watched}×`} />
             )}
 
 

@@ -31,6 +31,7 @@ export type Movie = {
   availability?: { source: string; location: string }[];
   img?: string;
   genres: { id: string; name: string }[];
+  times_watched?: number;
 };
 
 export type SortOption =
@@ -83,6 +84,7 @@ export type RawMovie = {
     };
   };
   genres: { id: string; name: string; documentId: string }[];
+  times_watched?: number;
 };
 
 export type RawPost = {

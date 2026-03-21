@@ -27,7 +27,7 @@
   }
 
   .prose blockquote {
-    @apply border-l-0;
+    @apply border-none;
   }
 
   .prose h6 {
