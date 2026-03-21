@@ -61,6 +61,7 @@ export const mapStrapiToPosts = (moviesJson: any): Movie[] => {
     director: item.director,
     would_recommend: item.would_recommend,
     would_rewatch: item.would_rewatch,
+    times_watched: item.times_watched,
     review_provided: item.review_provided,
     letterboxd_uri: item.letterboxd_uri,
     image_description: item.image_description,
