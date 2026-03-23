@@ -24,13 +24,14 @@ I also include podcasts that I've listened to, relevant to each review, that are
 * **Masonry-style Movie Grid:** See all movies presented in column-like-cards masonry look, each clickable through to the detail page.
 * **Article-style Review Presentation:** Read a movie blog as a newspaper article or a page in a book. Completed with 'Related blogs' side-section to suggest a next review.
 * **Distinguish Watched VS Watchlist:** Separate your watched movies from not yet seen ones by a simple toggle.
-* **Contact Form Will Send Messages Directly To The Author:** Currently Contact Form is in progress.
+* **Rewatch & Recommendation Indicators:** Movies display metadata badges for "rewatchable", "recommend", and times watched count.
+* **Contact Form:** Sends messages directly to the author via Formspree.
 * **Router-based With A Choice Of Layouts:** Multi-page website running on React, React Router v7 & Typescript allows for potential SEO in the future.
 
 ## 🛠️ Tech Stack
 | Layer | Technology |
 | :--- | :--- |
-| **Frontend** | React / Typescript |
+| **Frontend** | React 19 / Typescript |
 | **Routing** | React Router v7 (SSR) |
 | **Styling** | Tailwind v4 CSS / Tailwind Typography |
 | **CMS / Backend** | Strapi v5 (deployed on Railway) |
@@ -116,9 +117,9 @@ Desktop Contact Page
 
 ## 🧺 Future Dev/Laundry List
 
-1. Wire Contact Form to send emails to a dedicated cinefile blog address. Probably using Form spree since it's coming up on my classes schedule.
+1. ✅ ~~Wire Contact Form to send emails to a dedicated cinefile blog address.~~ — **Done!** Contact form is connected via Formspree.
 
-2. Research & implement the 'red standout' effect that will be present on mobile & tablet devices that do not have hover interaction. Whether it's a matter of creating masks for each imagery piece (every time-consuming) or a CSS/JS-based approach (would be great to apply some effects dynamically, bypassing Adobe CC Suite), that is still for me to investigate & play around with.
+2. 🔄 Research & implement the 'red standout' effect that will be present on mobile & tablet devices that do not have hover interaction. **Partially done** — the "Review Pending" flag on unwatched movie cards is now always visible on mobile/tablet (hover-only on desktop). Full color-return effect on images still to be explored.
 
 3. Kind of bouncing from the previous point - it would be great to eventually creat unique cool poster-like art that actually has deep reds color-highlighted, similar to what [this podcast](https://www.nightvalepresents.com/rnghpn9) is doing for each of their movie discussion episode.
 
@@ -155,7 +156,7 @@ Desktop Contact Page
 
 17. Add more sorting options - most rated, by director, by year etc.
 
-18. Want to do something else with the top main menu rather than just an awkward stack. I've played with a burger, but with only 4 links I feel I want an easier access without the whole burger slide-ins. Need a bit of R&D playtime for this one.
+18. ✅ ~~Want to do something else with the top main menu rather than just an awkward stack.~~ — **Done!** Mobile navigation now uses a hamburger menu with a smooth slide-in drawer.
 
 ---
 
