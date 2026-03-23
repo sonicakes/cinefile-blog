@@ -31,7 +31,7 @@
   }
 
   .prose h6 {
-    @apply custom-caption relative -top-7.5;
+    @apply custom-caption relative;
   }
 
   .prose img {
@@ -50,6 +50,10 @@
 
   .prose a {
     @apply hover:text-crimson transition;
+  }
+
+  .prose img {
+    @apply my-0;
   }
 }
 
