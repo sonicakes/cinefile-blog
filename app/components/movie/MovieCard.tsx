@@ -75,7 +75,7 @@ const MovieCard = ({
               <span>{rating && rating}</span>
             </div>
           ) : (
-            <div className="absolute top-0 right-0 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out bg-crimson text-white px-4 py-1.5 font-bold font-brawler uppercase tracking-widest text-sm shadow-lg">
+            <div className="absolute top-0 right-0 lg:translate-x-full lg:group-hover:translate-x-0 transition-transform duration-500 ease-out bg-crimson text-white px-4 py-1.5 font-bold font-brawler uppercase tracking-widest text-sm shadow-lg">
               Review Pending
             </div>
           )}
