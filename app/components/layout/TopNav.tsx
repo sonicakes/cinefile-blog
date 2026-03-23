@@ -13,7 +13,7 @@ const TopNav = () => {
     { path: "/", label: "Front Page" },
     { path: "/about", label: "The Masthead" },
     { path: "/blog", label: "Film Reviews" },
-    { path: "/contact", label: "Letter to the Editor" },
+    { path: "/contact", label: "Correspondence" },
   ];
 
   const now = new Date();

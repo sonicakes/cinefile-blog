@@ -44,13 +44,11 @@ const MovieDetailMain = ({
         {postMeta.meta_title ? postMeta.meta_title : postMeta.title}
       </h1>
       <Reveal>
-      <img
-        src={
-          postMeta.img ? postMeta.img : "/images/gallery.jpg"
-        }
-        alt={postMeta.title}
-        className="w-full max-h-120 object-cover"
-      />
+        <img
+          src={postMeta.img ? postMeta.img : "/images/gallery.jpg"}
+          alt={postMeta.title}
+          className="w-full max-h-100 object-cover"
+        />
       </Reveal>
       <p className="font-caption italic text-gray-600 mb-7 pb-2 pt-1.5 border-b border-gray-300 text-sm">
         {postMeta.img
