@@ -35,7 +35,7 @@
   }
 
   .prose img {
-    @apply w-full max-w-150 h-auto;
+    @apply w-auto max-w-full max-h-[600px] block mx-auto m-0;
   }
 }
 
@@ -53,7 +53,11 @@
   }
 
   .prose img {
-    @apply my-0;
+    @apply m-0;
+  }
+
+  .prose hr {
+    @apply my-8;
   }
 }
 
