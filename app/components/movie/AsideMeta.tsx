@@ -97,17 +97,17 @@ const AsideMeta = ({ postMeta, relatedMode = "related" }: { postMeta: Movie; rel
           <div className="flex gap-1 items-center w-full">
             {postMeta.availability &&
               postMeta.availability.map((item, index) =>
-                item.source.toLowerCase() === "university" || item.source.toLowerCase() === "work" ? (
+                item.source.toLowerCase() === "university" || item.source.toLowerCase() === "work" || item.source.toLowerCase() === "home" ? (
                   <MetaItem
                     key={index}
                     Icon={getIconByMedium(item.source)}
-                    text={item.location}
+                    text={item.source.toLowerCase() === "home" ? item.source : item.location}
                   />
                 ) : (
                   <a
                     key={index}
                     href={item.location}
-                    className="hover:underline transition"
+                    className="underline hover:text-crimson transition"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
