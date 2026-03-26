@@ -93,14 +93,13 @@ const MovieListContent = ({ posts, categories }: { posts: Movie[], categories: s
 
           <div className="w-full text-neutral-500 flex items-center gap-1 justify-center md:justify-end font-brawler lowercase tracking-wide">
             <span className="text-neutral-600">
-              showing
-              {searchQuery ? "results for " + '"' + searchQuery + ':"' : ""}
+              {searchQuery ? "" + '"' + searchQuery + ':"' : ""}
             </span>
-            <span className="text-sm lg:text-base text-crimson font-bold">
+            <span className="text-sm xl:text-base text-crimson font-bold">
               {filteredMovies.length}
             </span>
 
-            <span className="text-sm lg:text-base font-semibold">
+            <span className="text-sm xl:text-base font-semibold">
               / {posts.length}
             </span>
           </div>
