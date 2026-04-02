@@ -1,8 +1,8 @@
 import { SiLetterboxd, SiBluesky, SiGithub } from "react-icons/si";
 
 const SOCIAL_LINKS = [
-  { href: "https://letterboxd.com/sonicakes/", label: "Letterboxd", Icon: SiLetterboxd },
-  { href: "https://bsky.app/profile/sonicakes.bsky.social", label: "BlueSky", Icon: SiBluesky },
+  { href: "https://letterboxd.com/filmladyroyal/", label: "Letterboxd", Icon: SiLetterboxd },
+  { href: "https://bsky.app/profile/filmladyroyal.bsky.social", label: "BlueSky", Icon: SiBluesky },
   { href: "https://github.com/sonicakes", label: "GitHub", Icon: SiGithub },
 ];
 
