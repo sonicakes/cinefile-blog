@@ -98,9 +98,9 @@ const ContactPage = () => {
           </p>
           <p>
             In the meantime, don't hesitate to connect on{" "}
-            <a href="https://letterboxd.com/sonicakes/" target="_blank" rel="noopener noreferrer" className="underline hover:text-crimson transition-colors">Letterboxd</a>
+            <a href="https://letterboxd.com/filmladyroyal/" target="_blank" rel="noopener noreferrer" className="underline hover:text-crimson transition-colors">Letterboxd</a>
             {" & "}
-            <a href="https://bsky.app/profile/sonicakes.bsky.social" target="_blank" rel="noopener noreferrer" className="underline hover:text-crimson transition-colors">BlueSky</a>.
+            <a href="https://bsky.app/profile/filmladyroyal.bsky.social" target="_blank" rel="noopener noreferrer" className="underline hover:text-crimson transition-colors">BlueSky</a>.
           </p>
           <p className="pt-2 italic">Good Morning, Good Afternoon and Good Night!</p>
           <button
