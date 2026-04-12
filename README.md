@@ -13,7 +13,7 @@ I also include podcasts that I've listened to, relevant to each review, that are
 
 ## Links
 
-[The Cinefile Blog](https://cinefile-blog.netlify.app/](https://cinefileblog.com/) - deployed live on Netlify.
+[The Cinefile Blog](https://cinefileblog.com/) - deployed live on Netlify.
 
 ## 🚀 Features
 * **Freeform Reviews:** Full Markdown support for beautiful, long-form film analysis.
