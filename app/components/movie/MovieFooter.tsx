@@ -37,7 +37,7 @@ const MovieFooter = ({
           </div>
           <MovieWrapper
             isReviewed={!!nextMovie!.movie!.review_provided}
-            href={`/blog/${nextMovie!.movie!.documentId}`}
+            href={`/blog/${nextMovie!.movie!.slug}`}
             className="flex flex-col sm:flex-row gap-8 p-4 md:p-8 group hover:bg-neutral-50 transition-colors"
           >
             {nextMovie!.movie?.img && (

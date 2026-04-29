@@ -1,6 +1,7 @@
 export type Movie = {
   id: string;
   documentId: string;
+  slug: string;
   title: string;
   date_reviewed?: string;
   date_watched?: string;
@@ -46,6 +47,7 @@ export type SortOption =
 export type RawMovie = {
   id: string;
   documentId: string;
+  slug: string;
   rating: number;
   title: string;
   date_reviewed: string;
@@ -90,6 +92,7 @@ export type RawMovie = {
 export type RawPost = {
   id: string;
   documentId: string;
+  slug: string;
   title: string;
   date?: string;
   meta_title?: string;
@@ -104,6 +107,7 @@ export type RawPost = {
 export type Post = {
   id: string;
   documentId: string;
+  slug: string;
   title: string;
   date?: string;
   meta_title?: string;

@@ -93,7 +93,7 @@ export default function Home() {
                     text={post.meta_title || post.title}
                     imgPath={post.img?.url ?? "./images/gallery.jpg"}
                     caption={post.excerpt}
-                    url={`/posts/${post.documentId}`}
+                    url={`/posts/${post.slug}`}
                   />
                 ))
             )}
@@ -108,7 +108,7 @@ export default function Home() {
             <div className="w-full aspect-video bg-neutral-200 animate-pulse" />
           ) : (
             <>
-              <Link to={homepage?.featured_post ? `/posts/${homepage.featured_post.documentId}` : "#"}>
+              <Link to={homepage?.featured_post ? `/posts/${homepage.featured_post.slug}` : "#"}>
                 <Reveal>
                   <img
                     src={homepage?.featured_post?.img?.url ?? "./images/gallery.jpg"}
@@ -123,7 +123,7 @@ export default function Home() {
                     <p className="text-neutral-500 text-sm leading-snug first-letter:uppercase mb-2">{homepage.featured_post.excerpt}</p>
                   )}
                   <Link
-                    to={`/posts/${homepage.featured_post.documentId}`}
+                    to={`/posts/${homepage.featured_post.slug}`}
                     className="text-xs uppercase tracking-widest font-semibold hover:text-crimson transition-colors duration-300"
                   >
                     read more

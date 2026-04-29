@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, NavLink } from "react-router";
+import { useLoaderData, NavLink, useNavigate } from "react-router";
 import type { Route } from "./+types/detail";
 import type { RawMovie } from "~/types";
 
@@ -38,8 +38,12 @@ const mapDetailData = (item: any) => {
 
 const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
   const { id, apiUrl } = useLoaderData<typeof loader>();
+  const navigate = useNavigate();
   const [data, setData] = useState<{ post: any; stats: any } | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const populateParams =
+    "populate=next_movie.movie&populate=next_movie.movie.img&populate=next_movie.movie.genres&populate=availability&populate=genres&populate=img&populate=spotify_episodes&populate=further_reading&populate=sims_scenario";
 
   useEffect(() => {
     let isMounted = true;
@@ -47,7 +51,7 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
     async function getDetail() {
       try {
         const res = await fetch(
-          `${apiUrl}/movies?filters[documentId][$eq]=${id}&populate=next_movie.movie&populate=next_movie.movie.img&populate=next_movie.movie.genres&populate=availability&populate=genres&populate=img&populate=spotify_episodes&populate=further_reading&populate=sims_scenario`,
+          `${apiUrl}/movies?filters[slug][$eq]=${id}&${populateParams}`,
         );
 
         if (!res.ok) throw new Error("Failed to fetch");
@@ -55,7 +59,17 @@ const BlogPostDetailsPage = ({ loaderData }: Route.ComponentProps) => {
         const json: StrapiResponse<RawMovie> = await res.json();
 
         if (!json.data || !json.data.length) {
-          if (isMounted) setError("404");
+          // Param may be a legacy documentId — try fallback and redirect to slug URL
+          const fallback = await fetch(
+            `${apiUrl}/movies?filters[documentId][$eq]=${id}&${populateParams}`,
+          );
+          if (!fallback.ok) throw new Error("Failed to fetch");
+          const fallbackJson: StrapiResponse<RawMovie> = await fallback.json();
+          if (!fallbackJson.data || !fallbackJson.data.length) {
+            if (isMounted) setError("404");
+            return;
+          }
+          if (isMounted) navigate(`/blog/${fallbackJson.data[0].slug}`, { replace: true });
           return;
         }
 

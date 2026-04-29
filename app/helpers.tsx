@@ -50,6 +50,7 @@ export const mapStrapiToPosts = (moviesJson: any): Movie[] => {
   return moviesJson.data.map((item: any) => ({
     id: item.id,
     documentId: item.documentId,
+    slug: item.slug,
     title: item.title,
     rating: item.rating,
     year: item.year,

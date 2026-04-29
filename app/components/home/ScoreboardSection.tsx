@@ -114,7 +114,7 @@ const ScoreboardSection = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: s
                   return (
                     <tr
                       key={post.documentId}
-                      onClick={() => navigate(`/blog/${post.documentId}`)}
+                      onClick={() => navigate(`/blog/${post.slug}`)}
                       className="border-b border-neutral-200 hover:bg-neutral-50 transition-colors group cursor-pointer"
                     >
                       <td className="py-1.5 pr-3 hidden sm:table-cell">
