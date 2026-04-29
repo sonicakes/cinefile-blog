@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import AsideMeta from "~/components/movie/AsideMeta";
-import { Link } from "react-router";
 import Reveal from "~/components/ui/Reveal";
 
 type AboutData = {
@@ -135,9 +134,9 @@ const AboutPage = ({ apiUrl, strapiUrl }: { apiUrl: string; strapiUrl: string })
                 }}
               >{about.bio}</ReactMarkdown>
             )}
-            <Link to="/blog" className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
-              see all reviews
-            </Link>
+            <a href="https://filmladyproductions.netlify.app/" target="_blank" rel="noopener noreferrer" className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-2xl hover:scale-110 mt-6">
+              more about film lady
+            </a>
           </div>
         )}
 
