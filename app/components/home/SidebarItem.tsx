@@ -14,14 +14,14 @@ const SidebarItem = ({
 }) => {
   return (
     <Link to={url}>
-      <div className="sidebar-item mb-5 border-b border-neutral-300 pb-4 group cursor-pointer">
+      <div className="sidebar-item mb-5 border-b border-neutral-300 pb-3 group cursor-pointer">
         <Reveal>
           <img src={imgPath} className="h-50 object-cover w-full" alt={text} />
         </Reveal>
         <h4 className="group-hover:text-crimson transition duration-700 py-1 font-semibold text-lg leading-tight font-brawler tracking-tight capitalize">
           {text}
         </h4>
-        <small className="text-neutral-500 text-xs inline-block leading-snug first-letter:uppercase">{caption}</small>
+        <p className="text-neutral-500 text-xs leading-snug capitalize">{caption}</p>
       </div>
     </Link>
   );
