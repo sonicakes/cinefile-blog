@@ -1,0 +1,43 @@
+const LogoSVG = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 200"
+    width="200"
+    height="200"
+    className={className}
+    aria-hidden="true"
+  >
+    <circle cx="100" cy="100" r="98" fill="#2c2c2c" />
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#dc143c" strokeWidth="2.5" />
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#3e3e3e" strokeWidth="18" />
+    <rect transform="translate(100,20) rotate(0)"    x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(140,30.7) rotate(30)"  x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(169.3,60) rotate(60)"  x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(180,100) rotate(90)"   x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(169.3,140) rotate(120)" x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(140,169.3) rotate(150)" x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(100,180) rotate(180)"  x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(60,169.3) rotate(210)"  x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(30.7,140) rotate(240)"  x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(20,100) rotate(270)"   x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(30.7,60) rotate(300)"   x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <rect transform="translate(60,30.7) rotate(330)"   x="-4" y="-2.5" width="8" height="5" rx="1.5" fill="white" opacity="0.85" />
+    <circle cx="100" cy="100" r="70" fill="#2c2c2c" />
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#555555" strokeWidth="1" />
+    <text
+      x="100"
+      y="135"
+      textAnchor="middle"
+      fontFamily="UnifrakturMaguntia, cursive"
+      fontSize="96"
+      fill="white"
+    >
+      C
+    </text>
+    <line x1="38" y1="152" x2="70" y2="152" stroke="#dc143c" strokeWidth="1.5" opacity="0.7" />
+    <polygon points="100,148 104,152 100,156 96,152" fill="#dc143c" opacity="0.7" />
+    <line x1="130" y1="152" x2="162" y2="152" stroke="#dc143c" strokeWidth="1.5" opacity="0.7" />
+  </svg>
+);
+
+export default LogoSVG;

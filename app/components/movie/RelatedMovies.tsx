@@ -4,6 +4,7 @@ import Reveal from "~/components/ui/Reveal";
 
 type RelatedMovie = {
   documentId: string;
+  slug: string;
   title: string;
   excerpt: string;
   img?: {
@@ -89,7 +90,7 @@ const RelatedMovies = ({ genres, currentDocumentId, mode = "related" }: Props) =
         const imgSrc = getImg(movie);
         return (
           <Link
-            to={`/blog/${movie.documentId}`}
+            to={`/blog/${movie.slug}`}
             key={movie.documentId}
             className="block mb-5 pb-4 border-b border-neutral-300 group cursor-pointer"
           >

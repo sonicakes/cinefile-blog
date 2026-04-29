@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
+import LogoSVG from "./LogoSVG";
 
 const TopNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,12 +25,8 @@ const TopNav = () => {
   return (
     <nav className="w-full bg-white text-dark border-t-4 border-dark py-1">
       <div className="grid grid-cols-[auto_1fr_auto] md:grid-cols-[1fr_3fr_1fr] items-center py-2 md:py-6 border-b-4 border-double border-dark">
-        <NavLink className="flex justify-center px-2 md:px-0 border-r border-dark h-full group" to="/">
-          <img
-            src="/logo.svg"
-            alt="The Cinefile Blog — home"
-            className="h-12 md:h-20 w-auto self-center object-cover grayscale group-hover:duotone-crimson transition duration-700"
-          />
+        <NavLink className="flex justify-center px-2 md:px-0 border-r border-dark h-full group" to="/" aria-label="The Cinefile Blog — home">
+          <LogoSVG className="h-12 md:h-20 w-auto self-center grayscale group-hover:duotone-crimson transition duration-700" />
         </NavLink>
         <h1 className="text-center py-4 font-gothic tracking-tight md:border-b border-dark text-4xl md:text-7xl">
           The Cinefile Blog

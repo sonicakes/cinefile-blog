@@ -24,7 +24,7 @@ const MovieCard = ({
 }) => {
   const {
     review_provided,
-    documentId,
+    slug,
     year,
     rating,
     img,
@@ -44,7 +44,7 @@ const MovieCard = ({
 
   const Wrapper = ({ children }: { children: React.ReactNode }) =>
     review_provided ? (
-      <Link to={`/blog/${documentId}`} className={classExtra}>
+      <Link to={`/blog/${slug}`} className={classExtra}>
         {children}
       </Link>
     ) : (

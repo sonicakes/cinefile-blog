@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, NavLink } from "react-router";
+import { useLoaderData, NavLink, useNavigate } from "react-router";
 import type { Route } from "./+types/detail";
 import type { RawPost, Post } from "~/types";
 import PostDetailMain from "~/components/post/PostDetailMain";
@@ -19,6 +19,7 @@ export async function loader({ params }: Route.LoaderArgs) {
 const mapDetailData = (item: RawPost): Post => ({
   id: item.id,
   documentId: item.documentId,
+  slug: item.slug,
   title: item.title,
   date: item.date,
   meta_title: item.meta_title,
@@ -32,8 +33,11 @@ const mapDetailData = (item: RawPost): Post => ({
 
 const PostDetailPage = ({}: Route.ComponentProps) => {
   const { id, apiUrl } = useLoaderData<typeof loader>();
+  const navigate = useNavigate();
   const [data, setData] = useState<{ post: Post; stats: ReturnType<typeof calculateReadingTime> } | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  const populateParams = "populate=img&populate=further_reading&populate=spotify_episodes";
 
   useEffect(() => {
     let isMounted = true;
@@ -41,7 +45,7 @@ const PostDetailPage = ({}: Route.ComponentProps) => {
     async function getDetail() {
       try {
         const res = await fetch(
-          `${apiUrl}/posts?filters[documentId][$eq]=${id}&populate=img&populate=further_reading&populate=spotify_episodes`,
+          `${apiUrl}/posts?filters[slug][$eq]=${id}&${populateParams}`,
         );
 
         if (!res.ok) throw new Error("Failed to fetch");
@@ -49,7 +53,17 @@ const PostDetailPage = ({}: Route.ComponentProps) => {
         const json: StrapiResponse<RawPost> = await res.json();
 
         if (!json.data || !json.data.length) {
-          if (isMounted) setError("404");
+          // Param may be a legacy documentId — try fallback and redirect to slug URL
+          const fallback = await fetch(
+            `${apiUrl}/posts?filters[documentId][$eq]=${id}&${populateParams}`,
+          );
+          if (!fallback.ok) throw new Error("Failed to fetch");
+          const fallbackJson: StrapiResponse<RawPost> = await fallback.json();
+          if (!fallbackJson.data || !fallbackJson.data.length) {
+            if (isMounted) setError("404");
+            return;
+          }
+          if (isMounted) navigate(`/posts/${fallbackJson.data[0].slug}`, { replace: true });
           return;
         }
 
