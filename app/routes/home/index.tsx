@@ -28,8 +28,6 @@ type HomepageData = {
   byline: string;
   body_paragraph_1: string;
   body_paragraph_2: string;
-  front_page_image: { url: string } | null;
-  front_page_caption: string;
   sidebar_posts: RawPost[];
   featured_post: RawPost | null;
 };
@@ -43,7 +41,7 @@ export default function Home() {
     async function fetchHomepage() {
       try {
         const res = await fetch(
-          `${apiUrl}/homepage?populate[sidebar_posts][populate]=img&populate[front_page_image]=true&populate[featured_post][populate]=*`
+          `${apiUrl}/homepage?populate[sidebar_posts][populate]=img&populate[featured_post][populate]=img`
         );
         if (!res.ok) return;
         const json = await res.json();
@@ -113,7 +111,7 @@ export default function Home() {
               <Link to={homepage?.featured_post ? `/posts/${homepage.featured_post.documentId}` : "#"}>
                 <Reveal>
                   <img
-                    src={homepage?.featured_post?.img?.url ?? homepage?.front_page_image?.url ?? "./images/gallery.jpg"}
+                    src={homepage?.featured_post?.img?.url ?? "./images/gallery.jpg"}
                     alt={homepage?.featured_post?.title ?? "News Image"}
                     className="w-full"
                   />
