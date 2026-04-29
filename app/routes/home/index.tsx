@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
+import { useLoaderData, Link } from "react-router";
 import Header from "~/components/layout/Header";
 import type { Route } from "./+types/index";
 import HeadlineBlock from "~/components/home/HeadlineBlock";
@@ -28,9 +28,8 @@ type HomepageData = {
   byline: string;
   body_paragraph_1: string;
   body_paragraph_2: string;
-  front_page_image: { url: string } | null;
-  front_page_caption: string;
   sidebar_posts: RawPost[];
+  featured_post: RawPost | null;
 };
 
 export default function Home() {
@@ -42,7 +41,7 @@ export default function Home() {
     async function fetchHomepage() {
       try {
         const res = await fetch(
-          `${apiUrl}/homepage?populate[sidebar_posts][populate]=img&populate[front_page_image]=true`
+          `${apiUrl}/homepage?populate[sidebar_posts][populate]=img&populate[featured_post][populate]=img`
         );
         if (!res.ok) return;
         const json = await res.json();
@@ -86,15 +85,17 @@ export default function Home() {
                 <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
               </>
             ) : (
-              homepage?.sidebar_posts?.map((post) => (
-                <SidebarItem
-                  key={post.documentId}
-                  text={post.meta_title || post.title}
-                  imgPath={post.img?.url ?? "./images/gallery.jpg"}
-                  caption={post.excerpt}
-                  url={`/posts/${post.documentId}`}
-                />
-              ))
+              homepage?.sidebar_posts
+                ?.filter((post) => post.documentId !== homepage.featured_post?.documentId)
+                .map((post) => (
+                  <SidebarItem
+                    key={post.documentId}
+                    text={post.meta_title || post.title}
+                    imgPath={post.img?.url ?? "./images/gallery.jpg"}
+                    caption={post.excerpt}
+                    url={`/posts/${post.documentId}`}
+                  />
+                ))
             )}
           </aside>
         ) : (
@@ -106,16 +107,30 @@ export default function Home() {
           {isLoading ? (
             <div className="w-full aspect-video bg-neutral-200 animate-pulse" />
           ) : (
-            <Reveal>
-              <img
-                src={homepage?.front_page_image?.url ?? "./images/front-page.jpg"}
-                alt="News Image"
-                className="w-full"
-              />
-            </Reveal>
-          )}
-          {homepage?.front_page_caption && (
-            <p className="custom-caption">{homepage.front_page_caption}</p>
+            <>
+              <Link to={homepage?.featured_post ? `/posts/${homepage.featured_post.documentId}` : "#"}>
+                <Reveal>
+                  <img
+                    src={homepage?.featured_post?.img?.url ?? "./images/gallery.jpg"}
+                    alt={homepage?.featured_post?.title ?? "News Image"}
+                    className="w-full"
+                  />
+                </Reveal>
+              </Link>
+              {homepage?.featured_post && (
+                <div className="border-t border-gray-300 mt-3 pt-3">
+                  {homepage.featured_post.excerpt && (
+                    <p className="text-neutral-500 text-sm leading-snug first-letter:uppercase mb-2">{homepage.featured_post.excerpt}</p>
+                  )}
+                  <Link
+                    to={`/posts/${homepage.featured_post.documentId}`}
+                    className="text-xs uppercase tracking-widest font-semibold hover:text-crimson transition-colors duration-300"
+                  >
+                    read more
+                  </Link>
+                </div>
+              )}
+            </>
           )}
         </section>
       </main>

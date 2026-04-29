@@ -22,7 +22,7 @@ const PostDetailMain = ({ post, stats }: { post: Post; stats?: Stat }) => {
             <img
               src={post.img}
               alt={post.title}
-              className="w-full max-h-120 object-cover"
+              className="w-full max-h-230 object-cover"
             />
           </Reveal>
           {post.image_description && (

@@ -25,7 +25,7 @@ const MainFooter = () => {
           ))}
         </div>
         <p className="text-xs leading-tight">
-          <span className="italic font-bold text-neutral-600">The Cinefile Blog {new Date().getFullYear()}</span> — designed, developed & deployed by the film lady.
+          <span className="italic font-bold text-neutral-600">The Cinefile Blog {new Date().getFullYear()}</span> — designed, developed & deployed by <a className="italic hover:underline text-crimson" href="https://filmladyproductions.netlify.app/" target="_blank" rel="noopener noreferrer">Film Lady Productions</a>.
           All critique is a personal opinion.
           Metadata from <a className="italic hover:underline text-crimson" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB</a>,{" "}
           <a className="italic hover:underline text-crimson" href="https://letterboxd.com/" target="_blank" rel="noopener noreferrer">Letterboxd</a> &{" "}
