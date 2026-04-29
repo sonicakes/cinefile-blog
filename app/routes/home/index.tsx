@@ -113,7 +113,7 @@ export default function Home() {
               <Link to={homepage?.featured_post ? `/posts/${homepage.featured_post.documentId}` : "#"}>
                 <Reveal>
                   <img
-                    src={homepage?.featured_post?.img?.url ?? homepage?.front_page_image?.url ?? "./images/front-page.jpg"}
+                    src={homepage?.featured_post?.img?.url ?? homepage?.front_page_image?.url ?? "./images/gallery.jpg"}
                     alt={homepage?.featured_post?.title ?? "News Image"}
                     className="w-full"
                   />
