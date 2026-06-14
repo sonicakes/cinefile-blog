@@ -114,8 +114,8 @@ const PostDetailPage = ({}: Route.ComponentProps) => {
   return (
     <>
       <div className="border-b-5 border-dark text-center font-brawler uppercase text-xs tracking-widest py-2.5 bt-dark border-t">
-        <NavLink className="hover:underline hover:text-crimson transition" to="/">
-          Front Page
+        <NavLink className="hover:underline hover:text-crimson transition" to="/posts">
+          Posts
         </NavLink>
         / <b>{data.post.title}</b>
       </div>
