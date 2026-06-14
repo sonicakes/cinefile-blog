@@ -28,24 +28,33 @@ type HomepageData = {
   byline: string;
   body_paragraph_1: string;
   body_paragraph_2: string;
-  sidebar_posts: RawPost[];
   featured_post: RawPost | null;
 };
 
 export default function Home() {
   const { apiUrl, strapiUrl } = useLoaderData<typeof loader>();
   const [homepage, setHomepage] = useState<HomepageData | null>(null);
+  const [sidebarPosts, setSidebarPosts] = useState<RawPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function fetchHomepage() {
       try {
-        const res = await fetch(
-          `${apiUrl}/homepage?populate[sidebar_posts][populate]=img&populate[featured_post][populate]=img`
-        );
-        if (!res.ok) return;
-        const json = await res.json();
-        setHomepage(json.data);
+        const [homepageRes, postsRes] = await Promise.all([
+          fetch(`${apiUrl}/homepage?populate[featured_post][populate]=img`),
+          fetch(`${apiUrl}/posts?populate=img&sort=date:desc&pagination[limit]=3`),
+        ]);
+        if (!homepageRes.ok || !postsRes.ok) return;
+        const [homepageJson, postsJson] = await Promise.all([
+          homepageRes.json(),
+          postsRes.json(),
+        ]);
+        const featured: RawPost | null = homepageJson.data?.featured_post ?? null;
+        const latest: RawPost[] = (postsJson.data ?? [])
+          .filter((p: RawPost) => p.documentId !== featured?.documentId)
+          .slice(0, 2);
+        setHomepage(homepageJson.data);
+        setSidebarPosts(latest);
       } catch (err) {
         console.error(err);
       } finally {
@@ -77,7 +86,7 @@ export default function Home() {
             body_paragraph_2={homepage?.body_paragraph_2}
           />
         )}
-        {isLoading || (homepage?.sidebar_posts?.length ?? 0) > 0 ? (
+        {isLoading || sidebarPosts.length > 0 ? (
           <aside className="border-l border-[#ddd] pl-4 order-3 md:order-2">
             {isLoading ? (
               <>
@@ -85,9 +94,8 @@ export default function Home() {
                 <div className="h-50 w-full bg-neutral-200 animate-pulse mb-5" />
               </>
             ) : (
-              homepage?.sidebar_posts
-                ?.filter((post) => post.documentId !== homepage.featured_post?.documentId)
-                .map((post) => (
+              <>
+                {sidebarPosts.map((post) => (
                   <SidebarItem
                     key={post.documentId}
                     text={post.meta_title || post.title}
@@ -95,7 +103,14 @@ export default function Home() {
                     caption={post.excerpt}
                     url={`/posts/${post.slug}`}
                   />
-                ))
+                ))}
+                <Link
+                  to="/posts"
+                  className="text-xs uppercase tracking-widest font-semibold hover:text-crimson transition-colors duration-300"
+                >
+                  More Posts →
+                </Link>
+              </>
             )}
           </aside>
         ) : (
@@ -119,6 +134,9 @@ export default function Home() {
               </Link>
               {homepage?.featured_post && (
                 <div className="border-t border-gray-300 mt-3 pt-3">
+                  <h2 className="font-brawler text-xl font-bold leading-tight mb-1">
+                    {homepage.featured_post.meta_title || homepage.featured_post.title}
+                  </h2>
                   {homepage.featured_post.excerpt && (
                     <p className="text-neutral-500 text-sm leading-snug first-letter:uppercase mb-2">{homepage.featured_post.excerpt}</p>
                   )}

@@ -6,14 +6,15 @@ const TopNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const baseClasses =
-    "px-4 py-2 hover:bg-crimson hover:text-white font-brawler transition-colors duration-200 block font-semibold text-center tracking-wider";
+    "px-2 py-2 hover:bg-crimson hover:text-white font-brawler transition-colors duration-200 block font-semibold text-center tracking-wide";
   const activeClasses =
-    "bg-neutral-600 text-white px-4 py-2 block font-brawler text-center font-bold tracking-wider";
+    "bg-neutral-600 text-white px-2 py-2 block font-brawler text-center font-bold tracking-wide";
 
   const menuTitles = [
     { path: "/", label: "Front Page" },
     { path: "/about", label: "The Masthead" },
     { path: "/blog", label: "Film Reviews" },
+    { path: "/posts", label: "Posts" },
     { path: "/contact", label: "Correspondence" },
   ];
 
@@ -24,25 +25,25 @@ const TopNav = () => {
 
   return (
     <nav className="w-full bg-white text-dark border-t-4 border-dark py-1">
-      <div className="grid grid-cols-[auto_1fr_auto] md:grid-cols-[1fr_3fr_1fr] items-center py-2 md:py-6 border-b-4 border-double border-dark">
-        <NavLink className="flex justify-center px-2 md:px-0 border-r border-dark h-full group" to="/" aria-label="The Cinefile Blog — home">
-          <LogoSVG className="h-12 md:h-20 w-auto self-center grayscale group-hover:duotone-crimson transition duration-700" />
+      <div className="grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_3fr_1fr] items-center py-2 lg:py-6 border-b-4 border-double border-dark">
+        <NavLink className="flex justify-center px-2 lg:px-0 border-r border-dark h-full group" to="/" aria-label="The Cinefile Blog — home">
+          <LogoSVG className="h-12 lg:h-20 w-auto self-center grayscale group-hover:duotone-crimson transition duration-700" />
         </NavLink>
-        <h1 className="text-center py-4 font-gothic tracking-tight md:border-b border-dark text-4xl md:text-7xl">
+        <h1 className="text-center py-4 font-gothic tracking-tight lg:border-b border-dark text-4xl lg:text-6xl xl:text-7xl">
           The Cinefile Blog
         </h1>
-        <div className="border-l border-dark flex items-center justify-center px-4 py-2 md:pt-2 md:pb-5">
-          {/* Hamburger button — mobile only */}
+        <div className="border-l border-dark flex items-center justify-center px-4 py-2 lg:pt-2 lg:pb-5">
+          {/* Hamburger button — mobile and tablet */}
           <button
             onClick={() => setIsMenuOpen((o) => !o)}
             aria-expanded={isMenuOpen}
             aria-label="Toggle navigation menu"
-            className="md:hidden font-brawler text-xl px-2 py-1 border border-dark hover:bg-crimson hover:text-white transition-colors duration-200"
+            className="lg:hidden font-brawler text-xl px-2 py-1 border border-dark hover:bg-crimson hover:text-white transition-colors duration-200"
           >
             {isMenuOpen ? "✕" : "☰"}
           </button>
           {/* Vol/issue badge — desktop only */}
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <div className="border border-dark px-3 py-2 text-center font-brawler uppercase text-neutral-600 flex flex-col gap-0.5">
               <span className="text-sm md:text-base font-bold tracking-widest leading-none">Vol. {vol}</span>
               <span className="text-[10px] md:text-xs tracking-widest leading-none">No. {week}</span>
@@ -56,12 +57,12 @@ const TopNav = () => {
       </div>
 
       <div
-        className={`grid transition-all duration-300 ease-in-out md:block md:opacity-100 ${
+        className={`grid transition-all duration-300 ease-in-out lg:block lg:opacity-100 ${
           isMenuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
         <div className="overflow-hidden">
-          <div className="grid md:grid-cols-4 border-y border-dark uppercase tracking-tight text-sm">
+          <div className="grid lg:grid-cols-5 border-y border-dark uppercase tracking-tight text-sm">
             {menuTitles.map((menuLink) => (
               <NavLink
                 key={menuLink.label}

@@ -1,8 +1,10 @@
 import { SiLetterboxd, SiBluesky, SiGithub } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
 
 const SOCIAL_LINKS = [
   { href: "https://letterboxd.com/filmladyroyal/", label: "Letterboxd", Icon: SiLetterboxd },
   { href: "https://bsky.app/profile/filmladyroyal.bsky.social", label: "BlueSky", Icon: SiBluesky },
+  { href: "https://www.instagram.com/filmladyroyal/", label: "Instagram", Icon: FaInstagram },
   { href: "https://github.com/sonicakes", label: "GitHub", Icon: SiGithub },
 ];
 
