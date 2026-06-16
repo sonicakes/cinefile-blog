@@ -106,9 +106,9 @@ export default function Home() {
                 ))}
                 <Link
                   to="/posts"
-                  className="text-xs uppercase tracking-widest font-semibold hover:text-crimson transition-colors duration-300"
+                  className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-xl hover:scale-110 mt-6"
                 >
-                  More Posts →
+                  more posts
                 </Link>
               </>
             )}
@@ -134,15 +134,15 @@ export default function Home() {
               </Link>
               {homepage?.featured_post && (
                 <div className="border-t border-gray-300 mt-3 pt-3">
-                  <h2 className="font-brawler text-xl font-bold leading-tight mb-1">
+                  <h2 className="font-brawler text-xl font-bold leading-tight mb-1 capitalize">
                     {homepage.featured_post.meta_title || homepage.featured_post.title}
                   </h2>
                   {homepage.featured_post.excerpt && (
-                    <p className="text-neutral-500 text-sm leading-snug first-letter:uppercase mb-2">{homepage.featured_post.excerpt}</p>
+                    <p className="text-neutral-500 text-sm leading-snug capitalize mb-2">{homepage.featured_post.excerpt}</p>
                   )}
                   <Link
                     to={`/posts/${homepage.featured_post.slug}`}
-                    className="text-xs uppercase tracking-widest font-semibold hover:text-crimson transition-colors duration-300"
+                    className="inline-block text-dark hover:text-crimson transition duration-700 border-gray-600 hover:border-crimson border-t border-b border-dotted tracking-wider font-gothic text-xl hover:scale-110 mt-3"
                   >
                     read more
                   </Link>
