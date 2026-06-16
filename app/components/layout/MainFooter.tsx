@@ -11,7 +11,7 @@ const SOCIAL_LINKS = [
 const MainFooter = () => {
     return (
     <div className="pb-2 pt-8 mt-8 w-full uppercase text-neutral-500 tracking-wide font-semibold border-t-4 border-double border-dark">
-        <div className="flex gap-4 mb-4">
+        <div className="flex flex-wrap gap-4 mb-4">
           {SOCIAL_LINKS.map(({ href, label, Icon }) => (
             <a
               key={label}

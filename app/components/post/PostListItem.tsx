@@ -27,11 +27,11 @@ const PostListItem = ({ post }: { post: RawPost }) => {
               {date}
             </span>
           )}
-          <h2 className="font-brawler text-xl leading-tight group-hover:text-crimson transition-colors duration-300">
+          <h2 className="font-brawler text-xl font-bold leading-tight group-hover:text-crimson transition-colors duration-300">
             {post.title}
           </h2>
           {post.excerpt && (
-            <p className="text-neutral-500 text-sm leading-snug line-clamp-2">
+            <p className="text-neutral-500 text-sm leading-snug line-clamp-2 capitalize">
               {post.excerpt}
             </p>
           )}
