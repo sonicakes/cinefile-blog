@@ -4,6 +4,7 @@ import {
   MdHome,
   MdAirplanemodeActive,
   MdOutlineWork,
+  MdLocalMovies,
 } from "react-icons/md";
 import { FaYoutube, FaUniversity } from "react-icons/fa";
 import { SiMubi, SiPlex, SiTubi } from "react-icons/si";
@@ -15,6 +16,8 @@ export const getIconByMedium = (medium?: string) => {
   switch (medium?.toLowerCase()) {
     case "youtube":
       return FaYoutube;
+    case "theatre":
+      return MdLocalMovies;
     case "plane":
       return MdAirplanemodeActive;
     case "mubi":
